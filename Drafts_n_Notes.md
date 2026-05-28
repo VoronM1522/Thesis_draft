@@ -70,7 +70,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
   На сегодняшний активно используется концепция, при которой данные разделяются на используемые и хранимые. При этом ответственность за их перемещение между этими состояниями лежит на программисте. В контексте данной работы такой подход будет называться two-level store. К очевидным недостаткам такого подхода можно отнести:
   - Утрата данных неожиданном выключении/завершении процесса
   - Повышенная трудоемкость (и большая стоимость) разработки 
-  Такому подходу противопоставляется концепция ортогональной персистентности, рассмотренная Аткинсоном и Морисоном в 80-х годах XX века (https://www.researchgate.net/publication/240720509_Persistent_Languages_and_Architectures). Он заключается в том, что к данным имеется постоянный доступ и не требуется явных действий со стороны программиста для их сохранения на диск. Вместо этого ответственность за это ложится на среду, в которой программа исполняется. При снижении количества манипуляций с данными, а они обычно занимают до 30% кода (https://www.researchgate.net/publication/240720509_Persistent_Languages_and_Architectures), очевидным образом снижается и количество ошибок при написании таких программ. К неочевидным приемуществам такого подхода можно отнести весьма эффективное использование пропускной способности диска (https://www.cs.utexas.edu/~lorenzo/corsi/439/ref/keykos.pdf). **(?)** За прошедшее время среди операционных систмем появились представители, реализующие эту концепцию. К таким можно отнести KeyKOS (EROS and Coyotos), Multics и другие **(НАЙТИ ССЫЛКИ И ПРОВЕРИТЬ)**, однако на сегодняшний день самой современной и активно развивающейся является OS Phantom.
+  Такому подходу противопоставляется концепция ортогональной персистентности, рассмотренная Аткинсоном и Морисоном в 90-х годах XX века (https://www.researchgate.net/publication/240720509_Persistent_Languages_and_Architectures). Он заключается в том, что к данным имеется постоянный доступ и не требуется явных действий со стороны программиста для их сохранения на диск. Вместо этого ответственность за это ложится на среду, в которой программа исполняется. При снижении количества манипуляций с данными, а они обычно занимают до 30% кода (https://www.researchgate.net/publication/240720509_Persistent_Languages_and_Architectures), очевидным образом снижается и количество ошибок при написании таких программ. К неочевидным приемуществам такого подхода можно отнести весьма эффективное использование пропускной способности диска (https://www.cs.utexas.edu/~lorenzo/corsi/439/ref/keykos.pdf). **(?)** За прошедшее время среди операционных систмем появились представители, реализующие эту концепцию. К таким можно отнести KeyKOS (EROS and Coyotos), Multics и другие **(НАЙТИ ССЫЛКИ И ПРОВЕРИТЬ)**. Все эти системы довольно старые, а после их появления исследования приостановились. Однако значительно выросший уровень аппаратного обеспечения вновь подтолкнул к исследованиям в этом направлении, следствием чего стало появление на свет операционной системы Aurora (transparent персистентность). К таким современным системам, реализующим концепцию ортогональной персистентности, относится проект PhantomOS.
   ```
 
 - **en**
@@ -81,7 +81,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
       \item Data loss due to unexpected shutdowns or process termination;
       \item Increased development effort (and higher cost);
   \end{itemize}
-  This approach is contrasted with the concept of orthogonal persistence, discussed by Atkinson and Morrison in the 1990 \cite{PLA}. It entails that data is constantly accessible and does not require explicit actions on the part of the programmer to save it to the drive. Instead, the responsibility for this falls on the environment in which the program is executed. This reduces the amount of data manipulation, which typically accounts for up to 30\% of the code \cite{PLA}. The number of errors when writing such programs is also significantly reduced. One of the less obvious advantages of this approach is the highly efficient use of disk bandwidth \cite{KOS}. Over time, several operating systems have emerged that implement this concept. These include KeyKOS (EROS and Coyotos), Multics (with single-level storage), and others, however, OS Phantom is currently the most modern and actively developing system.
+  This approach is contrasted with the concept of orthogonal persistence, discussed by Atkinson and Morrison in the 1990 \cite{PLA}. It entails that data is constantly accessible and does not require explicit actions on the part of the programmer to save it to the drive. Instead, the responsibility for this falls on the environment in which the program is executed. This reduces the amount of data manipulation, which typically accounts for up to 30\% of the code \cite{PLA}. The number of errors when writing such programs is also significantly reduced. One of the less obvious advantages of this approach is the highly efficient use of disk bandwidth \cite{KOS}. Over time, several operating systems have emerged that implement this concept. These include KeyKOS (EROS and Coyotos), Multics (with single-level storage), and others. All of these systems are quite old, and research in this area came to a standstill after their introduction. However, significant advances in hardware capabilities have reignited interest in this field, leading to the development of the Aurora operating system (transparent persistence) \cite{Aurora}. The PhantomOS project is one such modern system that implements the concept of orthogonal persistence.
   ```
 
 ### PhantomOS
@@ -89,8 +89,8 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **ru**
 
   ```
-  Как заявляют сами разработчики (http://phantomos.org/ , https://phantomdox.readthedocs.io/en/latest/), Phantom OS - операционная система, реализующая принципы ортогональной персистентности внутри виртуальной машины Phantom (PVM). Как заявляется в документации, система гарантирует восстановление (при перезагрузке, даже неожиданной) с не слишком старыми консистентными данными. Достигается это засчет использования механизма снапшотов. 
-  На данный момент Phantom представляет из себя PoC концепта ортогональной персистентности. Многие механизмы и подсистемы реализованы, их работоспособность в некоторой степени проверена, однако нынешний уровень стабильности не позволяет использовать ос в промышленных целях, и работы по ее улучшению все еще ведутся.
+  Как заявляют сами разработчики (http://phantomos.org/ , https://phantomdox.readthedocs.io/en/latest/), Phantom OS - операционная система, реализующая принципы ортогональной персистентности внутри виртуальной машины Phantom (PVM). Как заявляется в документации, система гарантирует восстановление даже при нештатной перезагрузке с не слишком старыми консистентными данными. Достигается это засчет использования механизма снапшотов: время от времени система сбрасывает состояние PVM на диск, не останавливая при этом ее работу, что достигается использованием copy-on-write (CoW).
+  На данный момент Phantom представляет из себя (proof of concept) PoC ортогональной персистентности. Многие механизмы и подсистемы реализованы, их работоспособность в некоторой степени проверена, но не протестирована доконца. Нынешний уровень стабильности не позволяет использовать ос в промышленных целях, и работы по ее доводке все еще ведутся.
   Одним из направлений таких работ является портирование PhantomOS на фреймворк Genode. Это должно ускорить разработку и помочь избежать большого количества ошибок путем использования уже проверенных решений, а также благоприятно сказаться на безопасности системы блягодаря улучшенной изоляции, что  обусловлено использованием capability-based безопасности.
   ```
 
@@ -116,7 +116,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **en**
 
   ```
-  The Genode OS Framework is a set of tools for building operating systems. It provides a model in which component resources are isolated and their interactions are mediated via RPC. The framework supports multiple kernels as a foundation (including NOVA, formally verified seL4, Fiasco.OC, and Linux), and provides a ready-made set of drivers, file systems, and services, allowing developers to focus on application logic without having to reinvent or port the underlying infrastructure.
+  The Genode OS Framework is a set of tools for building operating systems. It provides a model in which component resources are isolated and their interactions are mediated via RPC. The framework supports multiple kernels as a foundation (including NOVA, formally verified seL4 \cite{seL4}, Fiasco.OC, and Linux), and provides a ready-made set of drivers, file systems, and services, allowing developers to focus on application logic without having to reinvent or port the underlying infrastructure.
   Access to resources in Genode is organized in accordance with the principles of capability-based security.
   In this context, a capability is a token granting the right to perform a specific operation on a specific object. A component can use a resource only if it possesses the corresponding capability, which was explicitly granted to it by a parent component. At the same time, the parent component is fully responsible for granting the appropriate capabilities to the child component and for passing its requests further up the hierarchy. This prevents unauthorized access to resources by bypassing the hierarchy, which differs significantly from the approach of the operating systems we are familiar with today, where a process with sufficient privileges can access any resource. \cite{Genode_Foundations}.
   As part of the phantomuserland-snapper project \cite{GitHub_phantomuserland-snapper}, PhantomOS is being ported to Genode as a set of components. The Phantom Virtual Machine (PVM) runs as a Genode user process.  To create, manage, and restore snapshots, snapper \cite{GitHub_Snapper} was developed, which uses the file system for storage. This approach allows Phantom to use Genode’s proven drivers and services without implementing them independently; the isolation of Genode components provides an additional layer of protection; and the use of microkernels enables a trusted computing base (TCB) of modest size by today’s standards, which also positively impacts the OS’s security.
@@ -127,7 +127,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **ru**
 
   ```
-  Однако некоторые проблемы безопасности все еще предстоит решить. Так, в отличие от большинства современных ОС, которые позволяют выполнять шифрование дискового пространства, PhantomOS не поддерживает это ни в каком виде. Поиск и анализ исследований также показал, что работы с PhantomOS в этом направлении не велись. При том информация, хранящаяся в снапшоте может быть более чувствительной, нежели файлы на диске, поскольку в момент снимка в памяти могут оказаться конфиденциальные данные. Это во многом схоже с проблемой безопасности снапшоов виртуальных машин. При определенных условиях это может позволить полностью воспроизвести состояние и дальнейшую работу машины на устройстве злоумышленника. Из этого вытекает необходимость реализации защиты снапшотов в покое.
+  Однако некоторые проблемы безопасности все еще предстоит решить. Так, в отличие от большинства современных ОС, которые позволяют выполнять шифрование дискового пространства, PhantomOS не поддерживает это ни в каком виде. Поиск и анализ исследований также показал, что работы с PhantomOS в этом направлении не велись. Портирование также не решает проблему, так как в Genode нет готовых адаптированных механизмов шифрования диска. При том информация, сбрасываемая на диск в момент создания снапшота и хранящаяся там, может быть более чувствительной, нежели файлы на диске, поскольку в момент снимка в памяти могут оказаться конфиденциальные данные. Это во многом схоже с проблемой безопасности снапшоов виртуальных машин. При определенных условиях это может позволить полностью воспроизвести состояние и дальнейшую работу машины на устройстве злоумышленника. Из этого вытекает необходимость реализации защиты снапшотов в покое.
   Таким образом, целью работы является обеспечение конфиденциальности снапшотов PhantomOS в покое.
   Из этого вытекают следующие цели:
   - Проанализировать сценарии использования компьютера и выделить среди них безопасные сценарии, которые будут поддерживаться нами
@@ -141,7 +141,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **en**
 
   ```
-  However, some security issues still need to be addressed. For instance, unlike most modern operating systems, which allow for disk encryption, PhantomOS does not support this feature in any form. A review of the research literature also revealed that no work has been conducted on PhantomOS in this area. Moreover, the information stored in a snapshot may be more sensitive than files on the disk, since confidential data may be present in memory at the moment the snapshot is taken. This is largely similar to the security issue with virtual machine snapshots. Under certain conditions, this could allow the attacker to fully reproduce the state and subsequent operation of the machine on their device. This highlights the need to implement protection for snapshots at rest.
+  However, some security issues still need to be addressed. For instance, unlike most modern operating systems, which support disk encryption, PhantomOS does not support this feature in any form. A review of the literature also revealed that no research has been conducted on PhantomOS in this area. Porting does not solve the problem either, as Genode lacks ready-made, adapted disk encryption mechanisms. Moreover, the information flushed to disk at the moment a snapshot is created and stored there may be more sensitive than the files on the disk, since confidential data may be present in memory at the time the snapshot is taken. This is largely similar to the security issue with virtual machine snapshots. Under certain conditions, this could allow the state and subsequent operation of the machine to be fully reproduced on an attacker’s device. This necessitates the implementation of protection for snapshots at rest.
   Thus, the goal of this work is to ensure the confidentiality of PhantomOS snapshots at rest.
   This leads to the following objectives:
   \begin{itemize}
@@ -248,19 +248,40 @@ https://en.wikipedia.org/wiki/Capability-based_security
   \end{enumerate}
   ```
 
-### Orthogonal persistence
+### Persistence
 
-
+1. Что такое персистентность?
+2. Какие виды персистентности выделяют?
+3. В чем их отличия, приемущества и недостатки?
+4. В чем ее приемущество (детально)?
+5. В чем заключаются сложности реализации?
+6. Примеры реализации: ОС, некое окружение (возможно), прикладное ПО (что-то было для сохранения состояния процесса)
 
 ### PhantomOS
 
-
+1. В чем заключается философия системы? Что про нее можно сказать (какие особенности можно выделить)?
+2. Какие компоненты и как позволяют реализовать концепт ортогональной персистентности (сборщик мусора, механизм снапшотов и т. д.)
+3. Как работает процесс создания снимка на оригинальной версии ОС?
 
 ### PhantomOS на Genode
 
-
+1. В чем отличие Phantom на Genode
+   1. Какие компоненты и как поменялись?
+   2. Какие genode компоненты использует Phantom
+2. Что такое Snapper?
+3. Как он работает?
+4. Какие компоненты использует?
+5. В каком виде и где хранит данные?
 
 ### Защита данных в покое
 
-
+1. Зачем нужна защита данных в покое?
+2. В чем отличие данных снапшотов и данных на диске?
+3. Какие есть способы защиты данных в покое?
+   1. Какие уровни шифрования бывают?
+   2. В чем приемущества и недостатки шифрования на разных уровнях?
+   3. Чем мы жертвуем? как это сказывается на производительности? (Аппаратное смягчение последствий)
+   4. Есть ли другие способы защиты данных в покое?
+4. Какой подход обычно применяется (или несколько)?
+5. Какой способ предпочтителен для нас и почему? (возможно, это уже другая глава)
 
