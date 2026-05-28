@@ -23,7 +23,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **ru**
 
   ```
-  Эволюция операционных систем на протяжении десятилетий определялась концептуальной моделью, сформировавшейся в середине XX века с появлением UNIX. Эта модель, основанная на триаде «программа-процесс-файл», доказала свою жизнеспособность, однако сегодня она всё чаще демонстрирует фундаментальные ограничения \cite{OS}. Попытки обойти эти ограничения привели в том числе к появлению концепции операционных систем с персистентной памятью еще в конце 80-х годов XX века /cite{может какую ссылку вставить}. Несмотря на достоинства  такой парадигмы \cite{найти ч-н} исследования столкнулись с аппаратными ограничениями (?). С тех пор производительность компьютеров сильно выросла, что дало толчок новым работам в этом направлении. Яркой иллюстрацией этого является PhantomOS. Однако написание и внедрение полностью новой операционной системы весьма длительно, трудоемко и влечет за собой большое количество ошибок. Смягчить эти последствия помогает использование уже отработанных механизмов, чему способствует портирование на Genode /cite{ссылка на Genode}. В данной работе мы рассматриваем процесс адаптации компонентов PhantomOS на Genode. Мы описываем трудности, с которыми приходится сталкиваться, недостатки ОС и рассказываем о решениях, которые помогают избавиться от этих проблем или смягчить их.
+  Эволюция операционных систем на протяжении десятилетий определялась доказавшей свою жизнеспособность концептуальной моделью, сформировавшейся в середине XX века с появлением UNIX. Однако сегодня она всё чаще демонстрирует фундаментальные ограничения. Попытки обойти их еще в 80-х годах XX века привели в том числе и к появлению концепции операционных систем с персистентной памятью. Несмотря на достоинства такой парадигмы исследования фактически были прекращены, так как столкнулись с аппаратными ограничениями. С тех пор производительность компьютеров сильно выросла, что дало толчок новым работам в этом направлении. Яркой иллюстрацией этого является ОС Phantom. Однако написание и внедрение полностью новой операционной системы весьма длительно, трудоемко и влечет за собой большое количество ошибок. Смягчить эти последствия помогает использование уже отработанных механизмов, чему способствует портирование на Genode. В данной работе мы рассматриваем процесс адаптации компонентов PhantomOS на Genode. Мы описываем трудности, с которыми приходится сталкиваться, недостатки ОС и рассказываем о решениях, которые помогают избавиться от этих проблем или смягчить их.
   ```
 
   
@@ -31,7 +31,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **en**
 
   ```
-  The evolution of operating systems over the decades has been shaped by a conceptual model that emerged in the mid-20th century with the advent of UNIX. This model, based on the “program-process-file” triad, has proven its viability; however, today it increasingly reveals fundamental limitations \cite{OS}. Attempts to circumvent these limitations led, among other things, to the emergence of the concept of operating systems with persistent memory as early as the late 1980s /cite{maybe insert a link here}. Despite the merits of such a paradigm \cite{find a source}, research ran into hardware limitations (?). Since then, computer performance has increased significantly, which has spurred new work in this direction. PhantomOS is a striking illustration of this. However, writing and implementing a completely new operating system is a lengthy, labor-intensive process that is prone to numerous errors. The use of proven mechanisms helps mitigate these consequences, facilitated by porting to Genode /cite{link to Genode}. In this paper, we examine the process of adapting PhantomOS components to Genode. We describe the challenges encountered, the OS’s shortcomings, and discuss solutions that help eliminate or mitigate these issues.
+  The evolution of operating systems over the decades has been shaped by a proven conceptual model that emerged in the mid-20th century with the advent of UNIX. Today, however, it is increasingly revealing fundamental limitations. Attempts to circumvent these limitations as early as the 1980s led, among other things, to the emergence of the concept of operating systems with persistent memory. Despite the merits of this paradigm, research was effectively halted as it ran into hardware limitations. Since then, computer performance has increased significantly, which has spurred new work in this direction. A striking illustration of this is the Phantom OS. However, writing and implementing a completely new operating system is a very time-consuming and labor-intensive process and is prone to a large number of errors. The use of proven mechanisms helps mitigate these consequences, a process facilitated by porting to Genode. In this paper, we examine the process of adapting PhantomOS components to Genode. We describe the difficulties encountered, the OS’s shortcomings, and discuss solutions that help eliminate or mitigate these problems.
   ```
 
 ## Introduction
@@ -76,6 +76,12 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **en**
 
   ```
+  Today, a widely used concept involves dividing data into two categories: active and stored. In this model, the programmer is responsible for moving data between these states. In the context of this paper, this approach will be referred to as a “two-level store.” The obvious drawbacks of this approach include:
+  \begin{itemize}
+      \item Data loss due to unexpected shutdowns or process termination;
+      \item Increased development effort (and higher cost);
+  \end{itemize}
+  This approach is contrasted with the concept of orthogonal persistence, discussed by Atkinson and Morrison in the 1990 \cite{PLA}. It entails that data is constantly accessible and does not require explicit actions on the part of the programmer to save it to the drive. Instead, the responsibility for this falls on the environment in which the program is executed. This reduces the amount of data manipulation, which typically accounts for up to 30\% of the code \cite{PLA}. The number of errors when writing such programs is also significantly reduced. One of the less obvious advantages of this approach is the highly efficient use of disk bandwidth \cite{KOS}. Over time, several operating systems have emerged that implement this concept. These include KeyKOS (EROS and Coyotos), Multics (with single-level storage), and others, however, OS Phantom is currently the most modern and actively developing system.
   ```
 
 ### PhantomOS
@@ -91,7 +97,9 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **en**
 
   ```
-  
+  According to the developers themselves, Phantom OS is an operating system that implements the principles of orthogonal persistence within the Phantom Virtual Machine (PVM) \cite{Phantom_docs}. As stated in the documentation, the system guarantees recovery (upon reboot, even an unexpected one) with consistent data that is not too old \cite{Phantom_docs}. This is achieved through the use of a snapshot mechanism. 
+  At present, Phantom is a proof-of-concept (PoC) for the concept of orthogonal persistence. Many mechanisms and subsystems have been implemented, and their functionality has been tested to some extent; however, the current level of stability does not allow the OS to be used for industrial purposes, and work to improve it is still ongoing.
+  One area of this work involves porting PhantomOS to the Genode framework. This should accelerate development and help avoid a large number of errors by using proven solutions, as well as positively impact system security through improved isolation, which is enabled by the use of capability-based security.
   ```
 
 ### Genode
@@ -99,16 +107,19 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **ru**
 
   ```
-  Genode OS Framework — это набор инструментов для построения специализированных операционных систем. Он предоставляет модель, в которой каждый компонент исполняется в изолированном окружении и взаимодействует с другими исключительно через явно заданные интерфейсы. Все это выглядит, как клиент-серверная архитектура, при которой каждый компонент может быть одновременно как клиентом, так и сервером, а взаимодействие реализовано засчет RPC **(Кривоватая формулировка)**. Фреймворк поддерживает несколько ядер в качестве основы (в том числе NOVA, формально верифицированное **(требует поясненй)** seL4, Fiasco.OC, linux), предоставляет готовый набор драйверов, файловых систем и сервисов, что позволяет сосредоточиться на прикладной логике, не изобретая базовую инфраструктуру заново. (https://genode.org/documentation/genode-foundations/23.05/index.html)
+  Genode OS Framework — это набор инструментов для построения операционных систем. Он предоставляет модель, в которой ресурсы компонентов изолируются, а их взаимодействие строится через RPC. Фреймворк поддерживает несколько ядер в качестве основы (в том числе NOVA, формально верифицированное seL4, Fiasco.OC, linux), предоставляет готовый набор драйверов, файловых систем и сервисов, что позволяет сосредоточиться на прикладной логике, не изобретая или перенося базовую инфраструктуру заново.
   Доступ к ресурсам в Genode организован в соответствии с принципами capability-based безопасности.
-  Capability — это токен, дающий право на выполнение конкретной операции над конкретным объектом. Компонент может воспользоваться ресурсом только при наличии соответствующей capability, которую ему явно передал родительский компонент. При этом родительский компонент полностью ответственен за предоставление соответствующих capabilities дочернему и за передачу его запросов далее по иерархии. Это исключает возможность несанкционированного доступа к ресурсам в обход (иерархии), что значительно отличается от подхода привычных нам сегодня ОС, в которых процесс с достаточными привилегиями может обратиться к произвольному ресурсу. (https://genode.org/documentation/genode-foundations/23.05/index.html,    глава «Access control»)
-  В рамках проекта phantomuserland-snapper **(Ссылка)** PhantomOS портируется на Genode в виде набора компонентов. Виртуальная машина Phantom (PVM) исполняется как пользовательский процесс Genode.  Для создания снапшотов, управления ими и восстановления состояния из был разработан snapper **(Ссылка)**, использующий ФС для их хранения. Такой подход позволяет Phantom пользоваться проверенными драйверами и сервисами Genode, не реализуя их самостоятельно, изоляция компонентов Genode обеспечивает дополнительный рубеж защиты, а использование микроядер позволяет добиться скромных, по сегодняшним меркам, размеров TBC, что также положительно сказывается на безопасности ОС.
+  В данном случае capability — это токен, дающий право на выполнение конкретной операции над конкретным объектом. Компонент может воспользоваться ресурсом только при наличии соответствующей capability, которую ему явно передал родительский компонент. При этом родительский компонент полностью ответственен за предоставление соответствующих capabilities дочернему и за передачу его запросов далее по иерархии. Это исключает возможность несанкционированного доступа к ресурсам в обход иерархии, что значительно отличается от подхода привычных нам сегодня ОС, в которых процесс с достаточными привилегиями может обратиться к произвольному ресурсу.
+  В рамках проекта phantomuserland-snapper **(Ссылка)** PhantomOS портируется на Genode в виде набора компонентов. Виртуальная машина Phantom (PVM) исполняется как пользовательский процесс Genode.  Для создания снапшотов, управления ими и восстановления состояния из был разработан snapper **(Ссылка)**, использующий ФС для их хранения. Такой подход позволяет Phantom пользоваться проверенными драйверами и сервисами Genode, не реализуя их самостоятельно, изоляция компонентов Genode обеспечивает дополнительный рубеж защиты, а использование микроядер позволяет добиться скромных, по сегодняшним меркам, размеров trusted computing base (TCB), что также положительно сказывается на безопасности ОС.
   ```
 
 - **en**
 
   ```
-  
+  The Genode OS Framework is a set of tools for building operating systems. It provides a model in which component resources are isolated and their interactions are mediated via RPC. The framework supports multiple kernels as a foundation (including NOVA, formally verified seL4, Fiasco.OC, and Linux), and provides a ready-made set of drivers, file systems, and services, allowing developers to focus on application logic without having to reinvent or port the underlying infrastructure.
+  Access to resources in Genode is organized in accordance with the principles of capability-based security.
+  In this context, a capability is a token granting the right to perform a specific operation on a specific object. A component can use a resource only if it possesses the corresponding capability, which was explicitly granted to it by a parent component. At the same time, the parent component is fully responsible for granting the appropriate capabilities to the child component and for passing its requests further up the hierarchy. This prevents unauthorized access to resources by bypassing the hierarchy, which differs significantly from the approach of the operating systems we are familiar with today, where a process with sufficient privileges can access any resource. \cite{Genode_Foundations}.
+  As part of the phantomuserland-snapper project \cite{GitHub_phantomuserland-snapper}, PhantomOS is being ported to Genode as a set of components. The Phantom Virtual Machine (PVM) runs as a Genode user process.  To create, manage, and restore snapshots, snapper \cite{GitHub_Snapper} was developed, which uses the file system for storage. This approach allows Phantom to use Genode’s proven drivers and services without implementing them independently; the isolation of Genode components provides an additional layer of protection; and the use of microkernels enables a trusted computing base (TCB) of modest size by today’s standards, which also positively impacts the OS’s security.
   ```
 
 ### Problem statement
@@ -116,11 +127,11 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **ru**
 
   ```
-  Однако некоторые проблемы безопасности все еще предстоит решить. Так, в отличие от большинства современных ОС, которые позволяют выполнять шифрование дискового пространства, PhantomOS не поддерживает это ни в каком виде. Поиск и анализ исследований также показал, что работы с PhantomOS в этом направлении не велись. При том информация, хранящаяся в снапшоте может быть более чувствительной, нежели файлы на диске, поскольку в момент снимка в памяти могут оказаться конфиденциальные данные. Это во многом схоже с проблемой безопасности снапшоов виртуальных машин **(Ссылка)**. При определенных условиях это может позволить полностью воспрои состояние и дальнейшую работу машины на устройстве злоумышленника. Из этого вытекает необходимость реализации защиты снапшотов в покое.
-  Таким образом, целью работы является обеспечение конфиденциальности снапшотов PhantomOS в покое путём.
+  Однако некоторые проблемы безопасности все еще предстоит решить. Так, в отличие от большинства современных ОС, которые позволяют выполнять шифрование дискового пространства, PhantomOS не поддерживает это ни в каком виде. Поиск и анализ исследований также показал, что работы с PhantomOS в этом направлении не велись. При том информация, хранящаяся в снапшоте может быть более чувствительной, нежели файлы на диске, поскольку в момент снимка в памяти могут оказаться конфиденциальные данные. Это во многом схоже с проблемой безопасности снапшоов виртуальных машин. При определенных условиях это может позволить полностью воспроизвести состояние и дальнейшую работу машины на устройстве злоумышленника. Из этого вытекает необходимость реализации защиты снапшотов в покое.
+  Таким образом, целью работы является обеспечение конфиденциальности снапшотов PhantomOS в покое.
   Из этого вытекают следующие цели:
-  - Проанализировать сценарии использования компьютера и выделить среди них тебезопасные сценарии, которые будут поддерживаться нами
-  - Написать или адаптировать компонент Genode, реализующий такой сценарий
+  - Проанализировать сценарии использования компьютера и выделить среди них безопасные сценарии, которые будут поддерживаться нами
+  - Разработать или адаптировать компонент Genode, реализующий такой сценарий
   - Верифицировать корректность защиты: продемонстрировать недоступность содержимого снапшота
   - Оценить влияние шифрования на производительность путём сравнительного анализа скорости работы с включённым и отключённым шифрованием
   
@@ -130,24 +141,16 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **en**
 
   ```
-  
+  However, some security issues still need to be addressed. For instance, unlike most modern operating systems, which allow for disk encryption, PhantomOS does not support this feature in any form. A review of the research literature also revealed that no work has been conducted on PhantomOS in this area. Moreover, the information stored in a snapshot may be more sensitive than files on the disk, since confidential data may be present in memory at the moment the snapshot is taken. This is largely similar to the security issue with virtual machine snapshots. Under certain conditions, this could allow the attacker to fully reproduce the state and subsequent operation of the machine on their device. This highlights the need to implement protection for snapshots at rest.
+  Thus, the goal of this work is to ensure the confidentiality of PhantomOS snapshots at rest.
+  This leads to the following objectives:
+  \begin{itemize}
+      \item Analyze computer usage scenarios and identify among them the secure scenarios that we will support;
+      \item Develop or adapt a Genode component that implements such a scenario;
+      \item Verify the correctness of the protection: demonstrate that the snapshot’s contents are inaccessible;
+      \item Evaluate the impact of encryption on performance by comparing the speed of operations with encryption enabled and disabled;
+  \end{itemize}
   ```
-
-###  Итого
-
-- **ru**
-
-  ```
-  
-  ```
-
-- **en**
-
-  ```
-  
-  ```
-
-
 
 ### Background
 
@@ -219,7 +222,45 @@ https://en.wikipedia.org/wiki/Capability-based_security
 
 
 
+## Literature review
 
+###  Вступление
+
+- **ru**
+
+  ```
+  Эта глава посвящается обзору существующих работ, связанных с нашей темой. Глава разделена на 4 основные части, в каждой из которых будут рассмотрены труды, касающиеся соответственно
+  - Section 1: Концепции ортогональной персистентности и вариантам ее реализации;
+  - Section 2: PhantomOS и реализации концепции ортогональной персистентности в ней;
+  - Section 3: Деталей и особенностей порта PhantomOS на Genode;
+  - Section 4: Способам защиты данных в покое и их особенностям;
+  ```
+
+- **en**
+
+  ```
+  This chapter provides an overview of existing research related to our topic. The chapter is divided into four main sections, each of which will examine works pertaining to the following
+  \begin{enumerate}[label=\textbf{Section \arabic*:}, leftmargin=*]
+    \item The concept of orthogonal persistence and its implementation options;
+    \item PhantomOS and its implementation of the concept of orthogonal persistence;
+    \item Details and features of the PhantomOS port to Genode;
+    \item Methods of protecting data at rest and their characteristics;
+  \end{enumerate}
+  ```
+
+### Orthogonal persistence
+
+
+
+### PhantomOS
+
+
+
+### PhantomOS на Genode
+
+
+
+### Защита данных в покое
 
 
 
