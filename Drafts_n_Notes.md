@@ -253,53 +253,56 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **ru**
 
   ```
-  Персистентность данных - это период времени, в течение которого данные существуют и используются \cite{PLA}. В своей работе они выделяют категории персистентности, разделяемые на 2 группы: 
+  Персистентность данных - это период времени, в течение которого данные существуют и используются \cite{PLA}. Именно так определяют это понятие одни из первых исследователей направления - Моррисон Р. и Аткинсон М. П.. В своей работе они выделяют категории персистентности, разделяемые на 2 группы: 
   1. Обеспечиваемые языком программирования;
   2. Обеспечиваемые средой;
-  Именно так определяют это понятие одни из первых исследователей направления - Моррисон Р. и Аткинсон М. П.. Задача персистентной системы в таком случае - обеспечить доступность данных вне зависимости от группы и категории. Исходя из этого выделяются 3 принципа ортогональной персистентности:
+  Исследователи стрематся к системам, в которых использование данных не зависит от их группы и кеатегории. Фундаментом понятия стали пинципы, сформуларованные иследователями:
   - Независимость
   - Ортогональность типа данных
   - Идентификация персистентности
   Система, следующая всем трем принципам, является ортогонально персистентной.
-  К ее достоинствам относят \cite{Revisited}:
+  Желание создания такой системы обусловлено наличием ряда приемуществ по отношению к привычным системам. К ним относятся \cite{Revisited}:
   - Повышение производительности программирования засчет упрощения семантики;
   - Избегание несистематических решений для преобразования данных и долгосрочного хранения данных;
   - Обеспечение механизмов защиты всей окружающей среды;
   - Поддержка постепенной эволюции;
   - automatically preserving referential integrity over the entire computational environment for the whole life-time of an application
-  Однако за все приходится платить. В случае с ортогональной персистентностью платой будет:
+  Все они в той или иной степени являются следствием упрощения модели работы с памятью для прикладного программиста. Таким образом уйдет огромный пласт кода, призванный решить вопросы ввода-вывода и сохранения данных. К ним относятся также сериализация/десериализация или инициализация/деинициализация.
+  Все вышеизложенные достоинства имеют свою цену. Помимо общих трудностей, касающихся создания и внедрения новой, а уж тем более - построенной на совершенно иных, отличающихся от привычных, принципах - системы, есть и специфичные для ортогонально персистентных систем. К ним относятся:
   1. Необходимость создания стабильного объектного хранилища: В значительной степени зависит от конкретного способа исполнения, поэтому к нему мы верномся в Секции 2.2.
   2. Снижение эффективности некоторых приложений: В связи с тем, что пользователь программист не имеет полного контроля над местом нахождения данных, скорость доступа к ним может быть снижена. Аналогичная проблема присутствует при использовании виртуальной памяти.
   3. The cost of providing language independent binding mechanisms.
-  Забегая вперед, скажу, что в Phantom есть решения для решения или минимизации каждой из этих проблем, поэтому к ним мы еще вернемся в Секции 2.2. А сейчас заметим, что п. 1 в значительной степени зависит от реализации, и обобщить информацию по нему затруднительно. Пороблемы, аналогичные п. 2, касаются (пусть зачастую и в меньшей степени) и систем с виртуальной памятью, поскольку программист не имеет полного контроля над расположением данных, из-за чего скорость доступа к ним может снижаться.
+  Забегая вперед, скажу, что в Phantom есть решения для минимизации каждой из этих проблем, поэтому к ним мы еще вернемся в Секции 2.2. А сейчас заметим, что п. 1 в значительной степени зависит от реализации, и обобщить информацию по нему затруднительно. Пороблемы, аналогичные п. 2, касаются (пусть зачастую и в меньшей степени) и систем с виртуальной памятью, поскольку программист не имеет полного контроля над расположением данных, из-за чего скорость доступа к ним может снижаться.
   ```
 
 - **en**
 
   ```
-  This chapter provides an overview of existing research related to our topic. The chapter is divided into four main sections, each of which will examine works pertaining to the following
-  \begin{enumerate}[label=\textbf{Section \arabic*:}, leftmargin=*]
-    \item The concept of orthogonal persistence and its implementation options;
-    \item PhantomOS and its implementation of the concept of orthogonal persistence;
-    \item Details and features of the PhantomOS port to Genode;
-    \item Methods of protecting data at rest and their characteristics;
-  \end{enumerate}
-  
   \section{Persistence}
   
-  Data persistence refers to the period of time during which data exists and is used \cite{PLA}. In their work, they identify categories of persistence, divided into two groups: 
+  \subsection{Persistence definitions}
+  
+  Data persistence refers to the period of time during which data exists and is used \cite{PLA}. This is precisely how some of the earliest researchers in the field—Morrison R. and Atkinson M. P.—define this concept. In their work, they identify categories of persistence, divided into two groups: 
   \begin{enumerate}[label=\arabic*.]
     \item Provided by the programming language;
     \item Provided by the environment;
   \end{enumerate}
-  This is precisely how some of the earliest researchers in the field—Morrison R. and Atkinson M. P.—define this concept. The task of a persistent system in this case is to ensure data availability regardless of group or category. Based on this, three principles of orthogonal persistence are identified:
+  Researchers are striving to develop systems in which data usage is independent of the group or category to which the data belongs. 
+  
+  
+  \subsection{Orthogonal persistence principles}
+  
+  The concept of orthogonal persistence is based on principles formulated by researchers:
   \begin{enumerate}
-      \item Independence
-      \item Orthogonality of data types
-      \item Identification of persistence
+      \item Independence;
+      \item Orthogonality of data types;
+      \item Persistence Identification;
   \end{enumerate}
-  A system that follows all three principles is orthogonally persistent.
-  Its advantages include \cite{Revisited}:
+  In this case, independence means that data persistence does not depend on how the data is manipulated (the user cannot move data between long-term and short-term storage). The orthogonality of data types ensures that there are no cases in which data of any type cannot be persisted. The third principle means that perrsistent object identification does not relate to the type of such an jbject. A system that follows all three principles is orthogonally persistent.
+  
+  \subsection{Advantages of a persistent system}
+  
+  The desire to create such a system stems from the fact that it offers a number of advantages over conventional systems. These include \cite{Revisited}:
   \begin{enumerate}
       \item Increased programming productivity through simplified semantics;
       \item Avoiding ad hoc solutions for data transformation and long-term data storage;
@@ -307,14 +310,18 @@ https://en.wikipedia.org/wiki/Capability-based_security
       \item Support for gradual evolution;
       \item Automatically preserving referential integrity across the entire computational environment for the entire lifetime of an application
   \end{enumerate}
-  However, everything comes at a cost. In the case of orthogonal persistence, the cost will be:
+  All of these are, to some extent, the result of simplifying the memory management model for application programmers. This eliminates a huge amount of code that would otherwise be required to handle I/O and data storage. This also includes serialization/deserialization and initialization/deinitialization.
+  
+  
+  \subsection{The cost of persistence}
+  
+  All of the advantages outlined above come at a cost. In addition to the general challenges associated with creating and implementing a new system—especially one built on principles that are entirely different from those we are accustomed to—there are also challenges specific to orthogonally persistent systems. These include:
   \begin{enumerate}[label=\arabic*.]
       \item The need for a stable object store: This depends largely on the specific implementation method, so we will return to this topic in Section 2.2.
       \item Reduced performance of some applications: Because the programmer does not have full control over the location of the data, access speed may be reduced. A similar problem exists when using virtual memory.
       \item The cost of providing language-independent binding mechanisms.
   \end{enumerate}
-  Looking ahead, I will say that Phantom has solutions to address or minimize each of these problems, so we will return to them in Section 2.2. For now, note that point 1 depends largely on the implementation, and it is difficult to generalize information regarding it. Problems similar to point 2 also affect (albeit often to a lesser extent) systems with virtual memory, since the programmer does not have full control over the layout of the data, which can slow down access to it.
-  
+  Looking ahead, I will say that Phantom has solutions to minimize each of these problems, so we will return to them in Section 2.2. For now, note that point 1 depends largely on the implementation, and it is difficult to generalize information regarding it. Problems similar to point 2 also affect (albeit often to a lesser extent) systems with virtual memory, since the programmer does not have full control over the layout of the data, which can slow down access to it.
   ```
 
 1. Что такое персистентность?
@@ -335,14 +342,14 @@ https://en.wikipedia.org/wiki/Capability-based_security
    1. Обеспечиваемые языком программирования;
    2. Обеспечиваемые средой;
 
-   Задача персистентной системы в таком случае - обеспечить доступность данных вне зависимости от группы и категории. Исходя из этого выделяются 3 принципа ортогональной персистентности:
+   Исследователи стрематся к системам, в которых использование данных не зависит от их группы и кеатегории. Исходя из этого выделяются 3 принципа ортогональной персистентности:
 
    - Независимость
-     Персистентность данных не зависист от способа манипуляции с ними (пользовател не может перемещать данные ежду долговременными и кратковременными хранилищами)
+     Персистентность данных не зависист от способа манипуляции с ними (пользовател не может перемещать данные между долговременными и кратковременными хранилищами)
    - Ортогональность типа данных
-     Не существует случаев, при которых данные какого-либо типа не могут быть персистентными
+     Не существует случаев, при которых данные какого-либо типы не могут быть персистентными
    - Идентификация персистентности
-     Выбор способа идентификации и предоставления персистентных объектов  ортогонален сфере применения системы. То есть механизм идентификации  персистентных объектов не связан с системой типов.
+     Выбор способа идентификации и предоставления персистентных объектов  ортогонален сфере применения системы. То есть механизм идентификации персистентных объектов не связан с системой типов.
 
    Система, следующая всем трем принципам, является ортогонально персистентной.
 
@@ -382,6 +389,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
   ```
 
 1. В чем заключается философия системы? Что про нее можно сказать (какие особенности можно выделить)?
+   PhantomOS - это операционная система с открытым исходным кодом. Автором идеи является Дмитрий Завалишин. Он же внес основной вклад в разработку системы. PhantomOS предоставляет ортогонально персистентное окружение прикладным программам внутри Phantom Virtual Machine (PVM), внутри которой исполняется код на языке программирования Phantom. Однако стоит отметить, что имеется и подсистема совместимости POSIX.
 2. Какие компоненты и как позволяют реализовать концепт ортогональной персистентности (сборщик мусора, механизм снапшотов и т. д.)
 3. Как работает процесс создания снимка на оригинальной версии ОС?
 4. Какова стоимость персистентности?
