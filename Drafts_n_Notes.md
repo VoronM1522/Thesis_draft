@@ -379,17 +379,56 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **ru**
 
   ```
+  PhantomOS - это операционная система с открытым исходным кодом. Автором идеи является Дмитрий Завалишин. Он же внес основной вклад в разработку системы. PhantomOS предоставляет ортогонально персистентное окружение прикладным программам. внутри Phantom Virtual Machine (PVM), внутри которой исполняется код на языке программирования Phantom. Однако стоит отметить, что имеется и подсистема совместимости POSIX. К особенностям системы также относится глобальное адресное пространство и возможность взаимодействия с объектами исключительно посредством определенных методов. Доступ по произвольному адресу исключён. В Phantom уже реализованы такое подсистемы, как:
+  - Kernel itself: threads, synchronization, persistent memory management;
+  - Bytecode virtual machine - running native applications;
+  - Posix layer - runs Linux compatible (but not yet persistent) code;
+  - Graphics subsystem - Windows, controls, UI;
+  - Networking (TCP/IP);
+  - Phantom language compiler - the most native userland language;
+  - Java to Phantom translator - work in progress;
+  - Python to Phantom translator - just started;
+  Все это указано в документации \cite{Phantom_docs}.
+  
   
   ```
 
 - **en**
 
   ```
+  \section{PhantomOS}
   
+  \subsection{PhantomOS Overview}
+  
+  PhantomOS is an open-source operating system \cite{GitHub_Phantom}. The concept was conceived by Dmitry Zavalishin, who also made the primary contributions to the system’s development. PhantomOS provides an orthogonally persistent environment for applications within the Phantom Virtual Machine (PVM), where code written in the Phantom programming language is executed. However, it is worth noting that there is also a POSIX compatibility subsystem. The system’s features also include a global address space and the ability to interact with objects exclusively through specific methods. Access via arbitrary addresses is prohibited. Phantom already implements subsystems such as:
+  \begin{itemize}
+      \item Kernel itself: threads, synchronization, persistent memory management;
+      \item Bytecode virtual machine - running native applications;
+      \item POSIX layer - runs Linux-compatible (but not yet persistent) code;
+      \item Graphics subsystem - Windows, controls, UI;
+      \item Networking (TCP/IP);
+      \item Phantom language compiler - the most native userland language;
+      \item Java to Phantom translator - work in progress;
+      \item Python to Phantom translator - just started;
+  \end{itemize}
+  All of this is specified in the documentation \cite{Phantom_docs}.
   ```
 
 1. В чем заключается философия системы? Что про нее можно сказать (какие особенности можно выделить)?
-   PhantomOS - это операционная система с открытым исходным кодом. Автором идеи является Дмитрий Завалишин. Он же внес основной вклад в разработку системы. PhantomOS предоставляет ортогонально персистентное окружение прикладным программам внутри Phantom Virtual Machine (PVM), внутри которой исполняется код на языке программирования Phantom. Однако стоит отметить, что имеется и подсистема совместимости POSIX.
+
+   Обзор PhantomOS
+   PhantomOS - это операционная система с открытым исходным кодом. Автором идеи является Дмитрий Завалишин. Он же внес основной вклад в разработку системы. PhantomOS предоставляет ортогонально персистентное окружение прикладным программам. внутри Phantom Virtual Machine (PVM), внутри которой исполняется код на языке программирования Phantom. Однако стоит отметить, что имеется и подсистема совместимости POSIX. К особенностям системы также относится глобальное адресное пространство и возможность взаимодействия с объектами исключительно посредством определенных методов. Доступ по произвольному адресу исключён. В Phantom уже реализованы такое подсистемы, как:
+
+   - Kernel itself: threads, synchronization, persistent memory management;
+   - Bytecode virtual machine - running native applications;
+   - Posix layer - runs Linux compatible (but not yet persistent) code;
+   - Graphics subsystem - Windows, controls, UI;
+   - Networking (TCP/IP);
+   - Phantom language compiler - the most native userland language;
+   - Java to Phantom translator - work in progress;
+   - Python to Phantom translator - just started;
+
+   Все это указано в документации \cite{Phantom_docs}.
 2. Какие компоненты и как позволяют реализовать концепт ортогональной персистентности (сборщик мусора, механизм снапшотов и т. д.)
 3. Как работает процесс создания снимка на оригинальной версии ОС?
 4. Какова стоимость персистентности?
