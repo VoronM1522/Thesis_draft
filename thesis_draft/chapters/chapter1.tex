@@ -1,0 +1,38 @@
+\title{Research and adaptation of components from the persistent OS Phantom for Genode}
+\chapter{Introduction}
+\label{chap:intro}
+\chaptermark{Optional running chapter heading}
+\section{Background}
+
+Today, a widely used concept involves dividing data into two categories: active and stored. In this model, the programmer is responsible for moving data between these states. In the context of this paper, this approach will be referred to as a “two-level store.” The obvious drawbacks of this approach include:
+\begin{itemize}
+    \item Data loss due to unexpected shutdowns or process termination;
+    \item Increased development effort (and higher cost);
+\end{itemize}
+This approach is contrasted with the concept of orthogonal persistence, discussed by Atkinson and Morrison in the 1990 \cite{PLA}. It entails that data is constantly accessible and does not require explicit actions on the part of the programmer to save it to the drive. Instead, the responsibility for this falls on the environment in which the program is executed. This reduces the amount of data manipulation, which typically accounts for up to 30\% of the code \cite{PLA}. The number of errors when writing such programs is also significantly reduced. One of the less obvious advantages of this approach is the highly efficient use of disk bandwidth \cite{KOS}. Over time, several operating systems have emerged that implement this concept. These include KeyKOS (EROS and Coyotos), Multics (with single-level storage), and others. All of these systems are quite old, and research in this area came to a standstill after their introduction. However, significant advances in hardware capabilities have reignited interest in this field, leading to the development of the Aurora operating system (transparent persistence) \cite{Aurora}. The PhantomOS project is one such modern system that implements the concept of orthogonal persistence.
+
+
+\section{PhantomOS}
+
+According to the developers themselves, Phantom OS is an operating system that implements the principles of orthogonal persistence within the Phantom Virtual Machine (PVM) \cite{Phantom_docs}. According to the documentation, the system guarantees recovery even in the event of an unexpected reboot, provided the consistent data is not too old. This is achieved through the use of a snapshot mechanism: from time to time, the system saves the PVM’s state to disk without interrupting its operation, which is accomplished using copy-on-write (CoW).
+At present, Phantom is a proof-of-concept (PoC) for the concept of orthogonal persistence. Many mechanisms and subsystems have been implemented, and their functionality has been verified to some extent, but they have not been fully tested. The current level of stability does not allow the OS to be used for industrial purposes, and work on refining it is still ongoing.
+One area of this work involves porting PhantomOS to the Genode framework. This should accelerate development and help avoid a large number of errors by using proven solutions, as well as positively impact system security through improved isolation, which is enabled by the use of capability-based security.
+
+\section{Genode}
+
+The Genode OS Framework is a set of tools for building operating systems. It provides a model in which component resources are isolated and their interactions are mediated via RPC. The framework supports multiple kernels as a foundation (including NOVA, formally verified seL4 \cite{seL4}, Fiasco.OC, and Linux), and provides a ready-made set of drivers, file systems, and services, allowing developers to focus on application logic without having to reinvent or port the underlying infrastructure.
+Access to resources in Genode is organized in accordance with the principles of capability-based security.
+In this context, a capability is a token granting the right to perform a specific operation on a specific object. A component can use a resource only if it possesses the corresponding capability, which was explicitly granted to it by a parent component. At the same time, the parent component is fully responsible for granting the appropriate capabilities to the child component and for passing its requests further up the hierarchy. This prevents unauthorized access to resources by bypassing the hierarchy, which differs significantly from the approach of the operating systems we are familiar with today, where a process with sufficient privileges can access any resource. \cite{Genode_Foundations}.
+As part of the phantomuserland-snapper project \cite{GitHub_phantomuserland-snapper}, PhantomOS is being ported to Genode as a set of components. The Phantom Virtual Machine (PVM) runs as a Genode user process.  To create, manage, and restore snapshots, snapper \cite{GitHub_Snapper} was developed, which uses the file system for storage. This approach allows Phantom to use Genode’s proven drivers and services without implementing them independently; the isolation of Genode components provides an additional layer of protection; and the use of microkernels enables a trusted computing base (TCB) of modest size by today’s standards, which also positively impacts the OS’s security.
+
+\section{Problem statement}
+
+However, some security issues still need to be addressed. For instance, unlike most modern operating systems, which support disk encryption, PhantomOS does not support this feature in any form. A review of the literature also revealed that no research has been conducted on PhantomOS in this area. Porting does not solve the problem either, as Genode lacks ready-made, adapted disk encryption mechanisms. Moreover, the information flushed to disk at the moment a snapshot is created and stored there may be more sensitive than the files on the disk, since confidential data may be present in memory at the time the snapshot is taken. This is largely similar to the security issue with virtual machine snapshots. Under certain conditions, this could allow the state and subsequent operation of the machine to be fully reproduced on an attacker’s device. This necessitates the implementation of protection for snapshots at rest.
+Thus, the goal of this work is to ensure the confidentiality of PhantomOS snapshots at rest.
+This leads to the following objectives:
+\begin{itemize}
+    \item Analyze computer usage scenarios and identify among them the secure scenarios that we will support;
+    \item Develop or adapt a Genode component that implements such a scenario;
+    \item Verify the correctness of the protection: demonstrate that the snapshot’s contents are inaccessible;
+    \item Evaluate the impact of encryption on performance by comparing the speed of operations with encryption enabled and disabled;
+\end{itemize}

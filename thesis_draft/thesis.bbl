@@ -1,0 +1,639 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{PLA}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=d990ce5bbff21a703e6424a001276d96}{%
+           family={Morrison},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=eba8e742691f4520f8a151c09a92462a}{%
+           family={Atkinson},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=54a9b22f20af354dc27ac5eabf6bc719}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4640cd5a1d6726eedcfa0354cb1cd4fe}{%
+           family={Keedy},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{fullhash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{fullhashraw}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{bibnamehash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{authorbibnamehash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{authornamehash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{authorfullhash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{authorfullhashraw}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{editorbibnamehash}{62dd1346457683009c229ebb93dbaa53}
+      \strng{editornamehash}{62dd1346457683009c229ebb93dbaa53}
+      \strng{editorfullhash}{62dd1346457683009c229ebb93dbaa53}
+      \strng{editorfullhashraw}{62dd1346457683009c229ebb93dbaa53}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Security and Persistence}
+      \field{title}{Persistent Languages and Architectures}
+      \field{year}{1990}
+      \field{pages}{9\bibrangedash 28}
+      \range{pages}{20}
+    \endentry
+    \entry{KOS}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=722a5639c29e3748ebc66f901ee395b6}{%
+           family={Bomberger},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a1b44d28ce39c3245169142f1274a116}{%
+           family={Frantz},
+           familyi={F\bibinitperiod},
+           given={W.\bibnamedelimi S.},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=137738036b402e2cce1fb3198a76c173}{%
+           family={Hardy},
+           familyi={H\bibinitperiod},
+           given={A.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=9cfac209955bc3ab55166b3fa1f5a21c}{%
+           family={Hardy},
+           familyi={H\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=552009a6f65044ff33d57b4df49ef238}{%
+           family={Landau},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=8455e87af53cd848fb1b012eec11cd84}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Seattle, WA}%
+      }
+      \strng{namehash}{487b6374c29f5781afbbe13ea5d8c68e}
+      \strng{fullhash}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{fullhashraw}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{bibnamehash}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{authorbibnamehash}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{authornamehash}{487b6374c29f5781afbbe13ea5d8c68e}
+      \strng{authorfullhash}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{authorfullhashraw}{73d78df51cdc1a5a513d8346dca2051b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the USENIX Workshop on Microkernels and Other Kernel Architectures}
+      \field{title}{The {KeyKOS} Nanokernel Architecture}
+      \field{year}{1992}
+      \field{pages}{95\bibrangedash 112}
+      \range{pages}{18}
+    \endentry
+    \entry{Aurora}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=5762dd7183b69c36da7d9bd96708eea8}{%
+           family={Tsalapatis},
+           familyi={T\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+        {{hash=554c42ebbdcbdb5e8b1110ed0650fba6}{%
+           family={Hancock},
+           familyi={H\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5db573efd22f9202da8d170f74012b74}{%
+           family={Barnes},
+           familyi={B\bibinitperiod},
+           given={Tavian},
+           giveni={T\bibinitperiod}}}%
+        {{hash=308988ebfdd2da40aab31e299c5cea8f}{%
+           family={Mashtizadeh},
+           familyi={M\bibinitperiod},
+           given={Ali\bibnamedelima José},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{e93a9b950a76747e9d13675aa3a25a4c}
+      \strng{fullhash}{de26a7099df0391c19398986f0e0e90d}
+      \strng{fullhashraw}{de26a7099df0391c19398986f0e0e90d}
+      \strng{bibnamehash}{de26a7099df0391c19398986f0e0e90d}
+      \strng{authorbibnamehash}{de26a7099df0391c19398986f0e0e90d}
+      \strng{authornamehash}{e93a9b950a76747e9d13675aa3a25a4c}
+      \strng{authorfullhash}{de26a7099df0391c19398986f0e0e90d}
+      \strng{authorfullhashraw}{de26a7099df0391c19398986f0e0e90d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the ACM SIGOPS 28th Symposium on Operating Systems Principles (SOSP)}
+      \field{title}{The {Aurora} Single Level Store Operating System}
+      \field{year}{2021}
+      \field{pages}{788\bibrangedash 803}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1145/3477132.3483563
+      \endverb
+    \endentry
+    \entry{Phantom_docs}{documentation}{}{}
+      \name{author}{1}{}{%
+        {{hash=bf504e14ff8248dfc7897e841540486c}{%
+           family={Zavalishin},
+           familyi={Z\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{fullhash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{fullhashraw}{bf504e14ff8248dfc7897e841540486c}
+      \strng{bibnamehash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{authorbibnamehash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{authornamehash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{authorfullhash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{authorfullhashraw}{bf504e14ff8248dfc7897e841540486c}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Available: \url{https://app.readthedocs.org/projects/phantomdox/downloads/pdf/latest/}}
+      \field{title}{Phantom OS Documentation}
+      \field{year}{2020}
+    \endentry
+    \entry{seL4}{inproceedings}{}{}
+      \name{author}{13}{}{%
+        {{hash=199a8abce7ff51f1ce18d08d6910be68}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={Gerwin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=fccc24f8be7baf0fc4b221f306006e22}{%
+           family={Elphinstone},
+           familyi={E\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=22cbcffae9ccc9f40eba5c2eda212e66}{%
+           family={Heiser},
+           familyi={H\bibinitperiod},
+           given={Gernot},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b879a2e7b4ddd0e1070f51f77011bf2a}{%
+           family={Andronick},
+           familyi={A\bibinitperiod},
+           given={June},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1f5253795d319e8f0c489628e959291a}{%
+           family={Cock},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4899d1b6699f1281f9779df5e94d56e6}{%
+           family={Derrin},
+           familyi={D\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=331d5ae4a901f592f81773aa781be9ce}{%
+           family={Elkaduwe},
+           familyi={E\bibinitperiod},
+           given={Dhammika},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2188700f92fdd043869fb96cd00595b2}{%
+           family={Engelhardt},
+           familyi={E\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bce9c58ef103d3ca364bede7ea9a65aa}{%
+           family={Kolanski},
+           familyi={K\bibinitperiod},
+           given={Rafal},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5f4f59c4ab0dd44df8053b075d95507e}{%
+           family={Norrish},
+           familyi={N\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=00f700cfb896b0edfc33968e3091baa2}{%
+           family={Sewell},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2fd1a0301a9608eb902c266123312b24}{%
+           family={Tuch},
+           familyi={T\bibinitperiod},
+           given={Harvey},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b60184d90b854beac68b7de7841e1cb9}{%
+           family={Winwood},
+           familyi={W\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Big Sky, MT, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{9f28f30fcd785413b488333f3492ee5f}
+      \strng{fullhash}{d35fa56d22d87bc1dd2d6e7656fde8d5}
+      \strng{fullhashraw}{d35fa56d22d87bc1dd2d6e7656fde8d5}
+      \strng{bibnamehash}{9f28f30fcd785413b488333f3492ee5f}
+      \strng{authorbibnamehash}{9f28f30fcd785413b488333f3492ee5f}
+      \strng{authornamehash}{9f28f30fcd785413b488333f3492ee5f}
+      \strng{authorfullhash}{d35fa56d22d87bc1dd2d6e7656fde8d5}
+      \strng{authorfullhashraw}{d35fa56d22d87bc1dd2d6e7656fde8d5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd ACM SIGOPS Symposium on Operating Systems Principles (SOSP)}
+      \field{title}{{seL4}: Formal Verification of an {OS} Kernel}
+      \field{year}{2009}
+      \field{pages}{207\bibrangedash 220}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1145/1629575.1629596
+      \endverb
+    \endentry
+    \entry{Genode_Foundations}{documentation}{}{}
+      \name{author}{1}{}{%
+        {{hash=fd265aa7debb5e4addc749cabed74cb9}{%
+           family={Feske},
+           familyi={F\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{fullhash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{fullhashraw}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{bibnamehash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{authorbibnamehash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{authornamehash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{authorfullhash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{authorfullhashraw}{fd265aa7debb5e4addc749cabed74cb9}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Available: \url{https://genode.org/documentation/genode-foundations-25-05.pdf}}
+      \field{title}{Genode Operating System Framework Foundations}
+      \field{year}{2025}
+    \endentry
+    \entry{GitHub_phantomuserland-snapper}{github}{}{}
+      \name{author}{1}{}{%
+        {{hash=bea6d745955cd872e8e66a16205d13b4}{%
+           family={Mitov},
+           familyi={M\bibinitperiod},
+           given={Rumen},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{fullhash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{fullhashraw}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{bibnamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorbibnamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authornamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorfullhash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorfullhashraw}{bea6d745955cd872e8e66a16205d13b4}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Available: \url{github.com/rumenmitov/phantomuserland-snapper}}
+      \field{title}{phantomuserland-snapper}
+    \endentry
+    \entry{GitHub_Snapper}{github}{}{}
+      \name{author}{1}{}{%
+        {{hash=bea6d745955cd872e8e66a16205d13b4}{%
+           family={Mitov},
+           familyi={M\bibinitperiod},
+           given={Rumen},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{fullhash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{fullhashraw}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{bibnamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorbibnamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authornamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorfullhash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorfullhashraw}{bea6d745955cd872e8e66a16205d13b4}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Available: \url{https://github.com/rumenmitov/snapper}}
+      \field{title}{Snapper}
+    \endentry
+    \entry{Revisited}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=e50c37de2db5fdb7ecda276367284371}{%
+           family={Dearle},
+           familyi={D\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b69bc1a0e57944a9264ad611e76da5d9}{%
+           family={Kirby},
+           familyi={K\bibinitperiod},
+           given={Graham\bibnamedelimb N.\bibnamedelimi C.},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=da763e25de56f1dcd40599cba019ebbe}{%
+           family={Morrison},
+           familyi={M\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{746324760da17f4d52aee97ad647ccfc}
+      \strng{fullhash}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{fullhashraw}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{bibnamehash}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{authorbibnamehash}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{authornamehash}{746324760da17f4d52aee97ad647ccfc}
+      \strng{authorfullhash}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{authorfullhashraw}{e38530cb6a1b74d86643a9befb1f2118}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint}
+      \field{note}{arXiv:1006.3448}
+      \field{title}{Orthogonal Persistence Revisited}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1006.3448
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1006.3448
+      \endverb
+    \endentry
+    \entry{Habr_MT}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bef1555721a50d007d4be09b705712f5}{%
+           family={Завалишин},
+           familyi={З\bibinitperiod},
+           given={Дмитрий},
+           giveni={Д\bibinitperiod}}}%
+      }
+      \strng{namehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \strng{bibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorbibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Хабр}
+      \field{month}{4}
+      \field{note}{Дата обращения: 2025}
+      \field{title}{Делаем мультизадачность}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://habr.com/ru/articles/282037/
+      \endverb
+      \verb{url}
+      \verb https://habr.com/ru/articles/282037/
+      \endverb
+    \endentry
+    \entry{Habr_Preempt}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bef1555721a50d007d4be09b705712f5}{%
+           family={Завалишин},
+           familyi={З\bibinitperiod},
+           given={Дмитрий},
+           giveni={Д\bibinitperiod}}}%
+      }
+      \strng{namehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \strng{bibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorbibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Хабр}
+      \field{month}{4}
+      \field{note}{Дата обращения: 2025}
+      \field{title}{Преемптивность: как отнять процессор}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://habr.com/ru/articles/282049/
+      \endverb
+      \verb{url}
+      \verb https://habr.com/ru/articles/282049/
+      \endverb
+    \endentry
+    \entry{Habr_Sched}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bef1555721a50d007d4be09b705712f5}{%
+           family={Завалишин},
+           familyi={З\bibinitperiod},
+           given={Дмитрий},
+           giveni={Д\bibinitperiod}}}%
+      }
+      \strng{namehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \strng{bibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorbibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Хабр}
+      \field{month}{4}
+      \field{note}{Дата обращения: 2025}
+      \field{title}{От шедулера к планировщику}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://habr.com/ru/articles/282213/
+      \endverb
+      \verb{url}
+      \verb https://habr.com/ru/articles/282213/
+      \endverb
+    \endentry
+    \entry{Habr_UI}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bef1555721a50d007d4be09b705712f5}{%
+           family={Завалишин},
+           familyi={З\bibinitperiod},
+           given={Дмитрий},
+           giveni={Д\bibinitperiod}}}%
+      }
+      \strng{namehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \strng{bibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorbibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Хабр}
+      \field{month}{11}
+      \field{note}{Дата обращения: 2025}
+      \field{title}{ОС Фантом: оконная подсистема — делаем контролы}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://habr.com/ru/articles/472160/
+      \endverb
+      \verb{url}
+      \verb https://habr.com/ru/articles/472160/
+      \endverb
+    \endentry
+    \entry{Habr_Persistent_Mem}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bef1555721a50d007d4be09b705712f5}{%
+           family={Завалишин},
+           familyi={З\bibinitperiod},
+           given={Дмитрий},
+           giveni={Д\bibinitperiod}}}%
+      }
+      \strng{namehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \strng{bibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorbibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \field{extraname}{5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Хабр}
+      \field{month}{3}
+      \field{note}{Дата обращения: 2025}
+      \field{title}{Персистентная оперативная память}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://habr.com/ru/articles/279443/
+      \endverb
+      \verb{url}
+      \verb https://habr.com/ru/articles/279443/
+      \endverb
+    \endentry
+    \entry{Habr_GC1}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bef1555721a50d007d4be09b705712f5}{%
+           family={Завалишин},
+           familyi={З\bibinitperiod},
+           given={Дмитрий},
+           giveni={Д\bibinitperiod}}}%
+      }
+      \strng{namehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \strng{bibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorbibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \field{extraname}{6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Хабр}
+      \field{month}{4}
+      \field{note}{Дата обращения: 2025}
+      \field{title}{Сборка мусора в персистентной модели: от терабайта и дальше}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://habr.com/ru/articles/281236/
+      \endverb
+      \verb{url}
+      \verb https://habr.com/ru/articles/281236/
+      \endverb
+    \endentry
+    \entry{Habr_GC2}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bef1555721a50d007d4be09b705712f5}{%
+           family={Завалишин},
+           familyi={З\bibinitperiod},
+           given={Дмитрий},
+           giveni={Д\bibinitperiod}}}%
+      }
+      \strng{namehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \strng{bibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorbibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \field{extraname}{7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Хабр}
+      \field{month}{6}
+      \field{note}{Дата обращения: 2025}
+      \field{title}{Фантом: большая сборка мусора}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://habr.com/ru/articles/331974/
+      \endverb
+      \verb{url}
+      \verb https://habr.com/ru/articles/331974/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

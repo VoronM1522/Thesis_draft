@@ -1,0 +1,94 @@
+\chapter{Literature Review}
+\label{chap:lr}
+\chaptermark{Second Chapter Heading}
+
+This chapter provides an overview of existing research related to our topic. The chapter is divided into four main sections, each of which will examine works pertaining to the following
+\begin{enumerate}[label=\textbf{Section \arabic*:}, leftmargin=*]
+  \item The concept of orthogonal persistence and its implementation options;
+  \item PhantomOS and its implementation of the concept of orthogonal persistence;
+  \item Details and features of the PhantomOS port to Genode;
+  \item Methods of protecting data at rest and their characteristics;
+\end{enumerate}
+
+\section{Persistence}
+
+\subsection{Persistence definitions}
+
+Data persistence refers to the period of time during which data exists and is used \cite{PLA}. This is precisely how some of the earliest researchers in the field—Morrison R. and Atkinson M. P.—define this concept. In their work, they identify categories of persistence, divided into two groups: 
+\begin{enumerate}[label=\arabic*.]
+  \item Provided by the programming language;
+  \item Provided by the environment;
+\end{enumerate}
+Researchers are striving to develop systems in which data usage is independent of the group or category to which the data belongs. 
+
+
+\subsection{Orthogonal persistence principles}
+
+The concept of orthogonal persistence is based on principles formulated by researchers:
+\begin{enumerate}
+    \item Independence;
+    \item Orthogonality of data types;
+    \item Persistence Identification;
+\end{enumerate}
+In this case, independence means that data persistence does not depend on how the data is manipulated (the user cannot move data between long-term and short-term storage). The orthogonality of data types ensures that there are no cases in which data of any type cannot be persisted. The third principle means that perrsistent object identification does not relate to the type of such an jbject. A system that follows all three principles is orthogonally persistent.
+
+\subsection{Advantages of a persistent system}
+
+The desire to create such a system stems from the fact that it offers a number of advantages over conventional systems. These include \cite{Revisited}:
+\begin{enumerate}
+    \item Increased programming productivity through simplified semantics;
+    \item Avoiding ad hoc solutions for data transformation and long-term data storage;
+    \item Providing security mechanisms for the entire environment;
+    \item Support for gradual evolution;
+    \item Automatically preserving referential integrity across the entire computational environment for the entire lifetime of an application
+\end{enumerate}
+All of these are, to some extent, the result of simplifying the memory management model for application programmers. This eliminates a huge amount of code that would otherwise be required to handle I/O and data storage. This also includes serialization/deserialization and initialization/deinitialization.
+
+\subsection{The cost of persistence}
+
+All of the advantages outlined above come at a cost. In addition to the general challenges associated with creating and implementing a new system—especially one built on principles that are entirely different from those we are accustomed to—there are also challenges specific to orthogonally persistent systems. These include:
+\begin{enumerate}[label=\arabic*.]
+    \item The need for a stable object store: This depends largely on the specific implementation method, so we will return to this topic in Section 2.2.
+    \item Reduced performance of some applications: Because the programmer does not have full control over the location of the data, access speed may be reduced. A similar problem exists when using virtual memory.
+    \item The cost of providing language-independent binding mechanisms.
+\end{enumerate}
+Looking ahead, I will say that Phantom has solutions to minimize each of these problems, so we will return to them in Section 2.2. For now, note that point 1 depends largely on the implementation, and it is difficult to generalize information regarding it. Problems similar to point 2 also affect (albeit often to a lesser extent) systems with virtual memory, since the programmer does not have full control over the layout of the data, which can slow down access to it.
+
+\section{PhantomOS}
+
+\subsection{PhantomOS Overview}
+
+PhantomOS is an open-source operating system. The concept was conceived by Dmitry Zavalishin, who also made the primary contribution to the system’s development. Like other modern operating systems, Phantom features multitasking \cite{Habr_MT, Habr_Preempt, Habr_Sched}, a windowing subsystem \cite{Habr_UI}, a network stack, and other familiar attributes. However, for our work, another feature is of greatest interest. PhantomOS provides an orthogonally persistent environment for applications within the Phantom Virtual Machine (PVM), where code is executed in the Phantom programming language. However, it is worth noting that there is also a POSIX compatibility subsystem. Access via arbitrary addresses is prohibited. Phantom already implements subsystems such as:
+\begin{itemize}
+    \item Kernel itself: threads, synchronization, persistent memory management;
+    \item Bytecode virtual machine - running native applications;
+    \item POSIX layer - runs Linux-compatible (but not yet persistent) code;
+    \item Graphics subsystem - Windows, controls, UI;
+    \item Networking (TCP/IP);
+    \item Phantom language compiler - the most native userland language;
+    \item Java to Phantom translator - work in progress;
+    \item Python to Phantom translator - just started;
+\end{itemize}
+All of this is specified in the documentation \cite{Phantom_docs}.
+
+\subsection{Mechanisms for ensuring persistence}
+
+Dmitry Zavalishin believes that it is impossible to preserve the state of the entire machine, but this is not necessary to achieve persistence \cite{Habr_Persistent_Mem}. Therefore, we will now discuss the mechanisms for ensuring a persistent environment. Persistence in PhantomOS is achieved by page-by-page mapping of the entire memory (PVM) to disk and periodically saving it. The kernel manages the snapshot process. It takes snapshots after first bringing the programs to a state where they are fully represented in memory. That is, all information from the processor registers is also transferred for this purpose. Application programs are blocked only during this brief preparation phase. The disk is switched to read-only mode during this process, but this does not cause a lock throughout the entire process of writing the snapshot to disk thanks to the use of CoW: if a page has been written to the snapshot, nothing prevents access to it; otherwise, a copy is created, which the program operates on, and the original page is moved closer to the front of the save queue \cite{Habr_Persistent_Mem}. Writing the entire memory to disk with every snapshot is a very costly operation that is unnecessary. To optimize this process, only the increment is written to disk, and preemptive writing is also used. The latter, by the way, serves two purposes:
+\begin{itemize}
+    \item To speed up the snapshot writing process;
+    \item To meet the increased demand for memory during the snapshot;
+\end{itemize}
+
+\subsection{System and Persistent Environment features}
+
+One of the goals behind the system’s design is to make life easier for programmers. They no longer need to manage memory; instead, the garbage collector handles this task. Other key features of the system include a global address space and the requirement that objects can only be accessed via a reference. Access via arbitrary addresses is prevented, which has a positive effect on security. It is in this environment that the garbage collector operates. The large amount of virtual memory and the inability to use stop-world algorithms led to a strategy of using two garbage collectors \cite{Habr_GC1}:
+\begin{enumerate}
+    \item Partial;
+    \item Full;
+\end{enumerate}
+The first is fast, inexpensive, and possibly incomplete. It is assumed that it cleans up garbage in RAM without waiting for objects to be flushed to disk. It runs continuously and is currently implemented based on counting the number of references to an object. The second should be full, but it can run periodically thanks to the presence of the first. At the same time, a stop-world implementation is also possible due to the persistence of garbage: that is, what was garbage in the old snapshot will remain garbage in the new one. Based on this idea, it is proposed to perform garbage collection on the old snapshot, although not the entire snapshot may be used for this, but only a reflection of its memory state. However, there are still a number of problems that need to be solved before its implementation \cite{Habr_GC2}.
+
+\section{OS Phantom to Genode port}
+
+\section{Data protection at rest}
+
