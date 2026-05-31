@@ -420,6 +420,13 @@ https://en.wikipedia.org/wiki/Capability-based_security
       \item To speed up the snapshot writing process;
       \item To meet the increased demand for memory during the snapshot;
   \end{itemize}
+  
+  One of the goals behind the system’s design is to make life easier for programmers. They no longer need to manage memory; instead, the garbage collector handles this task. Other key features of the system include a global address space and the requirement that objects can only be accessed via a reference. Access via arbitrary addresses is prevented, which has a positive effect on security. It is in this environment that the garbage collector operates. The large amount of virtual memory and the inability to use stop-world algorithms led to a strategy of using two garbage collectors \cite{Habr_GC1}:
+  \begin{enumerate}
+      \item Partial;
+      \item Full;
+  \end{enumerate}
+  The first is fast, inexpensive, and possibly incomplete. It is assumed that it cleans up garbage in RAM without waiting for objects to be flushed to disk. It runs continuously and is currently implemented based on counting the number of references to an object. The second should be full, but it can run periodically thanks to the presence of the first. At the same time, a stop-world implementation is also possible due to the persistence of garbage: that is, what was garbage in the old snapshot will remain garbage in the new one. Based on this idea, it is proposed to perform garbage collection on the old snapshot, although not the entire snapshot may be used for this, but only a reflection of its memory state. However, there are still a number of problems that need to be solved before its implementation \cite{Habr_GC2}.
   ```
 
 1. В чем заключается философия системы? Что про нее можно сказать (какие особенности можно выделить)?
@@ -443,7 +450,12 @@ https://en.wikipedia.org/wiki/Capability-based_security
    - Для удовлетворения повышенного спроса на память во время снимка;
 
 3. Особенности системы и среды
-   К особенностям системы также относится глобальное адресное пространство и возможность взаимодействия с объектами исключительно посредством определенных методов.
+   Один из замыслов создания системы - облегчение жизни программиста. У него отпадает необходимость следить за памятью, а вместо него эту работу выполняет сборщик мусора. К особенностям системы также относится глобальное адресное пространство и возможность взаимодействия с объектами исключительно при наличии ссылки на него. Возмодность доступа по произвольному адресу исключается, что положителььно сказывается на безопасности. Именно в такой среде и работает сборщику мусора. Большой объем виртуальной памяти и невозможность использования stop-world алгоритмов привели к стратегии использования двух сборщиков мусора \cite{Habr_GC1}:
+
+   1. Неполный;
+   2. Полный;
+
+   Первый - быстрый, недорогой, возможно — неполный. Предполагается, что он производит очистку мусора в оперативной памяти, не дожидаясь сброса объектов на диск. Он работает постоянно, на данный момент реализован на принципе подсчёта числа ссылок на объект. Второй должен быть полным, но его запуск может быть периодичным, благодаря наличию первого. При этом допускается и stop-world реализация благодаря постоянству мусора: то есть то, что было мусором в старом снимке, останется мусором и в новом. Основываясь на этой идее, предполагается проводить сборку мусора на старом снимке, хотя для этого может использоваться не весь снапшот, а лишь отражение его состояния памяти. Однако все еще существует ряд проблем, которые предстоит решить перед его реализацией \cite{Habr_GC2}.
 
 4. Какова стоимость персистентности?
 
