@@ -379,7 +379,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **ru**
 
   ```
-  PhantomOS - это операционная система с открытым исходным кодом. Автором идеи является Дмитрий Завалишин. Он же внес основной вклад в разработку системы. PhantomOS предоставляет ортогонально персистентное окружение прикладным программам. внутри Phantom Virtual Machine (PVM), внутри которой исполняется код на языке программирования Phantom. Однако стоит отметить, что имеется и подсистема совместимости POSIX. К особенностям системы также относится глобальное адресное пространство и возможность взаимодействия с объектами исключительно посредством определенных методов. Доступ по произвольному адресу исключён. В Phantom уже реализованы такое подсистемы, как:
+  PhantomOS - это операционная система с открытым исходным кодом. Автором идеи является Дмитрий Завалишин. Он же внес основной вклад в разработку системы. Как и другие современные операционные системы, Phantom имеет многозадачность\cite{Habr_MT, Habr_Preempt, Habr_Sched}, оконную подсистему \cite{Habr_UI}, сетевой стек и другие привычные атрибуты. Однако для нашей работы наибольший интерес представляет другая её особенность. PhantomOS предоставляет ортогонально персистентное окружение прикладным программам. внутри Phantom Virtual Machine (PVM), внутри которой исполняется код на языке программирования Phantom. Однако стоит отметить, что имеется и подсистема совместимости POSIX. Доступ по произвольному адресу исключён. В Phantom уже реализованы такое подсистемы, как:
   - Kernel itself: threads, synchronization, persistent memory management;
   - Bytecode virtual machine - running native applications;
   - Posix layer - runs Linux compatible (but not yet persistent) code;
@@ -390,7 +390,9 @@ https://en.wikipedia.org/wiki/Capability-based_security
   - Python to Phantom translator - just started;
   Все это указано в документации \cite{Phantom_docs}.
   
-  
+  Дмитрий Завалишин считает, что сохранить состояние всей машины невозможно, но для достижения персистентности это и не требуется \cite{Habr_Persistent_Mem}. Поэтому далее будем говорить о механизмах обеспечения персистентной среды. Персистентность в PhantomOS достигается постраничным отображением всей памяти (PVM) на диск и периодическим ее сохранением. Запуском процесса моментального снимка руководит ядро. Оно делает снапшоты, предварительно загнав программы в такое состояние, при котором оно полностью представлено в памяти. То есть для этого переносится и вся информация из регистров процессора. Только при этой кратковременной подготовке происходит блокировка прикладных программ. Диск при этом переводится в read-only режим, но это не приводит к блокировке на протяжении всего процесса сброса снапшота на диск благодаря использованию CoW: если страница была записана в снапшот, доступу к ней ничего не препятствует; в противном случае создается копия, которой и оперирует программа, а изначальная страница перемещается ближе к началу очереди на сохранение \cite{Habr_Persistent_Mem}. Запись всей памяти на диск при каждом снимке - весьма дорогостоящая операция, в которой нет необходимости. Для оптимизации этого процесса на диск записывается только инкремент, а также задействуется превентивная запись. Последнее, кстати, используется для двух целей:
+  - Для ускорения процесса записи снапшота;
+  - Для удовлетворения повышенного спроса на память во время снимка;
   ```
 
 - **en**
@@ -400,7 +402,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
   
   \subsection{PhantomOS Overview}
   
-  PhantomOS is an open-source operating system \cite{GitHub_Phantom}. The concept was conceived by Dmitry Zavalishin, who also made the primary contributions to the system’s development. PhantomOS provides an orthogonally persistent environment for applications within the Phantom Virtual Machine (PVM), where code written in the Phantom programming language is executed. However, it is worth noting that there is also a POSIX compatibility subsystem. The system’s features also include a global address space and the ability to interact with objects exclusively through specific methods. Access via arbitrary addresses is prohibited. Phantom already implements subsystems such as:
+  PhantomOS is an open-source operating system. The concept was conceived by Dmitry Zavalishin, who also made the primary contribution to the system’s development. Like other modern operating systems, Phantom features multitasking \cite{Habr_MT, Habr_Preempt, Habr_Sched}, a windowing subsystem \cite{Habr_UI}, a network stack, and other familiar attributes. However, for our work, another feature is of greatest interest. PhantomOS provides an orthogonally persistent environment for applications within the Phantom Virtual Machine (PVM), where code is executed in the Phantom programming language. However, it is worth noting that there is also a POSIX compatibility subsystem. Phantom already implements subsystems such as:
   \begin{itemize}
       \item Kernel itself: threads, synchronization, persistent memory management;
       \item Bytecode virtual machine - running native applications;
@@ -412,12 +414,16 @@ https://en.wikipedia.org/wiki/Capability-based_security
       \item Python to Phantom translator - just started;
   \end{itemize}
   All of this is specified in the documentation \cite{Phantom_docs}.
+  
+  Dmitry Zavalishin believes that it is impossible to preserve the state of the entire machine, but this is not necessary to achieve persistence \cite{Habr_Persistent_Mem}. Therefore, we will now discuss the mechanisms for ensuring a persistent environment. Persistence in PhantomOS is achieved by page-by-page mapping of the entire memory (PVM) to disk and periodically saving it. The kernel manages the snapshot process. It takes snapshots after first bringing the programs to a state where they are fully represented in memory. That is, all information from the processor registers is also transferred for this purpose. Application programs are blocked only during this brief preparation phase. The disk is switched to read-only mode during this process, but this does not cause a lock throughout the entire process of writing the snapshot to disk thanks to the use of CoW: if a page has been written to the snapshot, nothing prevents access to it; otherwise, a copy is created, which the program operates on, and the original page is moved closer to the front of the save queue \cite{Habr_Persistent_Mem}. Writing the entire memory to disk with every snapshot is a very costly operation that is unnecessary. To optimize this process, only the increment is written to disk, and preemptive writing is also used. The latter, by the way, serves two purposes:
+  \begin{itemize}
+      \item To speed up the snapshot writing process;
+      \item To meet the increased demand for memory during the snapshot;
+  \end{itemize}
   ```
 
 1. В чем заключается философия системы? Что про нее можно сказать (какие особенности можно выделить)?
-
-   Обзор PhantomOS
-   PhantomOS - это операционная система с открытым исходным кодом. Автором идеи является Дмитрий Завалишин. Он же внес основной вклад в разработку системы. PhantomOS предоставляет ортогонально персистентное окружение прикладным программам. внутри Phantom Virtual Machine (PVM), внутри которой исполняется код на языке программирования Phantom. Однако стоит отметить, что имеется и подсистема совместимости POSIX. К особенностям системы также относится глобальное адресное пространство и возможность взаимодействия с объектами исключительно посредством определенных методов. Доступ по произвольному адресу исключён. В Phantom уже реализованы такое подсистемы, как:
+   PhantomOS - это операционная система с открытым исходным кодом. Автором идеи является Дмитрий Завалишин. Он же внес основной вклад в разработку системы. Как и другие современные операционные системы, Phantom имеет многозадачность\cite{Habr_MT, Habr_Preempt, Habr_Sched}, оконную подсистему \cite{Habr_UI}, сетевой стек и другие привычные атрибуты. Однако для нашей работы наибольший интерес представляет другая её особенность. PhantomOS предоставляет ортогонально персистентное окружение прикладным программам. внутри Phantom Virtual Machine (PVM), внутри которой исполняется код на языке программирования Phantom. Однако стоит отметить, что имеется и подсистема совместимости POSIX. Доступ по произвольному адресу исключён. В Phantom уже реализованы такое подсистемы, как:
 
    - Kernel itself: threads, synchronization, persistent memory management;
    - Bytecode virtual machine - running native applications;
@@ -429,8 +435,16 @@ https://en.wikipedia.org/wiki/Capability-based_security
    - Python to Phantom translator - just started;
 
    Все это указано в документации \cite{Phantom_docs}.
-2. Какие компоненты и как позволяют реализовать концепт ортогональной персистентности (сборщик мусора, механизм снапшотов и т. д.)
-3. Как работает процесс создания снимка на оригинальной версии ОС?
+
+2. Как работает процесс создания снимка на оригинальной версии ОС?
+   Дмитрий Завалишин считает, что сохранить состояние всей машины невозможно, но для достижения персистентности это и не требуется \cite{Habr_Persistent_Mem}. Поэтому далее будем говорить о механизмах обеспечения персистентной среды. Персистентность в PhantomOS достигается постраничным отображением всей памяти (PVM) на диск и периодическим ее сохранением. Запуском процесса моментального снимка руководит ядро. Оно делает снапшоты, предварительно загнав программы в такое состояние, при котором оно полностью представлено в памяти. То есть для этого переносится и вся информация из регистров процессора. Только при этой кратковременной подготовке происходит блокировка прикладных программ. Диск при этом переводится в read-only режим, но это не приводит к блокировке на протяжении всего процесса сброса снапшота на диск благодаря использованию CoW: если страница была записана в снапшот, доступу к ней ничего не препятствует; в противном случае создается копия, которой и оперирует программа, а изначальная страница перемещается ближе к началу очереди на сохранение \cite{Habr_Persistent_Mem}. Запись всей памяти на диск при каждом снимке - весьма дорогостоящая операция, в которой нет необходимости. Для оптимизации этого процесса на диск записывается только инкремент, а также задействуется превентивная запись. Последнее, кстати, используется для двух целей:
+
+   - Для ускорения процесса записи снапшота;
+   - Для удовлетворения повышенного спроса на память во время снимка;
+
+3. Особенности системы и среды
+   К особенностям системы также относится глобальное адресное пространство и возможность взаимодействия с объектами исключительно посредством определенных методов.
+
 4. Какова стоимость персистентности?
 
 ### PhantomOS на Genode
@@ -479,3 +493,8 @@ https://en.wikipedia.org/wiki/Capability-based_security
 4. Какой подход обычно применяется (или несколько)?
 5. Какой способ предпочтителен для нас и почему? (возможно, это уже другая глава)
 
+
+
+
+
+А задача — именно такова. Обеспечить программе среду, в которой  остановка ОС и остановка компьютера для программы выглядели  исключительно как нажатие на кнопку «пауза» при просмотре фильма. Во  время паузы «под программой» можно даже компьютер поменять, но надо  как-то обеспечить ситуацию, в которой продолжение работы для программы  будет совершенно прозрачным. \cite{Habr_Persistent_Mem}
