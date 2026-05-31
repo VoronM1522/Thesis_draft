@@ -464,14 +464,46 @@ https://en.wikipedia.org/wiki/Capability-based_security
 - **ru**
 
   ```
+  Как уже было сказано, сейчас PhantomOS портируется на Genode фреймворк. Делается это для улучшения \cite{Antonov_Antonov};
   
+  - Надежности;
+  - Безопасности;
+  - Interoperability;
+  
+  Таким образом планируется достичь требуемого качества. Одну из главных проблем надежности - новое ядро со встроенными драйверами- планируется решить путем использования ядер, поддерживаемых Genode, среди которых множество микроядер, отличающихся повышенной надежностью. Также предлагается заменить нове, недостаточно протестированне компоненты уже проверенными с тем же функционалом. Это также решит вопрос Interoperability, так как не нужно будет писать уже существующие компонент, и можо будет сосредоточиться на логике системы.  К вопросу безопасности разработчики Genode подошли основательно. Фреймворк использует capability-based систему безопасности. Зачастую в качестве ядра системы используются микроядра. Благодаря этому удается в значительной степени изолировать компоненты и более гибко настроить доступ к резурсам, что позволяет достичь минимальной TCB. Таким образом достигается минимальная поверхность атаки, что крайне благоприятно сказывается на надежности.
   ```
 
 - **en**
 
   ```
+  As previously mentioned, PhantomOS is currently being ported to the Genode framework. This is being done to improve \cite{Antonov_Antonov};
+  \begin{itemize}
+      \item Reliability;
+      \item Security;
+      \item Interoperability;
+  \end{itemize}
+  - 
+  In this way, we plan to achieve the required quality. One of the main reliability issues—the new kernel with built-in drivers—is planned to be resolved by using kernels supported by Genode, including many microkernels known for their high reliability. It is also proposed to replace new, insufficiently tested components with already proven ones offering the same functionality. This will also resolve the issue of interoperability, as there will be no need to rewrite existing components, and the focus can shift to the system’s logic.  The Genode developers have taken a thorough approach to security. The framework uses a capability-based security system. Microkernels are often used as the system kernel. This makes it possible to isolate components to a significant degree and configure access to resources more flexibly, allowing for a minimal TCB. This results in a minimal attack surface, which has an extremely positive effect on reliability.
   
   ```
+
+**Причина портирования**
+
+Как уже было сказано, сейчас PhantomOS портируется на Genode фреймворк. Делается это для улучшения \cite{Antonov_Antonov};
+
+- Надежности;
+- Безопасности;
+- Interoperability;
+
+Таким образом планируется достичь требуемого качества. Одну из главных проблем надежности - новое ядро со встроенными драйверами- планируется решить путем использования ядер, поддерживаемых Genode, среди которых множество микроядер, отличающихся повышенной надежностью. Также предлагается заменить нове, недостаточно протестированне компоненты уже проверенными с тем же функционалом. Это также решит вопрос Interoperability, так как не нужно будет писать уже существующие компонент, и можо будет сосредоточиться на логике системы.  К вопросу безопасности разработчики Genode подошли основательно. Фреймворк использует capability-based систему безопасности. Зачастую в качестве ядра системы используются микроядра. Благодаря этому удается в значительной степени изолировать компоненты и более гибко настроить доступ к резурсам, что позволяет достичь минимальной TCB. Таким образом достигается минимальная поверхность атаки, что крайне благоприятно сказывается на надежности.
+
+**Затронутые компоненты**
+
+Изначально была проведена работа по портированию системы \cite{Antonov_Anton}. По большому счету, задача заключается в переносе перистентной среды на фреймворк. То есть окружением персистентной среды является уже не Phantom, а компоненты фреймворка.
+
+**Snapper**
+
+
 
 1. В чем отличие Phantom на Genode
    1. Какие компоненты и как поменялись?

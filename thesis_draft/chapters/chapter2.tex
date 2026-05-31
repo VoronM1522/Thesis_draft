@@ -90,5 +90,20 @@ The first is fast, inexpensive, and possibly incomplete. It is assumed that it c
 
 \section{OS Phantom to Genode port}
 
+\subsection{Reason for porting}
+
+As previously mentioned, PhantomOS is currently being ported to the Genode framework. This is being done to improve \cite{Antonov_Antonov};
+\begin{itemize}
+    \item Reliability;
+    \item Security;
+    \item Interoperability;
+\end{itemize}
+- 
+In this way, we plan to achieve the required quality. One of the main reliability issues—the new kernel with built-in drivers—is planned to be resolved by using kernels supported by Genode, including many microkernels known for their high reliability. It is also proposed to replace new, insufficiently tested components with already proven ones offering the same functionality. This will also resolve the issue of interoperability, as there will be no need to rewrite existing components, and the focus can shift to the system’s logic.  The Genode developers have taken a thorough approach to security. The framework uses a capability-based security system. Microkernels are often used as the system kernel. This makes it possible to isolate components to a significant degree and configure access to resources more flexibly, allowing for a minimal TCB. This results in a minimal attack surface, which has an extremely positive effect on reliability.
+
+\subsection{Affected components}
+
+\subsection{Snapper}
+
 \section{Data protection at rest}
 

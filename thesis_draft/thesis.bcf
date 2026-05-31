@@ -2394,6 +2394,7 @@
     <bcf:citekey order="16" intorder="1">Habr_Persistent_Mem</bcf:citekey>
     <bcf:citekey order="17" intorder="1">Habr_GC1</bcf:citekey>
     <bcf:citekey order="18" intorder="1">Habr_GC2</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Antonov_Antonov</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
