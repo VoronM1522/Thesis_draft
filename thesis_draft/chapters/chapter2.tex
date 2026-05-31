@@ -103,6 +103,8 @@ In this way, we plan to achieve the required quality. One of the main reliabilit
 
 \subsection{Affected components}
 
+Initially, work was carried out to port the \cite{Antonov_Anton} system. Essentially, the task involves migrating the peristent environment to the framework. In addition to PVM, work was done on HAL, libc, and the physical memory allocation mechanism. Some functions were replaced with placeholders. The result of this work was a working isomem project \cite{GitHub_isomem}. It also includes a video placeholder in the form of a window subsystem with limited functionality. It is configured and runs as a separate, standalone Genode component. Subsequently, work was carried out on developing a persistent network subsystem for the \cite{Brisilin_Anton} port and implementing the WASM bytecode runtime \cite{Samburskiy_Kirill}. The snapshot creation mechanism was also modified, resulting in the creation of the snapper project \cite{GitHub_Snapper}.
+
 \subsection{Snapper}
 
 \section{Data protection at rest}

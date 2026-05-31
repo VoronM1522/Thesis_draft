@@ -471,6 +471,8 @@ https://en.wikipedia.org/wiki/Capability-based_security
   - Interoperability;
   
   Таким образом планируется достичь требуемого качества. Одну из главных проблем надежности - новое ядро со встроенными драйверами- планируется решить путем использования ядер, поддерживаемых Genode, среди которых множество микроядер, отличающихся повышенной надежностью. Также предлагается заменить нове, недостаточно протестированне компоненты уже проверенными с тем же функционалом. Это также решит вопрос Interoperability, так как не нужно будет писать уже существующие компонент, и можо будет сосредоточиться на логике системы.  К вопросу безопасности разработчики Genode подошли основательно. Фреймворк использует capability-based систему безопасности. Зачастую в качестве ядра системы используются микроядра. Благодаря этому удается в значительной степени изолировать компоненты и более гибко настроить доступ к резурсам, что позволяет достичь минимальной TCB. Таким образом достигается минимальная поверхность атаки, что крайне благоприятно сказывается на надежности.
+  
+  Изначально была проведена работа по портированию системы \cite{Antonov_Anton}. По большому счету, задача заключается в переносе перистентной среды на фреймворк. Помимо PVM были проведены работы с HAL, libc, механизмом выделения физической памяти. Некоторые функции были заменены заглушками. Результатом работы стал работающий проект isomem \cite{GitHub_isomem}. В нем также присутствует видеозаглушка в виде подсистемы окон с ограниченным функционалом. Он конфигурируется запускается как отдельный самостоятельный компонент Genode. После этого были работы по разработке персистентной сетевой подсистемы для порта \cite{Brisilin_Anton} и  внедрению среды выполнения байт-кода WASM \cite{Samburskiy_Kirill}. Также менялся механизм создания снапшотов, результатом чего стало появление проекта snapper \cite{GitHub_Snapper}.
   ```
 
 - **en**
@@ -485,6 +487,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
   - 
   In this way, we plan to achieve the required quality. One of the main reliability issues—the new kernel with built-in drivers—is planned to be resolved by using kernels supported by Genode, including many microkernels known for their high reliability. It is also proposed to replace new, insufficiently tested components with already proven ones offering the same functionality. This will also resolve the issue of interoperability, as there will be no need to rewrite existing components, and the focus can shift to the system’s logic.  The Genode developers have taken a thorough approach to security. The framework uses a capability-based security system. Microkernels are often used as the system kernel. This makes it possible to isolate components to a significant degree and configure access to resources more flexibly, allowing for a minimal TCB. This results in a minimal attack surface, which has an extremely positive effect on reliability.
   
+  Initially, work was carried out to port the \cite{Antonov_Anton} system. Essentially, the task involves migrating the peristent environment to the framework. In addition to PVM, work was done on HAL, libc, and the physical memory allocation mechanism. Some functions were replaced with placeholders. The result of this work was a working isomem project \cite{GitHub_isomem}. It also includes a video placeholder in the form of a window subsystem with limited functionality. It is configured and runs as a separate, standalone Genode component. Subsequently, work was carried out on developing a persistent network subsystem for the \cite{Brisilin_Anton} port and implementing the WASM bytecode runtime \cite{Samburskiy_Kirill}. The snapshot creation mechanism was also modified, resulting in the creation of the snapper project \cite{GitHub_Snapper}.
   ```
 
 **Причина портирования**
@@ -499,7 +502,7 @@ https://en.wikipedia.org/wiki/Capability-based_security
 
 **Затронутые компоненты**
 
-Изначально была проведена работа по портированию системы \cite{Antonov_Anton}. По большому счету, задача заключается в переносе перистентной среды на фреймворк. То есть окружением персистентной среды является уже не Phantom, а компоненты фреймворка.
+Изначально была проведена работа по портированию системы \cite{Antonov_Anton}. По большому счету, задача заключается в переносе перистентной среды на фреймворк. Помимо PVM были проведены работы с HAL, libc, механизмом выделения физической памяти. Некоторые функции были заменены заглушками. Результатом работы стал работающий проект isomem \cite{GitHub_isomem}. В нем также присутствует видеозаглушка в виде подсистемы окон с ограниченным функционалом. Он конфигурируется запускается как отдельный самостоятельный компонент Genode. После этого были работы по разработке персистентной сетевой подсистемы для порта \cite{Brisilin_Anton} и  внедрению среды выполнения байт-кода WASM \cite{Samburskiy_Kirill}. Также менялся механизм создания снапшотов, результатом чего стало появление проекта snapper \cite{GitHub_Snapper}.
 
 **Snapper**
 

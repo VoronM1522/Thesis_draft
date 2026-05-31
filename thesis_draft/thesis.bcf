@@ -2358,4 +2358,67 @@
         <bcf:field>isbn</bcf:field>
       </bcf:constraint>
       <bcf:constraint type="data" datatype="issn">
-        <bcf:field
+        <bcf:field>issn</bcf:field>
+      </bcf:constraint>
+      <bcf:constraint type="data" datatype="ismn">
+        <bcf:field>ismn</bcf:field>
+      </bcf:constraint>
+      <bcf:constraint type="data" datatype="pattern" pattern="(?:sf|sm|sn|pf|pm|pn|pp)">
+        <bcf:field>gender</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+  </bcf:datamodel>
+  <!-- CITATION DATA -->
+  <!-- SECTION 0 -->
+  <bcf:bibdata section="0">
+    <bcf:datasource type="file" datatype="bibtex">ref.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">PLA</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">PLA</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">KOS</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Aurora</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Phantom_docs</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">seL4</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Genode_Foundations</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">GitHub_phantomuserland-snapper</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">GitHub_Snapper</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">PLA</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Revisited</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Habr_MT</bcf:citekey>
+    <bcf:citekey order="12" intorder="2">Habr_Preempt</bcf:citekey>
+    <bcf:citekey order="12" intorder="3">Habr_Sched</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Habr_UI</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Phantom_docs</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Habr_Persistent_Mem</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Habr_Persistent_Mem</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Habr_GC1</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Habr_GC2</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Antonov_Anton</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">Antonov_Anton</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">GitHub_isomem</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Brisilin_Anton</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Samburskiy_Kirill</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">GitHub_Snapper</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="none">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2">
+      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>

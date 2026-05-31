@@ -660,6 +660,84 @@
       \field{type}{Bachelors work}
       \field{year}{2021}
     \endentry
+    \entry{GitHub_isomem}{github}{}{}
+      \name{author}{1}{}{%
+        {{hash=4d064aaec343909caf4727d80e632e9e}{%
+           family={Anton},
+           familyi={A\bibinitperiod},
+           given={Antonov},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d064aaec343909caf4727d80e632e9e}
+      \strng{fullhash}{4d064aaec343909caf4727d80e632e9e}
+      \strng{fullhashraw}{4d064aaec343909caf4727d80e632e9e}
+      \strng{bibnamehash}{4d064aaec343909caf4727d80e632e9e}
+      \strng{authorbibnamehash}{4d064aaec343909caf4727d80e632e9e}
+      \strng{authornamehash}{4d064aaec343909caf4727d80e632e9e}
+      \strng{authorfullhash}{4d064aaec343909caf4727d80e632e9e}
+      \strng{authorfullhashraw}{4d064aaec343909caf4727d80e632e9e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{"Available: \url{https://github.com/S7rizh/phantomuserland/tree/15ea4c963c497255f824ffabd7e0cf987d3b45c5/phantom/isomem}"}
+      \field{title}{isomem}
+      \field{year}{2024}
+    \endentry
+    \entry{Brisilin_Anton}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c3f5e24aff30dfd8acb03c4923551925}{%
+           family={Brisilin},
+           familyi={B\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Innopolis University}%
+      }
+      \strng{namehash}{c3f5e24aff30dfd8acb03c4923551925}
+      \strng{fullhash}{c3f5e24aff30dfd8acb03c4923551925}
+      \strng{fullhashraw}{c3f5e24aff30dfd8acb03c4923551925}
+      \strng{bibnamehash}{c3f5e24aff30dfd8acb03c4923551925}
+      \strng{authorbibnamehash}{c3f5e24aff30dfd8acb03c4923551925}
+      \strng{authornamehash}{c3f5e24aff30dfd8acb03c4923551925}
+      \strng{authorfullhash}{c3f5e24aff30dfd8acb03c4923551925}
+      \strng{authorfullhashraw}{c3f5e24aff30dfd8acb03c4923551925}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Networking in orthogonally persistent operating systems}
+      \field{type}{Bachelors work}
+      \field{year}{2022}
+    \endentry
+    \entry{Samburskiy_Kirill}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=252cd4daa030cfe61ff1410885892729}{%
+           family={Samburskiy},
+           familyi={S\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Innopolis University}%
+      }
+      \strng{namehash}{252cd4daa030cfe61ff1410885892729}
+      \strng{fullhash}{252cd4daa030cfe61ff1410885892729}
+      \strng{fullhashraw}{252cd4daa030cfe61ff1410885892729}
+      \strng{bibnamehash}{252cd4daa030cfe61ff1410885892729}
+      \strng{authorbibnamehash}{252cd4daa030cfe61ff1410885892729}
+      \strng{authornamehash}{252cd4daa030cfe61ff1410885892729}
+      \strng{authorfullhash}{252cd4daa030cfe61ff1410885892729}
+      \strng{authorfullhashraw}{252cd4daa030cfe61ff1410885892729}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducing bytecode runtime into a persistent operating system}
+      \field{type}{Bachelors work}
+      \field{year}{2024}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
