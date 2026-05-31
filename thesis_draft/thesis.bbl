@@ -633,8 +633,34 @@
       \verb https://habr.com/ru/articles/331974/
       \endverb
     \endentry
+    \entry{Antonov_Anton}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=b146316006d368e92e5401e6b5f8c67a}{%
+           family={Antonov},
+           familyi={A\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Innopolis University}%
+      }
+      \strng{namehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{fullhash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{fullhashraw}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{bibnamehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authorbibnamehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authornamehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authorfullhash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authorfullhashraw}{b146316006d368e92e5401e6b5f8c67a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Persistency in microkernel OS: porting experience of Phantom OS to Genode OS Framework}
+      \field{type}{Bachelors work}
+      \field{year}{2021}
+    \endentry
   \enddatalist
-  \missing{Antonov_Antonov}
 \endrefsection
 \endinput
 
