@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  1 JUN 2026 19:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  1 JUN 2026 21:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2090,12 +2090,12 @@ Package hyperref Info: Link coloring ON on input line 123.
 \openout4 = `thesis.out'.
 
 \c@lstlisting=\count511
-<title.pdf, id=144, 598.235pt x 845.1575pt>
+<title.pdf, id=164, 598.235pt x 845.1575pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf>
 Package pdftex.def Info: title.pdf  used on input line 125.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<title.pdf, id=146, page=1, 598.235pt x 845.1575pt>
+<title.pdf, id=166, page=1, 598.235pt x 845.1575pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
 Package pdftex.def Info: title.pdf , page1 used on input line 125.
@@ -2367,24 +2367,24 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2F973E3D316AF51DCEF00FFE6048A737;4818.
+(rerunfilecheck)             Checksum: 3570F24A0BB7CBEBC165C38B928E9D6F;5276.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29582 strings out of 468907
- 508737 string characters out of 5460991
+ 29592 strings out of 468907
+ 508847 string characters out of 5460991
  1347395 words of memory out of 5000000
- 57646 multiletter control sequences out of 15000+600000
+ 57651 multiletter control sequences out of 15000+600000
  664584 words of font info for 86 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  72i,17n,117p,1551b,2359s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (33 pages, 258660 bytes).
+Output written on thesis.pdf (33 pages, 260168 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
- 483 compressed objects within 5 object streams
- 120 named destinations out of 1000 (max. 500000)
- 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 570 PDF objects out of 1000 (max. 8388607)
+ 509 compressed objects within 6 object streams
+ 125 named destinations out of 1000 (max. 500000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
 
