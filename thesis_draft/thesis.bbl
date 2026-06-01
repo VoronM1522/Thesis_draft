@@ -738,6 +738,77 @@
       \field{type}{Bachelors work}
       \field{year}{2024}
     \endentry
+    \entry{FOSDEM_Snapper}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=bea6d745955cd872e8e66a16205d13b4}{%
+           family={Mitov},
+           familyi={M\bibinitperiod},
+           given={Rumen},
+           giveni={R\bibinitperiod}}}%
+        {{hash=55c79176468ff72d103924598aa91c8e}{%
+           family={Tormasov},
+           familyi={T\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{fullhash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{fullhashraw}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{bibnamehash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{authorbibnamehash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{authornamehash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{authorfullhash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{authorfullhashraw}{434ea54de8ffb4ff7d18e61201f4378a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{FOSDEM 2026, Microkernel and Component-Based OS devroom}
+      \field{month}{2}
+      \field{note}{Дата обращения: 2025}
+      \field{title}{Practical Persistence on Microkernels (ft. {PhantomOS})}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://fosdem.org/2026/schedule/event/DJ8YVT-practical-persistence/
+      \endverb
+      \verb{url}
+      \verb https://fosdem.org/2026/schedule/event/DJ8YVT-practical-persistence/
+      \endverb
+    \endentry
+    \entry{FOSDEM_Snapper_paper}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=bea6d745955cd872e8e66a16205d13b4}{%
+           family={Mitov},
+           familyi={M\bibinitperiod},
+           given={Rumen},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {FOSDEM 2026}%
+      }
+      \strng{namehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{fullhash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{fullhashraw}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{bibnamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorbibnamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authornamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorfullhash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorfullhashraw}{bea6d745955cd872e8e66a16205d13b4}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Snapper (v2): A {PhantomOS} Snapshot Mechanism}
+      \field{type}{techreport}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://fosdem.org/2026/events/attachments/DJ8YVT-practical-persistence/slides/267604/snapper-v_5dptkby.pdf
+      \endverb
+      \verb{url}
+      \verb https://fosdem.org/2026/events/attachments/DJ8YVT-practical-persistence/slides/267604/snapper-v_5dptkby.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

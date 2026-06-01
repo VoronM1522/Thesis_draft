@@ -2400,6 +2400,8 @@
     <bcf:citekey order="22" intorder="1">Brisilin_Anton</bcf:citekey>
     <bcf:citekey order="23" intorder="1">Samburskiy_Kirill</bcf:citekey>
     <bcf:citekey order="24" intorder="1">GitHub_Snapper</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">FOSDEM_Snapper</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">FOSDEM_Snapper_paper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
