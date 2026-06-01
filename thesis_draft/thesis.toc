@@ -26,16 +26,16 @@
 \contentsline {section}{\numberline {3.1}Use cases}{23}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Requirements}{23}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Implementation plan}{23}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Implementation}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}}{25}{section.4.2}%
-\contentsline {section}{\numberline {4.3}}{25}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}}{26}{section.5.1}%
-\contentsline {section}{\numberline {5.2}}{26}{section.5.2}%
-\contentsline {section}{\numberline {5.3}}{26}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Conclusion}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}}{27}{section.6.1}%
-\contentsline {chapter}{Bibliography cited}{28}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Extra Stuff}{33}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Even More Extra Stuff}{34}{appendix.B}%
+\contentsline {chapter}{\numberline {4}Implementation}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}}{26}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}}{27}{section.5.2}%
+\contentsline {section}{\numberline {5.3}}{27}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusion}{28}{chapter.6}%
+\contentsline {section}{\numberline {6.1}}{28}{section.6.1}%
+\contentsline {chapter}{Bibliography cited}{29}{chapter*.6}%
+\contentsline {chapter}{\numberline {A}Extra Stuff}{34}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Even More Extra Stuff}{35}{appendix.B}%

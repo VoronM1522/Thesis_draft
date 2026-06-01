@@ -480,6 +480,11 @@ INPUT ./use_cases.pdf
 INPUT ./use_cases.pdf
 INPUT ./use_cases.pdf
 INPUT ./use_cases.pdf
+INPUT ./use_cases_supported.pdf
+INPUT ./use_cases_supported.pdf
+INPUT ./use_cases_supported.pdf
+INPUT ./use_cases_supported.pdf
+INPUT ./use_cases_supported.pdf
 INPUT ./chapters/chapter4.tex
 INPUT ./chapters/chapter4.tex
 OUTPUT chapters/chapter4.aux

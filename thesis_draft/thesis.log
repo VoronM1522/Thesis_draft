@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  2 JUN 2026 02:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  2 JUN 2026 03:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1988,7 +1988,11 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
+ (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux
+
+LaTeX Warning: Label `fig:use_cases' multiply defined.
+
+) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
@@ -2214,7 +2218,7 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 
  (./chapters/chapter3.tex
 Chapter 3.
-<use_cases.pdf, id=416, 2420.13242pt x 3400.47269pt>
+<use_cases.pdf, id=418, 2420.13242pt x 3400.47269pt>
 File: use_cases.pdf Graphic file (type pdf)
 <use use_cases.pdf>
 Package pdftex.def Info: use_cases.pdf  used on input line 10.
@@ -2222,17 +2226,25 @@ Package pdftex.def Info: use_cases.pdf  used on input line 10.
 
 LaTeX Warning: Float too large for page by 24.26334pt on input line 13.
 
+<use_cases_supported.pdf, id=419, 2420.13242pt x 3400.47269pt>
+File: use_cases_supported.pdf Graphic file (type pdf)
+<use use_cases_supported.pdf>
+Package pdftex.def Info: use_cases_supported.pdf  used on input line 18.
+(pdftex.def)             Requested size: 464.40904pt x 652.53052pt.
+
+LaTeX Warning: Float too large for page by 24.26334pt on input line 21.
+
 ) [23
 
 
 
 
-] [24 <./use_cases.pdf>]
+] [24 <./use_cases.pdf>] [25 <./use_cases_supported.pdf>]
 \openout2 = `chapters/chapter4.aux'.
 
  (./chapters/chapter4.tex
 Chapter 4.
-) [25
+) [26
 
 
 
@@ -2242,7 +2254,7 @@ Chapter 4.
 
  (./chapters/chapter5.tex
 Chapter 5.
-) [26
+) [27
 
 
 
@@ -2252,7 +2264,7 @@ Chapter 5.
 
  (./chapters/chapter6.tex
 Chapter 6.
-) [27
+) [28
 
 
 
@@ -2278,7 +2290,7 @@ Overfull \hbox (25.56607pt too wide) in paragraph at lines 155--155
 Package biblatex Warning: No driver for 'documentation'.
 (biblatex)                Using fallback driver on input line 155.
 
-[28
+[29
 
 
 
@@ -2310,7 +2322,7 @@ Overfull \hbox (24.55547pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
  []
 
-[29]
+[30]
 Overfull \hbox (9.01021pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Сборка мусора в персистентной модели: От терабайта
  []
@@ -2329,7 +2341,7 @@ Overfull \hbox (24.22165pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 A. An-ton, \T2A/Tempora-TLF/m/it/14.4 Isomem\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
  []
 
-[30]
+[31]
 
 Package biblatex Warning: No driver for 'github'.
 (biblatex)                Using fallback driver on input line 155.
@@ -2343,17 +2355,17 @@ Overfull \hbox (0.9973pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 M. Stein, \T2A/Tempora-TLF/m/it/14.4 File vault (readme)\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / genodelabs /
  []
 
-[31] [32]
+[32] [33]
 \openout2 = `chapters/appex.aux'.
 
  (./chapters/appex.tex
 Appendix A.
-[33
+[34
 
 
 ]
 Appendix B.
-) [34
+) [35
 
 ]
 
@@ -2369,25 +2381,28 @@ L3 programming layer <2026-01-19>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D75EE040DDC3D2E5553350E438871066;5276.
+(rerunfilecheck)             Checksum: 7513A1D44506EF05128229B31B148944;5276.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29611 strings out of 468907
- 509247 string characters out of 5460991
- 1353754 words of memory out of 5000000
- 57668 multiletter control sequences out of 15000+600000
+ 29620 strings out of 468907
+ 509503 string characters out of 5460991
+ 1353802 words of memory out of 5000000
+ 57675 multiletter control sequences out of 15000+600000
  664584 words of font info for 86 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  87i,17n,117p,1551b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (34 pages, 873820 bytes).
+Output written on thesis.pdf (35 pages, 1488345 bytes).
 PDF statistics:
- 1142 PDF objects out of 1200 (max. 8388607)
- 798 compressed objects within 8 object streams
- 127 named destinations out of 1000 (max. 500000)
- 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1714 PDF objects out of 1728 (max. 8388607)
+ 1086 compressed objects within 11 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 
