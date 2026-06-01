@@ -21,16 +21,16 @@
 \contentsline {section}{\numberline {2.4}Data protection at rest}{20}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Threats to stored data}{20}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Ways to protect stored data}{21}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Current work}{21}{subsection.2.4.3}%
-\contentsline {chapter}{\numberline {3}Methodology}{22}{chapter.3}%
-\contentsline {section}{\numberline {3.1}}{22}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Implementation}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}}{23}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}}{23}{subsection.4.1.1}%
-\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}}{24}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}}{25}{section.6.1}%
-\contentsline {chapter}{Bibliography cited}{26}{chapter*.4}%
-\contentsline {chapter}{\numberline {A}Extra Stuff}{30}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Even More Extra Stuff}{31}{appendix.B}%
+\contentsline {subsection}{\numberline {2.4.3}Current work}{22}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {3}Methodology}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}}{23}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Implementation}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}}{24}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}}{24}{subsection.4.1.1}%
+\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}}{25}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Conclusion}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}}{26}{section.6.1}%
+\contentsline {chapter}{Bibliography cited}{27}{chapter*.4}%
+\contentsline {chapter}{\numberline {A}Extra Stuff}{32}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Even More Extra Stuff}{33}{appendix.B}%

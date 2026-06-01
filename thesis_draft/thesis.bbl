@@ -897,6 +897,86 @@
       \verb https://web.engr.oregonstate.edu/~benl/Publications/Journals/ACM_Computing_Surveys_2020.pdf
       \endverb
     \endentry
+    \entry{NIST_SP800111}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=6ea98e3682d33480471e822adaacdc41}{%
+           family={Scarfone},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ffbf3d2da7973bafe66533b2afd05546}{%
+           family={Souppaya},
+           familyi={S\bibinitperiod},
+           given={Murugiah},
+           giveni={M\bibinitperiod}}}%
+        {{hash=54a72192c107f3648b9382aeab40e7f9}{%
+           family={Sexton},
+           familyi={S\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{e78c6af0c60d5232f50e342025fca0b5}
+      \strng{fullhash}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{fullhashraw}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{bibnamehash}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{authorbibnamehash}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{authornamehash}{e78c6af0c60d5232f50e342025fca0b5}
+      \strng{authorfullhash}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{authorfullhashraw}{9a5032d4a2ea56e4619e278a726c01f2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{SP 800-111}
+      \field{title}{Guide to Storage Encryption Technologies for End User Devices}
+      \field{type}{techreport}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.6028/NIST.SP.800-111
+      \endverb
+      \verb{urlraw}
+      \verb https://csrc.nist.gov/pubs/sp/800/111/final
+      \endverb
+      \verb{url}
+      \verb https://csrc.nist.gov/pubs/sp/800/111/final
+      \endverb
+    \endentry
+    \entry{CryptoFS}{misc}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=b282245a7e98791e3918f8a7413ce988}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Charles\bibnamedelima P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{fullhash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{fullhashraw}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{bibnamehash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{authorbibnamehash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{authornamehash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{authorfullhash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{authorfullhashraw}{b8186b335e8cd81ef9f393eecb4b2765}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Proceedings of the 2003 IEEE Security in Storage Workshop}
+      \field{title}{Cryptographic File Systems Performance: What You Don't Know Can Hurt You}
+      \field{year}{2003}
+      \verb{urlraw}
+      \verb https://www.filesystems.org/docs/nc-perf/index.html
+      \endverb
+      \verb{url}
+      \verb https://www.filesystems.org/docs/nc-perf/index.html
+      \endverb
+    \endentry
     \entry{GitHub_tresor}{github}{}{}
       \name{author}{1}{}{%
         {{hash=d4d8a1018d3b16e8d27ca0741a0b181c}{%
@@ -914,8 +994,8 @@
       \strng{authorfullhash}{d4d8a1018d3b16e8d27ca0741a0b181c}
       \strng{authorfullhashraw}{d4d8a1018d3b16e8d27ca0741a0b181c}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{"Available: \url{https://github.com/genodelabs/genode/blob/sculpt-25.04/repos/gems/src/lib/tresor/README}"}
@@ -939,8 +1019,8 @@
       \strng{authorfullhash}{d4d8a1018d3b16e8d27ca0741a0b181c}
       \strng{authorfullhashraw}{d4d8a1018d3b16e8d27ca0741a0b181c}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{"Available: \url{https://github.com/genodelabs/genode/blob/sculpt-25.04/repos/gems/src/app/file_vault/README}"}
@@ -964,8 +1044,8 @@
       \strng{authorfullhash}{d4d8a1018d3b16e8d27ca0741a0b181c}
       \strng{authorfullhashraw}{d4d8a1018d3b16e8d27ca0741a0b181c}
       \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Tresor (README)}

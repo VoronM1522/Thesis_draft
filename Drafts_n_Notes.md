@@ -531,7 +531,21 @@ Snapper в текущей версии (Snapper 2.0) призван решить
   
   Данными в покое называют любые данные, хранящиеся на персистентных носителях и не участвующие в активной передаче или обработке. Они статичны и подвержены угрозам связанным с физическим или логическим доступом. На диске могут располагаться чувствительные данные, которые могут быть считаны или перезаписаны. В контексте PhantomOS ситуация осложняется тем, что снапшот делается независимо от того, какие данные находятся в памяти, и в него могут попасть секретные данные, даже если на прикладном уровне программы предусмотрена их защита собственными средствами \cite{SNIA_PM_Security}. Это схоже с проблемой защиты снапшотов виртуальных машин \cite{VM_Security}.
   
+  Способы защиты данных должны соответствовать модели угроз, которая, в свою очередь, напрямую зависит от сценариев использования устройства. В этом подразделе будет проведен лишь краткий обзор таких способов без подробного объяснения выбора того или иного способа.
   
+  В данном случае мы говорим о шифровании хранилища. Мы не рассматриваем варианты с надежными физическими и/или логическими ограничениями доступа. Шифрование можно классифицировать по полноте \cite{NIST_SP800111} :
+  
+  - Полное шифрование диска;
+  - Шифрование томов и виртуальных дисков;
+  - Шифрование файлов и папок;
+  
+  и по уровню  \cite{CryptoFS}:
+  
+  - Блочный уровень;
+  - Уровень файловой системы (обобщено, делится на несколько пунктов ко количеству и удалению ФС);
+  - Уровень прикладных приложений;
+  
+  Это уровни используемые на уровне ОС и выше. Каждый более высокий уровень оставляет метаданные более низкого уровня открытыми. Помимо них возможны реализация на аппаратном низком уровне, что будет прозрачно для ОС. Ввиду отсутствия в Genode проверенных таких систем такого или инструментов для их создания, этот уровень рассматриваться не будет.
   
   В данной работае мы будем заниматься внедрением среды для безопасного хранения снапшотов. Это будет хранилище с шщифрованием на блосном уровне, что повысит безопасность в сравнении с шифрованием на уровне файловой системы и выше, скрыв метаинформацию и усложнив процесс получения данных о системе. Этому также способствует то, что в Genode уже существует библиотека \cite{GitHub_tresor} для этого и тестовый компонент \cite{GitHub_file_vault, Page_file_vault}.
   ```
@@ -543,7 +557,16 @@ Snapper в текущей версии (Snapper 2.0) призван решить
   
   Data at rest refers to any data stored on persistent storage media that is not currently being actively transmitted or processed. It is static and vulnerable to threats related to physical or logical access. Sensitive data may be stored on the disk and could be read or overwritten. In the context of PhantomOS, the situation is complicated by the fact that a snapshot is taken regardless of what data is in memory, and secret data may end up in it, even if the application level of the program provides for its protection using its own means \cite{SNIA_PM_Security}. This is similar to the problem of protecting virtual machine snapshots \cite{VM_Security}.
   
-  
+  Data protection methods must align with the threat model, which, in turn, depends directly on the device’s usage scenarios. This subsection provides only a brief overview of such methods, without a detailed explanation of why a particular method might be chosen.
+  In this case, we are discussing storage encryption. We do not consider options involving robust physical and/or logical access controls. Encryption can be classified by scope \cite{NIST_SP800111}:
+  - Full disk encryption;
+  - Volume and virtual disk encryption;
+  - File and folder encryption;
+  and by level \cite{CryptoFS}:
+  - Block level;
+  - File system level (generalized, divided into several points regarding the number and removal of file systems);
+  - Application level;
+  These are the levels used at the OS level and above. Each higher level leaves the metadata of the lower level exposed. In addition to these, implementation at a low-level hardware level is possible, which would be transparent to the OS. Due to the absence in Genode of verified systems of this type or tools for their creation, this level will not be considered.
   
   In this paper, we will focus on implementing an environment for the secure storage of snapshots. This will be a block-level encrypted storage system, which will enhance security compared to file-system-level encryption and higher, by hiding metadata and making it more difficult to extract system information. This is also facilitated by the fact that Genode already has a library \cite{GitHub_tresor} for this purpose and a test component \cite{GitHub_file_vault, Page_file_vault}.
   ```
@@ -571,6 +594,24 @@ Snapper внес вклад в улучшение безопасности сн�
 
 
 \subsection{Ways to protect stored data}
+
+
+
+Способы защиты данных должны соответствовать модели угроз, которая, в свою очередь, напрямую зависит от сценариев использования устройства. В этом подразделе будет проведен лишь краткий обзор таких способов без подробного объяснения выбора того или иного способа.
+
+В данном случае мы говорим о шифровании хранилища. Мы не рассматриваем варианты с надежными физическими и/или логическими ограничениями доступа. Шифрование можно классифицировать по полноте \cite{NIST_SP800111} :
+
+- Полное шифрование диска;
+- Шифрование томов и виртуальных дисков;
+- Шифрование файлов и папок;
+
+и по уровню  \cite{CryptoFS}:
+
+- Блочный уровень;
+- Уровень файловой системы (обобщено, делится на несколько пунктов ко количеству и удалению ФС);
+- Уровень прикладных приложений;
+
+Это уровни используемые на уровне ОС и выше. Каждый более высокий уровень оставляет метаданные более низкого уровня открытыми. Помимо них возможны реализация на аппаратном низком уровне, что будет прозрачно для ОС. Ввиду отсутствия в Genode проверенных таких систем такого или инструментов для их создания, этот уровень рассматриваться не будет. 
 
 
 

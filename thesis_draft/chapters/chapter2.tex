@@ -118,6 +118,21 @@ Data at rest refers to any data stored on persistent storage media that is not c
 
 \subsection{Ways to protect stored data}
 
+Data protection methods must align with the threat model, which, in turn, depends directly on the device’s usage scenarios. This subsection provides only a brief overview of such methods, without a detailed explanation of why a particular method might be chosen.
+In this case, we are discussing storage encryption. We do not consider options involving robust physical and/or logical access controls. Encryption can be classified by scope \cite{NIST_SP800111}:
+\begin{itemize}
+    \item Full disk encryption;
+    \item Volume and virtual disk encryption;
+    \item File and folder encryption;
+\end{itemize}
+and by level \cite{CryptoFS}:
+\begin{itemize}
+    \item Block level;
+    \item File system level (generalized, divided into several points regarding the number and removal of file systems);
+    \item Application level;
+\end{itemize}
+These are the levels used at the OS level and above. Each higher level leaves the metadata of the lower level exposed. In addition to these, implementation at a low-level hardware level is possible, which would be transparent to the OS. Due to the absence in Genode of verified systems of this type or tools for their creation, this level will not be considered.
+
 \subsection{Current work}
 
 In this paper, we will focus on implementing an environment for the secure storage of snapshots. This will be a block-level encrypted storage system, which will enhance security compared to file-system-level encryption and higher, by hiding metadata and making it more difficult to extract system information. This is also facilitated by the fact that Genode already has a library \cite{GitHub_tresor} for this purpose and a test component \cite{GitHub_file_vault, Page_file_vault}.
