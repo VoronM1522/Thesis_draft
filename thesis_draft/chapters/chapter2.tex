@@ -73,7 +73,7 @@ All of this is specified in the documentation \cite{Phantom_docs}.
 
 \subsection{Mechanisms for ensuring persistence}
 
-Dmitry Zavalishin believes that it is impossible to preserve the state of the entire machine, but this is not necessary to achieve persistence \cite{Habr_Persistent_Mem}. Therefore, we will now discuss the mechanisms for ensuring a persistent environment. Persistence in PhantomOS is achieved by page-by-page mapping of the entire memory (PVM) to disk and periodically saving it. The kernel manages the snapshot process. It takes snapshots after first bringing the programs to a state where they are fully represented in memory. That is, all information from the processor registers is also transferred for this purpose. Application programs are blocked only during this brief preparation phase. The disk is switched to read-only mode during this process, but this does not cause a lock throughout the entire process of writing the snapshot to disk thanks to the use of CoW: if a page has been written to the snapshot, nothing prevents access to it; otherwise, a copy is created, which the program operates on, and the original page is moved closer to the front of the save queue \cite{Habr_Persistent_Mem}. Writing the entire memory to disk with every snapshot is a very costly operation that is unnecessary. To optimize this process, only the increment is written to disk, and preemptive writing is also used. The latter, by the way, serves two purposes:
+Dmitry Zavalishin believes that it is impossible to preserve the state of the entire machine, but this is not necessary to achieve persistence \cite{Habr_Persistent_Mem}. Therefore, we will now discuss the mechanisms for ensuring a persistent environment. Persistence in PhantomOS is achieved by page-by-page mapping of the entire memory (PVM) to disk and periodically saving it. The kernel manages the snapshot process. It takes snapshots after first bringing the programs to a state where they are fully represented in memory. That is, all information from the processor registers is also transferred for this purpose. Application programs are blocked only during this brief preparation phase. The disk is switched to read-only mode during this process, but this does not cause a lock throughout the entire process of writing the snapshot to disk thanks to the use of CoW: if a page has been written to the snapshot, nothing prevents access to it; otherwise, a copy is created, which the program operates on, and the original page is moved closer to the front of the save queue \cite{Habr_Persistent_Mem, PM_wiki}. Writing the entire memory to disk with every snapshot is a very costly operation that is unnecessary. To optimize this process, only the increment is written to disk, and preemptive writing is also used. The latter, by the way, serves two purposes:
 \begin{itemize}
     \item To speed up the snapshot writing process;
     \item To meet the increased demand for memory during the snapshot;
@@ -110,3 +110,8 @@ The current version of Snapper (Snapper 2.0) is designed to address the issues e
 
 \section{Data protection at rest}
 
+Snapper has helped improve snapshot security by adding integrity checks, but neither it nor any other component ensures secure storage. They are stored on disk in plaintext, which can pose a serious security risk in many device usage scenarios.
+
+\subsection{Threats to stored data}
+
+\subsection{Ways to protect stored data}
