@@ -114,6 +114,8 @@ Snapper has helped improve snapshot security by adding integrity checks, but nei
 
 \subsection{Threats to stored data}
 
-Data at rest refers to any data stored on persistent storage media that is not currently being actively transmitted or processed. It is static and vulnerable to threats related to physical or logical access. Sensitive data may be stored on the disk and could be read or overwritten. In the context of PhantomOS, the situation is complicated by the fact that a snapshot is taken regardless of what data is in memory, and secret data may end up in it, even if the application level of the program provides for its protection using its own means \citeSNIA_PM_Security}. This is similar to the problem of protecting virtual machine snapshots \cite{VM_Security}.
+Data at rest refers to any data stored on persistent storage media that is not currently being actively transmitted or processed. It is static and vulnerable to threats related to physical or logical access. Sensitive data may be stored on the disk and could be read or overwritten. In the context of PhantomOS, the situation is complicated by the fact that a snapshot is taken regardless of what data is in memory, and secret data may end up in it, even if the application level of the program provides for its protection using its own means \cite{SNIA_PM_Security}. This is similar to the problem of protecting virtual machine snapshots \cite{VM_Security}.
 
 \subsection{Ways to protect stored data}
+
+\subsection{Current work}

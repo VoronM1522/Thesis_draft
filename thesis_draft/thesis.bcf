@@ -2403,7 +2403,8 @@
     <bcf:citekey order="24" intorder="1">GitHub_Snapper</bcf:citekey>
     <bcf:citekey order="25" intorder="1">FOSDEM_Snapper</bcf:citekey>
     <bcf:citekey order="25" intorder="2">FOSDEM_Snapper_paper</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">VM_Security</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">SNIA_PM_Security</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">VM_Security</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

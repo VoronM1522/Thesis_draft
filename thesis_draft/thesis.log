@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  1 JUN 2026 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  1 JUN 2026 18:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1981,7 +1981,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./thesis.aux)
+ (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
@@ -2085,16 +2085,17 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 123.
+ (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
 \c@lstlisting=\count511
-<title.pdf, id=4, 598.235pt x 845.1575pt>
+<title.pdf, id=144, 598.235pt x 845.1575pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf>
 Package pdftex.def Info: title.pdf  used on input line 125.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<title.pdf, id=6, page=1, 598.235pt x 845.1575pt>
+<title.pdf, id=146, page=1, 598.235pt x 845.1575pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
 Package pdftex.def Info: title.pdf , page1 used on input line 125.
@@ -2123,34 +2124,48 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 35.83pt on input line 126.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 35.83pt on input line 126.
+ (./thesis.toc
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 14.4pt on input line 3.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 3.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
+ (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [2
 
-No file thesis.toc.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[2
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}]
-No file thesis.lot.
+ [3] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-[3
+ [4
 
-]
-No file thesis.lof.
+] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-[4
+ [5
 
 ]
 \openout2 = `chapters/abstract.aux'.
 
  (./chapters/abstract.tex
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 1.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2195,84 +2210,12 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 
 
 
-] [13] [14] [15] [16] [17] [18] [19]
-./chapters/chapter2.tex:117: Undefined control sequence.
-l.117 ... protection using its own means \citeSNIA
-                                                  _PM_Security}. This is sim...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./chapters/chapter2.tex:117: Missing $ inserted.
-<inserted text> 
-                $
-l.117 ...protection using its own means \citeSNIA_
-                                                  PM_Security}. This is simi...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 117.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 117.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 14.4pt on input line 117.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 117.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 117.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 117.
- (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-./chapters/chapter2.tex:117: Extra }, or forgotten $.
-l.117 ...sing its own means \citeSNIA_PM_Security}
-                                                  . This is similar to the p...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./chapters/chapter2.tex:117: You can't use `\spacefactor' in math mode.
-\blx@leavevmode ...\else \leavevmode \spacefactor 
-                                                  \blx@sf@par \fi 
-l.117 ...ual machine snapshots \cite{VM_Security}.
-                                                  
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Citation 'VM_Security' on page 20 undefined on input line 117.
-
-./chapters/chapter2.tex:118: Missing $ inserted.
-<inserted text> 
-                $
-l.118 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-Missing character: There is no т in font cmex10!
-
-Overfull \hbox (53.72356pt too wide) in paragraph at lines 117--118
-[]\T2A/Tempora-TLF/m/it/14.4 M[]ecurity\OML/cmm/m/it/14.4 :\T2A/Tempora-TLF/m/it/14.4 Thisissimilartotheproblemofprotectingvirtualmachinesnapshots[]\OML/cmm/m/it/14.4 :$ 
- []
-
-) [20]
+] [13] [14] [15] [16] [17] [18] [19]) [20] [21]
 \openout2 = `chapters/chapter3.aux'.
 
  (./chapters/chapter3.tex
 Chapter 3.
-) [21
+) [22
 
 
 
@@ -2282,7 +2225,7 @@ Chapter 3.
 
  (./chapters/chapter4.tex
 Chapter 4.
-) [22
+) [23
 
 
 
@@ -2292,7 +2235,7 @@ Chapter 4.
 
  (./chapters/chapter5.tex
 Chapter 5.
-) [23
+) [24
 
 
 
@@ -2302,7 +2245,7 @@ Chapter 5.
 
  (./chapters/chapter6.tex
 Chapter 6.
-) [24
+) [25
 
 
 
@@ -2328,7 +2271,7 @@ Overfull \hbox (25.56607pt too wide) in paragraph at lines 153--153
 Package biblatex Warning: No driver for 'documentation'.
 (biblatex)                Using fallback driver on input line 153.
 
-[25
+[26
 
 
 
@@ -2360,7 +2303,7 @@ Overfull \hbox (24.55547pt too wide) in paragraph at lines 153--153
 []\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
  []
 
-[26]
+[27]
 Overfull \hbox (9.01021pt too wide) in paragraph at lines 153--153
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Сборка мусора в персистентной модели: От терабайта
  []
@@ -2379,17 +2322,17 @@ Overfull \hbox (24.22165pt too wide) in paragraph at lines 153--153
 []\T2A/Tempora-TLF/m/n/14.4 A. An-ton, \T2A/Tempora-TLF/m/it/14.4 Isomem\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
  []
 
-[27] [28]
+[28] [29]
 \openout2 = `chapters/appex.aux'.
 
  (./chapters/appex.tex
 Appendix A.
-[29
+[30
 
 
 ]
 Appendix B.
-) [30
+) [31
 
 ]
 
@@ -2409,42 +2352,25 @@ L3 programming layer <2026-01-19>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  64707EF2A2FD44105C57530706F2A4C4;4693.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 2F973E3D316AF51DCEF00FFE6048A737;4818.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29475 strings out of 468907
- 506321 string characters out of 5460991
- 1318734 words of memory out of 5000000
- 57577 multiletter control sequences out of 15000+600000
+ 29560 strings out of 468907
+ 507899 string characters out of 5460991
+ 1344078 words of memory out of 5000000
+ 57631 multiletter control sequences out of 15000+600000
  664584 words of font info for 86 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 72i,17n,117p,1551b,1866s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (29 pages, 253641 bytes).
+ 72i,17n,117p,1551b,2359s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on thesis.pdf (31 pages, 252693 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 298 compressed objects within 3 object streams
- 108 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 513 PDF objects out of 1000 (max. 8388607)
+ 455 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
 

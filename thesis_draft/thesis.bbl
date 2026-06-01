@@ -835,6 +835,68 @@
       \verb https://fosdem.org/2026/events/attachments/DJ8YVT-practical-persistence/slides/267604/snapper-v_5dptkby.pdf
       \endverb
     \endentry
+    \entry{SNIA_PM_Security}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=308d7b5b090264fbc63ad360a00ed9e4}{%
+           family={Carlson},
+           familyi={C\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{fullhash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{fullhashraw}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{bibnamehash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{authorbibnamehash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{authornamehash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{authorfullhash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{authorfullhashraw}{308d7b5b090264fbc63ad360a00ed9e4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Flash Memory Summit 2018}
+      \field{title}{Persistent Memory Security Threat Model}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://files.futurememorystorage.com/proceedings/2018/20180807_PMEM-101-1_Carlson.pdf
+      \endverb
+      \verb{url}
+      \verb https://files.futurememorystorage.com/proceedings/2018/20180807_PMEM-101-1_Carlson.pdf
+      \endverb
+    \endentry
+    \entry{VM_Security}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=18be0a4133d3ebea262695379ca1e4d8}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{0885016c0810092765194882a8345b66}
+      \strng{fullhash}{0885016c0810092765194882a8345b66}
+      \strng{fullhashraw}{0885016c0810092765194882a8345b66}
+      \strng{bibnamehash}{0885016c0810092765194882a8345b66}
+      \strng{authorbibnamehash}{0885016c0810092765194882a8345b66}
+      \strng{authornamehash}{0885016c0810092765194882a8345b66}
+      \strng{authorfullhash}{0885016c0810092765194882a8345b66}
+      \strng{authorfullhashraw}{0885016c0810092765194882a8345b66}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{title}{Security Issues and Challenges for Virtualization Technologies}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://web.engr.oregonstate.edu/~benl/Publications/Journals/ACM_Computing_Surveys_2020.pdf
+      \endverb
+      \verb{url}
+      \verb https://web.engr.oregonstate.edu/~benl/Publications/Journals/ACM_Computing_Surveys_2020.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

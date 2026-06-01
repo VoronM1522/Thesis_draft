@@ -529,7 +529,7 @@ Snapper в текущей версии (Snapper 2.0) призван решить
   ```
   Snapper внес вклад в улучшение безопасности снапшотов, добавив контрольь целостности, однако ни он, ни какой-либо другой компонент не позволяют достичь безопасного хранения. Они лежат на диске в plaintext, что может стать серьезной проблемой безопасности при многих сценариях использования устройства.
   
-  Данными в покое называют любые данные, хранящиеся на персистентных носителях и не участвующие в активной передаче или обработке. Они статичны и подвержены угрозам связанным с физическим или логическим доступом. На диске могут располагаться чувствительные данные, которые могут быть считаны или перезаписаны. В контексте PhantomOS ситуация осложняется тем, что снапшот делается независимо от того, какие данные находятся в памяти, и в него могут попасть секретные данные, даже если на прикладном уровне программы предусмотрена их защита собственными средствами \citeSNIA_PM_Security}. Это схоже с проблемой защиты снапшотов виртуальных машин \cite{VM_Security}.
+  Данными в покое называют любые данные, хранящиеся на персистентных носителях и не участвующие в активной передаче или обработке. Они статичны и подвержены угрозам связанным с физическим или логическим доступом. На диске могут располагаться чувствительные данные, которые могут быть считаны или перезаписаны. В контексте PhantomOS ситуация осложняется тем, что снапшот делается независимо от того, какие данные находятся в памяти, и в него могут попасть секретные данные, даже если на прикладном уровне программы предусмотрена их защита собственными средствами \cite{SNIA_PM_Security}. Это схоже с проблемой защиты снапшотов виртуальных машин \cite{VM_Security}.
   ```
 
 - **en**
@@ -537,7 +537,7 @@ Snapper в текущей версии (Snapper 2.0) призван решить
   ```
   Snapper has helped improve snapshot security by adding integrity checks, but neither it nor any other component ensures secure storage. They are stored on disk in plaintext, which can pose a serious security risk in many device usage scenarios.
   
-  Data at rest refers to any data stored on persistent storage media that is not currently being actively transmitted or processed. It is static and vulnerable to threats related to physical or logical access. Sensitive data may be stored on the disk and could be read or overwritten. In the context of PhantomOS, the situation is complicated by the fact that a snapshot is taken regardless of what data is in memory, and secret data may end up in it, even if the application level of the program provides for its protection using its own means \citeSNIA_PM_Security}. This is similar to the problem of protecting virtual machine snapshots \cite{VM_Security}.
+  Data at rest refers to any data stored on persistent storage media that is not currently being actively transmitted or processed. It is static and vulnerable to threats related to physical or logical access. Sensitive data may be stored on the disk and could be read or overwritten. In the context of PhantomOS, the situation is complicated by the fact that a snapshot is taken regardless of what data is in memory, and secret data may end up in it, even if the application level of the program provides for its protection using its own means \cite{SNIA_PM_Security}. This is similar to the problem of protecting virtual machine snapshots \cite{VM_Security}.
   ```
 
 Snapper внес вклад в улучшение безопасности снапшотов, добавив контрольь целостности, однако ни он, ни какой-либо другой компонент не позволяют достичь безопасного хранения. Они лежат на диске в plaintext, что может стать серьезной проблемой безопасности при многих сценариях использования устройства.
@@ -558,7 +558,7 @@ Snapper внес вклад в улучшение безопасности сн�
 
 \subsection{Зачем защищать снапшоты в покое}
 
-Данными в покое называют любые данные, хранящиеся на персистентных носителях и не участвующие в активной передаче или обработке. Они статичны и подвержены угрозам связанным с физическим или логическим доступом. На диске могут располагаться чувствительные данные, которые могут быть считаны или перезаписаны. В контексте PhantomOS ситуация осложняется тем, что снапшот делается независимо от того, какие данные находятся в памяти, и в него могут попасть секретные данные, даже если на прикладном уровне программы предусмотрена их защита собственными средствами \citeSNIA_PM_Security}. Это схоже с проблемой защиты снапшотов виртуальных машин \cite{VM_Security}.
+Данными в покое называют любые данные, хранящиеся на персистентных носителях и не участвующие в активной передаче или обработке. Они статичны и подвержены угрозам связанным с физическим или логическим доступом. На диске могут располагаться чувствительные данные, которые могут быть считаны или перезаписаны. В контексте PhantomOS ситуация осложняется тем, что снапшот делается независимо от того, какие данные находятся в памяти, и в него могут попасть секретные данные, даже если на прикладном уровне программы предусмотрена их защита собственными средствами \cite{SNIA_PM_Security}. Это схоже с проблемой защиты снапшотов виртуальных машин \cite{VM_Security}.
 
 
 
