@@ -12,8 +12,8 @@ Before describing the diagram itself, it’s worth mentioning what it depicts an
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases.pdf}
-    \caption{Use case scheme}
+    \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases_supported.pdf}
+    \caption{Supported use case scheme}
     \label{fig:use_cases}
 \end{figure}
 
@@ -25,14 +25,7 @@ Scenarios involving only trusted methods are simplified as much as possible, sin
 
 \subsection{Supported use cases}
 
-For our work, we selected secure authorization scenarios in which all users have unrestricted access to the device. These scenarios differ from insecure ones in that they guarantee that the snapshot remains encrypted upon completion.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases_supported.pdf}
-    \caption{Supported use case scheme}
-    \label{fig:use_cases}
-\end{figure}
+For our work, we selected secure authorization scenarios in which all users have unrestricted access to the device. These scenarios differ from insecure ones in that they guarantee the snapshot remains encrypted upon completion of the operation. The diagram omits details regarding the choice of authentication factor and encryption type. The use of external storage for the key is due to the simplicity of implementation while maintaining a security level acceptable to us. This will allow us to combine authentication with decryption.
 
 \section{Requirements}
 

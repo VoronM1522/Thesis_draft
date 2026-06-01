@@ -671,7 +671,7 @@ Snapper внес вклад в улучшение безопасности сн�
   
   \begin{figure}[H]
       \centering
-      \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases.pdf}
+      \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases_supported.pdf}
       \caption{Use case scheme}
       \label{fig:use_cases}
   \end{figure}
@@ -681,6 +681,10 @@ Snapper внес вклад в улучшение безопасности сн�
   First, four initial states were identified. These were derived by classifying the states based on access method and user privileges. In this context, remote access refers to the ability to interact with the computer exclusively through trusted input/output devices. Arbitrary access refers to the absence of any restrictions on interaction. In fact, the set of remote access options is a subset of the set of arbitrary access options. Of course, security issues at the hardware level can lead to system compromise. Exploits below the OS level (hardware, firmware) are not considered in this work and do not affect the security assessment of the scenario. The same applies to users. A trusted user is one whose access to the computer is legitimate. By and large, the task boils down to ensuring that, of all users, only trusted ones can gain access.
   
   Scenarios involving only trusted methods are simplified as much as possible, since with such a separation, the task at hand is always accomplished. To identify trusted users, we use authentication software that we consider reliable. We also believe that authentication factors are selected in such a way that their validity unambiguously identifies a trusted user. Among the remaining options, those without authentication and remote access are significantly simplified
+  
+  \subsection{Supported use cases}
+  
+  For our work, we selected secure authorization scenarios in which all users have unrestricted access to the device. These scenarios differ from insecure ones in that they guarantee the snapshot remains encrypted upon completion of the operation. The diagram omits details regarding the choice of authentication factor and encryption type. The use of external storage for the key is due to the simplicity of implementation while maintaining a security level acceptable to us. This will allow us to combine authentication with decryption.
   ```
 
 Чтобы выдвинуть наиболее подходящие требования к компоненту, необходимо определиться со сценарием использования устройства. Для этого была построена схема сценариев использования компьютера, на ней были отмечены небезопасные и безопасные сценарии. Из безопасных были отобраны поддерживаемые, реализуемые в рамках данной работы.
@@ -699,7 +703,7 @@ Snapper внес вклад в улучшение безопасности сн�
 
 
 
-Для нашей работы были выбраны безопасные сценарии с авторизацией, при которых произвольный доступ к устройству имеют все пользователи. От небезопасных их отличает то, что они гарантируют зашифрованное состояние снапшота по завершении работы.
+Для нашей работы были выбраны безопасные сценарии с авторизацией, при которых произвольный доступ к устройству имеют все пользователи. От небезопасных их отличает то, что они гарантируют зашифрованное состояние снапшота по завершении работы. На схеме опущены детали выбора фактора аутентификации и типа шифрования. Использование внешнего хранилища для ключа обусловлено простотой реалицации при приемлемым для нас уровне безопасности. Это позволит объединить аутентификацию с дешифрованием.   
 
 
 
