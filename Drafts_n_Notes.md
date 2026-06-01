@@ -648,15 +648,40 @@ Snapper внес вклад в улучшение безопасности сн�
 - **ru**
 
   ```
+  Чтобы выдвинуть наиболее подходящие требования к компоненту, необходимо определиться со сценарием использования устройства. Для этого была построена схема сценариев использования компьютера, на ней были отмечены небезопасные и безопасные сценарии. Из безопасных были отобраны поддерживаемые, реализуемые в рамках данной работы.
   
+  Прежде чем описывать саму схему, стоит сказать о том, что на ней изображено и как она строилась. Схема представляет из себя граф, обход котороо начинается и заканчивается состоянием "Poewer off". На ней изображен весь цикл работы компьютера. Каждый возможный путь является отдельным сценарием использования. При ее составлении мы стремились описать абсолютно все сценарии использования компьютера, сгруппировав их по важным для нас признакам. Группировка делалась без частичных пересечений или полных совпадений, фактическая работа может и, зачастую, будет описываться комбинациями таких сценариев. Состояния, от которых не зависит последующее состояние или безопасность всего пути, были исключены для простоты. Также не рассматривались априори неверные случаи, например, получение валидного фактора аутентификации от недоверенного пользователя.
   ```
 
 - **en**
 
   ```
+  To identify the most appropriate requirements for the component, it is necessary to define the device’s usage scenarios. To this end, a diagram of computer usage scenarios was created, with unsafe and safe scenarios marked on it. From among the safe scenarios, those that are supported and can be implemented within the scope of this project were selected.
+  
+  \subsection{All use cases}
+  
+  Before describing the diagram itself, it’s worth mentioning what it depicts and how it was constructed. The diagram is a graph whose cycle begins and ends with the “Power off” state. It illustrates the entire computer operation cycle. Each possible path represents a distinct usage scenario. When creating it, we aimed to describe absolutely all possible computer usage scenarios, grouping them according to criteria that were important to us. The grouping was done without partial overlaps or complete overlaps; actual operation may, and often will, be described by combinations of such scenarios. States on which the subsequent state or the security of the entire path does not depend were excluded for simplicity. We also did not consider a priori invalid cases, such as receiving a valid authentication factor from an untrusted user.
+  
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases.pdf}
+      \caption{Use case scheme}
+      \label{fig:use_cases}
+  \end{figure}
+  
   ```
 
+Чтобы выдвинуть наиболее подходящие требования к компоненту, необходимо определиться со сценарием использования устройства. Для этого была построена схема сценариев использования компьютера, на ней были отмечены небезопасные и безопасные сценарии. Из безопасных были отобраны поддерживаемые, реализуемые в рамках данной работы.
 
+
+
+\subsection{All use cases}
+
+Прежде чем описывать саму схему, стоит сказать о том, что на ней изображено и как она строилась. Схема представляет из себя граф, обход котороо начинается и заканчивается состоянием "Poewer off". На ней изображен весь цикл работы компьютера. Каждый возможный путь является отдельным сценарием использования. При ее составлении мы стремились описать абсолютно все сценарии использования компьютера, сгруппировав их по важным для нас признакам. Группировка делалась без частичных пересечений или полных совпадений, фактическая работа может и, зачастую, будет описываться комбинациями таких сценариев. Состояния, от которых не зависит последующее состояние или безопасность всего пути, были исключены для простоты. Также не рассматривались априори неверные случаи, например, получение валидного фактора аутентификации от недоверенного пользователя.
+
+В первую очередь было выявлено 4 начальных состояния. Они были получены разделением по признакам способа доступа и доверенности пользователя. В данном случае удаленный доступ подразумевает возможность взаисмодействия с компьютером исключительно через доверенные устройства ввода-вывода. Произвольный доступ подразумевает отсутствие каких-либо ограничений во взаимодействии. Фактически, множество вариантов удаленного доступа.
+
+\subsection{Supported use cases}
 
 
 

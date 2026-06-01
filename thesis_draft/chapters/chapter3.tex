@@ -4,16 +4,25 @@ This chapter discusses system requirements and the implementation plan. First, w
 
 \section{Use cases}
 
+To identify the most appropriate requirements for the component, it is necessary to define the device’s usage scenarios. To this end, a diagram of computer usage scenarios was created, with unsafe and safe scenarios marked on it. From among the safe scenarios, those that are supported and can be implemented within the scope of this project were selected.
 
-\begin{figure}[p]
+\subsection{All use cases}
+
+Before describing the diagram itself, it’s worth mentioning what it depicts and how it was constructed. The diagram is a graph whose cycle begins and ends with the “Power off” state. It illustrates the entire computer operation cycle. Each possible path represents a distinct usage scenario. When creating it, we aimed to describe absolutely all possible computer usage scenarios, grouping them according to criteria that were important to us. The grouping was done without partial overlaps or complete overlaps; actual operation may, and often will, be described by combinations of such scenarios. States on which the subsequent state or the security of the entire path does not depend were excluded for simplicity. We also did not consider a priori invalid cases, such as receiving a valid authentication factor from an untrusted user.
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases.pdf}
     \caption{Use case scheme}
     \label{fig:use_cases}
 \end{figure}
 
+text2
 
-\begin{figure}[p]
+
+\subsection{Supported use cases}
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases_supported.pdf}
     \caption{Supported use case scheme}
