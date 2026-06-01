@@ -119,3 +119,5 @@ Data at rest refers to any data stored on persistent storage media that is not c
 \subsection{Ways to protect stored data}
 
 \subsection{Current work}
+
+In this paper, we will focus on implementing an environment for the secure storage of snapshots. This will be a block-level encrypted storage system, which will enhance security compared to file-system-level encryption and higher, by hiding metadata and making it more difficult to extract system information. This is also facilitated by the fact that Genode already has a library \cite{GitHub_tresor} for this purpose and a test component \cite{GitHub_file_vault, Page_file_vault}.

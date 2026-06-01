@@ -530,6 +530,10 @@ Snapper в текущей версии (Snapper 2.0) призван решить
   Snapper внес вклад в улучшение безопасности снапшотов, добавив контрольь целостности, однако ни он, ни какой-либо другой компонент не позволяют достичь безопасного хранения. Они лежат на диске в plaintext, что может стать серьезной проблемой безопасности при многих сценариях использования устройства.
   
   Данными в покое называют любые данные, хранящиеся на персистентных носителях и не участвующие в активной передаче или обработке. Они статичны и подвержены угрозам связанным с физическим или логическим доступом. На диске могут располагаться чувствительные данные, которые могут быть считаны или перезаписаны. В контексте PhantomOS ситуация осложняется тем, что снапшот делается независимо от того, какие данные находятся в памяти, и в него могут попасть секретные данные, даже если на прикладном уровне программы предусмотрена их защита собственными средствами \cite{SNIA_PM_Security}. Это схоже с проблемой защиты снапшотов виртуальных машин \cite{VM_Security}.
+  
+  
+  
+  В данной работае мы будем заниматься внедрением среды для безопасного хранения снапшотов. Это будет хранилище с шщифрованием на блосном уровне, что повысит безопасность в сравнении с шифрованием на уровне файловой системы и выше, скрыв метаинформацию и усложнив процесс получения данных о системе. Этому также способствует то, что в Genode уже существует библиотека \cite{GitHub_tresor} для этого и тестовый компонент \cite{GitHub_file_vault, Page_file_vault}.
   ```
 
 - **en**
@@ -538,6 +542,10 @@ Snapper в текущей версии (Snapper 2.0) призван решить
   Snapper has helped improve snapshot security by adding integrity checks, but neither it nor any other component ensures secure storage. They are stored on disk in plaintext, which can pose a serious security risk in many device usage scenarios.
   
   Data at rest refers to any data stored on persistent storage media that is not currently being actively transmitted or processed. It is static and vulnerable to threats related to physical or logical access. Sensitive data may be stored on the disk and could be read or overwritten. In the context of PhantomOS, the situation is complicated by the fact that a snapshot is taken regardless of what data is in memory, and secret data may end up in it, even if the application level of the program provides for its protection using its own means \cite{SNIA_PM_Security}. This is similar to the problem of protecting virtual machine snapshots \cite{VM_Security}.
+  
+  
+  
+  In this paper, we will focus on implementing an environment for the secure storage of snapshots. This will be a block-level encrypted storage system, which will enhance security compared to file-system-level encryption and higher, by hiding metadata and making it more difficult to extract system information. This is also facilitated by the fact that Genode already has a library \cite{GitHub_tresor} for this purpose and a test component \cite{GitHub_file_vault, Page_file_vault}.
   ```
 
 Snapper внес вклад в улучшение безопасности снапшотов, добавив контрольь целостности, однако ни он, ни какой-либо другой компонент не позволяют достичь безопасного хранения. Они лежат на диске в plaintext, что может стать серьезной проблемой безопасности при многих сценариях использования устройства.
@@ -562,7 +570,15 @@ Snapper внес вклад в улучшение безопасности сн�
 
 
 
+\subsection{Ways to protect stored data}
 
+
+
+\subsection{Our work}
+
+
+
+В данной работае мы будем заниматься внедрением среды для безопасного хранения снапшотов. Это будет хранилище с шщифрованием на блосном уровне, что повысит безопасность в сравнении с шифрованием на уровне файловой системы и выше, скрыв метаинформацию и усложнив процесс получения данных о системе. Этому также способствует то, что в Genode уже существует библиотека \cite{GitHub_tresor} для этого и тестовый компонент \cite{GitHub_file_vault, Page_file_vault}.
 
 
 

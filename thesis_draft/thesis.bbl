@@ -897,6 +897,86 @@
       \verb https://web.engr.oregonstate.edu/~benl/Publications/Journals/ACM_Computing_Surveys_2020.pdf
       \endverb
     \endentry
+    \entry{GitHub_tresor}{github}{}{}
+      \name{author}{1}{}{%
+        {{hash=d4d8a1018d3b16e8d27ca0741a0b181c}{%
+           family={Stein},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{fullhash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{fullhashraw}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{bibnamehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authorbibnamehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authornamehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authorfullhash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authorfullhashraw}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{"Available: \url{https://github.com/genodelabs/genode/blob/sculpt-25.04/repos/gems/src/lib/tresor/README}"}
+      \field{title}{Tresor (README)}
+      \field{year}{2024}
+    \endentry
+    \entry{GitHub_file_vault}{github}{}{}
+      \name{author}{1}{}{%
+        {{hash=d4d8a1018d3b16e8d27ca0741a0b181c}{%
+           family={Stein},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{fullhash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{fullhashraw}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{bibnamehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authorbibnamehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authornamehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authorfullhash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authorfullhashraw}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{"Available: \url{https://github.com/genodelabs/genode/blob/sculpt-25.04/repos/gems/src/app/file_vault/README}"}
+      \field{title}{File Vault (README)}
+      \field{year}{2025}
+    \endentry
+    \entry{Page_file_vault}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d4d8a1018d3b16e8d27ca0741a0b181c}{%
+           family={Stein},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{fullhash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{fullhashraw}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{bibnamehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authorbibnamehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authornamehash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authorfullhash}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \strng{authorfullhashraw}{d4d8a1018d3b16e8d27ca0741a0b181c}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tresor (README)}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://genodians.org/m-stein/2021-05-17-introducing-the-file-vault
+      \endverb
+      \verb{url}
+      \verb https://genodians.org/m-stein/2021-05-17-introducing-the-file-vault
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
