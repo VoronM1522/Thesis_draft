@@ -25,7 +25,7 @@ Scenarios involving only trusted methods are simplified as much as possible, sin
 
 \subsection{Supported use cases}
 
-For our work, we selected secure authorization scenarios in which all users have unrestricted access to the device. These scenarios differ from insecure ones in that they guarantee the snapshot remains encrypted upon completion of the operation. The diagram omits details regarding the choice of authentication factor and encryption type. The use of external storage for the key is due to the simplicity of implementation while maintaining a security level acceptable to us. This will allow us to combine authentication with decryption.
+For our work, we selected secure authorization scenarios in which all users have unrestricted access to the device. These scenarios differ from insecure ones in that they guarantee the snapshot remains encrypted upon completion of the operation. We also note that scenarios in which, after granting access to a trusted user, an untrusted user gains access are not considered. In other words, every user, without exception, goes through authorization. The diagram omits details regarding the choice of authentication factor and encryption type. The use of external storage for the key is due to the simplicity of implementation while maintaining a security level acceptable to us. This will allow us to combine authentication with decryption.
 
 \section{Requirements}
 
