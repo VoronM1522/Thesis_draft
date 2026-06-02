@@ -491,6 +491,19 @@ OUTPUT chapters/chapter4.aux
 INPUT ./chapters/chapter4.tex
 INPUT ./chapters/chapter4.tex
 INPUT chapters/chapter4.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/public/tempora/Tempora-Regular-TLF-t2a.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/tempora/Tempora-Italic-TLF-t2a.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eurb5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/tempora/Tempora-Regular-TLF-t2a.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/lhcyr/lh-t2a/larm1000.tfm
 INPUT /home/VM/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 INPUT ./chapters/chapter5.tex
@@ -544,4 +557,5 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
