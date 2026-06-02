@@ -755,15 +755,16 @@ Snapper внес вклад в улучшение безопасности сн�
 - **ru**
 
   ```
-  
+  В Genode уже есть компонент file_vault, используемый для создания безопасного хранилища. Для шифрования используется библиотека Tresor. Планируется адаптироват этот компонент для шифрования снапшотов. Для этого будет убран весь нетребуемый функционал, по большей части касающийся пользовательского взаимодействия через графический интерфейс. Также будет добавлена возможность восстановлени файловой системы с помощью fsck. Будет добавлена возможность корректного завершения работы через графический интерфейс Phantom, так как сейчас для этого есть только заглушка. Для других компонентов системы это должно быть прозрачно и не потребует каких либо изменений. Помимо этого будут проведены работы по оптимизации, а компонент будет сконфигурирован для использования ключей с флешки.
   ```
 
 - **en**
 
   ```
+  Genode already includes a file\_vault component used to create secure storage. The Tresor library is used for encryption. We plan to adapt this component for encrypting snapshots. To do this, all unnecessary functionality—mostly related to user interaction via the graphical interface—will be removed. The ability to recover the file system using fsck will also be added. The ability to properly shut down via the Phantom GUI will be added, as currently there is only a placeholder for this. For other system components, this should be transparent and require no changes. In addition, optimization work will be carried out, and the component will be configured to use keys from a USB flash drive.
   ```
 
 
 
-
+В Genode уже есть компонент file_vault, используемый для создания безопасного хранилища. Для шифрования используется библиотека Tresor. Планируется адаптироват этот компонент для шифрования снапшотов. Для этого будет убран весь нетребуемый функционал, по большей части касающийся пользовательского взаимодействия через графический интерфейс. Также будет добавлена возможность восстановлени файловой системы с помощью fsck. Будет добавлена возможность корректного завершения работы через графический интерфейс Phantom, так как сейчас для этого есть только заглушка. Для других компонентов системы это должно быть прозрачно и не потребует каких либо изменений. Помимо этого будут проведены работы по оптимизации, а компонент будет сконфигурирован для использования ключей с флешки.
 
