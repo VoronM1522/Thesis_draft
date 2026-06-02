@@ -491,6 +491,8 @@ OUTPUT chapters/chapter4.aux
 INPUT ./chapters/chapter4.tex
 INPUT ./chapters/chapter4.tex
 INPUT chapters/chapter4.tex
+INPUT /home/VM/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 INPUT ./chapters/chapter5.tex
 INPUT ./chapters/chapter5.tex
 OUTPUT chapters/chapter5.aux
@@ -503,8 +505,6 @@ OUTPUT chapters/chapter6.aux
 INPUT ./chapters/chapter6.tex
 INPUT ./chapters/chapter6.tex
 INPUT chapters/chapter6.tex
-INPUT /home/VM/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm
-INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 INPUT ./chapters/appex.tex
 INPUT ./chapters/appex.tex
 OUTPUT chapters/appex.aux
@@ -543,4 +543,5 @@ OUTPUT thesis.run.xml
 INPUT /usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
