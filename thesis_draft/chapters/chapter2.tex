@@ -135,4 +135,6 @@ These are the levels used at the OS level and above. Each higher level leaves th
 
 \subsection{Current work}
 
-In this paper, we will focus on implementing an environment for the secure storage of snapshots. This will be a block-level encrypted storage system, which will enhance security compared to file-system-level encryption and higher, by hiding metadata and making it more difficult to extract system information. This is also facilitated by the fact that Genode already has a library \cite{GitHub_tresor} for this purpose and a test component \cite{GitHub_file_vault, Page_file_vault}.
+In this project, we will focus on implementing an environment for the secure storage of snapshots. This will be a block-level encrypted storage solution, which will enhance security compared to file-system-level encryption and higher, by hiding metadata and making it more difficult to extract system information. This is also facilitated by the fact that Genode already has a library \cite{GitHub_tresor} for this purpose and a test component \cite{GitHub_file_vault, Page_file_vault}. 
+
+Tresor performs AES encryption on 4K-sized blocks. The virtual block device key is encrypted with a master key, which is managed by the Trust Anchor. Copy-on-write (CoW) is used during writing, ensuring the atomicity of the operation and improving the ability to recover from failures. The component uses SHA-256 for data integrity checking.
