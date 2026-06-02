@@ -730,28 +730,51 @@ SHA-хешем. Хеши организованы в дерево Меркла: 
 - **en**
 
   ```
+  \section{Use cases}
+  
   To identify the most appropriate requirements for the component, it is necessary to define the device’s usage scenarios. To this end, a diagram of computer usage scenarios was created, with unsafe and safe scenarios marked on it. From among the safe scenarios, those that are supported and can be implemented within the scope of this project were selected.
   
   \subsection{All use cases}
   
-  Before describing the diagram itself, it’s worth mentioning what it depicts and how it was constructed. The diagram is a graph whose cycle begins and ends with the “Power off” state. It illustrates the entire computer operation cycle. Each possible path represents a distinct usage scenario. When creating it, we aimed to describe absolutely all possible computer usage scenarios, grouping them according to criteria that were important to us. The grouping was done without partial overlaps or complete overlaps; actual operation may, and often will, be described by combinations of such scenarios. States on which the subsequent state or the security of the entire path does not depend were excluded for simplicity. We also did not consider a priori invalid cases, such as receiving a valid authentication factor from an untrusted user.
+  Before describing the diagram on fig.~\ref{fig:use_cases}, it’s worth mentioning what it depicts and how it was constructed. The diagram is a graph whose cycle begins and ends with the “Power off” state. It illustrates the entire computer operation cycle. Each possible path represents a distinct usage scenario. When creating it, we aimed to describe absolutely all possible computer usage scenarios, grouping them according to criteria that were important to us. The grouping was done without partial overlaps or complete overlaps; actual operation may, and often will, be described by combinations of such scenarios. States on which the subsequent state or the security of the entire path does not depend were excluded for simplicity. Cases that are a priori incorrect were also not considered, such as receiving a valid authentication factor from an untrusted user.
   
   \begin{figure}[H]
       \centering
-      \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases_supported.pdf}
+      \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases.pdf}
       \caption{Use case scheme}
       \label{fig:use_cases}
   \end{figure}
   
-  Before describing the diagram itself, it’s worth mentioning what it depicts and how it was constructed. The diagram is a graph whose cycle begins and ends with the “Power off” state. It illustrates the entire computer operation cycle. Each possible path represents a distinct usage scenario. When creating it, we aimed to describe absolutely all possible computer usage scenarios, grouping them according to criteria that were important to us. The grouping was done without partial overlaps or complete overlaps; actual operation may, and often will, be described by combinations of such scenarios. States on which the subsequent state or the security of the entire path does not depend were excluded for simplicity. Cases that are a priori incorrect were also not considered, such as receiving a valid authentication factor from an untrusted user.
-  
   First, four initial states were identified. These were derived by classifying the states based on access method and user privileges. In this context, remote access refers to the ability to interact with the computer exclusively through trusted input/output devices. Arbitrary access refers to the absence of any restrictions on interaction. In fact, the set of remote access options is a subset of the set of arbitrary access options. Of course, security issues at the hardware level can lead to system compromise. Exploits below the OS level (hardware, firmware) are not considered in this work and do not affect the security assessment of the scenario. The same applies to users. A trusted user is one whose access to the computer is legitimate. By and large, the task boils down to ensuring that, of all users, only trusted ones can gain access.
   
-  Scenarios involving only trusted methods are simplified as much as possible, since with such a separation, the task at hand is always accomplished. To identify trusted users, we use authentication software that we consider reliable. We also believe that authentication factors are selected in such a way that their validity unambiguously identifies a trusted user. Among the remaining options, those without authentication and remote access are significantly simplified
+  Scenarios involving only trusted methods are simplified as much as possible, since with such a separation, the task at hand is always accomplished. To identify trusted users, we use authentication software that we consider reliable. We also believe that authentication factors are selected in such a way that their validity unambiguously identifies a trusted user. Among the remaining options, those without authentication and remote access are significantly simplified.
   
   \subsection{Supported use cases}
   
-  For our work, we selected secure authorization scenarios in which all users have unrestricted access to the device. These scenarios differ from insecure ones in that they guarantee the snapshot remains encrypted upon completion of the operation. We also note that scenarios in which, after granting access to a trusted user, an untrusted user gains access are not considered. In other words, every user, without exception, goes through authorization. The diagram omits details regarding the choice of authentication factor and encryption type. The use of external storage for the key is due to the simplicity of implementation while maintaining a security level acceptable to us. This will allow us to combine authentication with decryption.
+  For our work, we selected secure authorization scenarios in which all users have unrestricted access to the device. You can find it on fig.~\ref{fig:use_cases_supported}. These scenarios differ from insecure ones in that they guarantee the snapshot remains encrypted upon completion of the operation. We also note that scenarios in which, after granting access to a trusted user, an untrusted user gains access are not considered. In other words, every user, without exception, goes through authorization. The diagram omits details regarding the choice of authentication factor and encryption type. The use of external storage for the key is due to the simplicity of implementation while maintaining a security level acceptable to us. This will allow us to combine authentication with decryption.
+  
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{use_cases_supported.pdf}
+      \caption{Supported use case scheme}
+      \label{fig:use_cases_supported}
+  \end{figure}
+  
+  \section{Requirements}
+  
+  The scenario dictates the following implementation requirements:
+  \begin{enumerate}
+      \item Mandatory authorization;
+      \item Storage of keys on an external medium;
+      \item Encryption of snapshots;
+      \item Guarantee that only encrypted snapshots are stored;
+  \end{enumerate}
+  The first two requirements can be combined. Since a long key is required for reliable encryption, a USB drive containing it will serve as a secure factor that is difficult to forge. This will simplify the process without compromising the quality of the result. As mentioned earlier, Genode includes a library for block-level encryption—Tresor. It will enable the fulfillment of the last two requirements. Encryption will occur upon writing each block, ensuring that only encrypted data is written to the disk.
+  
+  \section{Implementation plan}
+  
+  Genode already includes a file\_vault component used to create secure storage. The Tresor library is used for encryption. We plan to adapt this component for encrypting snapshots. To do this, all unnecessary functionality—mostly related to user interaction via the graphical interface—will be removed. The ability to recover the file system using fsck will also be added. The ability to properly shut down via the Phantom GUI will be added, as currently there is only a placeholder for this. For other system components, this should be transparent and require no changes. In addition, optimization work will be carried out, and the component will be configured to use keys from a USB flash drive.
+  
   ```
 
 Чтобы выдвинуть наиболее подходящие требования к компоненту, необходимо определиться со сценарием использования устройства. Для этого была построена схема сценариев использования компьютера, на ней были отмечены небезопасные и безопасные сценарии. Из безопасных были отобраны поддерживаемые, реализуемые в рамках данной работы.

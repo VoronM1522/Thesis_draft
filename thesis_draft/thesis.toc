@@ -25,17 +25,17 @@
 \contentsline {chapter}{\numberline {3}Methodology}{23}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Use cases}{23}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}All use cases}{23}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Supported use cases}{27}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Requirements}{27}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Implementation plan}{28}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Implementation}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}File\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault adaptation}{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Related adaptations and optimizations}{30}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Tests and results}{32}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}}{35}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{36}{chapter.6}%
-\contentsline {section}{\numberline {6.1}}{36}{section.6.1}%
-\contentsline {chapter}{Bibliography cited}{37}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Extra Stuff}{42}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Even More Extra Stuff}{43}{appendix.B}%
+\contentsline {subsection}{\numberline {3.1.2}Supported use cases}{26}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Requirements}{29}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Implementation plan}{29}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Implementation}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault adaptation}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Related adaptations and optimizations}{32}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Tests and results}{34}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}}{37}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Conclusion}{38}{chapter.6}%
+\contentsline {section}{\numberline {6.1}}{38}{section.6.1}%
+\contentsline {chapter}{Bibliography cited}{39}{chapter*.6}%
+\contentsline {chapter}{\numberline {A}Extra Stuff}{44}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Even More Extra Stuff}{45}{appendix.B}%
