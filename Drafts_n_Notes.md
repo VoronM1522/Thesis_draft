@@ -853,6 +853,8 @@ SHA-хешем. Хеши организованы в дерево Меркла: 
   Далее была проведена оптимизация. 
   
   При взгляде на file\_vault нетрудно заметить, что компонент с именем \textit{tresor\_vfs} получает доступ к файлу-образу. используя блочную сессию, получаемую от vfs-плагина \textit{block}. Сделано это, вероятно, для удобства конфигурации и изменения размера хранилища. Нас же устроит фиксированный размер, не привышающий размер  имеющегося диска. Поэтому мы можем избавиться т кода для создания файла-образа и прокинуть блочную сессию напрямую. Аналогичный прием используем для хранилища Trust Anchor: вместо File\_system сессии передаем блочную сессию к USB.
+  
+  Мы не забыли, что Tresor работает с 4K блоками. Для лучшей согласованности и уменьшения расходов на управление блоками все они (на блочном уровне, на уровне ФС) были приведены к такому размеру.
   ```
 
 - **en**
@@ -879,6 +881,8 @@ SHA-хешем. Хеши организованы в дерево Меркла: 
   At the time the work described above was completed, the system still lacked a standard shutdown procedure, which meant that Tresor never flushed all blocks explicitly; consequently, there was a risk of losing the latest generation in the event of a failed shutdown. This issue was resolved by making changes to isomem, snapper, and vfs. A callback for the power-off button was added to isomem. After the button is pressed, the system sets a flag indicating readiness to shut down. This triggers the creation of the final snapshot either immediately (while waiting for a snapshot) or after the current snapshot is completed, after which isomem releases CPU resources but does not signal its termination to the system. To fix this, the termination process was replaced with a call to \textit{env.parent().exit(0)}. Client counters were added to vfs, snapper, and vfs, which triggered termination in the same way when reset to zero; however, an exit flag was also added for vfs, since this counter was reset during state transitions.
   
   Next, optimization was performed. Looking at \textit{file\_vault}, it is easy to see that the component named \textit{tresor\_vfs} accesses the file image using a block session obtained from the \textit{block} VFS plugin. This was likely done for the convenience of configuring and resizing the storage. However, a fixed size that does not exceed the size of the available disk will suffice for us. Therefore, we can remove the code for creating the image file and pass the block session directly. We use a similar approach for the Trust Anchor storage: instead of the File\_system session, we pass the block session to the USB.
+  
+  We haven’t forgotten that Tresor works with 4K blocks. To ensure better consistency and reduce the overhead of managing blocks, all of them (at the block level and at the file system level) have been standardized to this size.
   ```
 
 В этой главе мы рассмотрим реализацию компонента, расскажем о его тестировании и результатах. В Секции 4.1 рассмотрим   структуру искомого компонента, расскажем о внесенных изменениях. Секция 4.2 будет посвященаадаптации других компонентов, которая потребовалась для обеспечения рабтоспособности нашего решения. В Секции 4.3 опишем методику тестирования и результаты самих тестов.
@@ -911,7 +915,7 @@ UI был оценен, как избыточный, поскольку snapper 
 
 Далее была проведена оптимизация. При взгляде на file\_vault нетрудно заметить, что компонент с именем \textit{tresor\_vfs} получает доступ к файлу-образу. используя блочную сессию, получаемую от vfs-плагина \textit{block}. Сделано это, вероятно, для удобства конфигурации и изменения размера хранилища. Нас же устроит фиксированный размер, не привышающий размер  имеющегося диска. Поэтому мы можем избавиться т кода для создания файла-образа и прокинуть блочную сессию напрямую. Аналогичный прием используем для хранилища Trust Anchor: вместо File\_system сессии передаем блочную сессию к USB.
 
-Также
+Мы не забыли, что Tresor работает с 4K блоками. Для лучшей согласованности и уменьшения расходов на управление блоками все они (на блочном уровне, на уровне ФС) были приведены к такому размеру.
 
 
 

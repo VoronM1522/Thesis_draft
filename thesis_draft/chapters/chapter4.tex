@@ -22,6 +22,8 @@ At the time the work described above was completed, the system still lacked a st
 
 Next, optimization was performed. Looking at \textit{file\_vault}, it is easy to see that the component named \textit{tresor\_vfs} accesses the file image using a block session obtained from the \textit{block} VFS plugin. This was likely done for the convenience of configuring and resizing the storage. However, a fixed size that does not exceed the size of the available disk will suffice for us. Therefore, we can remove the code for creating the image file and pass the block session directly. We use a similar approach for the Trust Anchor storage: instead of the File\_system session, we pass the block session to the USB.
 
+We haven’t forgotten that Tresor works with 4K blocks. To ensure better consistency and reduce the overhead of managing blocks, all of them (at the block level and at the file system level) have been standardized to this size.
+
 \section{Tests and results}
 
 
