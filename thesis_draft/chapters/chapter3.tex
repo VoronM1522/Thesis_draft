@@ -29,4 +29,13 @@ For our work, we selected secure authorization scenarios in which all users have
 
 \section{Requirements}
 
+The scenario dictates the following implementation requirements:
+\begin{enumerate}
+    \item Mandatory authorization;
+    \item Storage of keys on an external medium;
+    \item Encryption of snapshots;
+    \item Guarantee that only encrypted snapshots are stored;
+\end{enumerate}
+The first two requirements can be combined. Since a long key is required for reliable encryption, a USB drive containing it will serve as a secure factor that is difficult to forge. This will simplify the process without compromising the quality of the result. As mentioned earlier, Genode includes a library for block-level encryption—Tresor. It will enable the fulfillment of the last two requirements. Encryption will occur upon writing each block, ensuring that only encrypted data is written to the disk.
+
 \section{Implementation plan}
