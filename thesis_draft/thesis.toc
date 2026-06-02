@@ -37,5 +37,5 @@
 \contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}%
 \contentsline {section}{\numberline {6.1}}{39}{section.6.1}%
 \contentsline {chapter}{Bibliography cited}{40}{chapter*.7}%
-\contentsline {chapter}{\numberline {A}Extra Stuff}{45}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Even More Extra Stuff}{46}{appendix.B}%
+\contentsline {chapter}{\numberline {A}Implementation}{45}{appendix.A}%
+\contentsline {section}{\numberline {A.1}se\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault configuration example}{45}{section.A.1}%

@@ -1,5 +1,68 @@
 \appendix
-\chapter{Extra Stuff}
+\chapter{Implementation}
+\section{se\_vault configuration example}
 
-
-\chapter{Even More Extra Stuff}
+\begin{lstlisting}[breaklines=true]
+<start name="se_vault" caps="1500" ram="2000M">
+ <exit propagate="yes"/>
+ <provides>
+  <service name="File_system"/>
+ </provides>
+ <config
+ jitterentropy_available="yes"
+ fsck_apply="yes">
+  <vfs/>
+ </config>
+ <route>
+  <service name="Block"
+  label_prefix="se_tresor_trust_anchor_vfs ->"> 
+   <child name="usb_sec"
+   identity="se_vault -> trust_anchor"/> 
+  </service>
+  <service name="Block"
+  label_prefix="se_tresor_init ->">
+   <child name="nvme2"
+   identity="se_vault -> data"/>
+  </service>
+  <service name="Block"
+  label_prefix="tresor ->">
+   <child name="nvme2"
+   identity="se_vault -> data"/>
+  </service>
+  <service name="Block"
+  label_prefix="se_tresor_vfs ->">
+   <child name="nvme2"
+   identity="se_vault -> data"/>
+  </service>
+  <service name="Block"
+  label_prefix="init_flag ->">
+   <child name="nvme2"
+   identity="se_vault -> data"/>
+  </service>
+  <service name="Timer">
+   <child name="timer"/>
+  </service>
+  <service name="Report">
+   <child name="report_rom"/>
+   </service>
+  <service name="PD">
+   <parent/>
+  </service>
+  <service name="ROM">
+   <parent/>
+  </service>
+  <service name="CPU">
+   <parent/>
+  </service>
+  <service name="LOG">
+   <parent/>
+  </service>
+  <service name="RM">
+   <parent/>
+  </service>
+  <any-service>
+   <parent/>
+  </any-service>
+ </route>
+</start>
+\end{lstlisting}
