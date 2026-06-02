@@ -30,12 +30,12 @@
 \contentsline {section}{\numberline {3.3}Implementation plan}{28}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Implementation}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Changes in file\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault}{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Related adaptations}{29}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Tests and results}{29}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{30}{chapter.5}%
-\contentsline {section}{\numberline {5.1}}{30}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Conclusion}{31}{chapter.6}%
-\contentsline {section}{\numberline {6.1}}{31}{section.6.1}%
-\contentsline {chapter}{Bibliography cited}{32}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Extra Stuff}{37}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Even More Extra Stuff}{38}{appendix.B}%
+\contentsline {section}{\numberline {4.2}Related adaptations}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Tests and results}{30}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}}{31}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Conclusion}{32}{chapter.6}%
+\contentsline {section}{\numberline {6.1}}{32}{section.6.1}%
+\contentsline {chapter}{Bibliography cited}{33}{chapter*.5}%
+\contentsline {chapter}{\numberline {A}Extra Stuff}{38}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Even More Extra Stuff}{39}{appendix.B}%

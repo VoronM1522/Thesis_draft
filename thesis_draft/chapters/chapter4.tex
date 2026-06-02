@@ -4,7 +4,7 @@ In this chapter, we will examine the implementation of the component, discuss it
 
 \section{Changes in file\_vault}
 
-
+File\_vault manages the state of the components responsible for encryption. It is a state orchestrator within the sandbox that provides File\_system clients with a secure storage session. Upon startup, it prompts the user for a password; if the password matches, it determines the state of the storage and either initializes it or unlocks it. Before shutting down, it seals the component, which flushes all blocks and ensures the storage remains in a consistent state. File\_vault itself receives and routes to its child (orchestrated) components the file system sessions containing the secure storage image file and information belonging to the Trust Anchor. Upon initialization, the file image of the required size, as well as the file system on top of the encrypted block device, are created automatically. There are also mechanisms for resizing the file system and replacing keys at the user's request.
 
 \section{Related adaptations}
 

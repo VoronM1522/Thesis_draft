@@ -840,21 +840,31 @@ SHA-хешем. Хеши организованы в дерево Меркла: 
 
   ```
   В этой главе мы рассмотрим реализацию компонента, расскажем о его тестировании и результатах. В Секции 4.1 рассмотрим   структуру искомого компонента, расскажем о внесенных изменениях. Секция 4.2 будет посвященаадаптации других компонентов, которая потребовалась для обеспечения рабтоспособности нашего решения. В Секции 4.3 опишем методику тестирования и результаты самих тестов.
+  
+  \section{Changes in file\_vault}
+  
+  File\_vault управляет состоянием компонентов, отвечающих за шифрование.  Это оркестратор состояний в sandbox, предоставляющий клиентам File\_system сессию защищенного хранилища. При старте он запрашивает пароль у пользователя, при совпадении определяет состояние хранилища и либо инициализирует его, либо разблокирует. Перед завершением работы он запечатывает компонент, что приводит к сбросу всех блоков и гарантирует консистентное состояние хранилища. Сам file\_vault получает и маршрутизирует к дочерним (оркестрируемым) компонентам сессии файловых систем, в которых находятся файл-образ защищенного хранилища и информация, принадлежащая Trust Anchor. При инициализации файл-образ нужного размера, как и файловая система поверх зашифрованного блочного устройства, создаются автоматически. Также есть механизмы изменения размера ФС и замены ключей по запросу пользователя.
   ```
 
 - **en**
 
   ```
   In this chapter, we will examine the implementation of the component, discuss its testing, and present the results. In Section 4.1, we will examine the structure of the component in question and describe the changes made. Section 4.2 will focus on the adaptation of other components that was necessary to ensure the functionality of our solution. In Section 4.3, we will describe the testing methodology and the results of the tests themselves.
+  
+  \section{Changes in file\_vault}
+  
+  File\_vault manages the state of the components responsible for encryption. It is a state orchestrator within the sandbox that provides File\_system clients with a secure storage session. Upon startup, it prompts the user for a password; if the password matches, it determines the state of the storage and either initializes it or unlocks it. Before shutting down, it seals the component, which flushes all blocks and ensures the storage remains in a consistent state. File\_vault itself receives and routes to its child (orchestrated) components the file system sessions containing the secure storage image file and information belonging to the Trust Anchor. Upon initialization, the file image of the required size, as well as the file system on top of the encrypted block device, are created automatically. There are also mechanisms for resizing the file system and replacing keys at the user's request.
   ```
 
 В этой главе мы рассмотрим реализацию компонента, расскажем о его тестировании и результатах. В Секции 4.1 рассмотрим   структуру искомого компонента, расскажем о внесенных изменениях. Секция 4.2 будет посвященаадаптации других компонентов, которая потребовалась для обеспечения рабтоспособности нашего решения. В Секции 4.3 опишем методику тестирования и результаты самих тестов.
+
+
 
 \section{Changes in file\_vault}
 
 
 
-
+File\_vault управляет состоянием компонентов, отвечающих за шифрование.  Это оркестратор состояний в sandbox, предоставляющий клиентам File\_system сессию защищенного хранилища. При старте он запрашивает пароль у пользователя, при совпадении определяет состояние хранилища и либо инициализирует его, либо разблокирует. Перед завершением работы он запечатывает компонент, что приводит к сбросу всех блоков и гарантирует консистентное состояние хранилища. Сам file\_vault получает и маршрутизирует к дочерним (оркестрируемым) компонентам сессии файловых систем, в которых находятся файл-образ защищенного хранилища и информация, принадлежащая Trust Anchor. При инициализации файл-образ нужного размера, как и файловая система поверх зашифрованного блочного устройства, создаются автоматически. Также есть механизмы изменения размера ФС и замены ключей по запросу пользователя.
 
 
 

@@ -1,0 +1,61 @@
+  ┌─────────────────────────────────────────────────────────────────────┐
+  │                       Parent (Genode env)                           │
+  │  ┌──────────────────────────────┐    ┌──────────────────────────┐   │
+  │  │  File_system "tresor_fs"     │    │  File_system             │   │
+  │  │  (хранит tresor.img)         │    │  "storage_dir"           │   │
+  │  └──────────────┬───────────────┘    └────────────┬─────────────┘   │
+  └─────────────────│─────────────────────────────────│─────────────────┘
+                    │                                 │
+                    │                                 ▼
+                    │                   ┌──────────────────────────────┐
+                    │                   │   tresor_trust_anchor_vfs    │
+                    │                   │                              │
+                    │                   │  /dev/tresor_trust_anchor/   │
+                    │                   │    initialize  (passphrase)  │
+                    │                   │    encrypt / decrypt  (keys) │
+                    │                   │    generate_key              │
+                    │                   │    hash   (superblock hash)  │
+                    │                   │  /dev/jitterentropy          │
+                    │                   └────────────┬─────────────────┘
+                    │                                │ File_system
+                    │                                │ "trust_anchor"
+                    ▼                                ▼
+           ┌────────────────────────────────────────────────────────────┐
+           │                      tresor_vfs                            │
+           │                                                            │
+           │  VFS внутри:                                               │
+           │    tresor_crypto_aes_cbc ──► /crypto   (AES-CBC шифр.)     │
+           │    trust_anchor FS       ──► /trust_anchor                 │
+           │    tresor plugin         ──► /dev/tresor/                  │
+           │       current             (snapshot, данные клиента)       │
+           │       control/rekey       (запуск rekeying)                │
+           │       control/extend      (расширение дерева)              │
+           │       control/deinitialize (lock vault)                    │
+           │                                                            │
+           │  Предоставляет:  File_system                               │
+           └──────────┬─────────────────────────────────────────────────┘
+                      │ File_system
+           ┌──────────┴─────────────────────────────────────────────────┐
+           │                                                            │
+           ▼                                                            ▼
+   ┌────────────────┐           ┌───────────────────────────────────────┐
+   │   vfs_block    │           │  fs_query / fs_tool компоненты        │
+   │                │           │                                       │
+   │  /data → Block │           │  image_fs_query ── читает parent FS   │
+   │  (512-байт     │           │  client_fs_query─ /current (размер)   │
+   │   секторы)     │           │  extend_fs_query─ /control/extend     │
+   └───────┬────────┘           │  rekey_fs_query ─ /control/rekey      │
+           │ Block              │  extend_fs_tool ─ пишет в /extend     │
+           ▼                    │  rekey_fs_tool  ─ пишет в /rekey      │
+   ┌────────────────┐           │          │                            │
+   │   rump_vfs     │           │          ▼  Report                    │
+   │  (ext2 через   │           │    ┌─────────────────────────────┐    │
+   │   rump kernel) │           │    │    file_vault  (Main)        │   │
+   │                │           │    │  state machine / orchestrator│   │
+   └───────┬────────┘           └────┤    запускает/гасит компоненты│   │
+           │ File_system              └─────────────────────────────┘   │
+           ▼                                                            │
+      клиент (приложение                                                │
+      или file_vault_gui)          ◄─────────────────── ui_report ──────┘
+
+
