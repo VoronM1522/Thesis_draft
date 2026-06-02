@@ -868,6 +868,12 @@ SHA-хешем. Хеши организованы в дерево Меркла: 
   Next, an option was added to check and restore the FS state using fsck. Initially, file\_vault created an ext2 filesystem. It was replaced with ext3, and later with ext4. The reason for this was the lack of journaling, which could cause problems during recovery after crashes. The rump\_fs component also drew attention, as it lacks the ability to configure the cache size, which is necessary to achieve a balance between reliability and speed. It was replaced with lwext4.
   
   \section{Related adaptations}
+  
+  After replacing rump\_fs with lwext4, problems arose when creating a file of the desired size. It turned out that \textit{truncate\_file} does not check the file size after creation, and lwext4 does not create a file of a smaller size. The problem was resolved by adding a pointer cast to the \textit{ftruncate} function.
+  
+  The system then started up, but crashed on a subsequent restart, producing numerous hash errors. Attempts to reduce the cache size or disable it yielded no results. The problem was later identified and fixed. The issue was that tresor updates the hash during a call to \textit{sync}. When \textit{sync} is called, lwext4 simply flushes the contents of the buffers to disk. A block of code was added that passes the sync call to the lower levels of the VFS, allowing tresor to correctly receive this call and update the state hash in a timely manner.
+  
+  At the time the work described above was completed, the system still lacked a standard shutdown procedure, which meant that Tresor never flushed all blocks; consequently, there was a risk of losing the latest generation in the event of a failed shutdown. This issue was resolved by making changes to isomem, snapper, and vfs. A callback for the power-off button was added to isomem. After the button is pressed, the system sets a flag indicating readiness to shut down. This triggers the creation of the final snapshot either immediately (while waiting for a snapshot) or after the current snapshot is completed, after which isomem releases CPU resources but does not signal its termination to the system. To address this, the termination process was replaced with a call to \textit{env.parent().exit(0)}. Client counters were added to vfs, snapper, and vfs, which triggered termination in the same way when reset to zero; however, an exit flag was also added for vfs, since this counter was reset during state transitions.
   ```
 
 В этой главе мы рассмотрим реализацию компонента, расскажем о его тестировании и результатах. В Секции 4.1 рассмотрим   структуру искомого компонента, расскажем о внесенных изменениях. Секция 4.2 будет посвященаадаптации других компонентов, которая потребовалась для обеспечения рабтоспособности нашего решения. В Секции 4.3 опишем методику тестирования и результаты самих тестов.
@@ -889,6 +895,14 @@ UI был от оценен, как избыточный, поскольку sna
 
 
 \section{Related adaptations}
+
+
+
+После замены rump_fs на lwext4 возникли проблемы с озданием файла нужного размера. Оказалось, что  \textit{truncate_file} не проверяет размер файла после его создания, а lwext4 не создает файл меньшего размера. Решить проблему удалось, добавив перемещение указателя функции  \textit{ftruncate}.
+
+Далее система стала запускаться, но при повторном запуске падала, выдавая множество ошибок хеша. Эксперементы по уменьшению размера кеша или его отключению результатов не дали. Позже проблема была обнаружена и устранена. Дело в том, что tresor обновляет хеш во время вызова  \textit{sync}. При вызове  \textit{sync} lwext4 выполняет просто сбрасывает содержимое буферов на диск. Был добавлен блок кода, передающий вызов sync на нижние уровни vfs, что позволило tresor корректно получать этот вызов и обновлять хеш состояния своевременно.
+
+На момент завершения вышеописанных работ в системе все еще не было способа штатного завершения работы, из-за чего tresor никогда не сбрасывал все блоки, и при неудачном завершении появлялся риск потери последнего поколения. Устранено это было внесением изменений в isomem, snapper и vfs. В isomem был добавлен callback для кнопки выключения. После нажатия на кнопку система выставляет флаг, сигнализируя о готовности к выключению. Это сразу (во время ожидания снапшота) или после завершения текущего снимка запускает создание последнего снапшота, после чего isomem высвобождает ресурсы CPU, но никак не сигнализирует системе о своем завершении. Для этого процесс завершения был заменен вызовом  \textit{env.parent().exit(0)}. В vfs, snapper и vfs были добавлены счетчики клиентов, которые приводили к завершению тем же способом при его обнулении, но для vfs также был добавлен влаг для выхода, так как в процессе переключения между состояниями этот счетчик обнулялся.
 
 
 

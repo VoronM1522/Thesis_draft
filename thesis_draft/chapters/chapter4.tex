@@ -14,6 +14,11 @@ Next, an option was added to check and restore the FS state using fsck. Initiall
 
 \section{Related adaptations}
 
+After replacing rump\_fs with lwext4, problems arose when creating a file of the desired size. It turned out that \textit{truncate\_file} does not check the file size after creation, and lwext4 does not create a file of a smaller size. The problem was resolved by adding a pointer cast to the \textit{ftruncate} function.
+
+The system then started up, but crashed on a subsequent restart, producing numerous hash errors. Attempts to reduce the cache size or disable it yielded no results. The problem was later identified and fixed. The issue was that tresor updates the hash during a call to \textit{sync}. When \textit{sync} is called, lwext4 simply flushes the contents of the buffers to disk. A block of code was added that passes the sync call to the lower levels of the VFS, allowing tresor to correctly receive this call and update the state hash in a timely manner.
+
+At the time the work described above was completed, the system still lacked a standard shutdown procedure, which meant that Tresor never flushed all blocks; consequently, there was a risk of losing the latest generation in the event of a failed shutdown. This issue was resolved by making changes to isomem, snapper, and vfs. A callback for the power-off button was added to isomem. After the button is pressed, the system sets a flag indicating readiness to shut down. This triggers the creation of the final snapshot either immediately (while waiting for a snapshot) or after the current snapshot is completed, after which isomem releases CPU resources but does not signal its termination to the system. To address this, the termination process was replaced with a call to \textit{env.parent().exit(0)}. Client counters were added to vfs, snapper, and vfs, which triggered termination in the same way when reset to zero; however, an exit flag was also added for vfs, since this counter was reset during state transitions.
 
 
 \section{Tests and results}
