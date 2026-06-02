@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  2 JUN 2026 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  2 JUN 2026 21:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2238,12 +2238,12 @@ Chapter 4.
 
 
 
-] [30]) [31]
+] [30] [31]) [32]
 \openout2 = `chapters/chapter5.aux'.
 
  (./chapters/chapter5.tex
 Chapter 5.
-) [32
+) [33
 
 
 
@@ -2253,7 +2253,7 @@ Chapter 5.
 
  (./chapters/chapter6.tex
 Chapter 6.
-) [33
+) [34
 
 
 
@@ -2279,7 +2279,7 @@ Overfull \hbox (25.56607pt too wide) in paragraph at lines 155--155
 Package biblatex Warning: No driver for 'documentation'.
 (biblatex)                Using fallback driver on input line 155.
 
-[34
+[35
 
 
 
@@ -2311,7 +2311,7 @@ Overfull \hbox (24.55547pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
  []
 
-[35]
+[36]
 Overfull \hbox (9.01021pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Сборка мусора в персистентной модели: От терабайта
  []
@@ -2330,7 +2330,7 @@ Overfull \hbox (24.22165pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 A. An-ton, \T2A/Tempora-TLF/m/it/14.4 Isomem\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
  []
 
-[36]
+[37]
 
 Package biblatex Warning: No driver for 'github'.
 (biblatex)                Using fallback driver on input line 155.
@@ -2344,17 +2344,17 @@ Overfull \hbox (0.9973pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 M. Stein, \T2A/Tempora-TLF/m/it/14.4 File vault (readme)\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / genodelabs /
  []
 
-[37] [38]
+[38] [39]
 \openout2 = `chapters/appex.aux'.
 
  (./chapters/appex.tex
 Appendix A.
-[39
+[40
 
 
 ]
 Appendix B.
-) [40
+) [41
 
 ]
 
@@ -2371,24 +2371,24 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E31EA937795C06C3C703764A875BCB97;5802.
+(rerunfilecheck)             Checksum: 56042B550675B7137D2D5270FA722714;5898.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29622 strings out of 468907
- 509417 string characters out of 5460991
- 1352763 words of memory out of 5000000
+ 29623 strings out of 468907
+ 509424 string characters out of 5460991
+ 1353763 words of memory out of 5000000
  57669 multiletter control sequences out of 15000+600000
  664584 words of font info for 86 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 87i,17n,117p,1551b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,117p,1658b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (40 pages, 884649 bytes).
+Output written on thesis.pdf (41 pages, 886420 bytes).
 PDF statistics:
- 1139 PDF objects out of 1200 (max. 8388607)
- 806 compressed objects within 9 object streams
- 137 named destinations out of 1000 (max. 500000)
+ 1143 PDF objects out of 1200 (max. 8388607)
+ 809 compressed objects within 9 object streams
+ 138 named destinations out of 1000 (max. 500000)
  341 words of extra memory for PDF output out of 10000 (max. 10000000)
 
