@@ -1,0 +1,166 @@
+
+[W][03706.147017] pw.conf      | [          conf.c: 1031 try_load_conf()] can't load config client.conf: No such file or directory
+[E][03706.147023] pw.conf      | [          conf.c: 1060 pw_conf_load_conf_for_context()] can't load config client.conf: No such file or directory
+XDG_RUNTIME_DIR (/run/user/1000) is not owned by us (uid 0), but by uid 1000! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+pulseaudio: pa_context_connect() failed
+pulseaudio: Reason: Connection refused
+pulseaudio: Failed to initialize PA context
+Bender Version 0.9-beta7-51-g28ba2ad-dirty
+Patching BDA with I/O port 0x3f8.
+Bender: Hello World.
+hwp config: eeo=na irq=na hwp=na epp=na epb=na
+
+kernel initialized
+Genode 25.02
+9962 MiB RAM and 64536 caps assigned to init
+[init]   0x1000000 .. 0x14ffffff: linker area
+[init]   0x40000000 .. 0x4fffffff: stack area
+[init]   0x30000 .. 0x136fff: ld.lib.so
+[init -> timer]   0x1000000 .. 0x14ffffff: linker area
+[init -> timer]   0x40000000 .. 0x4fffffff: stack area
+[init -> timer]   0x30000 .. 0x136fff: ld.lib.so
+[init -> se_vault] Start
+[init -> se_vault] Main::update_sandbox_config START!
+[init -> isomem]   0x1000000 .. 0x14ffffff: linker area
+[init -> gui_report_rom] report 'nit_focus -> focus'
+[init -> gui_report_rom]   <focus label=""/>
+[init -> gui_report_rom] report 'nitpicker -> focus'
+[init -> gui_report_rom]   <focus/>
+[init -> gui_report_rom] report 'nitpicker -> hover'
+[init -> gui_report_rom]   <hover active="yes"/>
+[init -> gui_report_rom] report 'nitpicker -> focus'
+[init -> gui_report_rom]   <focus/>
+[init -> isomem]   0x40000000 .. 0x4fffffff: stack area
+[init -> isomem]   0x30000 .. 0x136fff: ld.lib.so
+[init -> isomem]   0x14f5a000 .. 0x14ffffff: vfs.lib.so
+[init -> isomem] --- Phantom init ---
+[init -> isomem] short size: 2
+[init -> isomem] int size: 4
+[init -> isomem] long size: 8
+[init -> isomem] long long size: 8
+[init -> isomem] GO
+[init -> isomem] --- Setting up adapters ---
+[init -> isomem] cap<45>
+[init -> pci_decode]   0x1000000 .. 0x14ffffff: linker area
+[init -> pci_decode]   0x40000000 .. 0x4fffffff: stack area
+[init -> pci_decode]   0x30000 .. 0x136fff: ld.lib.so
+[init -> acpi]   0x1000000 .. 0x14ffffff: linker area
+[init -> acpi]   0x40000000 .. 0x4fffffff: stack area
+[init -> acpi]   0x30000 .. 0x136fff: ld.lib.so
+[init -> acpi] Found MADT
+[init -> acpi] MADT IRQ 0 -> GSI 2 flags: 0
+[init -> acpi] MADT IRQ 5 -> GSI 5 flags: 13
+[init -> acpi] MADT IRQ 9 -> GSI 9 flags: 13
+[init -> acpi] MADT IRQ 10 -> GSI 10 flags: 13
+[init -> acpi] MADT IRQ 11 -> GSI 11 flags: 13
+[init -> acpi] Found MCFG
+[init -> acpi] MCFG BASE 0xb0000000 seg 0x0 bus 0x0-0xff
+[init -> acpi] RSDT OEM 'BOCHS ', table id 'BXPC    ', revision 1, creator 'BXPC' (1)
+[init -> acpi] SMBIOS 3 table (entry point: 0x155270 structures: 0xf5290)
+[init -> pc_rtc]   0x1000000 .. 0x14ffffff: linker area
+[init -> pc_rtc]   0x40000000 .. 0x4fffffff: stack area
+[init -> pc_rtc]   0x30000 .. 0x136fff: ld.lib.so
+[init -> nvme0] Warning: ignore mpsmax:4
+[init -> nvme2] Warning: ignore mpsmax:4
+[init -> nvme3] Warning: ignore mpsmax:4
+[init -> nvme1] Warning: ignore mpsmax:4
+[init -> usb_hid]   0x1000000 .. 0x14ffffff: linker area
+[init -> usb_hid]   0x40000000 .. 0x4fffffff: stack area
+[init -> usb_hid]   0x30000 .. 0x136fff: ld.lib.so
+[init -> usb] SLUB: HWalign=64, Order=0-1, MinObjects=0, CPUs=1, Nodes=1
+[init -> usb] NR_IRQS: 4352, nr_irqs: 4352, preallocated irqs: 256
+[init -> usb] clocksource: dde_counter: mask: 0xffffffffffffff max_cycles: 0x1d854df40, max_idle_ns: 3526361616960 ns
+[init -> ps2] Using keyboard with scan code set 1 (xlate)
+[init -> usb] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[init -> usb] usbcore: registered new interface driver usbfs
+[init -> usb] usbcore: registered new interface driver hub
+[init -> usb] usbcore: registered new device driver usb
+[init -> usb] pci 00:1d.7: EHCI: unrecognized capability 00
+[init -> fb] fb mapped to 0x6000
+[init -> usb] clocksource: Switched to clocksource dde_counter
+[init -> usb] usbcore: registered new interface driver genode
+[init -> usb] uhci_hcd 00:1d.2: UHCI Host Controller
+[init -> usb] uhci_hcd 00:1d.2: new USB bus registered, assigned bus number 1
+[init -> usb] uhci_hcd 00:1d.2: irq 11, io port 0x0000c0c0
+[init -> usb] hub 1-0:1.0: USB hub found
+[init -> usb] hub 1-0:1.0: 2 ports detected
+[init -> usb] uhci_hcd 00:1d.1: UHCI Host Controller
+[init -> usb] uhci_hcd 00:1d.1: new USB bus registered, assigned bus number 2
+[init -> usb] uhci_hcd 00:1d.1: irq 10, io port 0x0000c0a0
+[init -> usb] hub 2-0:1.0: USB hub found
+[init -> usb] hub 2-0:1.0: 2 ports detected
+[init -> usb] uhci_hcd 00:1d.0: UHCI Host Controller
+[init -> usb] uhci_hcd 00:1d.0: new USB bus registered, assigned bus number 3
+[init -> usb] uhci_hcd 00:1d.0: irq 10, io port 0x0000c080
+[init -> usb] hub 3-0:1.0: USB hub found
+[init -> usb] hub 3-0:1.0: 2 ports detected
+[init -> usb] ehci-pci 00:1d.7: EHCI Host Controller
+[init -> usb] ehci-pci 00:1d.7: new USB bus registered, assigned bus number 4
+[init -> usb] ehci-pci 00:1d.7: irq 11, io mem 0xfeab9000
+[init -> usb] ehci-pci 00:1d.7: USB 2.0 started, EHCI 1.00
+[init -> usb] hub 4-0:1.0: USB hub found
+[init -> usb] hub 4-0:1.0: 6 ports detected
+[init -> usb] xhci_hcd 00:03.0: xHCI Host Controller
+[init -> usb] xhci_hcd 00:03.0: new USB bus registered, assigned bus number 5
+[init -> usb] xhci_hcd 00:03.0: hcc params 0x00087001 hci version 0x100 quirks 0x0000000000000010
+[init -> usb] xhci_hcd 00:03.0: xHCI Host Controller
+[init -> usb] xhci_hcd 00:03.0: new USB bus registered, assigned bus number 6
+[init -> usb] xhci_hcd 00:03.0: Host supports USB 3.0 SuperSpeed
+[init -> usb] hub 5-0:1.0: USB hub found
+[init -> usb] hub 5-0:1.0: 4 ports detected
+[init -> usb] usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
+[init -> usb] hub 6-0:1.0: USB hub found
+[init -> usb] hub 6-0:1.0: 4 ports detected
+[init -> usb] sched_clock: Marking stable (72473000, 28837000)->(171715000, -70405000)
+[init -> usb_hid] SLUB: HWalign=64, Order=0-1, MinObjects=0, CPUs=1, Nodes=1
+[init -> usb_hid] clocksource: dde_counter: mask: 0xffffffffffffff max_cycles: 0x1d854df40, max_idle_ns: 3526361616960 ns
+[init -> usb_hid] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[init -> usb_hid] usbcore: registered new interface driver usbfs
+[init -> usb_hid] usbcore: registered new interface driver hub
+[init -> usb_hid] usbcore: registered new device driver usb
+[init -> usb_hid] clocksource: Switched to clocksource dde_counter
+[init -> usb_hid] usbcore: registered new interface driver usbhid
+[init -> usb_hid] hid_core: USB HID core driver
+[init -> usb_hid] sched_clock: Marking stable (0, 192738000)->(195919000, -3181000)
+[init -> ps2] detected ExPS/2 mouse - activating scroll-wheel and 5-button support
+[init -> nvme2] NVMe:1.4.0 serial:'disk0001' model:'QEMU NVMe Ctrl' frev:'8.2.2   '
+[init -> nvme2] Block size: 4096 count: 524288 I/O entries: 512
+[init -> nvme0] NVMe:1.4.0 serial:'test0001' model:'QEMU NVMe Ctrl' frev:'8.2.2   '
+[init -> nvme0] Block size: 4096 count: 1310720 I/O entries: 512
+[init -> nvme3] NVMe:1.4.0 serial:'usb0001' model:'QEMU NVMe Ctrl' frev:'8.2.2   '
+[init -> nvme3] Block size: 4096 count: 131072 I/O entries: 512
+[init -> nvme1] NVMe:1.4.0 serial:'snap0001' model:'QEMU NVMe Ctrl' frev:'8.2.2   '
+[init -> nvme1] Block size: 4096 count: 65536 I/O entries: 512
+[init -> isomem] block device with block size 4096 block count 1310720 writeable=1
+[init -> isomem]
+[init -> se_vault -> check_init_flag] Initialized
+[init -> se_vault] child "check_init_flag" exited with exit value 0
+[init -> se_vault] CHECK_INIT_FLAG: UNLOCK_INIT_TRUST_ANCHOR
+[init -> se_vault] child "se_tresor_init_trust_anchor" exited with exit value 0
+[init -> se_vault] UNLOCK_START_TRESOR
+[init -> se_vault] gen_sync_to_tresor_vfs_init_start_node DONE
+[init -> se_vault] UNLOCK_START_TRESOR
+[init -> se_vault -> se_tresor_vfs] /block
+[init -> se_vault -> se_tresor_vfs] /crypto/add_key
+[init -> se_vault -> se_tresor_vfs] /crypto/remove_key
+[init -> se_vault -> se_tresor_vfs] /trust_anchor/decrypt
+[init -> se_vault -> se_tresor_vfs] /trust_anchor/encrypt
+[init -> se_vault -> se_tresor_vfs] /trust_anchor/generate_key
+[init -> se_vault -> se_tresor_vfs] /trust_anchor/initialize
+[init -> se_vault -> se_tresor_vfs] /trust_anchor/hash
+[init -> se_vault -> se_tresor_vfs] Error: sb_control: request (initialize) failed: superblock not found
+[init -> se_vault -> se_tresor_vfs] Error: /phantomuserland/genode/repos/gems/src/lib/vfs/tresor/vfs.cc:675:  assertion "_init_sb_control_ptr->success()" failed
+[init -> usb] usb 5-1: new high-speed USB device number 2 using xhci_hcd
+[init -> fb] Found: VESA BIOS version 3.0
+[init -> fb] OEM: SeaBIOS VBE(C) 2011
+[init -> fb] Found: physical frame buffer at 0xfd000000 size: 16777216
+[init -> fb] fb mapped to 0x15000000
+[init -> fb] using 1024x768 (1024x768)
+[init -> gui_report_rom] report 'nitpicker -> hover'
+[init -> gui_report_rom]   <hover xpos="511" ypos="383"/>
+[init -> se_vault] UNLOCK_START_TRESOR
+[init -> usb_sec] Warning: SCSI command failure, expected tag=2, got tag=2 status=1
+[init -> usb_sec] Warning: Medium not ready yet - try again
+[init -> se_vault] UNLOCK_START_TRESOR
+[init -> se_vault] UNLOCK_START_TRESOR
+[init -> se_vault] UNLOCK_START_TRESOR

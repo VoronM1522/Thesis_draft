@@ -26,4 +26,8 @@ We haven’t forgotten that Tresor works with 4K blocks. To ensure better consis
 
 \section{Tests and results}
 
+The OS was booted in QEMU, using files and a USB flash drive as storage media. A 2 GB image was used for isomem, and a 5 GB image for se\_vault (the user file system was 4 GB, with 1 GB reserved for Tresor’s internal structures).
 
+First, the functional part was tested. To verify operability, the OS was booted, a snapshot was written to disk, after which the process was terminated and the OS was booted again. The success criteria were error-free read/write operations and the ability to restore from the snapshot upon reboot. No issues were observed with this.
+
+Next, the encrypted image and the key generation mechanism were checked in a straightforward manner. After completing operations at various stages (both normal and emergency), an attempt was made to mount the image or detect the file system using fsck. All tests were passed successfully. This means that it is not possible to extract information from the storage medium in this way. At the same time, images are visible in the image used without encryption. The possibility of replacing the key and superblock hash was also tested. To do this, after the process was completed, files were transferred from the USB drive, the main storage device’s image was changed, a new boot was performed to generate keys, after which the old image and hash were restored, and the system was booted. In this case, the superblock is not detected, which can also be considered a success.

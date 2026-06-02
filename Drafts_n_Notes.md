@@ -855,6 +855,14 @@ SHA-хешем. Хеши организованы в дерево Меркла: 
   При взгляде на file\_vault нетрудно заметить, что компонент с именем \textit{tresor\_vfs} получает доступ к файлу-образу. используя блочную сессию, получаемую от vfs-плагина \textit{block}. Сделано это, вероятно, для удобства конфигурации и изменения размера хранилища. Нас же устроит фиксированный размер, не привышающий размер  имеющегося диска. Поэтому мы можем избавиться т кода для создания файла-образа и прокинуть блочную сессию напрямую. Аналогичный прием используем для хранилища Trust Anchor: вместо File\_system сессии передаем блочную сессию к USB.
   
   Мы не забыли, что Tresor работает с 4K блоками. Для лучшей согласованности и уменьшения расходов на управление блоками все они (на блочном уровне, на уровне ФС) были приведены к такому размеру.
+  
+  \section{Tests and results}
+  
+  ОС запускалась в QEMU, в качестве носителей информации использовались файлы и флешка. Для isomem использовался образ размером 2 Gb, для se\_vault - 5 Gb (размер пользовательской ФС 4 Gb и 1 Gb запаса под внутренние структуры tresor).
+  
+  В первую очередь было проведено тестирование функциональной части. Для проверки рабтоспособности запускалась ОС, снимок записывался на диск, после чего работа завершалась и ОС запускалась снова. Критериями успеха были чтение/запись без ошибок и возможность восстановления из снапшота при повторном запуске. Проблем с этим не наблюдалось.
+  
+  Далее тривиальным образом проверялись зашифрованный образ и механизм генерации ключей. После завершения работы на разных этапах (как штатно, так и аварийно) предпринималась попытка примонтировать образ или обнаружить ФС с помощью fsck. Все тесты пройдены успешно. Это значит, что таким образом извлечь информацию с носителя не представляется возможным. При этом в образе, используемом без шифрования, видны снимки. Также проверялась возможность подмены ключа и хеша суперблока. Для этого после завершения работы файлы с флешки переносились, менялся образ основного носителя, проводился новый запкуск для генерации ключей, после чего старый образ и хеш возвращались, и система запускалась. В таком случае суперблок не обнаруживается, что также можно считать успехом.
   ```
 
 - **en**
@@ -883,6 +891,14 @@ SHA-хешем. Хеши организованы в дерево Меркла: 
   Next, optimization was performed. Looking at \textit{file\_vault}, it is easy to see that the component named \textit{tresor\_vfs} accesses the file image using a block session obtained from the \textit{block} VFS plugin. This was likely done for the convenience of configuring and resizing the storage. However, a fixed size that does not exceed the size of the available disk will suffice for us. Therefore, we can remove the code for creating the image file and pass the block session directly. We use a similar approach for the Trust Anchor storage: instead of the File\_system session, we pass the block session to the USB.
   
   We haven’t forgotten that Tresor works with 4K blocks. To ensure better consistency and reduce the overhead of managing blocks, all of them (at the block level and at the file system level) have been standardized to this size.
+  
+  \section{Tests and results}
+  
+  The OS was booted in QEMU, using files and a USB flash drive as storage media. A 2 GB image was used for isomem, and a 5 GB image for se\_vault (the user file system was 4 GB, with 1 GB reserved for Tresor’s internal structures).
+  
+  First, the functional part was tested. To verify operability, the OS was booted, a snapshot was written to disk, after which the process was terminated and the OS was booted again. The success criteria were error-free read/write operations and the ability to restore from the snapshot upon reboot. No issues were observed with this.
+  
+  Next, the encrypted image and the key generation mechanism were checked in a straightforward manner. After completing operations at various stages (both normal and emergency), an attempt was made to mount the image or detect the file system using fsck. All tests were passed successfully. This means that it is not possible to extract information from the storage medium in this way. At the same time, images are visible in the image used without encryption. The possibility of replacing the key and superblock hash was also tested. To do this, after the process was completed, files were transferred from the USB drive, the main storage device’s image was changed, a new boot was performed to generate keys, after which the old image and hash were restored, and the system was booted. In this case, the superblock is not detected, which can also be considered a success.
   ```
 
 В этой главе мы рассмотрим реализацию компонента, расскажем о его тестировании и результатах. В Секции 4.1 рассмотрим   структуру искомого компонента, расскажем о внесенных изменениях. Секция 4.2 будет посвященаадаптации других компонентов, которая потребовалась для обеспечения рабтоспособности нашего решения. В Секции 4.3 опишем методику тестирования и результаты самих тестов.
@@ -920,3 +936,11 @@ UI был оценен, как избыточный, поскольку snapper 
 
 
 \section{Tests and results}
+
+
+
+ОС запускалась в QEMU, в качестве носителей информации использовались файлы и флешка. Для isomem использовался образ размером 2 Gb, для se\_vault - 5 Gb (размер пользовательской ФС 4 Gb и 1 Gb запаса под внутренние структуры tresor).
+
+В первую очередь было проведено тестирование функциональной части. Для проверки рабтоспособности запускалась ОС, снимок записывался на диск, после чего работа завершалась и ОС запускалась снова. Критериями успеха были чтение/запись без ошибок и возможность восстановления из снапшота при повторном запуске. Проблем с этим не наблюдалось.
+
+Далее тривиальным образом проверялись зашифрованный образ и механизм генерации ключей. После завершения работы на разных этапах (как штатно, так и аварийно) предпринималась попытка примонтировать образ или обнаружить ФС с помощью fsck. Все тесты пройдены успешно. Это значит, что таким образом извлечь информацию с носителя не представляется возможным. При этом в образе, используемом без шифрования, видны снимки. Также проверялась возможность подмены ключа и хеша суперблока. Для этого после завершения работы файлы с флешки переносились, менялся образ основного носителя, проводился новый запкуск для генерации ключей, после чего старый образ и хеш возвращались, и система запускалась. В таком случае суперблок не обнаруживается, что также можно считать успехом.
