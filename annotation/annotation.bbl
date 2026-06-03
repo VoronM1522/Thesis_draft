@@ -1,0 +1,511 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{PLA}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=d990ce5bbff21a703e6424a001276d96}{%
+           family={Morrison},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=eba8e742691f4520f8a151c09a92462a}{%
+           family={Atkinson},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=54a9b22f20af354dc27ac5eabf6bc719}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4640cd5a1d6726eedcfa0354cb1cd4fe}{%
+           family={Keedy},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{fullhash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{fullhashraw}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{bibnamehash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{authorbibnamehash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{authornamehash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{authorfullhash}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{authorfullhashraw}{e9f15399c36df65bd541659ad2a9866f}
+      \strng{editorbibnamehash}{62dd1346457683009c229ebb93dbaa53}
+      \strng{editornamehash}{62dd1346457683009c229ebb93dbaa53}
+      \strng{editorfullhash}{62dd1346457683009c229ebb93dbaa53}
+      \strng{editorfullhashraw}{62dd1346457683009c229ebb93dbaa53}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Security and Persistence}
+      \field{title}{Persistent Languages and Architectures}
+      \field{year}{1990}
+      \field{pages}{9\bibrangedash 28}
+      \range{pages}{20}
+    \endentry
+    \entry{Revisited}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=e50c37de2db5fdb7ecda276367284371}{%
+           family={Dearle},
+           familyi={D\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b69bc1a0e57944a9264ad611e76da5d9}{%
+           family={Kirby},
+           familyi={K\bibinitperiod},
+           given={Graham\bibnamedelimb N.\bibnamedelimi C.},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=da763e25de56f1dcd40599cba019ebbe}{%
+           family={Morrison},
+           familyi={M\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{746324760da17f4d52aee97ad647ccfc}
+      \strng{fullhash}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{fullhashraw}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{bibnamehash}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{authorbibnamehash}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{authornamehash}{746324760da17f4d52aee97ad647ccfc}
+      \strng{authorfullhash}{e38530cb6a1b74d86643a9befb1f2118}
+      \strng{authorfullhashraw}{e38530cb6a1b74d86643a9befb1f2118}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1006.3448}
+      \field{title}{Orthogonal Persistence Revisited}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1006.3448
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1006.3448
+      \endverb
+    \endentry
+    \entry{Aurora}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=5762dd7183b69c36da7d9bd96708eea8}{%
+           family={Tsalapatis},
+           familyi={T\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+        {{hash=554c42ebbdcbdb5e8b1110ed0650fba6}{%
+           family={Hancock},
+           familyi={H\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5db573efd22f9202da8d170f74012b74}{%
+           family={Barnes},
+           familyi={B\bibinitperiod},
+           given={Tavian},
+           giveni={T\bibinitperiod}}}%
+        {{hash=308988ebfdd2da40aab31e299c5cea8f}{%
+           family={Mashtizadeh},
+           familyi={M\bibinitperiod},
+           given={Ali\bibnamedelima José},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{e93a9b950a76747e9d13675aa3a25a4c}
+      \strng{fullhash}{de26a7099df0391c19398986f0e0e90d}
+      \strng{fullhashraw}{de26a7099df0391c19398986f0e0e90d}
+      \strng{bibnamehash}{de26a7099df0391c19398986f0e0e90d}
+      \strng{authorbibnamehash}{de26a7099df0391c19398986f0e0e90d}
+      \strng{authornamehash}{e93a9b950a76747e9d13675aa3a25a4c}
+      \strng{authorfullhash}{de26a7099df0391c19398986f0e0e90d}
+      \strng{authorfullhashraw}{de26a7099df0391c19398986f0e0e90d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. ACM SIGOPS 28th Symposium on Operating Systems Principles (SOSP)}
+      \field{title}{The {Aurora} Single Level Store Operating System}
+      \field{year}{2021}
+      \field{pages}{788\bibrangedash 803}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1145/3477132.3483563
+      \endverb
+    \endentry
+    \entry{Phantom_docs}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bf504e14ff8248dfc7897e841540486c}{%
+           family={Zavalishin},
+           familyi={Z\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{fullhash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{fullhashraw}{bf504e14ff8248dfc7897e841540486c}
+      \strng{bibnamehash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{authorbibnamehash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{authornamehash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{authorfullhash}{bf504e14ff8248dfc7897e841540486c}
+      \strng{authorfullhashraw}{bf504e14ff8248dfc7897e841540486c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Release 0.1-0}
+      \field{title}{Phantom {OS} Documentation}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://app.readthedocs.org/projects/phantomdox/downloads/pdf/latest/
+      \endverb
+      \verb{url}
+      \verb https://app.readthedocs.org/projects/phantomdox/downloads/pdf/latest/
+      \endverb
+    \endentry
+    \entry{SNIA_PM_Security}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=308d7b5b090264fbc63ad360a00ed9e4}{%
+           family={Carlson},
+           familyi={C\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{fullhash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{fullhashraw}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{bibnamehash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{authorbibnamehash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{authornamehash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{authorfullhash}{308d7b5b090264fbc63ad360a00ed9e4}
+      \strng{authorfullhashraw}{308d7b5b090264fbc63ad360a00ed9e4}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Flash Memory Summit 2018}
+      \field{title}{Persistent Memory Security Threat Model}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://files.futurememorystorage.com/proceedings/2018/20180807_PMEM-101-1_Carlson.pdf
+      \endverb
+      \verb{url}
+      \verb https://files.futurememorystorage.com/proceedings/2018/20180807_PMEM-101-1_Carlson.pdf
+      \endverb
+    \endentry
+    \entry{VM_Security}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=18be0a4133d3ebea262695379ca1e4d8}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{0885016c0810092765194882a8345b66}
+      \strng{fullhash}{0885016c0810092765194882a8345b66}
+      \strng{fullhashraw}{0885016c0810092765194882a8345b66}
+      \strng{bibnamehash}{0885016c0810092765194882a8345b66}
+      \strng{authorbibnamehash}{0885016c0810092765194882a8345b66}
+      \strng{authornamehash}{0885016c0810092765194882a8345b66}
+      \strng{authorfullhash}{0885016c0810092765194882a8345b66}
+      \strng{authorfullhashraw}{0885016c0810092765194882a8345b66}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{title}{Security Issues and Challenges for Virtualization Technologies}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://web.engr.oregonstate.edu/~benl/Publications/Journals/ACM_Computing_Surveys_2020.pdf
+      \endverb
+      \verb{url}
+      \verb https://web.engr.oregonstate.edu/~benl/Publications/Journals/ACM_Computing_Surveys_2020.pdf
+      \endverb
+    \endentry
+    \entry{Genode_Foundations}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=fd265aa7debb5e4addc749cabed74cb9}{%
+           family={Feske},
+           familyi={F\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{fullhash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{fullhashraw}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{bibnamehash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{authorbibnamehash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{authornamehash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{authorfullhash}{fd265aa7debb5e4addc749cabed74cb9}
+      \strng{authorfullhashraw}{fd265aa7debb5e4addc749cabed74cb9}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Genode Operating System Framework Foundations}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://genode.org/documentation/genode-foundations-25-05.pdf
+      \endverb
+      \verb{url}
+      \verb https://genode.org/documentation/genode-foundations-25-05.pdf
+      \endverb
+    \endentry
+    \entry{KOS}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=722a5639c29e3748ebc66f901ee395b6}{%
+           family={Bomberger},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a1b44d28ce39c3245169142f1274a116}{%
+           family={Frantz},
+           familyi={F\bibinitperiod},
+           given={W.\bibnamedelimi S.},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=137738036b402e2cce1fb3198a76c173}{%
+           family={Hardy},
+           familyi={H\bibinitperiod},
+           given={A.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=9cfac209955bc3ab55166b3fa1f5a21c}{%
+           family={Hardy},
+           familyi={H\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=552009a6f65044ff33d57b4df49ef238}{%
+           family={Landau},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=8455e87af53cd848fb1b012eec11cd84}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Seattle, WA}%
+      }
+      \strng{namehash}{487b6374c29f5781afbbe13ea5d8c68e}
+      \strng{fullhash}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{fullhashraw}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{bibnamehash}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{authorbibnamehash}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{authornamehash}{487b6374c29f5781afbbe13ea5d8c68e}
+      \strng{authorfullhash}{73d78df51cdc1a5a513d8346dca2051b}
+      \strng{authorfullhashraw}{73d78df51cdc1a5a513d8346dca2051b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. USENIX Workshop on Microkernels and Other Kernel Architectures}
+      \field{title}{The {KeyKOS} Nanokernel Architecture}
+      \field{year}{1992}
+      \field{pages}{95\bibrangedash 112}
+      \range{pages}{18}
+    \endentry
+    \entry{Antonov_Anton}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=b146316006d368e92e5401e6b5f8c67a}{%
+           family={Antonov},
+           familyi={A\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Innopolis University}%
+      }
+      \strng{namehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{fullhash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{fullhashraw}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{bibnamehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authorbibnamehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authornamehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authorfullhash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authorfullhashraw}{b146316006d368e92e5401e6b5f8c67a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Persistency in Microkernel {OS}: Porting Experience of {Phantom OS} to {Genode OS} Framework}
+      \field{type}{Bachelor's thesis}
+      \field{year}{2021}
+    \endentry
+    \entry{FOSDEM_Snapper}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=bea6d745955cd872e8e66a16205d13b4}{%
+           family={Mitov},
+           familyi={M\bibinitperiod},
+           given={Rumen},
+           giveni={R\bibinitperiod}}}%
+        {{hash=55c79176468ff72d103924598aa91c8e}{%
+           family={Tormasov},
+           familyi={T\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{fullhash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{fullhashraw}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{bibnamehash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{authorbibnamehash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{authornamehash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{authorfullhash}{434ea54de8ffb4ff7d18e61201f4378a}
+      \strng{authorfullhashraw}{434ea54de8ffb4ff7d18e61201f4378a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{FOSDEM 2026, Microkernel and Component-Based OS devroom}
+      \field{title}{Practical Persistence on Microkernels (ft.\ {PhantomOS})}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://fosdem.org/2026/schedule/event/DJ8YVT-practical-persistence/
+      \endverb
+      \verb{url}
+      \verb https://fosdem.org/2026/schedule/event/DJ8YVT-practical-persistence/
+      \endverb
+    \endentry
+    \entry{FOSDEM_Snapper_paper}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=bea6d745955cd872e8e66a16205d13b4}{%
+           family={Mitov},
+           familyi={M\bibinitperiod},
+           given={Rumen},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {FOSDEM 2026}%
+      }
+      \strng{namehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{fullhash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{fullhashraw}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{bibnamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorbibnamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authornamehash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorfullhash}{bea6d745955cd872e8e66a16205d13b4}
+      \strng{authorfullhashraw}{bea6d745955cd872e8e66a16205d13b4}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Snapper (v2): A {PhantomOS} Snapshot Mechanism}
+      \field{type}{techreport}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://fosdem.org/2026/events/attachments/DJ8YVT-practical-persistence/slides/267604/snapper-v_5dptkby.pdf
+      \endverb
+      \verb{url}
+      \verb https://fosdem.org/2026/events/attachments/DJ8YVT-practical-persistence/slides/267604/snapper-v_5dptkby.pdf
+      \endverb
+    \endentry
+    \entry{NIST_SP800111}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=6ea98e3682d33480471e822adaacdc41}{%
+           family={Scarfone},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ffbf3d2da7973bafe66533b2afd05546}{%
+           family={Souppaya},
+           familyi={S\bibinitperiod},
+           given={Murugiah},
+           giveni={M\bibinitperiod}}}%
+        {{hash=54a72192c107f3648b9382aeab40e7f9}{%
+           family={Sexton},
+           familyi={S\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {NIST}%
+      }
+      \strng{namehash}{e78c6af0c60d5232f50e342025fca0b5}
+      \strng{fullhash}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{fullhashraw}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{bibnamehash}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{authorbibnamehash}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{authornamehash}{e78c6af0c60d5232f50e342025fca0b5}
+      \strng{authorfullhash}{9a5032d4a2ea56e4619e278a726c01f2}
+      \strng{authorfullhashraw}{9a5032d4a2ea56e4619e278a726c01f2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{SP 800-111}
+      \field{title}{Guide to Storage Encryption Technologies for End User Devices}
+      \field{type}{techreport}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.6028/NIST.SP.800-111
+      \endverb
+      \verb{urlraw}
+      \verb https://csrc.nist.gov/pubs/sp/800/111/final
+      \endverb
+      \verb{url}
+      \verb https://csrc.nist.gov/pubs/sp/800/111/final
+      \endverb
+    \endentry
+    \entry{CryptoFS}{misc}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=b282245a7e98791e3918f8a7413ce988}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Charles\bibnamedelima P.},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{fullhash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{fullhashraw}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{bibnamehash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{authorbibnamehash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{authornamehash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{authorfullhash}{b8186b335e8cd81ef9f393eecb4b2765}
+      \strng{authorfullhashraw}{b8186b335e8cd81ef9f393eecb4b2765}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Proc. 2003 IEEE Security in Storage Workshop}
+      \field{title}{Cryptographic File Systems Performance: What You Don't Know Can Hurt You}
+      \field{year}{2003}
+      \verb{urlraw}
+      \verb https://www.filesystems.org/docs/nc-perf/index.html
+      \endverb
+      \verb{url}
+      \verb https://www.filesystems.org/docs/nc-perf/index.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

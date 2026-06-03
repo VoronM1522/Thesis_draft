@@ -2374,46 +2374,24 @@
     <bcf:datasource type="file" datatype="bibtex">ref.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">Phantom_docs</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">Genode_Foundations</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">PLA</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">PLA</bcf:citekey>
-    <bcf:citekey order="4" intorder="2">KOS</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">PLA</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">Revisited</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">Aurora</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Phantom_docs</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">SNIA_PM_Security</bcf:citekey>
+    <bcf:citekey order="4" intorder="2">VM_Security</bcf:citekey>
     <bcf:citekey order="5" intorder="1">Phantom_docs</bcf:citekey>
-    <bcf:citekey order="5" intorder="2">Habr_Persistent_Mem</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">seL4</bcf:citekey>
-    <bcf:citekey order="6" intorder="2">Genode_Foundations</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">SNIA_PM_Security</bcf:citekey>
-    <bcf:citekey order="7" intorder="2">VM_Security</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Revisited</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">KOS</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Aurora</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Habr_MT</bcf:citekey>
-    <bcf:citekey order="11" intorder="2">Habr_Preempt</bcf:citekey>
-    <bcf:citekey order="11" intorder="3">Habr_Sched</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Habr_UI</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Habr_GC1</bcf:citekey>
-    <bcf:citekey order="13" intorder="2">Habr_GC2</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Habr_Persistent_Mem</bcf:citekey>
-    <bcf:citekey order="14" intorder="2">PM_wiki</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Antonov_Anton</bcf:citekey>
-    <bcf:citekey order="15" intorder="2">GitHub_isomem</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Brisilin_Anton</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Samburskiy_Kirill</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">FOSDEM_Snapper</bcf:citekey>
-    <bcf:citekey order="18" intorder="2">FOSDEM_Snapper_paper</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">NIST_SP800111</bcf:citekey>
-    <bcf:citekey order="19" intorder="2">CryptoFS</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">GitHub_tresor</bcf:citekey>
-    <bcf:citekey order="20" intorder="2">GitHub_file_vault</bcf:citekey>
-    <bcf:citekey order="20" intorder="3">Page_file_vault</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">GitHub_file_vault</bcf:citekey>
-    <bcf:citekey order="21" intorder="2">Page_file_vault</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">GitHub_tresor</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">GitHub_phantomuserland-snapper</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">GitHub_tresor</bcf:citekey>
-    <bcf:citekey order="24" intorder="2">Page_file_vault</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">FOSDEM_Snapper_paper</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Genode_Foundations</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">PLA</bcf:citekey>
+    <bcf:citekey order="7" intorder="2">Revisited</bcf:citekey>
+    <bcf:citekey order="7" intorder="3">KOS</bcf:citekey>
+    <bcf:citekey order="7" intorder="4">Aurora</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Antonov_Anton</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">FOSDEM_Snapper</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">FOSDEM_Snapper_paper</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">NIST_SP800111</bcf:citekey>
+    <bcf:citekey order="10" intorder="2">CryptoFS</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">FOSDEM_Snapper_paper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

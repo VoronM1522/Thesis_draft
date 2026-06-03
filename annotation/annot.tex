@@ -1,0 +1,183 @@
+\documentclass[oneside,final,14pt,a4paper]{extreport}
+
+\usepackage{tempora} % Times New Roman alike font  
+
+\usepackage{vmargin}
+\setpapersize{A4}
+\setmarginsrb{2.5cm}{2.0cm}{2.0cm}{2.0cm}{0pt}{10mm}{0pt}{13mm}
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage{indentfirst}
+\parindent=1.25cm
+
+%%%%% ADDED TO SUPPORT TT BOLD FACES %%%%
+\DeclareFontShape{OT1}{cmtt}{bx}{n}{<5><6><7><8><9><10><10.95><12><14.4><17.28><20.74><24.88>cmttb10}{}
+\renewcommand{\ttdefault}{pcr}
+%%%%% END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\renewcommand{\thesection}{\arabic{section}}
+
+\usepackage{atbegshi,picture}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[russian]{babel}
+\usepackage[backend=biber,style=ieee,autocite=inline]{biblatex}
+\bibliography{ref.bib}
+\DefineBibliographyStrings{english}{%
+  bibliography = {References},}
+\usepackage{blindtext}
+
+\usepackage{pdfpages}
+\newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
+\usepackage{amsmath,amsfonts}
+\usepackage{url}
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\theoremstyle{remark}
+\newtheorem*{example}{Example}
+
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{{figs/}} %path to images
+\usepackage{array}
+\usepackage{multirow,array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+% \hypersetup{colorlinks=true, linkcolor=black, citecolor=black}
+\hypersetup{hidelinks}
+\usepackage{paralist}
+\usepackage{listings}
+\usepackage{zed-csp}
+\usepackage{fancyhdr}
+\usepackage{csquotes}
+\usepackage{color}
+% \usepackage{anyfontsize}
+% \usepackage{mathptmx}
+% \usepackage{t1enc}
+
+\usepackage{chngcntr}
+\usepackage{upgreek} 
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage[font=singlespacing, labelfont=bf]{caption}
+%Hints
+\newcommand\pic[1]{(Fig. \ref{#1})} %Ref on figure
+\newcommand\tab[1]{(Tab. \ref{#1})} %Ref on table
+
+\setlength{\headheight}{32.0976pt}
+\usepackage{enumitem}
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{%
+  label=(\arabic*),
+}
+
+% \setcounter{secnumdepth}{4}
+\captionsetup[table]{labelfont={normalfont}, name={TABLE}, labelsep={newline}}
+\captionsetup{justification=raggedright, singlelinecheck=false}
+\setlength{\parindent}{2em} 
+\DeclareCaptionLabelSeparator{figSep}{.\quad}
+\captionsetup[figure]{labelfont={normalfont}, name={Fig.}, labelsep=period}
+\counterwithin{figure}{chapter}
+
+% \usepackage{titlesec}
+% \titleformat{\section}[hang]{\fontsize{20}{24}\selectfont\filcenter}{\Roman{section}}{1em}{}
+% \titleformat{\subsection}[hang]{\itshape}{\Alph{subsection}.}{1em}{}[]
+% \titleformat{\subsubsection}[runin]{\itshape}{\arabic{subsubsection})}{1em}{}[$:$]
+% \titlespacing{\subsubsection}{1em}{1em}{1em}
+% \titleformat{\paragraph}[runin]{\itshape}{\alph{paragraph})}{1em}{}[$:$\quad]
+% \titlespacing{\paragraph}{2em}{1em}{1em}
+
+\usepackage{placeins} % for \FloatBarrier
+
+\pagestyle{fancyplain}
+
+% remember section title
+\renewcommand{\chaptermark}[1]%
+	{\markboth{\chaptername~\thechapter~--~#1}{}}
+
+% subsection number and title
+\renewcommand{\sectionmark}[1]%
+	{\markright{\thesection\ #1}}
+
+\rhead[\fancyplain{}{\bf\leftmark}]%
+      {\fancyplain{}{\bf\thepage}}
+\lhead[\fancyplain{}{\bf\thepage}]%
+      {\fancyplain{}{\bf\rightmark}}
+\cfoot{} %bfseries
+
+
+\newcommand{\dedication}[1]
+   {\thispagestyle{empty}
+     
+   \begin{flushleft}\raggedleft #1\end{flushleft}
+}
+
+\begin{document}
+
+\includepdf[pages=-, offset=70 -80]{title.pdf}
+\tableofcontents
+% \listoftables
+% \listoffigures
+\newpage
+
+
+% \include{chapters/abstract}
+\setcounter{page}{3}
+% set manually the number, from which Chapter 1 starts!
+% Why do we put 7 in this case?
+% Title page - page 1
+% Contents - page 2, page 3
+% List of tables - page 4
+% List of figures - page 5
+% Abstract - page 6
+% Chapter 1 - page 7
+% In your thesis the counter number can be different, please count carefully and insert the corresponding number.
+\setcounter{section}{0}
+
+\section{Введение}
+
+Актуальность работы обусловлена тем, что современные операционные системы унаследовали модель хранения данных, сложившуюся с появлением UNIX. Эта модель требует от программиста явного управления перемещением данных между памятью и диском, что увеличивает объём кода и приводит к потерям при сбоях~\cite{PLA}. Концепция ортогональной персистентности устраняет эти недостатки, однако её практические реализации на современном оборудовании по-прежнему остаются предметом исследований~\cite{Revisited,Aurora}.
+
+Работа выполнена в контексте проекта по портированию Phantom~OS на фреймворк Genode. Phantom~OS реализует ортогональную персистентность через Phantom Virtual Machine~(PVM), периодически сохраняя её состояние на диск в виде снапшотов~\cite{Phantom_docs}. Снапшоты хранятся в открытом виде, что создаёт угрозу конфиденциальности: слепок памяти PVM может содержать секретные данные~\cite{SNIA_PM_Security,VM_Security}. \textbf{Цель работы}~--- обеспечить конфиденциальность снапшотов в состоянии покоя. Для этого адаптирован компонент блочного шифрования на основе библиотеки Tresor, проведена верификация защиты и оценено влияние шифрования на производительность.
+
+\section{Краткое описание основной части работы}
+
+Основная часть состоит из шести глав: введение, обзор литературы, методология, реализация, оценка и обсуждение, заключение.
+
+Глава~1 формулирует проблему: снапшоты содержат полный слепок памяти PVM, включая конфиденциальные данные, и хранятся без шифрования. Описаны предпосылки появления ортогональной персистентности, архитектура PhantomOS~\cite{Phantom_docs} и Genode~\cite{Genode_Foundations}, поставлены цели и задачи.
+
+Глава~2 представляет обзор литературы по четырём направлениям. Рассматривается концепция ортогональной персистентности~\cite{PLA,Revisited,KOS,Aurora} и её реализация в PhantomOS. Описана история порта PhantomOS на Genode~\cite{Antonov_Anton} и механизм Snapper~2.0~\cite{FOSDEM_Snapper,FOSDEM_Snapper_paper}. Приводится классификация методов шифрования данных в состоянии покоя~\cite{NIST_SP800111,CryptoFS} и обосновывается выбор блочного шифрования с использованием библиотеки Tresor.
+
+Глава~3 описывает методологию. На основе модели сценариев использования (граф состояний от включения до выключения) выбраны безопасные сценарии с аутентификацией через USB-накопитель с ключом. Сформулированы четыре требования: обязательная авторизация, хранение ключей на USB, шифрование снапшотов, гарантия записи только зашифрованных данных. Определён план реализации на базе существующего компонента \texttt{file\_vault}.
+
+Глава~4 описывает реализацию компонента \texttt{se\_vault}. Графический интерфейс удалён, аутентификация перенесена на USB, файловая система сменена с ext2 на ext4~(\texttt{lwext4}), добавлена поддержка fsck, блочная сессия передаётся в Tresor напрямую, все блоки унифицированы до~4~КБ. В \texttt{lwext4} исправлена функция \texttt{ftruncate} и добавлена передача \texttt{sync} на нижние уровни VFS. В компонентах isomem, snapper и vfs реализована корректная цепочка завершения. Тестирование в QEMU подтвердило корректность шифрования и восстановления из снапшота. Нагрузочные тесты выявили снижение производительности в~$\approx$25~раз (первый снапшот: $\approx$2~с без шифрования и $\approx$51~с с шифрованием) из-за однопоточной реализации Tresor; инициализация ускорилась с~$\approx$20~мин до~$\approx$1~мин.
+
+Глава~5 содержит оценку результатов. Проведён сравнительный анализ \texttt{file\_vault} и \texttt{se\_vault}; рассмотрены ограничения, связанные с непроизводственным статусом Tresor и тестированием в виртуальной среде; обсуждаются пути решения проблемы производительности.
+
+% ===== 3. ЗАКЛЮЧЕНИЕ =====
+\section{Заключение}
+
+Разработан компонент \texttt{se\_vault} для шифрования снапшотов PhantomOS в рамках её порта на Genode. Система решает задачу обеспечения конфиденциальности снапшотов в состоянии покоя и прозрачно интегрируется с остальными компонентами порта.
+
+Достигнуты поставленные задачи: адаптирован компонент блочного шифрования, верифицирована недоступность содержимого снапшота без ключа, оценено влияние шифрования на производительность. Цель достигнута частично: защита снапшотов реализована, однако производительность снизилась из-за ограничений библиотеки Tresor.
+
+Ограничения связаны с непроизводственным статусом Tresor и тестированием только в виртуальной среде. Перспективы дальнейшей работы: оптимизация Tresor, распространение шифрования на блочное устройство isomem, возможное объединение Snapper и Tresor~\cite{FOSDEM_Snapper_paper}.
+
+
+\nocite{*}
+
+% REFERENCES
+\printbibliography[heading=bibintoc,title={Список использованной литературы}]
+% \include{chapters/appex}
+\end{document}

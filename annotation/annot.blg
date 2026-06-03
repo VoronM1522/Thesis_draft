@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'annot.blg'
+[36] biber:342> INFO - === Ср июн  3, 2026, 21:29:01
+[45] Biber.pm:421> INFO - Reading 'annot.bcf'
+[81] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[89] Biber.pm:4487> INFO - Processing section 0
+[94] Biber.pm:4678> INFO - Looking for bibtex file 'ref.bib' for section 0
+[95] bibtex.pm:1713> INFO - LaTeX decoding ...
+[103] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[217] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[217] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[217] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'ru-RU'
+[217] Biber.pm:4313> INFO - No sort tailoring available for locale 'ru-RU'
+[231] bbl.pm:676> INFO - Writing 'annot.bbl' with encoding 'UTF-8'
+[238] bbl.pm:779> INFO - Output to annot.bbl

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  3 JUN 2026 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  3 JUN 2026 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/annotation/thesis.tex
-(/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/annotation/thesis.tex
+**/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/annotation/annot.tex
+(/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/annotation/annot.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/share/texmf-dist/tex/latex/extsizes/extreport.cls
@@ -1198,22 +1198,7 @@ LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) o
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count286
- (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex) (/usr/share/texmf-dist/tex/generic/babel/locale/ru/babel-russian.tex)
-Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 4330.
- (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'british' set to \l@english
-(babel)             (\language0). Reported on input line 82.
-Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
-(babel)             (\language0). Reported on input line 83.
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@english
-(babel)             (\language0). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@english
-(babel)             (\language0). Reported on input line 108.
-)
+ (/usr/share/texmf-dist/tex/generic/babel/locale/ru/babel-russian.tex)
 Package babel Info: Importing font and identification data for russian
 (babel)             from babel-ru.ini. Reported on input line 4330.
  (/usr/share/texmf-dist/tex/generic/babel-russian/russianb.ldf
@@ -1483,58 +1468,42 @@ Package biblatex Info: ... and expl3
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
-)) (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count415
-\csq@gtype=\count416
-\csq@glevel=\count417
-\csq@qlevel=\count418
-\csq@maxlvl=\count419
-\csq@tshold=\count420
-\csq@ltx@everypar=\toks22
- (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
-)
-Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
-Package csquotes Info: ... configuration file loaded successfully.
- (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
-File: csquotes.cfg 
 )) (/usr/share/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count421
-\c@Blindtext=\count422
-\c@blind@countparstart=\count423
-\blind@countxx=\count424
-\blindtext@numBlindtext=\count425
-\blind@countyy=\count426
-\c@blindlist=\count427
-\c@blindlistlevel=\count428
-\c@blindlist@level=\count429
-\blind@listitem=\count430
-\c@blind@listcount=\count431
-\c@blind@levelcount=\count432
-\blind@mathformula=\count433
-\blind@Mathformula=\count434
-\c@blind@randomcount=\count435
-\c@blind@randommax=\count436
-\c@blind@pangramcount=\count437
-\c@blind@pangrammax=\count438
+\c@blindtext=\count415
+\c@Blindtext=\count416
+\c@blind@countparstart=\count417
+\blind@countxx=\count418
+\blindtext@numBlindtext=\count419
+\blind@countyy=\count420
+\c@blindlist=\count421
+\c@blindlistlevel=\count422
+\c@blindlist@level=\count423
+\blind@listitem=\count424
+\c@blind@listcount=\count425
+\c@blind@levelcount=\count426
+\blind@mathformula=\count427
+\blind@Mathformula=\count428
+\c@blind@randomcount=\count429
+\c@blind@randommax=\count430
+\c@blind@pangramcount=\count431
+\c@blind@pangrammax=\count432
 ) (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
  (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count439
-\calc@Bcount=\count440
+\calc@Acount=\count433
+\calc@Bcount=\count434
 \calc@Adimen=\dimen153
 \calc@Bdimen=\dimen154
 \calc@Askip=\skip73
 \calc@Bskip=\skip74
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count441
+\calc@Ccount=\count435
 \calc@Cskip=\skip75
 ) (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
@@ -1578,13 +1547,13 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
  (/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count442
+\pdfpages@includegraphics@status=\count436
 \AM@pagebox=\box53
-\AM@global@opts=\toks23
-\AM@pagecnt=\count443
-\AM@toc@title=\toks24
-\AM@lof@heading=\toks25
-\c@AM@survey=\count444
+\AM@global@opts=\toks22
+\AM@pagecnt=\count437
+\AM@toc@title=\toks23
+\AM@lof@heading=\toks24
+\c@AM@survey=\count438
 \AM@templatesizebox=\box54
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
@@ -1595,7 +1564,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2024/11/17 v2.01 AMS text
  (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
+\@emptytoks=\toks25
 \ex@=\dimen162
 )) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -1603,14 +1572,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count445
+\inf@bad=\count439
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count446
-\leftroot@=\count447
+\uproot@=\count440
+\leftroot@=\count441
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count448
-\DOTSCASE@=\count449
+\classnum@=\count442
+\DOTSCASE@=\count443
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -1623,31 +1592,31 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen164
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count450
+\macc@depth=\count444
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count451
+\c@MaxMatrixCols=\count445
 \dotsspace@=\muskip22
-\c@parentequation=\count452
-\dspbrk@lvl=\count453
-\tag@help=\toks27
-\row@=\count454
-\column@=\count455
-\maxfields@=\count456
-\andhelp@=\toks28
+\c@parentequation=\count446
+\dspbrk@lvl=\count447
+\tag@help=\toks26
+\row@=\count448
+\column@=\count449
+\maxfields@=\count450
+\andhelp@=\toks27
 \eqnshift@=\dimen165
 \alignsep@=\dimen166
 \tagshift@=\dimen167
 \tagwidth@=\dimen168
 \totwidth@=\dimen169
 \lineht@=\dimen170
-\@envbody=\toks29
+\@envbody=\toks28
 \multlinegap=\skip77
 \multlinetaggap=\skip78
-\mathdisplay@stack=\toks30
+\mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 ) (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -1659,36 +1628,43 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ) (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks31
-\thm@bodyfont=\toks32
-\thm@headfont=\toks33
-\thm@notefont=\toks34
-\thm@headpunct=\toks35
+\thm@style=\toks30
+\thm@bodyfont=\toks31
+\thm@headfont=\toks32
+\thm@notefont=\toks33
+\thm@headpunct=\toks34
 \thm@preskip=\skip79
 \thm@postskip=\skip80
 \thm@headsep=\skip81
-\dth@everypar=\toks36
+\dth@everypar=\toks35
 )
-\c@theorem=\count457
-\c@corollary=\count458
-\c@lemma=\count459
-\c@proposition=\count460
-\c@definition=\count461
- (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip82
-\multirow@cntb=\count462
-\multirow@dima=\skip83
-\bigstrutjot=\dimen171
+\c@theorem=\count451
+\c@corollary=\count452
+\c@lemma=\count453
+\c@proposition=\count454
+\c@definition=\count455
+ (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count456
+\float@exts=\toks36
+\float@box=\box57
+\@float@everytoks=\toks37
+\@floatcapt=\box58
 ) (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen172
-\ar@mcellbox=\box57
-\extrarowheight=\dimen173
-\NC@list=\toks37
-\extratabsurround=\skip84
-\backup@length=\skip85
-\ar@cellbox=\box58
+\col@sep=\dimen171
+\ar@mcellbox=\box59
+\extrarowheight=\dimen172
+\NC@list=\toks38
+\extratabsurround=\skip82
+\backup@length=\skip83
+\ar@cellbox=\box60
+) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip84
+\multirow@cntb=\count457
+\multirow@dima=\skip85
+\bigstrutjot=\dimen173
 ) (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
@@ -1703,14 +1679,15 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen181
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count463
-\c@continuedfloat=\count464
+\c@caption@flags=\count458
+\c@continuedfloat=\count459
+Package caption Info: float package is loaded.
 ) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count465
+\c@subfigure=\count460
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count466
+\c@subtable=\count461
 ) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
  (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -1726,13 +1703,13 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count467
+\c@section@level=\count462
 ) (/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen182
-\Hy@linkcounter=\count468
-\Hy@pagecounter=\count469
+\Hy@linkcounter=\count463
+\Hy@pagecounter=\count464
  (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -1740,7 +1717,7 @@ Now handling font encoding PD1 ...
 ) (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count470
+\Hy@SavedSpaceFactor=\count465
  (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -1756,7 +1733,6 @@ LaTeX Encoding Info:    Redeclaring text command \textohm (encoding PU) on input
 )
 Package hyperref Info: Option `unicode' set `true' on input line 3166.
 Package hyperref Info: Option `final' set `true' on input line 4072.
-Package hyperref Info: Option `unicode' set `true' on input line 4072.
 Package hyperref Info: Hyper figures OFF on input line 4201.
 Package hyperref Info: Link nesting OFF on input line 4206.
 Package hyperref Info: Hyper index ON on input line 4209.
@@ -1764,7 +1740,7 @@ Package hyperref Info: Plain pages OFF on input line 4216.
 Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count471
+\c@Hy@tempcnt=\count466
 LaTeX Info: Redefining \url on input line 4807.
 \XeTeXLinkMargin=\dimen183
  (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
@@ -1772,7 +1748,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count472
+\Fld@menulength=\count467
 \Field@Width=\dimen184
 \Fld@charsize=\dimen185
 Package hyperref Info: Hyper figures OFF on input line 6084.
@@ -1782,15 +1758,15 @@ Package hyperref Info: backreferencing OFF on input line 6099.
 Package hyperref Info: Link coloring OFF on input line 6104.
 Package hyperref Info: Link coloring with OCG OFF on input line 6109.
 Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count473
-\c@Item=\count474
-\c@Hfootnote=\count475
+\Hy@abspage=\count468
+\c@Item=\count469
+\c@Hfootnote=\count470
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
-\Fld@listcount=\count476
-\c@bookmark@seq@number=\count477
+\Fld@listcount=\count471
+\c@bookmark@seq@number=\count472
  (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
  (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -1799,35 +1775,33 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip86
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 53.
- (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
+) (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip87
 \plpartopsep=\skip88
 \plitemsep=\skip89
 \plparsep=\skip90
-\pl@lab=\toks38
+\pl@lab=\toks39
 ) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count478
-\lst@gtempboxa=\box59
-\lst@token=\toks39
-\lst@length=\count479
+\lst@mode=\count473
+\lst@gtempboxa=\box61
+\lst@token=\toks40
+\lst@length=\count474
 \lst@currlwidth=\dimen186
-\lst@column=\count480
-\lst@pos=\count481
+\lst@column=\count475
+\lst@pos=\count476
 \lst@lostspace=\dimen187
 \lst@width=\dimen188
-\lst@newlines=\count482
-\lst@lineno=\count483
+\lst@newlines=\count477
+\lst@lineno=\count478
 \lst@maxwidth=\dimen189
  (/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count484
-\lst@skipnumbers=\count485
-\lst@framebox=\box60
+\c@lstnumber=\count479
+\lst@skipnumbers=\count480
+\lst@framebox=\box62
 ) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
@@ -1841,7 +1815,7 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
 (/usr/share/texmf-dist/tex/latex/zed-csp/zed-csp.sty
 Package: zed-csp 95/01/11 0c zed-csp package
-\c@mv@zed=\count486
+\c@mv@zed=\count481
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `zed'
 (Font)                  OT1/cmr/m/n --> T2A/Tempora-TLF/m/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `zed'
@@ -1886,8 +1860,8 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 308.
 \zedtab=\dimen192
 \zedbar=\dimen193
 \zedskip=\skip91
-\interzedlinepenalty=\count487
-\preboxpenalty=\count488
+\interzedlinepenalty=\count482
+\preboxpenalty=\count483
 ) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip92
@@ -1904,12 +1878,45 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip103
 \f@nch@widthC=\skip104
 \f@nch@widthR=\skip105
-\@temptokenb=\toks40
-) (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
-\everycr=\toks41
-\minrowclearance=\skip106
-\rownum=\count489
+\@temptokenb=\toks41
+) (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+\csq@reset=\count484
+\csq@gtype=\count485
+\csq@glevel=\count486
+\csq@qlevel=\count487
+\csq@maxlvl=\count488
+\csq@tshold=\count489
+\csq@ltx@everypar=\toks42
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)) (/usr/share/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+) (/usr/share/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+) (/usr/share/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup9
+\symboldletters=\mathgroup10
+\symboldsymbols=\mathgroup11
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+Package bm Info: No bold for \T2A/Tempora-TLF/m/it, using \pmb.
+Package bm Info: No bold for \U/lasy/m/n, using \pmb.
+\symboldugrf@m=\mathgroup12
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen194
@@ -1929,176 +1936,127 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count492
 \@lastruleclass=\count493
 \@thisrulewidth=\dimen262
-) (/usr/share/texmf-dist/tex/latex/graphics/epsfig.sty
-Package: epsfig 2024/01/14 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen263
-\epsfysize=\dimen264
-) (/usr/share/texmf-dist/tex/latex/was/upgreek.sty
-Package: upgreek 2003/02/12 v2.0 (WaS)
-Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
-\symugrf@m=\mathgroup8
-LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
-(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
-) (/usr/share/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup9
-\symboldletters=\mathgroup10
-\symboldsymbols=\mathgroup11
-Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
-Package bm Info: No bold for \U/msa/m/n, using \pmb.
-Package bm Info: No bold for \U/msb/m/n, using \pmb.
-Package bm Info: No bold for \T2A/Tempora-TLF/m/it, using \pmb.
-Package bm Info: No bold for \U/lasy/m/n, using \pmb.
-\symboldugrf@m=\mathgroup12
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
-\LTleft=\skip107
-\LTright=\skip108
-\LTpre=\skip109
-\LTpost=\skip110
+\LTleft=\skip106
+\LTright=\skip107
+\LTpre=\skip108
+\LTpost=\skip109
 \LTchunksize=\count494
-\LTcapwidth=\dimen265
-\LT@head=\box61
-\LT@firsthead=\box62
-\LT@foot=\box63
-\LT@lastfoot=\box64
-\LT@gbox=\box65
+\LTcapwidth=\dimen263
+\LT@head=\box63
+\LT@firsthead=\box64
+\LT@foot=\box65
+\LT@lastfoot=\box66
+\LT@gbox=\box67
 \LT@cols=\count495
 \LT@rows=\count496
 \c@LT@tables=\count497
 \c@LT@chunks=\count498
-\LT@p@ftn=\toks42
-) (/usr/share/texmf-dist/tex/latex/floatrow/floatrow.sty
-Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-\c@float@type=\count499
-\float@exts=\toks43
-\float@box=\box66
-\@floatcapt=\box67
-Package floatrow Info: Modified float package code loaded on input line 455.
-Package floatrow Info: Modified rotfloat package code loaded on input line 473.
-\FR@everyfloat=\toks44
-\flrow@foot=\insert252
-\FB@wd=\dimen266
-\FBo@wd=\dimen267
-\FBc@wd=\dimen268
-\FBo@ht=\skip111
-\FBc@ht=\skip112
-\FBf@ht=\skip113
-\FBo@max=\skip114
-\FBc@max=\skip115
-\FBf@max=\skip116
-\c@FBl@b=\count500
-\floatbox@depth=\count501
-\c@FRobj=\count502
-\c@FRsobj=\count503
-\Xhsize=\skip117
-\sXhsize=\skip118
-\Zhsize=\skip119
-\sZhsize=\skip120
-\flrow@rowbox=\box68
-\FR@Zunitlength=\dimen269
-\c@FBcnt=\count504
-\FPOScnt=\count505
-\LTleft=\skip121
-\LTright=\skip122
-\LTleft=\skip123
-\LTright=\skip124
-\flrow@types=\toks45
+\LT@p@ftn=\toks43
+) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\enitkv@toks@=\toks44
+\labelindent=\skip110
+\enit@outerparindent=\dimen264
+\enit@toks=\toks45
+\enit@inbox=\box68
+\enit@count@id=\count499
+\enitdp@description=\count500
+)
+\c@inlinelisti=\count501
+\enitdp@inlinelist=\count502
+ (/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'russian'.
- (./thesis.aux
+ (./annot.aux
 Package babel Info: 'russian' activates 'russian' shorthands.
 (babel)             Reported on input line 9.
- (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux))
-\openout1 = `thesis.aux'.
+)
+\openout1 = `annot.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 126.
+LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 126.
  (/usr/share/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
 File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T2C/cmr/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 92.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T2C/cmr/m/n on input line 126.
+LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 126.
  (/usr/share/texmf-dist/tex/latex/cyrillic/t2ccmr.fd
 File: t2ccmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T2B/cmr/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 92.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T2B/cmr/m/n on input line 126.
+LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 126.
  (/usr/share/texmf-dist/tex/latex/cyrillic/t2bcmr.fd
 File: t2bcmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 92.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 126.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 126.
  (/usr/share/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 92.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 126.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 126.
  (/usr/share/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-\c@mv@tabular=\count506
-\c@mv@boldtabular=\count507
-LaTeX Info: Redefining \th on input line 92.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+\c@mv@tabular=\count503
+\c@mv@boldtabular=\count504
+LaTeX Info: Redefining \th on input line 126.
 Package biblatex Info: Trying to load language 'russian'...
 Package biblatex Info: ... file 'russian.lbx' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/lbx/russian.lbx
 File: russian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
-)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `thesis.bcf'.
+\openout3 = `annot.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' found.
- (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 92.
-Package biblatex Info: Reference segment=0 on input line 92.
+Package biblatex Info: ... file 'annot.bbl' found.
+ (./annot.bbl)
+Package biblatex Info: Reference section=0 on input line 126.
+Package biblatex Info: Reference segment=0 on input line 126.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count508
-\scratchdimen=\dimen270
+\scratchcounter=\count505
+\scratchdimen=\dimen265
 \scratchbox=\box69
-\nofMPsegments=\count509
-\nofMParguments=\count510
+\nofMPsegments=\count506
+\nofMParguments=\count507
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count511
-\MPscratchDim=\dimen271
-\MPnumerator=\count512
-\makeMPintoPDFobject=\count513
+\MPscratchCnt=\count508
+\MPscratchDim=\dimen266
+\MPnumerator=\count509
+\makeMPintoPDFobject=\count510
 \everyMPtoPDFconversion=\toks47
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -2115,268 +2073,174 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: floatrow package is loaded.
-Package caption Info: floatrow package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
  (/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
-Package caption Info: Fixing longtable code of `floatrow' package.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 92.
- (./thesis.out) (./thesis.out)
+Package hyperref Info: Link coloring OFF on input line 126.
+ (./annot.out) (./annot.out)
 \@outlinefile=\write4
-\openout4 = `thesis.out'.
+\openout4 = `annot.out'.
 
-\c@lstlisting=\count514
- (/usr/share/texmf-dist/tex/latex/floatrow/fr-longtable.sty
-Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
-\flrow@LT@lasthead=\box70
-\flrow@LT@prelastfoot=\box71
-\c@FBLTpage=\count515
-)
-<title.pdf, id=28, 598.235pt x 845.1575pt>
+\c@lstlisting=\count511
+<title.pdf, id=20, 598.235pt x 845.1575pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf>
-Package pdftex.def Info: title.pdf  used on input line 94.
+Package pdftex.def Info: title.pdf  used on input line 128.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<title.pdf, id=30, page=1, 598.235pt x 845.1575pt>
+<title.pdf, id=22, page=1, 598.235pt x 845.1575pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
-Package pdftex.def Info: title.pdf , page1 used on input line 94.
+Package pdftex.def Info: title.pdf , page1 used on input line 128.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
-Package pdftex.def Info: title.pdf , page1 used on input line 94.
+Package pdftex.def Info: title.pdf , page1 used on input line 128.
 (pdftex.def)             Requested size: 598.37958pt x 845.36177pt.
 File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
-Package pdftex.def Info: title.pdf , page1 used on input line 94.
+Package pdftex.def Info: title.pdf , page1 used on input line 128.
 (pdftex.def)             Requested size: 598.37958pt x 845.36177pt.
 File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
-Package pdftex.def Info: title.pdf , page1 used on input line 94.
+Package pdftex.def Info: title.pdf , page1 used on input line 128.
 (pdftex.def)             Requested size: 598.37958pt x 845.36177pt.
 File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
-Package pdftex.def Info: title.pdf , page1 used on input line 94.
+Package pdftex.def Info: title.pdf , page1 used on input line 128.
 (pdftex.def)             Requested size: 598.37958pt x 845.36177pt.
  [1
 
 
  <./title.pdf>]
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 35.83pt on input line 97.
+(Font)              scaled to size 35.83pt on input line 129.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 35.83pt on input line 97.
- (./thesis.toc
+(Font)              scaled to size 35.83pt on input line 129.
+ (./annot.toc
 LaTeX Font Info:    Trying to load font information for T1+Tempora-TLF on input line 1.
  (/usr/share/texmf-dist/tex/latex/tempora/T1Tempora-TLF.fd
 File: T1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for T1/Tempora-TLF.
 )
 LaTeX Font Info:    Font shape `T1/Tempora-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 1.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 2.
-)
-\tf@toc=\write5
-\openout5 = `thesis.toc'.
-
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
-
-[2
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}]
-\openout2 = `chapters/abstract.aux'.
-
- (./chapters/abstract.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 \end{abstract}
-                   [1
-
-])
-\openout2 = `chapters/chapter1.aux'.
-
- (./chapters/chapter1.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 29.86pt on input line 1.
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 29.86pt on input line 1.
-)
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
-
-[4
-
-
-
-
-]
-\openout2 = `chapters/chapter2.aux'.
-
- (./chapters/chapter2.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-)
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
-
-[5
-
-
-
-
-]
-\openout2 = `chapters/chapter3.aux'.
-
- (./chapters/chapter3.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
-LaTeX Font Info:    Trying to load font information for T2A+pcr on input line 4.
-LaTeX Font Info:    No file T2Apcr.fd. on input line 4.
-
-LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 4.
-
-)
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
-
-[6
-
-
-
-
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-\openout2 = `chapters/chapter4.aux'.
-
- (./chapters/chapter4.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-)
-Underfull \hbox (badness 1199) in paragraph at lines 4--111
-[]\T2A/Tempora-TLF/m/n/14.4 Компонент \T2A/pcr/m/n/14.4 se[]vault \T2A/Tempora-TLF/m/n/14.4 обес-пе-чи-ва-ет кон-фи-ден-ци-аль-ность снап-шо-тов
- []
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
-
-[7
-
-
-
-
-]
-\openout2 = `chapters/chapter5.aux'.
-
- (./chapters/chapter5.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
-)
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
-
-[8
-
-
-
-
-]
-LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 14.4pt on input line 115.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 115.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 115.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 115.
+(Font)              scaled to size 14.4pt on input line 2.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 115.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 115.
+(Font)              scaled to size 10.0pt on input line 2.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 2.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 2.
  (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 5.
+)
+\tf@toc=\write5
+\openout5 = `annot.toc'.
 
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
+ [2
 
-[9
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}]
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
+(Font)              scaled to size 20.74pt on input line 148.
+LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
+(Font)              scaled to size 20.74pt on input line 148.
+LaTeX Font Info:    Font shape `T1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 161.
+Package babel Info: 'russian' activates 'russian' shorthands.
+(babel)             Reported on input line 161.
+ [3]
+LaTeX Font Info:    Trying to load font information for T2A+pcr on input line 162.
+LaTeX Font Info:    No file T2Apcr.fd. on input line 162.
 
 
+LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
+(Font)              using `T2A/cmr/m/n' instead on input line 162.
+
+[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+Overfull \hbox (5.02118pt too wide) in paragraph at lines 173--174
+[]\T2A/Tempora-TLF/m/n/14.4 Достигнуты по-став-лен-ные за-да-чи: адап-ти-ро-ван ком-по-нент блоч-но-го шиф-
+ []
+
+[5]
+Overfull \hbox (2.1905pt too wide) in paragraph at lines 181--181
+[]\T2A/Tempora-TLF/m/n/14.4 A. Dearle, G. N. C. Kirby и R. Morrison, ѕ  Orthogonal Persistence Revisited,ї
+ []
+
+
+Overfull \hbox (5.69414pt too wide) in paragraph at lines 181--181
+\T2A/Tempora-TLF/m/n/14.4 Single Level Store Operating System,ї в \T2A/Tempora-TLF/m/it/14.4 Proc. ACM SIGOPS 28th Symposium
+ []
+
+
+Overfull \hbox (20.96794pt too wide) in paragraph at lines 181--181
+\T2A/Tempora-TLF/m/n/14.4 Summit 2018, 2018. url: []$\T2A/pcr/m/n/14.4 https : / / ^^\les . futurememorystorage . com / proceedings /
+ []
+
+
+Overfull \hbox (23.7315pt too wide) in paragraph at lines 181--181
+[]\T2A/Tempora-TLF/m/n/14.4 B. Liang и др., ѕ  Security Issues and Challenges for Virtualization Technologies,ї
+ []
+
+[6
 
 ]
-LaTeX Font Info:    Font shape `T1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 115.
-Package babel Info: 'russian' activates 'russian' shorthands.
-(babel)             Reported on input line 115.
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 18.32643pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.32643pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-18.32643pt}.
-
-[10]
-Underfull \hbox (badness 1127) in paragraph at lines 115--115
-[]\T2A/Tempora-TLF/m/n/14.4 A. Antonov, \T2A/Tempora-TLF/m/it/14.4 isomem\T2A/Tempora-TLF/m/n/14.4 , 2024. url: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh /
+Overfull \hbox (2.67166pt too wide) in paragraph at lines 181--181
+[]\T2A/Tempora-TLF/m/n/14.4 A. Antonov, ѕ  Persistency in Microkernel OS: Porting Experience of Phantom
  []
 
 
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 18.32643pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.32643pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-18.32643pt}.
+Overfull \hbox (21.6464pt too wide) in paragraph at lines 181--181
+[]\T2A/Tempora-TLF/m/n/14.4 R. Mitov и A. Tormasov, \T2A/Tempora-TLF/m/it/14.4 Practical Persistence on Microkernels (ft. PhantomOS)\T2A/Tempora-TLF/m/n/14.4 ,
+ []
 
-[11]
-Underfull \hbox (badness 1478) in paragraph at lines 115--115
-[]\T2A/Tempora-TLF/m/n/14.4 R. Mitov, \T2A/Tempora-TLF/m/it/14.4 phantomuserland-snapper\T2A/Tempora-TLF/m/n/14.4 . url: [][]$\T2A/pcr/m/n/14.4 https : / / github . com /
+[7]
+Overfull \hbox (3.8532pt too wide) in paragraph at lines 181--181
+[]\T2A/Tempora-TLF/m/n/14.4 R. Mitov, \T2A/Tempora-TLF/m/it/14.4 phantomuserland-snapper\T2A/Tempora-TLF/m/n/14.4 . url: []$\T2A/pcr/m/n/14.4 https : / / github . com / rumenmitov /
  []
 
 
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 18.32643pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.32643pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-18.32643pt}.
+Overfull \hbox (10.50151pt too wide) in paragraph at lines 181--181
+[]\T2A/Tempora-TLF/m/n/14.4 D. Zavalishin, \T2A/Tempora-TLF/m/it/14.4 PersistentMemory\T2A/Tempora-TLF/m/n/14.4 , 2019. url: []$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
+ []
 
-[12] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux))
+[8]
+Overfull \hbox (21.64449pt too wide) in paragraph at lines 181--181
+[]\T2A/Tempora-TLF/m/n/14.4 A. Antonov, \T2A/Tempora-TLF/m/it/14.4 isomem\T2A/Tempora-TLF/m/n/14.4 , 2024. url: []$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
+ []
+
+
+Overfull \hbox (23.5199pt too wide) in paragraph at lines 181--181
+[]\T2A/Tempora-TLF/m/n/14.4 A. Brisilin, \T2A/Tempora-TLF/m/it/14.4 Networking in Orthogonally Persistent Operating Systems\T2A/Tempora-TLF/m/n/14.4 , Bachelor's
+ []
+
+
+Overfull \hbox (2.33693pt too wide) in paragraph at lines 181--181
+[]\T2A/Tempora-TLF/m/n/14.4 M. Stein, \T2A/Tempora-TLF/m/it/14.4 File Vault (README)\T2A/Tempora-TLF/m/n/14.4 , 2025. url: []$\T2A/pcr/m/n/14.4 https : / / github . com / genodelabs /
+ []
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 86.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[figure] on input line 90.
+See the caption package documentation for explanation.
+
+[9] (./annot.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2385,25 +2249,25 @@ L3 programming layer <2026-01-19>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8755D2139F4A9A17B1FC39C1212B971C;923.
-Package logreq Info: Writing requests to 'thesis.run.xml'.
-\openout1 = `thesis.run.xml'.
+Package rerunfilecheck Info: File `annot.out' has not changed.
+(rerunfilecheck)             Checksum: CADBC883CD6F745D1F86CE7C028635A1;883.
+Package logreq Info: Writing requests to 'annot.run.xml'.
+\openout1 = `annot.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29830 strings out of 468907
- 511150 string characters out of 5460991
- 1410664 words of memory out of 5000000
- 57978 multiletter control sequences out of 15000+600000
+ 29360 strings out of 468907
+ 501933 string characters out of 5460991
+ 1386511 words of memory out of 5000000
+ 57561 multiletter control sequences out of 15000+600000
  663709 words of font info for 82 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 72i,17n,117p,1850b,1794s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (12 pages, 195096 bytes).
+ 72i,17n,117p,1440b,1831s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on annot.pdf (9 pages, 201866 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 64 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
