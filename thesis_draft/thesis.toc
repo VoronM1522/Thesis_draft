@@ -30,14 +30,14 @@
 \contentsline {section}{\numberline {3.3}Implementation plan}{29}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Implementation}{31}{chapter.4}%
 \contentsline {section}{\numberline {4.1}File\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault adaptation}{31}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Related adaptations and optimizations}{32}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Related adaptations and optimizations}{33}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Tests and results}{34}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Results}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Limitations}{39}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Shortcomings}{40}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Future work}{40}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusion}{42}{chapter.6}%
-\contentsline {chapter}{Bibliography cited}{43}{chapter*.7}%
-\contentsline {chapter}{\numberline {A}Implementation}{47}{appendix.A}%
-\contentsline {section}{\numberline {A.1}se\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault configuration example}{47}{section.A.1}%
+\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Results}{38}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Limitations}{40}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Shortcomings}{41}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Future work}{41}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusion}{43}{chapter.6}%
+\contentsline {chapter}{Bibliography cited}{44}{chapter*.7}%
+\contentsline {chapter}{\numberline {A}Implementation}{48}{appendix.A}%
+\contentsline {section}{\numberline {A.1}se\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault configuration example}{48}{section.A.1}%

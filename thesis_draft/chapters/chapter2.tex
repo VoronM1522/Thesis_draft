@@ -30,7 +30,7 @@ The concept of orthogonal persistence is based on principles formulated by resea
     \item Orthogonality of data types;
     \item Persistence Identification;
 \end{enumerate}
-In this case, independence means that data persistence does not depend on how the data is manipulated (the user cannot move data between long-term and short-term storage). The orthogonality of data types ensures that there are no cases in which data of any type cannot be persisted. The third principle means that persistent object identification does not relate to the type of such an jbject. A system that follows all three principles is orthogonally persistent.
+In this case, independence means that data persistence does not depend on how the data is manipulated (the user cannot move data between long-term and short-term storage). The orthogonality of data types ensures that there are no cases in which data of any type cannot be persisted. The third principle means that persistent object identification does not relate to the type of such an object. A system that follows all three principles is orthogonally persistent.
 
 \subsection{Advantages of a persistent system}
 
@@ -52,7 +52,7 @@ All of the advantages outlined above come at a cost. In addition to the general 
     \item Reduced performance of some applications: Because the programmer does not have full control over the location of the data, access speed may be reduced. A similar problem exists when using virtual memory.
     \item The cost of providing language-independent binding mechanisms.
 \end{enumerate}
-Looking ahead, I will say that Phantom has solutions to minimize each of these problems, so we will return to them in Section 2.2. For now, note that point 1 depends largely on the implementation, and it is difficult to generalize information regarding it. Problems similar to point 2 also affect (albeit often to a lesser extent) systems with virtual memory, since the programmer does not have full control over the layout of the data, which can slow down access to it.
+Looking ahead, we will say that Phantom has solutions to minimize each of these problems, so we will return to them in Section 2.2. For now, note that point 1 depends largely on the implementation, and it is difficult to generalize information regarding it. Problems similar to point 2 also affect (albeit often to a lesser extent) systems with virtual memory, since the programmer does not have full control over the layout of the data, which can slow down access to it.
 
 \section{PhantomOS}
 

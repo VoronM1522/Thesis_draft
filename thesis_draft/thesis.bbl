@@ -335,7 +335,7 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Available: \url{github.com/rumenmitov/phantomuserland-snapper}}
+      \field{note}{Available: \url{https://github.com/rumenmitov/phantomuserland-snapper}}
       \field{title}{phantomuserland-snapper}
     \endentry
     \entry{GitHub_Snapper}{github}{}{}
@@ -589,7 +589,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{"Available: \url{https://github.com/dzavalishin/phantomuserland/wiki/PersistentMemory}"}
+      \field{note}{Available: \url{https://github.com/dzavalishin/phantomuserland/wiki/PersistentMemory}}
       \field{title}{PersistentMemory}
       \field{year}{2019}
     \endentry
@@ -678,39 +678,41 @@
       \strng{authornamehash}{b146316006d368e92e5401e6b5f8c67a}
       \strng{authorfullhash}{b146316006d368e92e5401e6b5f8c67a}
       \strng{authorfullhashraw}{b146316006d368e92e5401e6b5f8c67a}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Persistency in microkernel OS: porting experience of Phantom OS to Genode OS Framework}
-      \field{type}{Bachelors work}
+      \field{type}{Bachelor's thesis}
       \field{year}{2021}
     \endentry
     \entry{GitHub_isomem}{github}{}{}
       \name{author}{1}{}{%
-        {{hash=4d064aaec343909caf4727d80e632e9e}{%
-           family={Anton},
+        {{hash=b146316006d368e92e5401e6b5f8c67a}{%
+           family={Antonov},
            familyi={A\bibinitperiod},
-           given={Antonov},
+           given={Anton},
            giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{4d064aaec343909caf4727d80e632e9e}
-      \strng{fullhash}{4d064aaec343909caf4727d80e632e9e}
-      \strng{fullhashraw}{4d064aaec343909caf4727d80e632e9e}
-      \strng{bibnamehash}{4d064aaec343909caf4727d80e632e9e}
-      \strng{authorbibnamehash}{4d064aaec343909caf4727d80e632e9e}
-      \strng{authornamehash}{4d064aaec343909caf4727d80e632e9e}
-      \strng{authorfullhash}{4d064aaec343909caf4727d80e632e9e}
-      \strng{authorfullhashraw}{4d064aaec343909caf4727d80e632e9e}
+      \strng{namehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{fullhash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{fullhashraw}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{bibnamehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authorbibnamehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authornamehash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authorfullhash}{b146316006d368e92e5401e6b5f8c67a}
+      \strng{authorfullhashraw}{b146316006d368e92e5401e6b5f8c67a}
+      \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{"Available: \url{https://github.com/S7rizh/phantomuserland/tree/15ea4c963c497255f824ffabd7e0cf987d3b45c5/phantom/isomem}"}
+      \field{note}{Available: \url{https://github.com/S7rizh/phantomuserland/tree/15ea4c963c497255f824ffabd7e0cf987d3b45c5/phantom/isomem}}
       \field{title}{isomem}
       \field{year}{2024}
     \endentry
-    \entry{Brisilin_Anton}{misc}{}{}
+    \entry{Brisilin_Anton}{thesis}{}{}
       \name{author}{1}{}{%
         {{hash=c3f5e24aff30dfd8acb03c4923551925}{%
            family={Brisilin},
@@ -734,10 +736,10 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Networking in orthogonally persistent operating systems}
-      \field{type}{Bachelors work}
+      \field{type}{Bachelor's thesis}
       \field{year}{2022}
     \endentry
-    \entry{Samburskiy_Kirill}{misc}{}{}
+    \entry{Samburskiy_Kirill}{thesis}{}{}
       \name{author}{1}{}{%
         {{hash=252cd4daa030cfe61ff1410885892729}{%
            family={Samburskiy},
@@ -761,7 +763,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Introducing bytecode runtime into a persistent operating system}
-      \field{type}{Bachelors work}
+      \field{type}{Bachelor's thesis}
       \field{year}{2024}
     \endentry
     \entry{FOSDEM_Snapper}{misc}{}{}
@@ -998,7 +1000,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{"Available: \url{https://github.com/genodelabs/genode/blob/sculpt-25.04/repos/gems/src/lib/tresor/README}"}
+      \field{note}{Available: \url{https://github.com/genodelabs/genode/blob/sculpt-25.04/repos/gems/src/lib/tresor/README}}
       \field{title}{Tresor (README)}
       \field{year}{2024}
     \endentry
@@ -1023,7 +1025,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{"Available: \url{https://github.com/genodelabs/genode/blob/sculpt-25.04/repos/gems/src/app/file_vault/README}"}
+      \field{note}{Available: \url{https://github.com/genodelabs/genode/blob/sculpt-25.04/repos/gems/src/app/file_vault/README}}
       \field{title}{File Vault (README)}
       \field{year}{2025}
     \endentry
