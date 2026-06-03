@@ -40,15 +40,15 @@ Init time (4~GB FS) & $\approx$20~min & $\approx$1~min \\
 \end{tabular}
 \end{table}
 
-It can be said that the tasks at hand have been completed, but it cannot be claimed that the goal has been fully achieved. Although we managed to secure the snapshots, performance has plummeted. This may not be as critical for less demanding tasks, since snapshots do not block Phantom processes for extended periods of time. However, during active operation, a large number of pages will be modified while a new snapshot is being created, and these will need to be written to the new snapshot, which in turn will lead to an even greater increase in snapshot creation time. This will also result in longer intervals between snapper calls, creating a risk of data loss over a longer period in the event of a failure. On the other hand, Dmitry Zavalishin described a problem where a large amount of memory is used and becomes obsolete between snapshot creations, citing graph computation as an example. When using the OS for similar tasks where a relatively long interval between snapshots is required and data loss during that period would not be critical, it is possible to mitigate the consequences to a significant extent. This is best verified through practical use, but that is currently impossible due to the system’s lack of readiness.
+Although we managed to secure the snapshots, performance has plummeted. This may not be as critical for less demanding tasks, since snapshots do not block Phantom processes for extended periods of time. However, during active operation, a large number of pages will be modified while a new snapshot is being created, and these will need to be written to the new snapshot, which in turn will lead to an even greater increase in snapshot creation time. This will also result in longer intervals between snapper calls, creating a risk of data loss over a longer period in the event of a failure. On the other hand, Dmitry Zavalishin described a problem where a large amount of memory is used and becomes obsolete between snapshot creations, citing graph computation as an example. When using the OS for similar tasks where a relatively long interval between snapshots is required and data loss during that period would not be critical, it is possible to mitigate the consequences to a significant extent. This is best verified through practical use, but that is currently impossible due to the system’s lack of readiness.
 
 \section{Limitations}
 
-
+This project certainly has a number of serious limitations. First, Tresor is not intended for production use. The author himself acknowledges this. The problem is that it is the only library designed for block-level encryption. And after the author left the team, its support has deteriorated even further. Second, testing was conducted on small amounts of user space. It cannot be said with certainty that the system will operate with comparable levels of performance and stability as the volume increases exponentially. Third, testing was conducted only on a virtual machine with placeholders instead of many actual working components. Although this scenario provides an indication of approximate results, it still differs significantly from real-world usage.
 
 \section{Shortcomings}
 
-
+The performance issue is obvious, as has been pointed out many times. The only apparent solution is to make corrections to the library. Another approach is to sacrifice security to some extent—though the exact extent remains to be determined—and implement a simpler encryption method. This can be done at the file system level. Genode includes an OpenSSL port, so there is no need to implement cryptographic algorithms from scratch, which would be unacceptable.
 
 \section{Future work}
 
