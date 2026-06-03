@@ -504,7 +504,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/euler/eurb5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/tempora/Tempora-Regular-TLF-t2a.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/lhcyr/lh-t2a/larm1000.tfm
-INPUT /home/VM/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 INPUT ./chapters/chapter5.tex
 INPUT ./chapters/chapter5.tex
@@ -512,6 +511,7 @@ OUTPUT chapters/chapter5.aux
 INPUT ./chapters/chapter5.tex
 INPUT ./chapters/chapter5.tex
 INPUT chapters/chapter5.tex
+INPUT /home/VM/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm
 INPUT ./chapters/chapter6.tex
 INPUT ./chapters/chapter6.tex
 OUTPUT chapters/chapter6.aux

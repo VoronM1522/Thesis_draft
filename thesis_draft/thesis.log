@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  3 JUN 2026 04:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  3 JUN 2026 05:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2089,12 +2089,12 @@ Package hyperref Info: Link coloring ON on input line 125.
 \openout4 = `thesis.out'.
 
 \c@lstlisting=\count511
-<title.pdf, id=164, 598.235pt x 845.1575pt>
+<title.pdf, id=172, 598.235pt x 845.1575pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf>
 Package pdftex.def Info: title.pdf  used on input line 127.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<title.pdf, id=166, page=1, 598.235pt x 845.1575pt>
+<title.pdf, id=174, page=1, 598.235pt x 845.1575pt>
 File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
 Package pdftex.def Info: title.pdf , page1 used on input line 127.
@@ -2145,21 +2145,21 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [2
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}] [3])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [3] (./thesis.lot)
+ [4] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [4
+ [5
 
 ] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [5
+ [6
 
 ]
 \openout2 = `chapters/abstract.aux'.
@@ -2220,7 +2220,7 @@ Chapter 3.
 
 
 ]
-<use_cases.pdf, id=425, 2420.13242pt x 3400.47269pt>
+<use_cases.pdf, id=440, 2420.13242pt x 3400.47269pt>
 File: use_cases.pdf Graphic file (type pdf)
 <use use_cases.pdf>
 Package pdftex.def Info: use_cases.pdf  used on input line 15.
@@ -2229,7 +2229,7 @@ Package pdftex.def Info: use_cases.pdf  used on input line 15.
 Overfull \vbox (24.26334pt too high) has occurred while \output is active []
 
  [25 <./use_cases.pdf>] [26]
-<use_cases_supported.pdf, id=969, 2420.13242pt x 3400.47269pt>
+<use_cases_supported.pdf, id=983, 2420.13242pt x 3400.47269pt>
 File: use_cases_supported.pdf Graphic file (type pdf)
 <use use_cases_supported.pdf>
 Package pdftex.def Info: use_cases_supported.pdf  used on input line 30.
@@ -2271,42 +2271,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \T2A/pcr/m/n/10 msg02999 . html$[][]\T2A/Tempora-TLF/m/n/10 ; [][]$\T2A/pcr/m/n/10 https : / / lists . genode . org / mailman3 / hyperkitty / list / users @ lists . genode . org / thread /
  []
 
-[35]
-Underfull \hbox (badness 5388) in paragraph at lines 49--49
-[]|\T2A/Tempora-TLF/m/n/14.4 General-purpose se-cure
- []
-
-
-Underfull \hbox (badness 6510) in paragraph at lines 51--51
-[]|\T2A/Tempora-TLF/m/n/14.4 GUI via ui[]config /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-[]|\T2A/Tempora-TLF/m/n/14.4 Yes (con-fig-urable via
- []
-
-
-Underfull \hbox (badness 3439) in paragraph at lines 65--65
-[]|\T2A/Tempora-TLF/m/n/14.4 Pre-allocated via trun-
- []
-
-) [36{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] [37]
+) [35] [36{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
 \openout2 = `chapters/chapter5.aux'.
 
  (./chapters/chapter5.tex
 Chapter 5.
-) [38
+
+Underfull \hbox (badness 5388) in paragraph at lines 18--18
+[]|\T2A/Tempora-TLF/m/n/14.4 General-purpose se-cure
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 20--20
+[]|\T2A/Tempora-TLF/m/n/14.4 GUI via ui[]config /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+[]|\T2A/Tempora-TLF/m/n/14.4 Yes (con-fig-urable via
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 34--34
+[]|\T2A/Tempora-TLF/m/n/14.4 Pre-allocated via trun-
+ []
+
+[37
 
 
 
 
-]
+] [38]) [39]
 \openout2 = `chapters/chapter6.aux'.
 
  (./chapters/chapter6.tex
 Chapter 6.
-) [39
+) [40
 
 
 
@@ -2325,7 +2325,7 @@ Overfull \hbox (25.56607pt too wide) in paragraph at lines 155--155
 Package biblatex Warning: No driver for 'documentation'.
 (biblatex)                Using fallback driver on input line 155.
 
-[40
+[41
 
 
 
@@ -2357,7 +2357,7 @@ Overfull \hbox (24.55547pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
  []
 
-[41]
+[42]
 Overfull \hbox (9.01021pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Сборка мусора в персистентной модели: От терабайта
  []
@@ -2376,7 +2376,7 @@ Overfull \hbox (24.22165pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 A. An-ton, \T2A/Tempora-TLF/m/it/14.4 Isomem\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
  []
 
-[42]
+[43]
 
 Package biblatex Warning: No driver for 'github'.
 (biblatex)                Using fallback driver on input line 155.
@@ -2390,15 +2390,15 @@ Overfull \hbox (0.9973pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 M. Stein, \T2A/Tempora-TLF/m/it/14.4 File vault (readme)\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / genodelabs /
  []
 
-[43] [44]
+[44] [45]
 \openout2 = `chapters/appex.aux'.
 
  (./chapters/appex.tex
 Appendix A.
-[45
+[46
 
 
-] [46]) [47] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
+] [47]) [48] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2408,24 +2408,24 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D7A62549942E91C71FE037986345DAE7;5966.
+(rerunfilecheck)             Checksum: 4D7A29DA4816F34C2F344A7C75FC40A9;6300.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29996 strings out of 468907
- 513107 string characters out of 5460991
- 1430881 words of memory out of 5000000
- 57961 multiletter control sequences out of 15000+600000
+ 30002 strings out of 468907
+ 513168 string characters out of 5460991
+ 1430887 words of memory out of 5000000
+ 57963 multiletter control sequences out of 15000+600000
  674006 words of font info for 99 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 87i,17n,117p,2339b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,117p,2339b,2402s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (47 pages, 1539481 bytes).
+Output written on thesis.pdf (49 pages, 1543001 bytes).
 PDF statistics:
- 1798 PDF objects out of 2073 (max. 8388607)
- 1189 compressed objects within 12 object streams
- 210 named destinations out of 1000 (max. 500000)
- 346 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1819 PDF objects out of 2073 (max. 8388607)
+ 1207 compressed objects within 13 object streams
+ 214 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

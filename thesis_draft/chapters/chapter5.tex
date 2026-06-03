@@ -1,3 +1,55 @@
 \chapter{Evaluation and Discussion}
 
-\section{}
+In this chapter, we will take a closer look at the results of our work. We will examine the findings, limitations, and shortcomings of our study, as well as ways to address them. Finally, we will touch on future research in this area.
+
+\section{Results}
+
+
+During the course of the research, the file\_vault component was adapted for use by Snapper as a snapshot storage system. The integration was seamless for Snapper and other components; only minor changes were required to ensure proper functionality, changes that would have been necessary even without our component. Only a few modifications to lwext4 can be considered truly necessary specifically for this project. A comparative analysis of the resulting and target components can be seen in Table~\ref{tab:vault_comparison}.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of file\_vault and se\_vault}
+\label{tab:vault_comparison}
+\begin{tabular}{|p{4.2cm}|p{5.2cm}|p{5.2cm}|}
+\toprule
+\textbf{Parameter} & \textbf{file\_vault} & \textbf{se\_vault} \\
+\midrule
+Purpose & General-purpose secure file storage & Snapshot encryption for Phantom OS \\
+\midrule
+User interface & GUI via ui\_config / ui\_report ROM & None (headless) \\
+\midrule
+Authentication & Passphrase entered at runtime & Key file read from USB drive \\
+\midrule
+File system driver & rump\_vfs (ext2) & lwext4 (ext4) \\
+\midrule
+fsck support & No & Yes (configurable via \texttt{fsck\_apply}) \\
+\midrule
+Storage backend & Image file via File\_system session & Direct block device session \\
+\midrule
+Trust Anchor storage & File\_system session & USB block session \\
+\midrule
+Online extend / rekey & Yes & Removed \\
+\midrule
+Image file creation & Pre-allocated via truncate\_file & Skipped \\
+\midrule
+Block size & 512 & Standardized to 4~KB \\
+\midrule
+Init time (4~GB FS) & $\approx$20~min & $\approx$1~min \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+It can be said that the tasks at hand have been completed, but it cannot be claimed that the goal has been fully achieved. Although we managed to secure the snapshots, performance has plummeted. This may not be as critical for less demanding tasks, since snapshots do not block Phantom processes for extended periods of time. However, during active operation, a large number of pages will be modified while a new snapshot is being created, and these will need to be written to the new snapshot, which in turn will lead to an even greater increase in snapshot creation time. This will also result in longer intervals between snapper calls, creating a risk of data loss over a longer period in the event of a failure. On the other hand, Dmitry Zavalishin described a problem where a large amount of memory is used and becomes obsolete between snapshot creations, citing graph computation as an example. When using the OS for similar tasks where a relatively long interval between snapshots is required and data loss during that period would not be critical, it is possible to mitigate the consequences to a significant extent. This is best verified through practical use, but that is currently impossible due to the system’s lack of readiness.
+
+\section{Limitations}
+
+
+
+\section{Shortcomings}
+
+
+
+\section{Future work}
+
+
