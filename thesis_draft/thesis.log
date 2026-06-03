@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  3 JUN 2026 06:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  3 JUN 2026 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2145,11 +2145,11 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [2
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}] [3])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [4] (./thesis.lot)
+ [3] [4] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
@@ -2204,12 +2204,17 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 15.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 15.
+
+Overfull \hbox (8.15103pt too wide) in paragraph at lines 17--18
+\T2A/Tempora-TLF/m/n/14.4 used [[][]1[][]]. This is pre-cisely how some of the ear-li-est re-searchers in the field^^VMorrison
+ []
+
 [12
 
 
 
 
-] [13] [14] [15] [16] [17] [18] [19] [20] [21]) [22]
+] [13] [14] [15] [16] [17] [18] [19] [20]) [21] [22]
 \openout2 = `chapters/chapter3.aux'.
 
  (./chapters/chapter3.tex
@@ -2224,18 +2229,18 @@ Chapter 3.
 File: use_cases.pdf Graphic file (type pdf)
 <use use_cases.pdf>
 Package pdftex.def Info: use_cases.pdf  used on input line 15.
-(pdftex.def)             Requested size: 464.40904pt x 652.53052pt.
+(pdftex.def)             Requested size: 470.09598pt x 660.52112pt.
  [24]
-Overfull \vbox (24.26334pt too high) has occurred while \output is active []
+Overfull \vbox (20.87302pt too high) has occurred while \output is active []
 
  [25 <./use_cases.pdf>] [26]
 <use_cases_supported.pdf, id=983, 2420.13242pt x 3400.47269pt>
 File: use_cases_supported.pdf Graphic file (type pdf)
 <use use_cases_supported.pdf>
 Package pdftex.def Info: use_cases_supported.pdf  used on input line 30.
-(pdftex.def)             Requested size: 464.40904pt x 652.53052pt.
+(pdftex.def)             Requested size: 470.09598pt x 660.52112pt.
  [27]
-Overfull \vbox (24.26334pt too high) has occurred while \output is active []
+Overfull \vbox (20.87302pt too high) has occurred while \output is active []
 
  [28 <./use_cases_supported.pdf>]) [29] [30]
 \openout2 = `chapters/chapter4.aux'.
@@ -2317,7 +2322,7 @@ Package biblatex Warning: No driver for 'documentation'.
 (biblatex)                Using fallback driver on input line 155.
 
 
-Overfull \hbox (25.56607pt too wide) in paragraph at lines 155--155
+Overfull \hbox (19.87561pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Phan-tom os doc-u-men-ta-tion\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / app . readthedocs .
  []
 
@@ -2335,16 +2340,11 @@ Package biblatex Warning: No driver for 'github'.
 (biblatex)                Using fallback driver on input line 155.
 
 
-Overfull \hbox (0.17278pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 R. Mi-tov, \T2A/Tempora-TLF/m/it/14.4 Phantomuserland-snapper\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 github . com / rumenmitov /
- []
-
-
 Package biblatex Warning: No driver for 'github'.
 (biblatex)                Using fallback driver on input line 155.
 
 
-Overfull \hbox (40.97963pt too wide) in paragraph at lines 155--155
+Overfull \hbox (35.28917pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Персистентная оперативная память\T2A/Tempora-TLF/m/n/14.4 , Хабр, Дата обращения:
  []
 
@@ -2353,17 +2353,17 @@ Package biblatex Warning: No driver for 'documentation'.
 (biblatex)                Using fallback driver on input line 155.
 
 
-Overfull \hbox (24.55547pt too wide) in paragraph at lines 155--155
+Overfull \hbox (18.865pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
  []
 
 [44]
-Overfull \hbox (9.01021pt too wide) in paragraph at lines 155--155
+Overfull \hbox (3.31975pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Сборка мусора в персистентной модели: От терабайта
  []
 
 
-Overfull \hbox (10.67485pt too wide) in paragraph at lines 155--155
+Overfull \hbox (4.98439pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Фантом: Большая сборка мусора\T2A/Tempora-TLF/m/n/14.4 , Хабр, Дата обращения:
  []
 
@@ -2372,8 +2372,13 @@ Package biblatex Warning: No driver for 'github'.
 (biblatex)                Using fallback driver on input line 155.
 
 
-Overfull \hbox (24.22165pt too wide) in paragraph at lines 155--155
+Overfull \hbox (18.53119pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 A. An-ton, \T2A/Tempora-TLF/m/it/14.4 Isomem\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
+ []
+
+
+Overfull \hbox (15.30214pt too wide) in paragraph at lines 155--155
+\T2A/pcr/m/n/14.4 tree / 15ea4c963c497255f824^^[abd7e0cf987d3b45c5 / phantom / isomem$[][]\T2A/Tempora-TLF/m/n/14.4 ", 2024. 
  []
 
 [45]
@@ -2385,20 +2390,15 @@ Package biblatex Warning: No driver for 'github'.
 Package biblatex Warning: No driver for 'github'.
 (biblatex)                Using fallback driver on input line 155.
 
-
-Overfull \hbox (0.9973pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 M. Stein, \T2A/Tempora-TLF/m/it/14.4 File vault (readme)\T2A/Tempora-TLF/m/n/14.4 , "Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / genodelabs /
- []
-
-[46] [47]
+[46]
 \openout2 = `chapters/appex.aux'.
 
  (./chapters/appex.tex
 Appendix A.
-[48
+[47
 
 
-] [49]) [50] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
+] [48]) [49] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2414,18 +2414,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30004 strings out of 468907
- 513173 string characters out of 5460991
- 1430887 words of memory out of 5000000
+ 30003 strings out of 468907
+ 513166 string characters out of 5460991
+ 1434887 words of memory out of 5000000
  57962 multiletter control sequences out of 15000+600000
  674006 words of font info for 99 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 87i,17n,117p,2333b,2402s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,117p,2333b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (51 pages, 1547475 bytes).
+Output written on thesis.pdf (50 pages, 1546432 bytes).
 PDF statistics:
- 1832 PDF objects out of 2073 (max. 8388607)
- 1218 compressed objects within 13 object streams
- 217 named destinations out of 1000 (max. 500000)
+ 1820 PDF objects out of 2073 (max. 8388607)
+ 1207 compressed objects within 13 object streams
+ 216 named destinations out of 1000 (max. 500000)
  362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

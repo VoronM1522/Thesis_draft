@@ -20,8 +20,8 @@
 \contentsline {subsection}{\numberline {2.3.3}Snapper}{19}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}Data protection at rest}{20}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Threats to stored data}{20}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Ways to protect stored data}{21}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Current work}{22}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.2}Ways to protect stored data}{20}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Current work}{21}{subsection.2.4.3}%
 \contentsline {chapter}{\numberline {3}Methodology}{23}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Use cases}{23}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}All use cases}{23}{subsection.3.1.1}%
@@ -39,5 +39,5 @@
 \contentsline {section}{\numberline {5.4}Future work}{40}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Conclusion}{42}{chapter.6}%
 \contentsline {chapter}{Bibliography cited}{43}{chapter*.7}%
-\contentsline {chapter}{\numberline {A}Implementation}{48}{appendix.A}%
-\contentsline {section}{\numberline {A.1}se\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault configuration example}{48}{section.A.1}%
+\contentsline {chapter}{\numberline {A}Implementation}{47}{appendix.A}%
+\contentsline {section}{\numberline {A.1}se\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault configuration example}{47}{section.A.1}%
