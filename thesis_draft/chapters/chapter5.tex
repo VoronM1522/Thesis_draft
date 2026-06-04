@@ -69,39 +69,11 @@ Storage initialization (4~GB) & Not required & $\approx$1~min \\
 \end{tabular}
 \end{table}
 
-
-The detailed per-run timing measurements are provided in Section~4.3 (Tables~\ref{tab:perf_runs} and~\ref{tab:restore_runs}).
-
-Although we managed to secure the snapshots, performance has plummeted. This may not be as critical for less demanding tasks, since snapshots do not block Phantom processes for extended periods of time. % OLD: However, during active operation, a large number of pages will be modified
-% while a new snapshot is being created, and these will need to be written to the
-% new snapshot, which in turn will lead to an even greater increase in snapshot
-% creation time. This will also result in longer intervals between snapper calls,
-% creating a risk of data loss over a longer period in the event of a failure.
-%
-% RU (перевести): При последующих снапшотах ситуация несколько иная: создание
-% снапшота включает как запись изменённых страниц, так и чтение неизменённых.
-% Поскольку накладные расходы на чтение существенно ниже, чем на запись
-% (≈11× против ≈24×), итоговый оверхед определяется соотношением изменённых
-% и неизменённых страниц. При высокой интенсивности записи это всё равно
-% увеличивает интервалы между вызовами snapper и создаёт риск потери данных
-% за больший период в случае сбоя. On the other hand, Dmitry Zavalishin described a problem where a large amount of memory is used and becomes obsolete between snapshot creations, citing graph computation as an example. When using the OS for similar tasks where a relatively long interval between snapshots is required and data loss during that period would not be critical, it is possible to mitigate the consequences to a significant extent. This is best verified through practical use, but that is currently impossible due to the system’s lack of readiness.
+Although we managed to secure the snapshots, performance has plummeted. This may not be as critical for less demanding tasks, since snapshots do not block Phantom processes for extended periods of time.  For subsequent snapshots, the situation is somewhat different: creating a snapshot involves reading hashes to locate changed pages and writing the changed pages. Since the overhead for reading is significantly lower than for writing, the total overhead is determined by the ratio of modified to unmodified pages and depends largely on the usage scenario, which is difficult to verify on a demo version of the OS. On the other hand, Dmitry Zavalishin described a problem where a large amount of memory is used and becomes obsolete between snapshot creations, citing graph computation as an example \cite{Habr_GC2}. When using the OS for similar tasks where a relatively long interval between snapshots is required and data loss during that period would not be critical, it is possible to mitigate the consequences to a significant extent. This is best verified through practical use, but that is currently impossible due to the system’s lack of readiness.
 
 \section{Limitations}
 
-
-% RU (перевести): Следует отметить, что приведённые замеры не являются точной
-% репрезентацией чистых тестов чтения и записи, однако отражают общую тенденцию.
-% При создании первого снапшота в зашифрованное хранилище выполняется только запись,
-% а при восстановлении — только чтение. Это позволяет оценить накладные расходы
-% шифрования на каждую из операций раздельно.
-
-This project certainly has a number of serious limitations. First, Tresor is not intended for production use. The author himself acknowledges this. The problem is that it is the only library designed for block-level encryption. After the author left the team, its support has deteriorated even further. Second, testing was conducted on small amounts of user space. It cannot be said with certainty that the system will operate with comparable levels of performance and stability as the volume increases exponentially. Third, testing was conducted only on a virtual machine with placeholders instead of many actual working components. Although this scenario provides an indication of approximate results, it still differs significantly from real-world usage.
-% RU (перевести): Наконец, проведённые замеры не являются чистыми тестами
-% производительности операций ввода-вывода: при создании первого снапшота
-% выполняется только запись, а при восстановлении — только чтение, тогда как
-% в реальной работе операции чтения и записи перемежаются. Результаты следует
-% рассматривать как оценку накладных расходов шифрования на каждую из операций
-% в отдельности, а не как итоговую характеристику производительности системы.
+This project certainly has a number of serious limitations. First, Tresor is not intended for use in a production environment. The author himself acknowledges this. The problem is that it is the only library designed for block-level encryption. Since the author left the team, support for the project has deteriorated even further. Second, testing was conducted on small amounts of user space. It cannot be stated with certainty that the system will perform with comparable levels of performance and stability as the volume of data increases exponentially. Third, testing was conducted only on a virtual machine with placeholders instead of many real working components. Although this scenario provides an idea of approximate results, it still differs significantly from real-world usage and is also influenced by the state of the host system. Finally, the measurements taken are not pure I/O performance tests: when creating the first snapshot, only a write operation to the secure storage is performed, and during restoration, only a read operation from it; however, in the first case, a read operation from isomem is performed, and in the second, a write operation to it. The results should be viewed as an estimate of the overhead for encryption for each snapshot operation individually, rather than as an overall assessment of system performance.
 
 \section{Shortcomings}
 

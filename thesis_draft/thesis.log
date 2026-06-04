@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2354,12 +2354,12 @@ Underfull \hbox (badness 6592) in paragraph at lines 67--67
 []|\T2A/Tempora-TLF/m/n/14.4 Storage ini-tial-iza-
  []
 
-[39] [40]) [41] [42]
+[39] [40] [41]) [42] [43]
 \openout2 = `chapters/chapter6.aux'.
 
  (./chapters/chapter6.tex
 Chapter 6.
-) [43
+) [44
 
 
 
@@ -2378,7 +2378,7 @@ Overfull \hbox (19.87561pt too wide) in paragraph at lines 155--155
 Package biblatex Warning: No driver for 'documentation'.
 (biblatex)                Using fallback driver on input line 155.
 
-[44
+[45
 
 
 
@@ -2405,7 +2405,7 @@ Overfull \hbox (12.98982pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
  []
 
-[45]
+[46]
 Overfull \hbox (3.31975pt too wide) in paragraph at lines 155--155
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Сборка мусора в персистентной модели: От терабайта
  []
@@ -2429,24 +2429,24 @@ Overfull \hbox (9.42696pt too wide) in paragraph at lines 155--155
 \T2A/pcr/m/n/14.4 tree / 15ea4c963c497255f824^^[abd7e0cf987d3b45c5 / phantom / isomem$[][]\T2A/Tempora-TLF/m/n/14.4 , 2024. 
  []
 
-[46]
-
-Package biblatex Warning: No driver for 'github'.
-(biblatex)                Using fallback driver on input line 155.
-
-
-Package biblatex Warning: No driver for 'github'.
-(biblatex)                Using fallback driver on input line 155.
-
 [47]
+
+Package biblatex Warning: No driver for 'github'.
+(biblatex)                Using fallback driver on input line 155.
+
+
+Package biblatex Warning: No driver for 'github'.
+(biblatex)                Using fallback driver on input line 155.
+
+[48]
 \openout2 = `chapters/appex.aux'.
 
  (./chapters/appex.tex
 Appendix A.
-[48
+[49
 
 
-] [49]) [50] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
+] [50]) [51] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2462,18 +2462,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30016 strings out of 468907
- 513344 string characters out of 5460991
+ 30017 strings out of 468907
+ 513351 string characters out of 5460991
  1435132 words of memory out of 5000000
  57965 multiletter control sequences out of 15000+600000
  674006 words of font info for 99 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  87i,17n,117p,2337b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (51 pages, 1552527 bytes).
+Output written on thesis.pdf (52 pages, 1554169 bytes).
 PDF statistics:
- 1858 PDF objects out of 2073 (max. 8388607)
- 1244 compressed objects within 13 object streams
- 226 named destinations out of 1000 (max. 500000)
+ 1861 PDF objects out of 2073 (max. 8388607)
+ 1246 compressed objects within 13 object streams
+ 227 named destinations out of 1000 (max. 500000)
  362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

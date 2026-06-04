@@ -2410,6 +2410,7 @@
     <bcf:citekey order="30" intorder="1">GitHub_tresor</bcf:citekey>
     <bcf:citekey order="31" intorder="1">GitHub_file_vault</bcf:citekey>
     <bcf:citekey order="31" intorder="2">Page_file_vault</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Habr_GC2</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
