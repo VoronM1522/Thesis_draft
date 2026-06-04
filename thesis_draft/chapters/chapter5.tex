@@ -60,62 +60,16 @@ Unauthorized data extraction & Possible; image mountable directly & Not possible
 \midrule
 Recovery support & Applicable; Not configured yet & ext4 with fsck (configurable) \\
 \midrule
-Snapshot creation time & $\approx$2.10~s & $\approx$51.00~s ($\approx$24 overhead) \\
+Snapshot creation time & $\approx$2.10~s & $\approx$51.00~s ($\approx$24$\times$ overhead) \\
 \midrule
-Snapshot restore time & $\approx$2.50~s & $\approx$27.30~s ($\approx$11 overhead) \\
+Snapshot restore time & $\approx$2.50~s & $\approx$27.30~s ($\approx$11$\times$ overhead) \\
 \midrule
 Storage initialization (4~GB) & Not required & $\approx$1~min \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The first-snapshot creation time was measured over five consecutive runs for both configurations; the results are shown in Table~\ref{tab:perf_runs}.
-
-\begin{table}[H]
-\centering
-\caption{First snapshot creation time over 5 runs (seconds)}
-\label{tab:perf_runs}
-\begin{tabular}{|c|c|c|c|}
-\toprule
-\textbf{Run} & \textbf{Without encryption} & \textbf{With encryption} & \textbf{Overhead (times)} \\
-\midrule
-1 & 2.08 & 50.84 & 24.44 \\
-2 & 2.09 & 50.82 & 24.32 \\
-3 & 2.13 & 51.19 & 24.03 \\
-4 & 2.11 & 51.61 & 24.46 \\
-5 & 2.09 & 50.54 & 24.18 \\
-\midrule
-\textbf{Mean} & \textbf{2.10} & \textbf{51.00} & \textbf{24.29} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The restore time---measured from boot until the snapshot is fully loaded---was also recorded over five runs; see Table~\ref{tab:restore_runs}.
-
-\begin{table}[H]
-\centering
-\caption{Snapshot restore time over 5 runs (seconds)}
-\label{tab:restore_runs}
-\begin{tabular}{|c|c|c|c|}
-\toprule
-\textbf{Run} & \textbf{Without encryption} & \textbf{With encryption} & \textbf{Overhead (times)} \\
-\midrule
-1 & 2.46 & 27.52 & 11.19 \\
-2 & 2.49 & 27.52 & 11.05 \\
-3 & 2.53 & 26.98 & 10.66 \\
-4 & 2.47 & 27.20 & 11.01 \\
-5 & 2.55 & 27.28 & 10.70 \\
-\midrule
-\textbf{Mean} & \textbf{2.50} & \textbf{27.30} & \textbf{10.92} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-% RU (перевести): Следует отметить, что приведённые замеры не являются точной
-% репрезентацией чистых тестов чтения и записи, однако отражают общую тенденцию.
-% При создании первого снапшота в зашифрованное хранилище выполняется только запись,
-% а при восстановлении — только чтение, однако в обоих случаях . Это позволяет оценить накладные расходы
-% шифрования на каждую из операций раздельно.
+The detailed per-run timing measurements are provided in Section~4.3 (Tables~\ref{tab:perf_runs} and~\ref{tab:restore_runs}).
 
 Although we managed to secure the snapshots, performance has plummeted. This may not be as critical for less demanding tasks, since snapshots do not block Phantom processes for extended periods of time. % OLD: However, during active operation, a large number of pages will be modified
 % while a new snapshot is being created, and these will need to be written to the
@@ -133,7 +87,13 @@ Although we managed to secure the snapshots, performance has plummeted. This may
 
 \section{Limitations}
 
-This project certainly has a number of serious limitations. First, Tresor is not intended for production use. The author himself acknowledges this. The problem is that it is the only library designed for block-level encryption. And after the author left the team, its support has deteriorated even further. Second, testing was conducted on small amounts of user space. It cannot be said with certainty that the system will operate with comparable levels of performance and stability as the volume increases exponentially. Third, testing was conducted only on a virtual machine with placeholders instead of many actual working components. Although this scenario provides an indication of approximate results, it still differs significantly from real-world usage.
+This project certainly has a number of serious limitations. First, Tresor is not intended for production use. The author himself acknowledges this. The problem is that it is the only library designed for block-level encryption. After the author left the team, its support has deteriorated even further. Second, testing was conducted on small amounts of user space. It cannot be said with certainty that the system will operate with comparable levels of performance and stability as the volume increases exponentially. Third, testing was conducted only on a virtual machine with placeholders instead of many actual working components. Although this scenario provides an indication of approximate results, it still differs significantly from real-world usage.
+% RU (перевести): Наконец, проведённые замеры не являются чистыми тестами
+% производительности операций ввода-вывода: при создании первого снапшота
+% выполняется только запись, а при восстановлении — только чтение, тогда как
+% в реальной работе операции чтения и записи перемежаются. Результаты следует
+% рассматривать как оценку накладных расходов шифрования на каждую из операций
+% в отдельности, а не как итоговую характеристику производительности системы.
 
 \section{Shortcomings}
 
@@ -141,4 +101,4 @@ The performance issue is obvious, as has been pointed out many times. The only a
 
 \section{Future work}
 
-Clearly, we should focus on improving performance in the future. However, there is another aspect that hasn’t been discussed yet. It’s worth noting that isomem also uses a block device. This is part of the persistent storage where pages are swapped out from RAM. When the system shuts down, a large number of artifacts remain in it, allowing the machine’s state at the time of shutdown to be almost completely restored. This should be avoided. It is not difficult to modify se\_vault to provide a block session instead of a filesystem session. This will allow it to be used for encrypting the contents of the isomem block device. Moving the file system outside the sandbox will increase the solution’s flexibility. For greater security, conversely, one can place snapper and/or isomem inside the sandbox. This is a fairly simple solution to implement. In the early stages of adaptation, this option was also used in our work, but we abandoned it in favor of configurability. If it is absolutely necessary to protect data, it is still possible to do so using the \textit{block} VFS plugin, but given the current performance levels, this is undesirable. Another approach could be to attempt to combine snapper and tresor. Tresor also stores snapshots and uses incremental updates when writing. In this regard, their functionality is similar, but the components use it differently.
+Clearly, we should focus on improving performance in the future. However, there is another aspect that hasn’t been discussed yet. It is worth noting that isomem also uses a block device. This is part of the persistent storage where pages are swapped out from RAM. When the system shuts down, a large number of artifacts remain in it, allowing the machine’s state at the time of shutdown to be almost completely restored. This should be avoided. It is not difficult to modify se\_vault to provide a block session instead of a filesystem session. This will allow it to be used for encrypting the contents of the isomem block device. Moving the file system outside the sandbox will increase the solution’s flexibility. For greater security, conversely, one can place snapper and/or isomem inside the sandbox. This is a fairly simple solution to implement. In the early stages of adaptation, this option was also used in our work, but we abandoned it in favor of configurability. If it is absolutely necessary to protect data, it is still possible to do so using the \textit{block} VFS plugin, but given the current performance levels, this is undesirable. Another approach could be to attempt to combine snapper and tresor. Tresor also stores snapshots and uses incremental updates when writing. In this regard, their functionality is similar, but the components use it differently.
