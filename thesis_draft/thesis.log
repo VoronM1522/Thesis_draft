@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 16:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2518,14 +2518,14 @@ Here is how much of TeX's memory you used:
  57965 multiletter control sequences out of 15000+600000
  674006 words of font info for 99 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 87i,17n,117p,2221b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,117p,2209b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-di
 st/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm144
 0.pfb>
-Output written on thesis.pdf (52 pages, 1554154 bytes).
+Output written on thesis.pdf (52 pages, 1554139 bytes).
 PDF statistics:
  1861 PDF objects out of 2073 (max. 8388607)
  1246 compressed objects within 13 object streams
