@@ -1,7 +1,7 @@
 PWD /home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/thesis_draft
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT thesis.tex
+INPUT /home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/thesis_draft/thesis.tex
 OUTPUT thesis.log
 INPUT /usr/share/texmf-dist/tex/latex/extsizes/extreport.cls
 INPUT /usr/share/texmf-dist/tex/latex/extsizes/extreport.cls

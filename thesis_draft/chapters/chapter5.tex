@@ -60,9 +60,9 @@ Unauthorized data extraction & Possible; image mountable directly & Not possible
 \midrule
 Recovery support & Applicable; Not configured yet & ext4 with fsck (configurable) \\
 \midrule
-Snapshot creation time & $\approx$2.10~s & $\approx$51.00~s ($\approx$24$\times$ overhead) \\
+Snapshot creation time & $\approx$2.10~s & $\approx$51.00~s ($\approx$24 (times) overhead) \\
 \midrule
-Snapshot restore time & $\approx$2.50~s & $\approx$27.30~s ($\approx$11$\times$ overhead) \\
+Snapshot restore time & $\approx$2.50~s & $\approx$27.30~s ($\approx$11 (times) overhead) \\
 \midrule
 Storage initialization (4~GB) & Not required & $\approx$1~min \\
 \bottomrule
@@ -86,6 +86,13 @@ Although we managed to secure the snapshots, performance has plummeted. This may
 % за больший период в случае сбоя. On the other hand, Dmitry Zavalishin described a problem where a large amount of memory is used and becomes obsolete between snapshot creations, citing graph computation as an example. When using the OS for similar tasks where a relatively long interval between snapshots is required and data loss during that period would not be critical, it is possible to mitigate the consequences to a significant extent. This is best verified through practical use, but that is currently impossible due to the system’s lack of readiness.
 
 \section{Limitations}
+
+
+% RU (перевести): Следует отметить, что приведённые замеры не являются точной
+% репрезентацией чистых тестов чтения и записи, однако отражают общую тенденцию.
+% При создании первого снапшота в зашифрованное хранилище выполняется только запись,
+% а при восстановлении — только чтение. Это позволяет оценить накладные расходы
+% шифрования на каждую из операций раздельно.
 
 This project certainly has a number of serious limitations. First, Tresor is not intended for production use. The author himself acknowledges this. The problem is that it is the only library designed for block-level encryption. After the author left the team, its support has deteriorated even further. Second, testing was conducted on small amounts of user space. It cannot be said with certainty that the system will operate with comparable levels of performance and stability as the volume increases exponentially. Third, testing was conducted only on a virtual machine with placeholders instead of many actual working components. Although this scenario provides an indication of approximate results, it still differs significantly from real-world usage.
 % RU (перевести): Наконец, проведённые замеры не являются чистыми тестами

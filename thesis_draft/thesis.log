@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 15:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 15:33
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**thesis.tex
-(./thesis.tex
+**/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/thesis_draft/thesis.tex
+(/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/thesis_draft/thesis.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/share/texmf-dist/tex/latex/extsizes/extreport.cls
@@ -33,13 +34,13 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \bibindent=\dimen149
 ) (/usr/share/texmf-dist/tex/latex/tempora/tempora.sty
 Package: tempora 2016/02/02 (msharpe) Style file for Tempora.
-(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+ (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-(/usr/share/texmf-dist/tex/latex/cyrillic/ot2enc.def
+ (/usr/share/texmf-dist/tex/latex/cyrillic/ot2enc.def
 File: ot2enc.def 2022/06/11 v3.3b Cyrillic encoding definition file
 Now handling font encoding OT2 ...
 ... processing UTF-8 mapping file for font encoding OT2
-(/usr/share/texmf-dist/tex/latex/base/ot2enc.dfu
+ (/usr/share/texmf-dist/tex/latex/base/ot2enc.dfu
 File: ot2enc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -184,7 +185,7 @@ File: ot2enc.dfu 2022/06/07 v1.3c UTF-8 support
 File: t2cenc.def 2023/11/07 v1.0k Cyrillic encoding definition file
 Now handling font encoding T2C ...
 ... processing UTF-8 mapping file for font encoding T2C
-(/usr/share/texmf-dist/tex/latex/base/t2cenc.dfu
+ (/usr/share/texmf-dist/tex/latex/base/t2cenc.dfu
 File: t2cenc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -378,7 +379,7 @@ File: t2cenc.dfu 2022/06/07 v1.3c UTF-8 support
 File: t2benc.def 2023/11/07 v1.0k Cyrillic encoding definition file
 Now handling font encoding T2B ...
 ... processing UTF-8 mapping file for font encoding T2B
-(/usr/share/texmf-dist/tex/latex/base/t2benc.dfu
+ (/usr/share/texmf-dist/tex/latex/base/t2benc.dfu
 File: t2benc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -576,7 +577,7 @@ File: t2benc.dfu 2022/06/07 v1.3c UTF-8 support
 File: t2aenc.def 2023/11/07 v1.0k Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
-(/usr/share/texmf-dist/tex/latex/base/t2aenc.dfu
+ (/usr/share/texmf-dist/tex/latex/base/t2aenc.dfu
 File: t2aenc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -780,7 +781,7 @@ File: t2aenc.dfu 2022/06/07 v1.3c UTF-8 support
 File: lgrenc.def 2023-09-12 2.5 LGR Greek font encoding definitions
 Now handling font encoding LGR ...
 ... processing UTF-8 mapping file for font encoding LGR
-(/usr/share/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+ (/usr/share/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
 File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
    defining Unicode char U+00A8 (decimal 168)
    defining Unicode char U+00AB (decimal 171)
@@ -1133,54 +1134,50 @@ File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
    defining Unicode char U+10147 (decimal 65863)
 ) (/usr/share/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
-LaTeX Encoding Info:    Ignoring declaration for text command \accACUTE (encodi
-ng LGR) on input line 251.
-LaTeX Encoding Info:    Ignoring declaration for text command \accGRAVE (encodi
-ng LGR) on input line 259.
-LaTeX Encoding Info:    Ignoring declaration for text command \accTILDE (encodi
-ng LGR) on input line 267.
+LaTeX Encoding Info:    Ignoring declaration for text command \accACUTE (encoding LGR) on input line 251.
+LaTeX Encoding Info:    Ignoring declaration for text command \accGRAVE (encoding LGR) on input line 259.
+LaTeX Encoding Info:    Ignoring declaration for text command \accTILDE (encoding LGR) on input line 267.
 ))) (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 ) (/usr/share/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2026-01-02 v2.0.2 Font selection axes (deprecated)
 Applying: [2024-11-01] Use figureversions if present on input line 74.
-(/usr/share/texmf-dist/tex/latex/figureversions/figureversions.sty
+ (/usr/share/texmf-dist/tex/latex/figureversions/figureversions.sty
 Package: figureversions 2025-04-29 v1.0.1 Figure versions
 )
 Already applied: [0000-00-00] Fall back to v1 on input line 76.
 ) (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/t
-ex/generic/xkeyval/xkvutils.tex
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks17
 \XKV@tempa@toks=\toks18
 \XKV@tempb@toks=\toks19
-(/usr/share/texmf-dist/tex/generic/xkeyval/keyval.tex))
+ (/usr/share/texmf-dist/tex/generic/xkeyval/keyval.tex))
 \XKV@depth=\count284
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))) (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
-(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PD
-F (HO)
-(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+ (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
+ (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ) (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 ) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 )))
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )) (/usr/share/texmf-dist/tex/latex/vmargin/vmargin.sty
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 \PaperWidth=\dimen150
 \PaperHeight=\dimen151
@@ -1196,9 +1193,8 @@ Package: picture 2020-04-22 v1.6 Dimens for picture macros (HO)
 Package picture Info: Calculation method: etex.
 ) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T2A+Tempora-TLF on inpu
-t line 116.
-(/usr/share/texmf-dist/tex/latex/tempora/t2atempora-tlf.fd
+LaTeX Font Info:    Trying to load font information for T2A+Tempora-TLF on input line 116.
+ (/usr/share/texmf-dist/tex/latex/tempora/t2atempora-tlf.fd
 File: t2atempora-tlf.fd 2015/09/13 Font definitions for T2A/Tempora-TLF.
 )
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
@@ -1208,32 +1204,24 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks20
 \inpenc@posthook=\toks21
 ) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaT
-eX and XeLaTeX
+Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count285
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2078.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2080.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2082.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2083.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2084.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2086.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2111.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
 \U@D=\dimen152
 \l@unhyphenated=\language17
-(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count286
-(/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+ (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 4330.
-(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+ (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'british' set to \l@english
 (babel)             (\language0). Reported on input line 82.
@@ -1247,10 +1235,9 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@english
 (babel)             (\language0). Reported on input line 108.
 )) (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
-(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ) (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
@@ -1263,12 +1250,12 @@ Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count287
 ) (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-(/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+ (/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count288
-(/usr/share/texmf-dist/tex/latex/logreq/logreq.def
+ (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
@@ -1335,7 +1322,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count334
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
@@ -1426,12 +1413,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip72
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \c@textcitecount=\count403
 \c@textcitetotal=\count404
@@ -1449,30 +1436,30 @@ File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
-(/usr/share/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+ (/usr/share/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
 File: ieee.bbx 2025-08-01 v1.4f biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
 File: numeric-comp.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count412
 \c@bbx:relatedtotal=\count413
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
-(/usr/share/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+ (/usr/share/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
 File: ieee.cbx 2025-08-01 v1.4f biblatex citation style
 Package biblatex Info: Trying to load citation style 'numeric-verb'...
 Package biblatex Info: ... file 'numeric-verb.cbx' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric-verb.cbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric-verb.cbx
 File: numeric-verb.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -1487,14 +1474,14 @@ Package biblatex Info: Redefining '\textcites'.
 ))
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
-(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+ (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2026-01-19 L3 programming layer (loader) 
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count414
 ))
@@ -1502,14 +1489,13 @@ Package biblatex Info: ... and expl3
 (biblatex)             2026-01-19 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texmf-
-dist/tex/latex/l3packages/xparse/xparse.sty
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 )) (/usr/share/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-(/usr/share/texmf-dist/tex/latex/tools/xspace.sty
+ (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count415
@@ -1532,7 +1518,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@pangrammax=\count432
 ) (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
-(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+ (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count433
 \calc@Bcount=\count434
@@ -1548,13 +1534,13 @@ LaTeX Info: Redefining \addtolength on input line 87.
 Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
 \ESO@tempdima=\dimen155
 \ESO@tempdimb=\dimen156
-(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+ (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -1572,7 +1558,7 @@ Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 \AM@pagewidth=\dimen159
 \AM@pageheight=\dimen160
 \AM@fboxrule=\dimen161
-(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+ (/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count436
@@ -1586,10 +1572,11 @@ File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip76
+
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks25
 \ex@=\dimen162
@@ -1670,7 +1657,7 @@ Package: amsthm 2020/05/29 v2.20.6
 \c@lemma=\count453
 \c@proposition=\count454
 \c@definition=\count455
-(/usr/share/texmf-dist/tex/latex/float/float.sty
+ (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count456
 \float@exts=\toks36
@@ -1694,7 +1681,7 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \bigstrutjot=\dimen173
 ) (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen174
 \captionmargin=\dimen175
@@ -1717,7 +1704,7 @@ Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count461
 ) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
-(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+ (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
@@ -1725,20 +1712,19 @@ Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 ) (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
-(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+ (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count462
 ) (/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen182
 \Hy@linkcounter=\count463
 \Hy@pagecounter=\count464
-(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
@@ -1746,20 +1732,18 @@ Now handling font encoding PD1 ...
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count465
-(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+ (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
-(/usr/share/texmf-dist/tex/latex/greek-fontenc/puenc-greek.def
+ (/usr/share/texmf-dist/tex/latex/greek-fontenc/puenc-greek.def
 File: puenc-greek.def 2023-09-12 2.5 Greek LICRs for PDF strings
-(/usr/share/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+ (/usr/share/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 )
-LaTeX Encoding Info:    Redeclaring text command \textmu (encoding PU) on input
- line 179.
+LaTeX Encoding Info:    Redeclaring text command \textmu (encoding PU) on input line 179.
 )
-LaTeX Encoding Info:    Redeclaring text command \textohm (encoding PU) on inpu
-t line 1176.
+LaTeX Encoding Info:    Redeclaring text command \textohm (encoding PU) on input line 1176.
 )
 Package hyperref Info: Option `final' set `true' on input line 4072.
 Package hyperref Info: Hyper figures OFF on input line 4201.
@@ -1772,11 +1756,10 @@ Package hyperref Info: Bookmarks ON on input line 4468.
 \c@Hy@tempcnt=\count466
 LaTeX Info: Redefining \url on input line 4807.
 \XeTeXLinkMargin=\dimen183
-(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+ (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+ (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count467
 \Field@Width=\dimen184
@@ -1793,22 +1776,21 @@ Package hyperref Info: PDF/A mode OFF on input line 6114.
 \c@Hfootnote=\count470
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+ (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
 \Fld@listcount=\count471
 \c@bookmark@seq@number=\count472
-(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
-(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-84.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip86
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 55.
-(/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
+ (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip87
 \plpartopsep=\skip88
@@ -1828,7 +1810,7 @@ Package: paralist 2017/01/22 v2.7 Extended list environments
 \lst@newlines=\count477
 \lst@lineno=\count478
 \lst@maxwidth=\dimen189
-(/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
+ (/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
@@ -1839,6 +1821,7 @@ File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
 ==> First Aid for listings.sty no longer applied!
     Expected:
         2024/09/23 1.10c (Carsten Heinz)
@@ -1852,7 +1835,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `zed'
 (Font)                  OT1/cmr/m/n --> T2A/Tempora-TLF/m/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `zed'
 (Font)                  OT1/cmr/bx/n --> T2A/Tempora-TLF/bx/n on input line 86.
-
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `zed'
 (Font)                  OT1/cmss/m/n --> T2A/cmss/m/n on input line 86.
 \symitalics=\mathgroup6
@@ -1876,15 +1858,11 @@ LaTeX Font Info:    Overwriting symbol font `AMSb' in version `zed'
 LaTeX Font Info:    Redeclaring math symbol \square on input line 308.
 LaTeX Font Info:    Redeclaring math symbol \lozenge on input line 308.
 LaTeX Font Info:    Redeclaring math symbol \rightsquigarrow on input line 308.
-
 LaTeX Font Info:    Redeclaring math symbol \sqsubset on input line 308.
 LaTeX Font Info:    Redeclaring math symbol \sqsupset on input line 308.
-LaTeX Font Info:    Redeclaring math symbol \vartriangleright on input line 308
-.
+LaTeX Font Info:    Redeclaring math symbol \vartriangleright on input line 308.
 LaTeX Font Info:    Redeclaring math symbol \vartriangleleft on input line 308.
-
 LaTeX Font Info:    Redeclaring math symbol \trianglerighteq on input line 308.
-
 LaTeX Font Info:    Redeclaring math symbol \trianglelefteq on input line 308.
 LaTeX Font Info:    Redeclaring math delimiter \ulcorner on input line 308.
 LaTeX Font Info:    Redeclaring math delimiter \urcorner on input line 308.
@@ -1901,7 +1879,6 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 308.
 \preboxpenalty=\count483
 ) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
-
 \f@nch@headwidth=\skip92
 \f@nch@offset@elh=\skip93
 \f@nch@offset@erh=\skip94
@@ -1926,12 +1903,12 @@ Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
 \csq@maxlvl=\count488
 \csq@tshold=\count489
 \csq@ltx@everypar=\toks42
-(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
-(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )) (/usr/share/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
@@ -2004,16 +1981,14 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 )
 \c@inlinelisti=\count501
 \enitdp@inlinelist=\count502
-(/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
+ (/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-(./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/c
-hapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/ch
-apter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
+ (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
@@ -2031,37 +2006,32 @@ LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
 LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 125.
-LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 1
-25.
-(/usr/share/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
+LaTeX Font Info:    Trying to load font information for OT2+cmr on input line 125.
+ (/usr/share/texmf-dist/tex/latex/cyrillic/ot2cmr.fd
 File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Checking defaults for T2C/cmr/m/n on input line 125.
-LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 1
-25.
-(/usr/share/texmf-dist/tex/latex/cyrillic/t2ccmr.fd
+LaTeX Font Info:    Trying to load font information for T2C+cmr on input line 125.
+ (/usr/share/texmf-dist/tex/latex/cyrillic/t2ccmr.fd
 File: t2ccmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Checking defaults for T2B/cmr/m/n on input line 125.
-LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 1
-25.
-(/usr/share/texmf-dist/tex/latex/cyrillic/t2bcmr.fd
+LaTeX Font Info:    Trying to load font information for T2B+cmr on input line 125.
+ (/usr/share/texmf-dist/tex/latex/cyrillic/t2bcmr.fd
 File: t2bcmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 125.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
-25.
-(/usr/share/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 125.
+ (/usr/share/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 125.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
-25.
-(/usr/share/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 125.
+ (/usr/share/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 125.
@@ -2071,7 +2041,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 125.
 LaTeX Font Info:    ... okay on input line 125.
 \c@mv@tabular=\count503
 \c@mv@boldtabular=\count504
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count505
 \scratchdimen=\dimen265
@@ -2086,15 +2056,13 @@ LaTeX Font Info:    ... okay on input line 125.
 \everyMPtoPDFconversion=\toks47
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -2104,19 +2072,19 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
-(./thesis.bbl)
+ (./thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 125.
 Package biblatex Info: Reference segment=0 on input line 125.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
-(/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+ (/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 125.
-(./thesis.out) (./thesis.out)
+ (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
@@ -2147,7 +2115,7 @@ File: title.pdf Graphic file (type pdf)
 <use title.pdf, page 1>
 Package pdftex.def Info: title.pdf , page1 used on input line 127.
 (pdftex.def)             Requested size: 598.34306pt x 845.31018pt.
-[1
+ [1
 
 
  <./title.pdf>]
@@ -2155,15 +2123,15 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 35.83pt on input line 128.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 35.83pt on input line 128.
-(./thesis.toc
+ (./thesis.toc
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 2.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
@@ -2173,34 +2141,31 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 3.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
-
-(/usr/share/texmf-dist/tex/latex/base/ulasy.fd
+ (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [2
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/tempora/t2a-tempora.enc}])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[3] [4] (./thesis.lot)
+ [3] [4] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-[5
+ [5
 
 ] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-[6
+ [6
 
 ]
 \openout2 = `chapters/abstract.aux'.
 
-(./chapters/abstract.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+ (./chapters/abstract.tex
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.5 \end{abstract}
@@ -2209,7 +2174,7 @@ l.5 \end{abstract}
 ])
 \openout2 = `chapters/chapter1.aux'.
 
-(./chapters/chapter1.tex
+ (./chapters/chapter1.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 29.86pt on input line 2.
@@ -2219,24 +2184,21 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 20.74pt on input line 7.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 20.74pt on input line 7.
-LaTeX Font Info:    Trying to load font information for TS1+Tempora-TLF on inpu
-t line 11.
+LaTeX Font Info:    Trying to load font information for TS1+Tempora-TLF on input line 11.
 (/usr/share/texmf-dist/tex/latex/tempora/TS1Tempora-TLF.fd
-File: TS1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for TS1/Tempora-
-TLF.
+File: TS1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for TS1/Tempora-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/Tempora-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 11.
-[7
+ [7
 
 
 
 
-{/usr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_ac5xuc.enc}] [8] [9] [10]) [
-11]
+{/usr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_ac5xuc.enc}] [8] [9] [10]) [11]
 \openout2 = `chapters/chapter2.aux'.
 
-(./chapters/chapter2.tex
+ (./chapters/chapter2.tex
 Chapter 2.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 15.
@@ -2244,8 +2206,7 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 15.
 
 Overfull \hbox (8.15103pt too wide) in paragraph at lines 17--18
-\T2A/Tempora-TLF/m/n/14.4 used [[][]1[][]]. This is pre-cisely how some of the 
-ear-li-est re-searchers in the field^^VMorrison
+\T2A/Tempora-TLF/m/n/14.4 used [[][]1[][]]. This is pre-cisely how some of the ear-li-est re-searchers in the field^^VMorrison
  []
 
 [12
@@ -2256,7 +2217,7 @@ ear-li-est re-searchers in the field^^VMorrison
 ] [13] [14] [15] [16] [17] [18] [19] [20]) [21] [22]
 \openout2 = `chapters/chapter3.aux'.
 
-(./chapters/chapter3.tex
+ (./chapters/chapter3.tex
 Chapter 3.
 [23
 
@@ -2269,22 +2230,22 @@ File: use_cases.pdf Graphic file (type pdf)
 <use use_cases.pdf>
 Package pdftex.def Info: use_cases.pdf  used on input line 15.
 (pdftex.def)             Requested size: 470.09598pt x 660.52112pt.
-[24]
+ [24]
 Overfull \vbox (20.87302pt too high) has occurred while \output is active []
 
-[25 <./use_cases.pdf>] [26]
+ [25 <./use_cases.pdf>] [26]
 <use_cases_supported.pdf, id=989, 2420.13242pt x 3400.47269pt>
 File: use_cases_supported.pdf Graphic file (type pdf)
 <use use_cases_supported.pdf>
 Package pdftex.def Info: use_cases_supported.pdf  used on input line 30.
 (pdftex.def)             Requested size: 470.09598pt x 660.52112pt.
-[27]
+ [27]
 Overfull \vbox (20.87302pt too high) has occurred while \output is active []
 
-[28 <./use_cases_supported.pdf>]) [29] [30]
+ [28 <./use_cases_supported.pdf>]) [29] [30]
 \openout2 = `chapters/chapter4.aux'.
 
-(./chapters/chapter4.tex
+ (./chapters/chapter4.tex
 Chapter 4.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 7.
@@ -2292,8 +2253,7 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 (Font)              scaled to size 5.0pt on input line 7.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 7.
-LaTeX Font Info:    Trying to load font information for T2A+pcr on input line 7
-.
+LaTeX Font Info:    Trying to load font information for T2A+pcr on input line 7.
 LaTeX Font Info:    No file T2Apcr.fd. on input line 7.
 
 LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
@@ -2304,24 +2264,20 @@ LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
 
 
 
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] [32] [33] [3
-4] [35]
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] [32] [33] [34] [35]
 Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[][][]\T2A/Tempora-TLF/m/n/10 Genode Users Mail-ing List, 2022: [][]$\T2A/pcr/m
-/n/10 https : / / www . mail-[]archive . com / users @ lists . genode . org /
+[][][]\T2A/Tempora-TLF/m/n/10 Genode Users Mail-ing List, 2022: [][]$\T2A/pcr/m/n/10 https : / / www . mail-[]archive . com / users @ lists . genode . org /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T2A/pcr/m/n/10 msg02999 . html$[][]\T2A/Tempora-TLF/m/n/10 ; [][]$\T2A/pcr/m/n
-/10 https : / / lists . genode . org / mailman3 / hyperkitty / list / users @ l
-ists . genode . org / thread /
+\T2A/pcr/m/n/10 msg02999 . html$[][]\T2A/Tempora-TLF/m/n/10 ; [][]$\T2A/pcr/m/n/10 https : / / lists . genode . org / mailman3 / hyperkitty / list / users @ lists . genode . org / thread /
  []
 
-[36] [37]) [38]
+[36]) [37]
 \openout2 = `chapters/chapter5.aux'.
 
-(./chapters/chapter5.tex
+ (./chapters/chapter5.tex
 Chapter 5.
 
 Underfull \hbox (badness 5388) in paragraph at lines 18--18
@@ -2343,7 +2299,7 @@ Underfull \hbox (badness 3439) in paragraph at lines 34--34
 []|\T2A/Tempora-TLF/m/n/14.4 Pre-allocated via trun-
  []
 
-[39
+[38
 
 
 
@@ -2398,12 +2354,12 @@ Underfull \hbox (badness 6592) in paragraph at lines 67--67
 []|\T2A/Tempora-TLF/m/n/14.4 Storage ini-tial-iza-
  []
 
-[40] [41]) [42] [43]
+[39] [40]) [41] [42]
 \openout2 = `chapters/chapter6.aux'.
 
-(./chapters/chapter6.tex
+ (./chapters/chapter6.tex
 Chapter 6.
-) [44
+) [43
 
 
 
@@ -2415,16 +2371,14 @@ Package biblatex Warning: No driver for 'documentation'.
 
 
 Overfull \hbox (19.87561pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Phan-tom
- os doc-u-men-ta-tion\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/
-14.4 https : / / app . readthedocs .
+[]\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Phan-tom os doc-u-men-ta-tion\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / app . readthedocs .
  []
 
 
 Package biblatex Warning: No driver for 'documentation'.
 (biblatex)                Using fallback driver on input line 155.
 
-[45
+[44
 
 
 
@@ -2439,8 +2393,7 @@ Package biblatex Warning: No driver for 'github'.
 
 
 Overfull \hbox (35.28917pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Персистент
-ная оперативная память\T2A/Tempora-TLF/m/n/14.4 , Хабр, Дата обращения:
+[]\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Персистентная оперативная память\T2A/Tempora-TLF/m/n/14.4 , Хабр, Дата обращения:
  []
 
 
@@ -2449,21 +2402,17 @@ Package biblatex Warning: No driver for 'documentation'.
 
 
 Overfull \hbox (12.98982pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-
-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 http
-s : / / github . com / dzavalishin /
+[]\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
  []
 
-[46]
+[45]
 Overfull \hbox (3.31975pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Сборка мус
-ора в персистентной модели: От терабайта
+[]\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Сборка мусора в персистентной модели: От терабайта
  []
 
 
 Overfull \hbox (4.98439pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Фантом: Бо
-льшая сборка мусора\T2A/Tempora-TLF/m/n/14.4 , Хабр, Дата обращения:
+[]\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Фантом: Большая сборка мусора\T2A/Tempora-TLF/m/n/14.4 , Хабр, Дата обращения:
  []
 
 
@@ -2472,41 +2421,37 @@ Package biblatex Warning: No driver for 'github'.
 
 
 Overfull \hbox (26.53758pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 A. Antonov, \T2A/Tempora-TLF/m/it/14.4 Isomem\T2A/T
-empora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . c
-om / S7rizh / phantomuserland /
+[]\T2A/Tempora-TLF/m/n/14.4 A. Antonov, \T2A/Tempora-TLF/m/it/14.4 Isomem\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
  []
 
 
 Overfull \hbox (9.42696pt too wide) in paragraph at lines 155--155
-\T2A/pcr/m/n/14.4 tree / 15ea4c963c497255f824^^[abd7e0cf987d3b45c5 / phantom / 
-isomem$[][]\T2A/Tempora-TLF/m/n/14.4 , 2024. 
+\T2A/pcr/m/n/14.4 tree / 15ea4c963c497255f824^^[abd7e0cf987d3b45c5 / phantom / isomem$[][]\T2A/Tempora-TLF/m/n/14.4 , 2024. 
  []
 
+[46]
+
+Package biblatex Warning: No driver for 'github'.
+(biblatex)                Using fallback driver on input line 155.
+
+
+Package biblatex Warning: No driver for 'github'.
+(biblatex)                Using fallback driver on input line 155.
+
 [47]
-
-Package biblatex Warning: No driver for 'github'.
-(biblatex)                Using fallback driver on input line 155.
-
-
-Package biblatex Warning: No driver for 'github'.
-(biblatex)                Using fallback driver on input line 155.
-
-[48]
 \openout2 = `chapters/appex.aux'.
 
-(./chapters/appex.tex
+ (./chapters/appex.tex
 Appendix A.
-[49
+[48
 
 
-] [50]) [51] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) 
-(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (
-./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
+] [49]) [50] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2518,22 +2463,17 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  30016 strings out of 468907
- 513113 string characters out of 5460991
+ 513344 string characters out of 5460991
  1435132 words of memory out of 5000000
  57965 multiletter control sequences out of 15000+600000
  674006 words of font info for 99 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 87i,17n,117p,2253b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-di
-st/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm144
-0.pfb>
-Output written on thesis.pdf (52 pages, 1553554 bytes).
+ 87i,17n,117p,2337b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on thesis.pdf (51 pages, 1552527 bytes).
 PDF statistics:
- 1862 PDF objects out of 2073 (max. 8388607)
- 1247 compressed objects within 13 object streams
- 227 named destinations out of 1000 (max. 500000)
+ 1858 PDF objects out of 2073 (max. 8388607)
+ 1244 compressed objects within 13 object streams
+ 226 named destinations out of 1000 (max. 500000)
  362 words of extra memory for PDF output out of 10000 (max. 10000000)
 
