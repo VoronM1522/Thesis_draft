@@ -31,7 +31,7 @@ Trust Anchor storage & File\_system session & USB block session \\
 \midrule
 Online extend / rekey & Yes & Removed \\
 \midrule
-Image file creation & Pre-allocated via truncate\_file & Skipped \\
+Image file creation & Pre-allocated via truncate\_file & Not applicable \\
 \midrule
 Block size & 512 & Standardized to 4~KB \\
 \midrule
@@ -40,7 +40,96 @@ Init time (4~GB FS) & $\approx$20~min & $\approx$1~min \\
 \end{tabular}
 \end{table}
 
-Although we managed to secure the snapshots, performance has plummeted. This may not be as critical for less demanding tasks, since snapshots do not block Phantom processes for extended periods of time. However, during active operation, a large number of pages will be modified while a new snapshot is being created, and these will need to be written to the new snapshot, which in turn will lead to an even greater increase in snapshot creation time. This will also result in longer intervals between snapper calls, creating a risk of data loss over a longer period in the event of a failure. On the other hand, Dmitry Zavalishin described a problem where a large amount of memory is used and becomes obsolete between snapshot creations, citing graph computation as an example. When using the OS for similar tasks where a relatively long interval between snapshots is required and data loss during that period would not be critical, it is possible to mitigate the consequences to a significant extent. This is best verified through practical use, but that is currently impossible due to the system’s lack of readiness.
+A broader comparison of the two configurations---snapshots stored without encryption versus snapshots protected by se\_vault---is presented in Table~\ref{tab:solution_comparison}.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of unencrypted and encrypted snapshot storage}
+\label{tab:solution_comparison}
+\begin{tabular}{|p{4.0cm}|p{5.0cm}|p{5.0cm}|}
+\toprule
+\textbf{Property} & \textbf{Without encryption} & \textbf{With encryption (se\_vault)} \\
+\midrule
+Confidentiality at rest & None; snapshots stored in plaintext & AES block-level encryption \\
+\midrule
+Integrity protection & FS level (Snapper's hash) & FS level (Snapper's hash) + Block level (Tresor's SHA-256) \\
+\midrule
+Authentication & None & Trush Anchor Data Ownership \\
+\midrule
+Unauthorized data extraction & Possible; image mountable directly & Not possible \\
+\midrule
+Recovery support & Applicable; Not configured yet & ext4 with fsck (configurable) \\
+\midrule
+Snapshot creation time & $\approx$2.10~s & $\approx$51.00~s ($\approx$24 overhead) \\
+\midrule
+Snapshot restore time & $\approx$2.50~s & $\approx$27.30~s ($\approx$11 overhead) \\
+\midrule
+Storage initialization (4~GB) & Not required & $\approx$1~min \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The first-snapshot creation time was measured over five consecutive runs for both configurations; the results are shown in Table~\ref{tab:perf_runs}.
+
+\begin{table}[H]
+\centering
+\caption{First snapshot creation time over 5 runs (seconds)}
+\label{tab:perf_runs}
+\begin{tabular}{|c|c|c|c|}
+\toprule
+\textbf{Run} & \textbf{Without encryption} & \textbf{With encryption} & \textbf{Overhead (times)} \\
+\midrule
+1 & 2.08 & 50.84 & 24.44 \\
+2 & 2.09 & 50.82 & 24.32 \\
+3 & 2.13 & 51.19 & 24.03 \\
+4 & 2.11 & 51.61 & 24.46 \\
+5 & 2.09 & 50.54 & 24.18 \\
+\midrule
+\textbf{Mean} & \textbf{2.10} & \textbf{51.00} & \textbf{24.29} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The restore time---measured from boot until the snapshot is fully loaded---was also recorded over five runs; see Table~\ref{tab:restore_runs}.
+
+\begin{table}[H]
+\centering
+\caption{Snapshot restore time over 5 runs (seconds)}
+\label{tab:restore_runs}
+\begin{tabular}{|c|c|c|c|}
+\toprule
+\textbf{Run} & \textbf{Without encryption} & \textbf{With encryption} & \textbf{Overhead (times)} \\
+\midrule
+1 & 2.46 & 27.52 & 11.19 \\
+2 & 2.49 & 27.52 & 11.05 \\
+3 & 2.53 & 26.98 & 10.66 \\
+4 & 2.47 & 27.20 & 11.01 \\
+5 & 2.55 & 27.28 & 10.70 \\
+\midrule
+\textbf{Mean} & \textbf{2.50} & \textbf{27.30} & \textbf{10.92} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% RU (перевести): Следует отметить, что приведённые замеры не являются точной
+% репрезентацией чистых тестов чтения и записи, однако отражают общую тенденцию.
+% При создании первого снапшота в зашифрованное хранилище выполняется только запись,
+% а при восстановлении — только чтение, однако в обоих случаях . Это позволяет оценить накладные расходы
+% шифрования на каждую из операций раздельно.
+
+Although we managed to secure the snapshots, performance has plummeted. This may not be as critical for less demanding tasks, since snapshots do not block Phantom processes for extended periods of time. % OLD: However, during active operation, a large number of pages will be modified
+% while a new snapshot is being created, and these will need to be written to the
+% new snapshot, which in turn will lead to an even greater increase in snapshot
+% creation time. This will also result in longer intervals between snapper calls,
+% creating a risk of data loss over a longer period in the event of a failure.
+%
+% RU (перевести): При последующих снапшотах ситуация несколько иная: создание
+% снапшота включает как запись изменённых страниц, так и чтение неизменённых.
+% Поскольку накладные расходы на чтение существенно ниже, чем на запись
+% (≈11× против ≈24×), итоговый оверхед определяется соотношением изменённых
+% и неизменённых страниц. При высокой интенсивности записи это всё равно
+% увеличивает интервалы между вызовами snapper и создаёт риск потери данных
+% за больший период в случае сбоя. On the other hand, Dmitry Zavalishin described a problem where a large amount of memory is used and becomes obsolete between snapshot creations, citing graph computation as an example. When using the OS for similar tasks where a relatively long interval between snapshots is required and data loss during that period would not be critical, it is possible to mitigate the consequences to a significant extent. This is best verified through practical use, but that is currently impossible due to the system’s lack of readiness.
 
 \section{Limitations}
 

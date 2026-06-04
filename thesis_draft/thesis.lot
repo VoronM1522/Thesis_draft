@@ -5,5 +5,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Comparison of file\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault and se\unhbox \voidb@x \kern 0.06em\vbox {\hrule width0.5em}vault}}{39}{table.caption.6}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison of unencrypted and encrypted snapshot storage}}{40}{table.caption.7}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces First snapshot creation time over 5 runs (seconds)}}{41}{table.caption.8}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Snapshot restore time over 5 runs (seconds)}}{41}{table.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
