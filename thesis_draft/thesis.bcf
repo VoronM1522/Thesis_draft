@@ -2379,6 +2379,7 @@
     <bcf:citekey order="3" intorder="1">KOS</bcf:citekey>
     <bcf:citekey order="4" intorder="1">Aurora</bcf:citekey>
     <bcf:citekey order="5" intorder="1">Phantom_docs</bcf:citekey>
+    <bcf:citekey order="5" intorder="2">OSP_Phantom_article</bcf:citekey>
     <bcf:citekey order="6" intorder="1">seL4</bcf:citekey>
     <bcf:citekey order="7" intorder="1">Genode_Foundations</bcf:citekey>
     <bcf:citekey order="8" intorder="1">GitHub_phantomuserland-snapper</bcf:citekey>

@@ -1,7 +1,7 @@
 PWD /home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/thesis_draft
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT thesis.tex
+INPUT /home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/thesis_draft/thesis.tex
 OUTPUT thesis.log
 INPUT /usr/share/texmf-dist/tex/latex/extsizes/extreport.cls
 INPUT /usr/share/texmf-dist/tex/latex/extsizes/extreport.cls
@@ -556,6 +556,7 @@ OUTPUT thesis.run.xml
 INPUT /usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb

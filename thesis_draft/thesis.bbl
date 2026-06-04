@@ -195,6 +195,37 @@
       \field{title}{Phantom OS Documentation}
       \field{year}{2020}
     \endentry
+    \entry{OSP_Phantom_article}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=bef1555721a50d007d4be09b705712f5}{%
+           family={Завалишин},
+           familyi={З\bibinitperiod},
+           given={Дмитрий},
+           giveni={Д\bibinitperiod}}}%
+      }
+      \strng{namehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{fullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \strng{bibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorbibnamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
+      \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Открытые системы}
+      \field{title}{Операционная система «Фантом»}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://www.osp.ru/os/2011/03/13008200
+      \endverb
+      \verb{url}
+      \verb https://www.osp.ru/os/2011/03/13008200
+      \endverb
+    \endentry
     \entry{seL4}{inproceedings}{}{}
       \name{author}{13}{}{%
         {{hash=199a8abce7ff51f1ce18d08d6910be68}{%
@@ -419,7 +450,7 @@
       \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -452,7 +483,7 @@
       \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -485,7 +516,7 @@
       \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -518,7 +549,7 @@
       \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
-      \field{extraname}{4}
+      \field{extraname}{5}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -551,7 +582,7 @@
       \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
-      \field{extraname}{5}
+      \field{extraname}{6}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -609,7 +640,7 @@
       \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
-      \field{extraname}{6}
+      \field{extraname}{7}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -642,7 +673,7 @@
       \strng{authornamehash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhash}{bef1555721a50d007d4be09b705712f5}
       \strng{authorfullhashraw}{bef1555721a50d007d4be09b705712f5}
-      \field{extraname}{7}
+      \field{extraname}{8}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
