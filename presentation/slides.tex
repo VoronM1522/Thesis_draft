@@ -151,7 +151,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Implementation: se\_vault}
-    Genode includes \textbf{file\_vault} + \textbf{Tresor} library:
+    There is a \textbf{file\_vault} in Genode based on \textbf{Tresor} library:
     \begin{itemize}
         \item Tresor: AES encryption on 4K blocks, SHA-256 integrity, CoW atomicity
         \item file\_vault: state orchestrator providing a secure FS session
@@ -163,7 +163,7 @@
         \item GUI removed --- headless operation
         \item Passphrase replaced by \textbf{USB key file}
         \item rump\_fs/ext2 replaced by \textbf{lwext4/ext4}
-        \item Added \textbf{fsck} crash recovery support
+        \item Added \textbf{fsck} crash recovery support with fsck
         \item Direct block session (skip image file creation)
         \item All block sizes standardized to 4K
         \item Graceful shutdown sequence added
@@ -230,11 +230,6 @@
     Root cause: \textbf{known Tresor library limitation} ---
     not optimized for multithreading.
     Acknowledged by the author; unresolved.
-
-    \bigskip
-    Default QEMU \texttt{-cpu Nehalem-v2} disables AES/SHA hardware acceleration;
-    switching to \texttt{-cpu host} improved results significantly,
-    but overhead remains high.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
