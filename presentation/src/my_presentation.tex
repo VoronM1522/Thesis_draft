@@ -1,0 +1,117 @@
+\documentclass{beamer}
+
+\usepackage{array}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{eucal}
+\usepackage{cite}
+\usepackage{datetime}
+\usepackage{soul}
+\usepackage[font=small,labelfont=bf]{caption}
+
+
+\graphicspath{ {./} }
+
+\title{Research and adaptation of components from the persistent OS Phantom for Genode.}
+\author{student: Mikhail Voronin\\supervisor: Artem Burmyakov\\consultants: Alexander Tormasov}
+
+\newdateformat{monthYear}{\monthname[\THEMONTH] \THEYEAR}
+\date{\monthYear\today}
+
+\begin{document}
+
+\frame{
+	\titlepage
+}
+
+% \begin{frame}{Outline}
+%     \section{Outline}
+% 	\tableofcontents
+% \end{frame}
+
+\begin{frame}{Introduction}
+    \section{Introduction}
+    \textbf{Data persistence:} period of time during which data exists and is used\\
+    \scriptsize{R. Morrison and M. P. Atkinson, “Persistent languages and architectures”}
+\end{frame}
+
+\begin{frame}{History of cryptography}
+    \subsection{History of cryptography}
+    \begin{center}
+        \begin{minipage}{0.48\linewidth}
+        \captionof{figure}{Ceasar cipher}
+        \end{minipage}
+        
+        \hfill
+        
+        \begin{minipage}{0.49\linewidth}
+        \captionof{figure}{Skytale}
+        \end{minipage}
+        
+        \captionof{figure}{Examples of ancient cryptographic machinery}
+    \end{center}
+\end{frame}
+
+\begin{frame}{First cryptographers}
+    \begin{center}
+        \begin{minipage}{0.45\linewidth}
+            \captionof{figure}{The first page of al-Kindi's manuscript ''On 
+            Deciphering Cryptographic Messages'', containing the oldest known
+            description of cryptanalysis by frequency analysis.}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\linewidth}
+            \begin{center}
+                \captionof{figure}{Auguste Kerckhoffs}
+                \captionof{figure}{Claude Shannon}
+            \end{center}
+        \end{minipage}            
+    \end{center}
+\end{frame}
+
+\begin{frame}{Modern cryptography}
+    \begin{center}
+    \begin{minipage}{0.45\linewidth}
+        \captionof{figure}{Whitfield Diffie and Martin Hellman, authors of the 
+            first published paper on public-key cryptography.}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.5\linewidth}
+        \captionof{figure}{Ron Rivest, Adi Shamir and Leonard Adleman --- 
+            reinventors of RSA cryptosystem.}
+    \end{minipage}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Applications of cryptography}
+    \subsection{Applications of cryptography}
+    \begin{itemize}
+        \item Blockchains
+        \item Secure messaging
+        \item SSL$\backslash$TLS
+        \item Secure data storage
+        \item You name it!
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Why mathematical cryptography?}
+    \subsection{Mathematical cryptography}
+    Selected topics in mathematics
+    \begin{itemize}
+        \item Abstract algebra (must have!)
+        \item Number theory (must have!) --- although we will only scratch the 
+            surface
+        \item Probability theory
+        \item Type theory
+        \item Formal Logic
+    \end{itemize}
+	$\triangle$
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
