@@ -16,20 +16,45 @@
 \newdateformat{monthYear}{\monthname[\THEMONTH] \THEYEAR}
 \date{\monthYear\today}
 
+\setbeamertemplate{footline}{%
+  \ifnum\value{framenumber}>1
+    \hfill\insertframenumber/\inserttotalframenumber\hspace{1em}\vspace{0.5em}
+  \fi
+}
+
 \begin{document}
 
 \frame{\titlepage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}{Relevance}
+    With the advent of new hardware, new demands are being placed on software, especially basic software. 
+    In light of this, it is necessary to examine the relevance of persistence concepts in the current environment.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Objective}
+    There are already existing implementations of persistent systems designed for embedded systems and systems without constant physical human access. 
+    Our objective is to understand what data security options are available in such implementations.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}{Data Persistence}
-    \textbf{Data persistence}: period of time during which data exists and is used
+    \textbf{Persistence} the period of time during which an object is usable
 
-    \bigskip
-    \textit{R. Morrison, M. P. Atkinson --- ``Persistent Languages and Architectures'', 1990}
+    % \textbf{Data persistence:} period of time during which data exists and is used
 
+    % \bigskip
+    \tiny{M. P. Atkinson, P. J. Bailey, K. J. Chisholm, W. P. Cockshott, and R. Morrison,\\
+    “Ps-algol: A language for persistent programming,” (1983)}
+    % \textit{R. Morrison, M. P. Atkinson --- ``Persistent Languages and Architectures'', 1990}
+
+    \normalsize
     \bigskip\bigskip
-    Today's dominant model --- \textbf{two-level store}:
+    Today's dominant model (for non-persistent programming) --- \textbf{two-level store}:
     \begin{itemize}
         \item Data is either \textit{active} (RAM) or \textit{stored} (disk)
         \item Programmer manually moves data between levels
@@ -43,7 +68,7 @@
     Alternative: the \textbf{environment} manages persistence
 
     \bigskip
-    Three principles:
+    Three principles of \textbf{orthogonal persistence} (\textit{according to R. Morrison, M. P. Atkinson --- ``Persistent Languages and Architectures'', 1990}):
     \begin{enumerate}
         \item \textbf{Independence} --- data persistence does not depend on how it is manipulated
         \item \textbf{Data type orthogonality} --- all types can be persisted
@@ -51,13 +76,14 @@
     \end{enumerate}
 
     \bigskip
-    Benefits: up to 30\% reduction in code size, more efficient use of disk bandwidth and improved reliability failt tolerance.
+    Benefits: No initialization is required at every system startup; there is no need for regular configuration reads/writes; 
+    up to 30\% reduction in code size; more efficient use of disk bandwidth; improved reliability failt tolerance.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{PhantomOS}
-    \textbf{PhantomOS} is a non-Unix like OS implementing orthogonal persistence (D. Zavalishin).
+    \textbf{\href{http://phantomos.org/}{PhantomOS}} is a non-Unix like OS implementing orthogonal persistence (D. Zavalishin, 2010).
 
     \bigskip
     \begin{itemize}
@@ -68,7 +94,7 @@
     \end{itemize}
 
     \bigskip
-    Currently ported to the \textbf{Genode} OS framework:
+    Currently ported to the \href{https://genode.org/}{\textbf{Genode} OS C++ framework}:
     \begin{itemize}
         \item Proven microkernels (NOVA, seL4, Fiasco.OC)
         \item Capability-based security, minimal TCB
@@ -81,7 +107,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Snapper}
-    File-system-based generational snapshot storage.
+    \textbf{\href{https://github.com/rumenmitov/snapper}{Snappser}} is a file-system-based generational snapshot storage
+    \tiny{\\\href{https://fosdem.org/2026/schedule/event/DJ8YVT-practical-persistence/}{R. Mitov, “Snapper (v2): A PhantomOS snapshot mechanism,” FOSDEM 2026}}
+    \normalsize
 
     \bigskip
     Previous approach (``superblock''): snapshots stored as monolithic objects.
@@ -107,7 +135,7 @@
     --- including sensitive data present in memory.
 
     \bigskip
-    Snapshots are stored in \textbf{plaintext}.
+    Snapshots are stored on the drive in \textbf{plaintext}.
     An attacker with physical access can mount and read them directly,
     or fully reproduce the machine state.
 
@@ -123,8 +151,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Use Cases \& Requirements}
-    Snapshot must remain \textbf{encrypted} at all times.
+\begin{frame}{Environment \& Requirements}
+    There should be no way for an attacker to gain access to the snapshot in plaintext at any point during its lifetime.
 
     \bigskip
     Requirements:
@@ -143,7 +171,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[plain]
+\begin{frame}{Usage scenarios 1}
     \begin{tikzpicture}[remember picture,overlay]
         \node[anchor=north,inner sep=0pt,yshift=0.5cm] at (current page.north) {
             \includegraphics[height=2\paperheight]{src/use_cases.pdf}
@@ -153,7 +181,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[plain]
+\begin{frame}{Usage scenarios 2}
     \begin{tikzpicture}[remember picture,overlay]
         \node[anchor=south,inner sep=0pt,yshift=0.5cm] at (current page.south) {
             \includegraphics[height=2\paperheight]{src/use_cases.pdf}
@@ -171,9 +199,10 @@
     \end{itemize}
 
     \bigskip
-    Adapted file\_vault $\to$ \textbf{se\_vault}:
+    Implemented \textbf{\href{https://github.com/VoronM1522/genode/tree/se/repos/gems/src/app/se_vault}{se\_vault}} 
+    as adapted \textbf{\href{github.com/genodelabs/genode/tree/sculpt-25.04/repos/gems/src/app/file_vault}{file\_vault}}:
     \begin{itemize}
-        \item GUI removed --- headless operation
+        \item Headless operation
         \item Passphrase replaced by \textbf{USB key file}
         \item rump\_fs/ext2 replaced by \textbf{lwext4/ext4}
         \item Added \textbf{fsck} crash recovery support with fsck
@@ -186,6 +215,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Related Fixes \& Adaptations}
+    For se\_vault to function properly, lwext4, isomem, snapper, and vfs have been adapted.\\
+    \bigskip
     \textbf{lwext4} bug fixes:
     \begin{itemize}
         \item \texttt{ftruncate}: pointer cast for correct file size
@@ -197,7 +228,7 @@
     \textbf{Shutdown sequence} (isomem / snapper / VFS):
     \begin{itemize}
         \item isomem: power-off button triggers final snapshot
-        \item snapper, VFS: client counters trigger graceful shutdown
+        \item snapper, vfs: client counters trigger graceful shutdown
         \item lwext4 unmounted cleanly; mount flag cleared for fsck
     \end{itemize}
 
@@ -208,7 +239,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Testing}
+\begin{frame}{Benchmarking}
     Environment: QEMU with \texttt{-cpu host} (enables AES/SHA hardware acceleration).\\
     2 GB image for isomem, 5 GB image for se\_vault (4 GB user FS).
 
