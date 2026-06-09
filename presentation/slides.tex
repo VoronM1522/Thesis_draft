@@ -239,7 +239,33 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Benchmarking}
+\begin{frame}{Benchmarking configuration}
+    Environment: QEMU with \texttt{-cpu host} (enables AES/SHA hardware acceleration).\\
+    2 GB image for isomem, 5 GB image for se\_vault (4 GB user FS).
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Functional testing}
+    Environment: QEMU with \texttt{-cpu host} (enables AES/SHA hardware acceleration).\\
+    2 GB image for isomem, 5 GB image for se\_vault (4 GB user FS).
+
+    \bigskip
+    Functional tests (all passed):
+    \begin{itemize}
+        \item Normal boot / shutdown / restore cycle
+        \item Encrypted image cannot be mounted without key
+        \item Key/hash replacement attack --- superblock not detected
+        \item Crash recovery via fsck
+    \end{itemize}
+
+    \bigskip
+    Performance: first snapshot creation and restore, 5 runs each.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Performance testing}
     Environment: QEMU with \texttt{-cpu host} (enables AES/SHA hardware acceleration).\\
     2 GB image for isomem, 5 GB image for se\_vault (4 GB user FS).
 
