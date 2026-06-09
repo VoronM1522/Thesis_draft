@@ -8,6 +8,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{datetime}
+\usepackage{tikz}
 
 \title{Research and Adaptation of Components\\from the Persistent OS Phantom for Genode}
 \author{student: Mikhail Voronin\\supervisor: Artem Burmyakov\\consultant: Alexander Tormasov}
@@ -142,10 +143,22 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Use Cases: Supported Scenarios}
-    \begin{center}
-        \includegraphics[height=0.85\textheight]{src/use_cases_supported.pdf}
-    \end{center}
+\begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=north,inner sep=0pt,yshift=0.5cm] at (current page.north) {
+            \includegraphics[height=2\paperheight]{src/use_cases.pdf}
+        };
+    \end{tikzpicture}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=south,inner sep=0pt,yshift=0.5cm] at (current page.south) {
+            \includegraphics[height=2\paperheight]{src/use_cases.pdf}
+        };
+    \end{tikzpicture}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
