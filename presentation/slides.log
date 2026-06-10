@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.5)  9 JUN 2026 19:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.5)  10 JUN 2026 19:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1345,9 +1345,19 @@ Package pdftex.def Info: src/use_cases.pdf  used on input line 190.
 (pdftex.def)             Requested size: 388.78009pt x 546.29324pt.
  [11
 
-] [12
+]
+<src/arch_diagram.pdf, id=823, 440.49367pt x 359.23009pt>
+File: src/arch_diagram.pdf Graphic file (type pdf)
+<use src/arch_diagram.pdf>
+Package pdftex.def Info: src/arch_diagram.pdf  used on input line 198.
+(pdftex.def)             Requested size: 280.52367pt x 228.76524pt.
 
-] [13
+Overfull \vbox (0.67967pt too high) detected at line 198
+ []
+
+[12
+
+ <./src/arch_diagram.pdf>] [13
 
 ] [14
 
@@ -1360,6 +1370,8 @@ Package pdftex.def Info: src/use_cases.pdf  used on input line 190.
 ] [18
 
 ] [19
+
+] [20
 
 ]
 \tf@nav=\write6
@@ -1380,18 +1392,18 @@ Package rerunfilecheck Info: File `slides.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26758 strings out of 468907
- 519363 string characters out of 5460992
+ 26769 strings out of 468907
+ 519610 string characters out of 5460992
  928866 words of memory out of 5000000
- 54846 multiletter control sequences out of 15000+600000
+ 54855 multiletter control sequences out of 15000+600000
  636629 words of font info for 72 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  128i,15n,123p,1085b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slides.pdf (19 pages, 937604 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on slides.pdf (20 pages, 1010298 bytes).
 PDF statistics:
- 1074 PDF objects out of 1200 (max. 8388607)
- 766 compressed objects within 8 object streams
- 39 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1137 PDF objects out of 1200 (max. 8388607)
+ 816 compressed objects within 9 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
