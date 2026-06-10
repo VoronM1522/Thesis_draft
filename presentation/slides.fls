@@ -433,12 +433,12 @@ INPUT ./src/use_cases.pdf
 INPUT ./src/use_cases.pdf
 INPUT ./src/use_cases.pdf
 INPUT ./src/use_cases.pdf
-INPUT ./src/arch_diagram.pdf
-INPUT ./src/arch_diagram.pdf
-INPUT ./src/arch_diagram.pdf
-INPUT ./src/arch_diagram.pdf
-INPUT ./src/arch_diagram.pdf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ./src/arch_diagram.pdf
+INPUT ./src/arch_diagram.pdf
+INPUT ./src/arch_diagram.pdf
+INPUT ./src/arch_diagram.pdf
+INPUT ./src/arch_diagram.pdf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
@@ -459,6 +459,7 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb

@@ -105,13 +105,15 @@
 
 \node[band, fill=teal!5, draw=teal!50,
       below=0.18cm of podman.south, anchor=north] (hostl)
-    {\bfseries Host Linux\normalfont\enspace
-     (btrfs)\enspace
-     \texttt{block0.raw},\enspace\texttt{snapper\_block.raw},\enspace\texttt{test.5gb.raw}};
+    {\bfseries Host Linux\normalfont\\[2pt]
+     \hspace{0.3cm}$\bullet$\enspace NVMe disk (btrfs):\enspace
+         \texttt{block0.raw},\enspace\texttt{test.5gb.raw}\\
+     \hspace{0.3cm}$\bullet$\enspace USB flash (ext4):\enspace
+         trust anchor key,\enspace initialization flag};
 
 \node[band, fill=gray!20, draw=black,
       below=0.18cm of hostl.south, anchor=north] (hw)
-    {\bfseries HW:\normalfont\enspace NVMe SSD \hspace{3.2cm} USB Flash Drive};
+    {\bfseries HW:\normalfont\enspace NVMe SSD \hspace{2.8cm} USB 2.0 flash drive};
 
 %% ---- Arrows from block drivers through bands ----
 

@@ -191,14 +191,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{System Architecture}
-    \begin{center}
-        \includegraphics[height=0.88\textheight,keepaspectratio]{src/arch_diagram.pdf}
-    \end{center}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}{Implementation: se\_vault}
     There is a \textbf{file\_vault} in Genode based on \textbf{Tresor} library:
     \begin{itemize}
@@ -247,7 +239,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Benchmarking configuration}
+\begin{frame}{System Architecture}
+    \begin{center}
+        \includegraphics[height=0.88\textheight,keepaspectratio]{src/arch_diagram.pdf}
+    \end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{First run configuration}
     Environment: QEMU with \texttt{-cpu host} (enables AES/SHA hardware acceleration).\\
     2 GB image for isomem, 5 GB image for se\_vault (4 GB user FS).
 \end{frame}

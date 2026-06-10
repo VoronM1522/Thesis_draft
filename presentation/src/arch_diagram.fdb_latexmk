@@ -1,14 +1,20 @@
 # Fdb version 4
-["pdflatex"] 1781102893.65459 "/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/presentation/src/arch_diagram.tex" "arch_diagram.pdf" "arch_diagram" 1781102894.05915 0
-  "/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/presentation/src/arch_diagram.tex" 1781102893.46638 4820 3d63efaf15eb331a73c9bd45c0399c43 ""
+["pdflatex"] 1781103537.56958 "/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/presentation/src/arch_diagram.tex" "arch_diagram.pdf" "arch_diagram" 1781103537.95807 0
+  "/home/VM/User/Learning/Program/Current/Thesis/Writing/Thesis_draft/presentation/src/arch_diagram.tex" 1781103537.42152 4954 d8b5c71f9de6fd55bfaf6d2e1d792014 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1775415801 1328 5442e22a7072966dbaf88ca900acf3f0 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1775415801 1512 f21f83efb36853c0b70002322c1ab3ad ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1775415801 1524 d89e2d087a9828407a196f428428ef4a ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1775415801 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1775415801 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1775415801 1116 933a60c408fc0a863a92debe84b2d294 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1775415801 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm" 1775415801 1492 86331993fe614793f5e7e755835c31c5 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm" 1775415801 764 c98a2af25c99b73a368cf7336e255190 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1775415801 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1775415801 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1775415801 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1775415801 32442 c975af247b6702f7ca0c299af3616b80 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb" 1775415801 36607 d654cb3f2bc54f57509240071db3bffa ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb" 1775415801 29078 718ea4567ceff944262b0f5b0800e1d9 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1775415801 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -106,8 +112,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1780650895 5424949 fad47d69957f272589a0232de8534069 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1780650858 2434459 1b13c0b8d66dc30209eef6e2b0cb934b ""
-  "arch_diagram.aux" 1781102894.02057 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "arch_diagram.tex" 1781102893.46638 4820 3d63efaf15eb331a73c9bd45c0399c43 ""
+  "arch_diagram.aux" 1781103537.92852 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "arch_diagram.tex" 1781103537.42152 4954 d8b5c71f9de6fd55bfaf6d2e1d792014 ""
   (generated)
   "arch_diagram.aux"
   "arch_diagram.log"
