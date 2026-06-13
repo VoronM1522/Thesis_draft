@@ -92,28 +92,28 @@
     at (genode.north west) {Genode OS Framework};
 
 %% ---- Environment bands ----
+%% All bands match Genode width; text width fills interior so align=left is literal.
 
-\node[band, fill=gray!8, draw=gray!50, dashed,
-      below=0.45cm of genode.south, anchor=north] (qemu)
+\path let \p1=(genode.west), \p2=(genode.east),
+          \n1={\x2-\x1}, \n2={\x2-\x1-10pt} in
+  node[band, minimum width=\n1, text width=\n2, fill=gray!8, draw=gray!50, dashed,
+       anchor=north] (qemu) at ($(genode.south)+(0,-0.45cm)$)
     {\bfseries QEMU\normalfont\enspace
-     \texttt{-cpu host},\enspace virtual NVMe (PCIe),\enspace USB passthrough};
-
-\node[band, fill=red!5, draw=red!45, dashed,
-      below=0.18cm of qemu.south, anchor=north] (podman)
+     \texttt{-cpu host},\enspace virtual NVMe (PCIe),\enspace USB passthrough}
+  node[band, minimum width=\n1, text width=\n2, fill=red!5, draw=red!45, dashed,
+       anchor=north] (podman) at ($(qemu.south)+(0,-0.18cm)$)
     {\bfseries Podman container\normalfont\enspace
-     (USB flash passthrough:\enspace\texttt{--device /dev/bus/usb/...})};
-
-\node[band, fill=teal!5, draw=teal!50,
-      below=0.18cm of podman.south, anchor=north] (hostl)
+     (USB flash passthrough:\enspace\texttt{--device /dev/bus/usb/...})}
+  node[band, minimum width=\n1, text width=\n2, fill=teal!5, draw=teal!50,
+       anchor=north] (hostl) at ($(podman.south)+(0,-0.18cm)$)
     {\bfseries Host Linux\normalfont\\[2pt]
-     \hspace{0.3cm}$\bullet$\enspace NVMe disk (btrfs):\enspace
+     $\bullet$\enspace NVMe disk (btrfs):\enspace
          \texttt{block0.raw},\enspace\texttt{test.5gb.raw}\\
-     \hspace{0.3cm}$\bullet$\enspace USB flash (ext4):\enspace
-         trust anchor key,\enspace initialization flag};
-
-\node[band, fill=gray!20, draw=black,
-      below=0.18cm of hostl.south, anchor=north] (hw)
-    {\bfseries HW:\normalfont\enspace NVMe SSD \hspace{2.8cm} USB 2.0 flash drive};
+     $\bullet$\enspace USB flash (ext4):\enspace
+         trust anchor key,\enspace initialization flag}
+  node[band, minimum width=\n1, text width=\n2, fill=gray!20, draw=black,
+       anchor=north] (hw) at ($(hostl.south)+(0,-0.18cm)$)
+    {\bfseries HW:\normalfont\enspace NVMe SSD,  USB 2.0 flash drive};
 
 %% ---- Arrows from block drivers through bands ----
 

@@ -1,0 +1,183 @@
+\chapter{Literature Review}
+\label{chap:background}
+
+This work is based on previous researches in the field of computer science,
+including ones on language server and compiler construction. In this
+chapter we conduct the literature review of the most relevant sources in these areas.
+
+\section{Language Server Protocol}
+
+The Language Server Protocol (LSP) is a language-agnostic protocol designed to
+ease the integration of different programming languages with development
+environments. Before the introduction of LSP, language developers had to 
+implement and maintain distinct integration for each supported IDE, which was
+both time-consuming and resource-intensive. LSP offers a unified protocol that
+could be implemented once per language and used across multiple editors.
+
+The current specification of LSP, version 3.17
+\cite{language-server-protocol:2016}, defines a standard suite of core editing
+features, such as `go to definition', `symbol renaming', `code completion', and
+`semantic highlighting'. These features improve the development experience by
+providing essential tools for code navigation. 
+
+It is worth noting, that, LSP was designed as an extensible protocol, allowing
+language developers to implement additional functionalities via custom requests
+and responses.
+
+As an example of such custom functionality, the OCaml language
+server~\cite{opam-ocaml-lsp} introduces a custom request method,
+$\texttt{ocamllsp/switchImplIntf}$, which allowes the developer to toggle
+between interface ($\texttt{foo.mli}$) and implementation ($\texttt{foo.ml}$)
+files. This feature highlights the flexibility of LSP to accommodate
+language-specific requirements.
+
+
+\subsection{Language server implementations}
+\label{sec:background:implementations}
+
+For optimal integration with the Jasmin compiler, which is implemented in OCaml,
+the language server was developed in OCaml too. This choice provides direct
+access to compiler API for essential operations, including source code parsing
+and functions on typed AST. Below, we analyze relevant OCaml implementations to
+derive best practices for language server design.  
+
+\subsubsection*{Jasmin language server}
+
+Aside from the implementation discussed in this work, the Jasmin Language Server
+described in \cite{gh-jasmin-lsp} is the only existing option for providing
+basic diagnostics support for Jasmin. While functional, this implementation has
+several limitations:
+
+\begin{itemize}
+    \item It uses a custom-written Language Server Protocol (LSP) wrapper.
+    This choice complicates maintenance and extensibility, especially given the
+    availability of community-supported LSP libraries for OCaml, such as
+    \cite{opam-ocaml-lsp}.
+    
+    \item Logging is performed directly to \texttt{stderr}, which is
+    non-extensible and limits the ability to effectively debug and trace issues.
+    A more robust logging framework would facilitate better development and
+    maintenance processes.
+    
+    \item The server currently supports only the
+    $\texttt{textDocument/publishDiagnostics}$ functionality. It omits other
+    essential LSP features such as hover information, go-to definition, and find
+    references, which are critical for improving the user experience and
+    productivity.
+    
+    \item The server lacks configurability, meaning it cannot parameterize
+    settings such as the include path or message severity levels. This
+    restriction may limit its applicability in some projects.
+
+\end{itemize}
+
+\subsubsection*{OCaml language server (Merlin)}
+
+Another example in the field of language servers is Merlin, a sophisticated tool
+specifically designed for the OCaml programming language.  Merlin's development
+started in 2013, long before the introduction of the Language Server Protocol
+(LSP). In their report \cite{merlin:2018}, the developers and researchers behind
+Merlin share valuable insights and methodologies that were instrumental in
+crafting this language server \cite{gh-merlin}. 
+
+One of the major contributions of the Merlin project is its sophisticated
+management of incomplete code during real-time editing, a feature that is
+essential to providing precise diagnostics and stable code suggestions, even when
+the code is incomplete. This ability is crucial for developers as it supports a
+seamless programming experience by detecting errors at the earliest, providing
+real-time autocomplete suggestions. Becoming able to do this is is challenging
+and needs a powerful parsing technique and strong type inference mechanisms for
+developing well-informed assumptions of the programmer's intentions, despite
+incomplete input.
+
+Moreover, Merlin's architecture shows the potential to integrate deeply with
+IDEs, offering features like type checking, code navigation, and more. These
+capabilities not only enhance the development experience but also set a high
+standard for language servers in terms of user support. 
+
+\subsubsection*{Semgrep language server}
+
+Particularly interesting language server implementation is the Semgrep Language Server
+\cite{gh-semgrep-lsp}, which served as a primary technical reference due to its
+clarity and modular design. 
+
+While the implementation supports only the core LSP features, it presents
+pragmatic architectural choices that help maintaining efficiency and simplicity
+of a language server. For example, it uses the \texttt{ocaml-lsp}
+library~\cite{opam-ocaml-lsp} for LSP messages handling, which simplifies
+communication between the editor and the server by abstracting away the
+complexities of the LSP implementation. Furthermore, the Semgrep Language Server
+utilizes the \texttt{lwt} library \cite{opam-lwt} for asynchronous input/output
+handling, enabling non-blocking operations that can be run in a separate thread.
+
+Additionally, the modular design of Semgrep language server helps with 
+new feature addition, due to the fact that most of Semgrep language server 
+internal functions are implemented as pure functions, that greatly helps 
+with debugging and testing new features.
+
+\subsection{Libraries for language server development}
+
+A widely adopted OCaml library for language server development is the
+aforementioned \texttt{ocaml-lsp} library \cite{opam-ocaml-lsp}. As of this
+writing, this library provides comprehensive support for processing JSON-RPC 2.0
+\cite{jsonrpc:2010} communication, which is the underlying protocol for the
+Language Server Protocol (LSP). 
+
+One of the key features of the \texttt{ocaml-lsp} library is its capability to
+handle bidirectional conversion between raw protocol messages and typed OCaml
+representations of LSP structures. This allows developers to work with
+strongly-typed data, reducing the likelihood of runtime errors.
+
+Internally, the library relies on the \texttt{yojson} library \cite{gh-yojson}
+for efficient JSON parsing and serialization. \texttt{yojson} is well-suited for
+this task due to its performance and ease of use, enabling rapid conversion
+between JSON data and OCaml types. 
+
+The architecture of \texttt{ocaml-lsp} enables developers to concentrate on
+implementing language-specific logic, such as syntax analysis, code completion,
+and other higher-order functionalities, without delving into the low-level
+details of protocol handling. Furthermore, the library's open-source nature
+invites community contributions, leading to continuous improvements and feature
+enhancements.
+
+\section{Jasmin Compiler}
+
+The Jasmin compiler \cite{jasmin:2017} is a formally verified toolchain
+specifically designed for the compilation of high-assurance cryptographic code
+into efficient and secure assembly. One of its primary features is the ability
+to verify program properties such as memory safety and termination through its
+integrated static analyzer. This ensures that the generated assembly code is not
+only performant but also compliant to security standards, making it highly
+suitable for cryptographic applications. However, utilizing the full range of
+the compiler's utilities necessitates a deep understanding of its source code,
+as there is no public API provided for more straightforward interaction.
+
+A distinctive attribute of the Jasmin compiler is its capability to extract
+programs to EasyCrypt \cite{easycrypt:2013} specifications. This feature is
+particularly significant for advancing the formal verification of cryptographic
+algorithms, as it allows developers to conduct thorough correctness and security
+proofs within the EasyCrypt framework. The authors assert that for a Jasmin
+program that meets safety criteria, its corresponding EasyCrypt embedding
+remains sound. This claim underscores the integrated approach of Jasmin and
+EasyCrypt in ensuring the verification of cryptographic software, highlighting
+the importance of formal methods in the development of secure and verified
+systems. Such a combination not only enhances the assurance of security
+properties but also facilitates ongoing formal analysis and proofs of modern
+cryptographic algorithms.
+
+\section{Tree-sitter}
+
+Tree-sitter is a powerful and flexible parser generator tool designed to build
+fast and robust parsers that produce concrete syntax trees (CST) for use in code
+editors and other tools. Developed by Max Brunsfeld and first released in 2018,
+Tree-sitter has quickly gained popularity due to its efficiency, ease of use,
+and comprehensive support for a wide variety of programming languages
+\cite{tree-sitter}. 
+
+One of the primary advantages of Tree-sitter over traditional parsing techniques
+is its incremental parsing capability, which allows parsers to update the syntax
+tree efficiently in response to code changes. This feature is particularly
+beneficial in the context of text editors and Integrated Development
+Environments. Incremental parsing reduces the computational overhead
+associated with re-parsing the entire file, enabling smoother and more
+intuitive coding experiences for developers.

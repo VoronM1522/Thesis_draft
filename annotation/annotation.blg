@@ -1,15 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'annotation.blg'
-[37] biber:342> INFO - === Ср июн  3, 2026, 21:31:10
-[47] Biber.pm:421> INFO - Reading 'annotation.bcf'
-[88] Biber.pm:1002> INFO - Found 13 citekeys in bib section 0
-[97] Biber.pm:4487> INFO - Processing section 0
-[103] Biber.pm:4678> INFO - Looking for bibtex file 'ref.bib' for section 0
-[103] bibtex.pm:1713> INFO - LaTeX decoding ...
-[112] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
-[179] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
-[179] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[179] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'ru-RU'
-[179] Biber.pm:4313> INFO - No sort tailoring available for locale 'ru-RU'
-[186] bbl.pm:676> INFO - Writing 'annotation.bbl' with encoding 'UTF-8'
-[189] bbl.pm:779> INFO - Output to annotation.bbl
+[33] biber:342> INFO - === Пт июн  5, 2026, 15:37:29
+[42] Biber.pm:421> INFO - Reading 'annotation.bcf'
+[77] Biber.pm:1002> INFO - Found 13 citekeys in bib section 0
+[85] Biber.pm:4487> INFO - Processing section 0
+[90] Biber.pm:4678> INFO - Looking for bibtex file 'ref.bib' for section 0
+[90] bibtex.pm:1713> INFO - LaTeX decoding ...
+[99] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[172] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[172] UCollate.pm:68> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[172] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'ru-RU'
+[172] Biber.pm:4313> INFO - No sort tailoring available for locale 'ru-RU'
+[178] bbl.pm:676> INFO - Writing 'annotation.bbl' with encoding 'UTF-8'
+[180] bbl.pm:779> INFO - Output to annotation.bbl

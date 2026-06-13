@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 18:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.5)  5 JUN 2026 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2171,66 +2171,28 @@ LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
 (Font)              using `T2A/cmr/m/n' instead on input line 162.
 
 [4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-Overfull \hbox (5.02118pt too wide) in paragraph at lines 173--174
-[]\T2A/Tempora-TLF/m/n/14.4 Достигнуты по-став-лен-ные за-да-чи: адап-ти-ро-ван ком-по-нент блоч-но-го шиф-
+Overfull \hbox (0.60988pt too wide) in paragraph at lines 171--172
+[]\T2A/Tempora-TLF/m/n/14.4 Компонент \T2A/pcr/m/n/14.4 se[]vault \T2A/Tempora-TLF/m/n/14.4 адап-ти-ро-ван для шиф-ро-ва-ния снап-шо-тов PhantomOS
+ []
+
+
+Overfull \hbox (2.25638pt too wide) in paragraph at lines 173--174
+[]\T2A/Tempora-TLF/m/n/14.4 Поставленные за-да-чи вы-пол-не-ны: адап-ти-ро-ван ком-по-нент блоч-но-го шиф-
  []
 
 [5]
-Overfull \hbox (2.1905pt too wide) in paragraph at lines 181--181
-[]\T2A/Tempora-TLF/m/n/14.4 A. Dearle, G. N. C. Kirby и R. Morrison, ѕ  Orthogonal Persistence Revisited,ї
+
+Package biblatex Warning: No driver for 'documentation'.
+(biblatex)                Using fallback driver on input line 178.
+
+
+Overfull \hbox (20.6532pt too wide) in paragraph at lines 178--178
+[]\T2A/Tempora-TLF/m/n/14.4 D. Zavalishin, \T2A/Tempora-TLF/m/it/14.4 Phantom OS Documentation\T2A/Tempora-TLF/m/n/14.4 , Available: []$\T2A/pcr/m/n/14.4 https : / / app . readthedocs .
  []
 
 
-Overfull \hbox (5.69414pt too wide) in paragraph at lines 181--181
-\T2A/Tempora-TLF/m/n/14.4 Single Level Store Operating System,ї в \T2A/Tempora-TLF/m/it/14.4 Proc. ACM SIGOPS 28th Symposium
- []
-
-
-Overfull \hbox (20.96794pt too wide) in paragraph at lines 181--181
-\T2A/Tempora-TLF/m/n/14.4 Summit 2018, 2018. url: []$\T2A/pcr/m/n/14.4 https : / / ^^\les . futurememorystorage . com / proceedings /
- []
-
-
-Overfull \hbox (23.7315pt too wide) in paragraph at lines 181--181
-[]\T2A/Tempora-TLF/m/n/14.4 B. Liang и др., ѕ  Security Issues and Challenges for Virtualization Technologies,ї
- []
-
-[6
-
-]
-Overfull \hbox (2.67166pt too wide) in paragraph at lines 181--181
-[]\T2A/Tempora-TLF/m/n/14.4 A. Antonov, ѕ  Persistency in Microkernel OS: Porting Experience of Phantom
- []
-
-
-Overfull \hbox (21.6464pt too wide) in paragraph at lines 181--181
-[]\T2A/Tempora-TLF/m/n/14.4 R. Mitov и A. Tormasov, \T2A/Tempora-TLF/m/it/14.4 Practical Persistence on Microkernels (ft. PhantomOS)\T2A/Tempora-TLF/m/n/14.4 ,
- []
-
-[7]
-Overfull \hbox (3.8532pt too wide) in paragraph at lines 181--181
-[]\T2A/Tempora-TLF/m/n/14.4 R. Mitov, \T2A/Tempora-TLF/m/it/14.4 phantomuserland-snapper\T2A/Tempora-TLF/m/n/14.4 . url: []$\T2A/pcr/m/n/14.4 https : / / github . com / rumenmitov /
- []
-
-
-Overfull \hbox (10.50151pt too wide) in paragraph at lines 181--181
-[]\T2A/Tempora-TLF/m/n/14.4 D. Zavalishin, \T2A/Tempora-TLF/m/it/14.4 PersistentMemory\T2A/Tempora-TLF/m/n/14.4 , 2019. url: []$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
- []
-
-[8]
-Overfull \hbox (21.64449pt too wide) in paragraph at lines 181--181
-[]\T2A/Tempora-TLF/m/n/14.4 A. Antonov, \T2A/Tempora-TLF/m/it/14.4 isomem\T2A/Tempora-TLF/m/n/14.4 , 2024. url: []$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
- []
-
-
-Overfull \hbox (23.5199pt too wide) in paragraph at lines 181--181
-[]\T2A/Tempora-TLF/m/n/14.4 A. Brisilin, \T2A/Tempora-TLF/m/it/14.4 Networking in Orthogonally Persistent Operating Systems\T2A/Tempora-TLF/m/n/14.4 , Bachelor's
- []
-
-
-Overfull \hbox (2.33693pt too wide) in paragraph at lines 181--181
-[]\T2A/Tempora-TLF/m/n/14.4 M. Stein, \T2A/Tempora-TLF/m/it/14.4 File Vault (README)\T2A/Tempora-TLF/m/n/14.4 , 2025. url: []$\T2A/pcr/m/n/14.4 https : / / github . com / genodelabs /
- []
+Package biblatex Warning: No driver for 'documentation'.
+(biblatex)                Using fallback driver on input line 178.
 
 
 Package caption Warning: Unused \captionsetup[table] on input line 86.
@@ -2240,7 +2202,9 @@ See the caption package documentation for explanation.
 Package caption Warning: Unused \captionsetup[figure] on input line 90.
 See the caption package documentation for explanation.
 
-[9] (./annot.aux)
+[6
+
+] (./annot.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2256,18 +2220,18 @@ Package logreq Info: Writing requests to 'annot.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29360 strings out of 468907
- 502017 string characters out of 5460991
- 1386511 words of memory out of 5000000
- 57561 multiletter control sequences out of 15000+600000
+ 29258 strings out of 468907
+ 498158 string characters out of 5460992
+ 1380531 words of memory out of 5000000
+ 57486 multiletter control sequences out of 15000+600000
  663709 words of font info for 82 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 72i,17n,117p,1440b,1831s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,17n,117p,1756b,1831s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on annot.pdf (9 pages, 225513 bytes).
+Output written on annot.pdf (6 pages, 204016 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

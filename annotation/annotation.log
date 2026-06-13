@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.5)  5 JUN 2026 15:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1838,9 +1838,7 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforetabskip=\skip118
 \cfttabindent=\skip119
 \cfttabnumwidth=\skip120
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 62.
- (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
+) (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip121
 \plpartopsep=\skip122
@@ -2052,7 +2050,7 @@ Package csquotes Info: Redefining alias 'default' -> 'russian'.
  (./annotation.aux
 Package babel Info: 'russian' activates 'russian' shorthands.
 (babel)             Reported on input line 9.
- (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux))
+)
 \openout1 = `annotation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
@@ -2165,7 +2163,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: Fixing longtable code of `floatrow' package.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 101.
+Package hyperref Info: Link coloring OFF on input line 101.
  (./annotation.out) (./annotation.out)
 \@outlinefile=\write4
 \openout4 = `annotation.out'.
@@ -2208,9 +2206,9 @@ Package pdftex.def Info: title_signed.pdf , page1 used on input line 103.
 
  <./title_signed.pdf>]
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 35.83pt on input line 106.
+(Font)              scaled to size 35.83pt on input line 105.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 35.83pt on input line 106.
+(Font)              scaled to size 35.83pt on input line 105.
  (./annotation.toc
 LaTeX Font Info:    Trying to load font information for T1+Tempora-TLF on input line 1.
  (/usr/share/texmf-dist/tex/latex/tempora/T1Tempora-TLF.fd
@@ -2239,26 +2237,13 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \tf@toc=\write5
 \openout5 = `annotation.toc'.
 
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
-
-[4{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}]
-\openout2 = `chapters/chapter1.aux'.
-
- (./chapters/chapter1.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 29.86pt on input line 1.
+(Font)              scaled to size 20.74pt on input line 119.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 29.86pt on input line 1.
+(Font)              scaled to size 20.74pt on input line 119.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 5.
-)
+(Font)              scaled to size 14.4pt on input line 123.
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -2266,41 +2251,18 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
 
-[5
+[2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/tempora/t2a-tempora.enc}]
+LaTeX Font Info:    Trying to load font information for T2A+pcr on input line 133.
+LaTeX Font Info:    No file T2Apcr.fd. on input line 133.
 
-
-]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
-
-[6]
-\openout2 = `chapters/chapter2.aux'.
-
- (./chapters/chapter2.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-LaTeX Font Info:    Trying to load font information for T2A+pcr on input line 9.
-LaTeX Font Info:    No file T2Apcr.fd. on input line 9.
 
 LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 9.
+(Font)              using `T2A/cmr/m/n' instead on input line 133.
 
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 17.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{17.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
-
-[7
-
-
-
-
-])
+LaTeX Font Info:    Font shape `T1/Tempora-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 136.
+Package babel Info: 'russian' activates 'russian' shorthands.
+(babel)             Reported on input line 136.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -2308,17 +2270,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
 
-[8{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
-\openout2 = `chapters/chapter3.aux'.
-
- (./chapters/chapter3.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
-
-Underfull \hbox (badness 6204) in paragraph at lines 3--4
+[3{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+Underfull \hbox (badness 6204) in paragraph at lines 141--142
 []\T2A/Tempora-TLF/m/n/14.4 Компонент \T2A/pcr/m/n/14.4 se[]vault \T2A/Tempora-TLF/m/n/14.4 адап-ти-ро-ван для шиф-ро-ва-ния снап-шо-тов
  []
 
-)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -2326,12 +2282,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
 
-[9
-
-
-
-
-]
+[4]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -2339,16 +2290,17 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
 
-[10
+[5]
 
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 17.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{17.0pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-17.0pt}.
 
+[6
 
 ]
-LaTeX Font Info:    Font shape `T1/Tempora-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 121.
-Package babel Info: 'russian' activates 'russian' shorthands.
-(babel)             Reported on input line 121.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 18.32643pt, for example:
@@ -2356,7 +2308,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-18.32643pt}.
 
-[11]
+[7]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 18.32643pt, for example:
@@ -2364,7 +2316,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-18.32643pt}.
 
-[12] (./annotation.aux (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux))
+[8] (./annotation.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2374,24 +2326,24 @@ L3 programming layer <2026-01-19>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `annotation.out' has not changed.
-(rerunfilecheck)             Checksum: AF10D9E3506293788B8DAFFBD1F16E62;877.
+(rerunfilecheck)             Checksum: 48F7DB14D80664E2A52FF453ABF2DAEC;883.
 Package logreq Info: Writing requests to 'annotation.run.xml'.
 \openout1 = `annotation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29955 strings out of 468907
- 510476 string characters out of 5460991
- 1406133 words of memory out of 5000000
- 58139 multiletter control sequences out of 15000+600000
+ 29876 strings out of 468907
+ 508090 string characters out of 5460992
+ 1396999 words of memory out of 5000000
+ 58084 multiletter control sequences out of 15000+600000
  663709 words of font info for 82 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 72i,17n,117p,1789b,1863s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,17n,117p,1761b,1877s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on annotation.pdf (10 pages, 216292 bytes).
+Output written on annotation.pdf (8 pages, 215456 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

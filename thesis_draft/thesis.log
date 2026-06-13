@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 JUN 2026 20:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1788,9 +1788,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip86
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 55.
- (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
+) (/usr/share/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip87
 \plpartopsep=\skip88
@@ -2083,7 +2081,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 125.
+Package hyperref Info: Link coloring OFF on input line 125.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -2120,9 +2118,9 @@ Package pdftex.def Info: title.pdf , page1 used on input line 127.
 
  <./title.pdf>]
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/n' will be
-(Font)              scaled to size 35.83pt on input line 128.
+(Font)              scaled to size 35.83pt on input line 129.
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
-(Font)              scaled to size 35.83pt on input line 128.
+(Font)              scaled to size 35.83pt on input line 129.
  (./thesis.toc
 LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 2.
@@ -2190,12 +2188,12 @@ File: TS1Tempora-TLF.fd 2016/02/02 (autoinst) Font definitions for TS1/Tempora-T
 )
 LaTeX Font Info:    Font shape `TS1/Tempora-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 11.
- [7
+ [8
 
 
 
 
-{/usr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_ac5xuc.enc}] [8] [9] [10]) [11]
+{/usr/share/texmf-dist/fonts/enc/dvips/tempora/tmp_ac5xuc.enc}] [9] [10] [11]) [12]
 \openout2 = `chapters/chapter2.aux'.
 
  (./chapters/chapter2.tex
@@ -2206,20 +2204,20 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 15.
 
 Overfull \hbox (8.15103pt too wide) in paragraph at lines 17--18
-\T2A/Tempora-TLF/m/n/14.4 used [[][]1[][]]. This is pre-cisely how some of the ear-li-est re-searchers in the field^^VMorrison
+\T2A/Tempora-TLF/m/n/14.4 used [[]1[]]. This is pre-cisely how some of the ear-li-est re-searchers in the field^^VMorrison
  []
 
-[12
+[13
 
 
 
 
-] [13] [14] [15] [16] [17] [18] [19] [20]) [21] [22]
+] [14] [15] [16] [17] [18] [19] [20] [21]) [22] [23]
 \openout2 = `chapters/chapter3.aux'.
 
  (./chapters/chapter3.tex
 Chapter 3.
-[23
+[24
 
 
 
@@ -2230,19 +2228,19 @@ File: use_cases.pdf Graphic file (type pdf)
 <use use_cases.pdf>
 Package pdftex.def Info: use_cases.pdf  used on input line 15.
 (pdftex.def)             Requested size: 470.09598pt x 660.52112pt.
- [24]
+ [25]
 Overfull \vbox (20.87302pt too high) has occurred while \output is active []
 
- [25 <./use_cases.pdf>] [26]
+ [26 <./use_cases.pdf>] [27]
 <use_cases_supported.pdf, id=991, 2420.13242pt x 3400.47269pt>
 File: use_cases_supported.pdf Graphic file (type pdf)
 <use use_cases_supported.pdf>
 Package pdftex.def Info: use_cases_supported.pdf  used on input line 30.
 (pdftex.def)             Requested size: 470.09598pt x 660.52112pt.
- [27]
+ [28]
 Overfull \vbox (20.87302pt too high) has occurred while \output is active []
 
- [28 <./use_cases_supported.pdf>]) [29] [30]
+ [29 <./use_cases_supported.pdf>]) [30] [31]
 \openout2 = `chapters/chapter4.aux'.
 
  (./chapters/chapter4.tex
@@ -2259,22 +2257,22 @@ LaTeX Font Info:    No file T2Apcr.fd. on input line 7.
 LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
 (Font)              using `T2A/cmr/m/n' instead on input line 7.
 
-[31
+[32
 
 
 
 
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] [32] [33] [34] [35]
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] [33] [34] [35] [36]
 Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[][][]\T2A/Tempora-TLF/m/n/10 Genode Users Mail-ing List, 2022: [][]$\T2A/pcr/m/n/10 https : / / www . mail-[]archive . com / users @ lists . genode . org /
+[][][]\T2A/Tempora-TLF/m/n/10 Genode Users Mail-ing List, 2022: []$\T2A/pcr/m/n/10 https : / / www . mail-[]archive . com / users @ lists . genode . org /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T2A/pcr/m/n/10 msg02999 . html$[][]\T2A/Tempora-TLF/m/n/10 ; [][]$\T2A/pcr/m/n/10 https : / / lists . genode . org / mailman3 / hyperkitty / list / users @ lists . genode . org / thread /
+\T2A/pcr/m/n/10 msg02999 . html$[]\T2A/Tempora-TLF/m/n/10 ; []$\T2A/pcr/m/n/10 https : / / lists . genode . org / mailman3 / hyperkitty / list / users @ lists . genode . org / thread /
  []
 
-[36]) [37]
+[37]) [38]
 \openout2 = `chapters/chapter5.aux'.
 
  (./chapters/chapter5.tex
@@ -2299,7 +2297,7 @@ Underfull \hbox (badness 3439) in paragraph at lines 34--34
 []|\T2A/Tempora-TLF/m/n/14.4 Pre-allocated via trun-
  []
 
-[38
+[39
 
 
 
@@ -2349,12 +2347,12 @@ Underfull \hbox (badness 6592) in paragraph at lines 67--67
 []|\T2A/Tempora-TLF/m/n/14.4 Storage ini-tial-iza-
  []
 
-[39] [40] [41]) [42] [43]
+[40] [41] [42]) [43] [44]
 \openout2 = `chapters/chapter6.aux'.
 
  (./chapters/chapter6.tex
 Chapter 6.
-) [44
+) [45
 
 
 
@@ -2362,92 +2360,92 @@ Chapter 6.
 ]
 
 Package biblatex Warning: No driver for 'documentation'.
-(biblatex)                Using fallback driver on input line 155.
+(biblatex)                Using fallback driver on input line 156.
 
 
-Overfull \hbox (19.87561pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Phan-tom os doc-u-men-ta-tion\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / app . readthedocs .
+Overfull \hbox (19.87561pt too wide) in paragraph at lines 156--156
+[]\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Phan-tom os doc-u-men-ta-tion\T2A/Tempora-TLF/m/n/14.4 , Avail-able: []$\T2A/pcr/m/n/14.4 https : / / app . readthedocs .
  []
 
 
-Overfull \hbox (11.07854pt too wide) in paragraph at lines 155--155
+Overfull \hbox (11.07854pt too wide) in paragraph at lines 156--156
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, ^^P  Операционная система ѕфантомї,^^Q \T2A/Tempora-TLF/m/it/14.4 Открытые системы\T2A/Tempora-TLF/m/n/14.4 ,
  []
 
-[45
+[46
 
 
 
 ]
 
 Package biblatex Warning: No driver for 'documentation'.
-(biblatex)                Using fallback driver on input line 155.
+(biblatex)                Using fallback driver on input line 156.
 
 
 Package biblatex Warning: No driver for 'github'.
-(biblatex)                Using fallback driver on input line 155.
+(biblatex)                Using fallback driver on input line 156.
 
 
 Package biblatex Warning: No driver for 'github'.
-(biblatex)                Using fallback driver on input line 155.
+(biblatex)                Using fallback driver on input line 156.
 
 
-Overfull \hbox (35.28917pt too wide) in paragraph at lines 155--155
+Overfull \hbox (35.28917pt too wide) in paragraph at lines 156--156
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Персистентная оперативная память\T2A/Tempora-TLF/m/n/14.4 , Хабр, Дата обращения:
  []
 
-[46]
+[47]
 
 Package biblatex Warning: No driver for 'documentation'.
-(biblatex)                Using fallback driver on input line 155.
+(biblatex)                Using fallback driver on input line 156.
 
 
-Overfull \hbox (12.98982pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
+Overfull \hbox (12.98982pt too wide) in paragraph at lines 156--156
+[]\T2A/Tempora-TLF/m/n/14.4 D. Zaval-ishin, \T2A/Tempora-TLF/m/it/14.4 Per-sis-tent-mem-ory\T2A/Tempora-TLF/m/n/14.4 , Avail-able: []$\T2A/pcr/m/n/14.4 https : / / github . com / dzavalishin /
  []
 
 
-Overfull \hbox (3.31975pt too wide) in paragraph at lines 155--155
+Overfull \hbox (3.31975pt too wide) in paragraph at lines 156--156
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Сборка мусора в персистентной модели: От терабайта
  []
 
 
-Overfull \hbox (4.98439pt too wide) in paragraph at lines 155--155
+Overfull \hbox (4.98439pt too wide) in paragraph at lines 156--156
 []\T2A/Tempora-TLF/m/n/14.4 Д. Завалишин, \T2A/Tempora-TLF/m/it/14.4 Фантом: Большая сборка мусора\T2A/Tempora-TLF/m/n/14.4 , Хабр, Дата обращения:
  []
 
 
 Package biblatex Warning: No driver for 'github'.
-(biblatex)                Using fallback driver on input line 155.
+(biblatex)                Using fallback driver on input line 156.
 
 
-Overfull \hbox (26.53758pt too wide) in paragraph at lines 155--155
-[]\T2A/Tempora-TLF/m/n/14.4 A. Antonov, \T2A/Tempora-TLF/m/it/14.4 Isomem\T2A/Tempora-TLF/m/n/14.4 , Avail-able: [][]$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
+Overfull \hbox (26.53758pt too wide) in paragraph at lines 156--156
+[]\T2A/Tempora-TLF/m/n/14.4 A. Antonov, \T2A/Tempora-TLF/m/it/14.4 Isomem\T2A/Tempora-TLF/m/n/14.4 , Avail-able: []$\T2A/pcr/m/n/14.4 https : / / github . com / S7rizh / phantomuserland /
  []
 
 
-Overfull \hbox (9.42696pt too wide) in paragraph at lines 155--155
-\T2A/pcr/m/n/14.4 tree / 15ea4c963c497255f824^^[abd7e0cf987d3b45c5 / phantom / isomem$[][]\T2A/Tempora-TLF/m/n/14.4 , 2024. 
+Overfull \hbox (9.42696pt too wide) in paragraph at lines 156--156
+\T2A/pcr/m/n/14.4 tree / 15ea4c963c497255f824^^[abd7e0cf987d3b45c5 / phantom / isomem$[]\T2A/Tempora-TLF/m/n/14.4 , 2024. 
  []
 
-[47]
+[48]
 
 Package biblatex Warning: No driver for 'github'.
-(biblatex)                Using fallback driver on input line 155.
+(biblatex)                Using fallback driver on input line 156.
 
 
 Package biblatex Warning: No driver for 'github'.
-(biblatex)                Using fallback driver on input line 155.
+(biblatex)                Using fallback driver on input line 156.
 
-[48] [49]
+[49] [50]
 \openout2 = `chapters/appex.aux'.
 
  (./chapters/appex.tex
 Appendix A.
-[50
+[51
 
 
-] [51]) [52] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
+] [52]) [53] (./thesis.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/appex.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2464,14 +2462,14 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  30022 strings out of 468907
- 513546 string characters out of 5460991
- 1434208 words of memory out of 5000000
+ 513547 string characters out of 5460991
+ 1434211 words of memory out of 5000000
  57968 multiletter control sequences out of 15000+600000
  674006 words of font info for 99 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  87i,17n,117p,2289b,2361s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/tempora/Tempora-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (53 pages, 1564318 bytes).
+Output written on thesis.pdf (53 pages, 1563925 bytes).
 PDF statistics:
  1874 PDF objects out of 2073 (max. 8388607)
  1256 compressed objects within 13 object streams

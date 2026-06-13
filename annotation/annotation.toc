@@ -1,5 +1,5 @@
 \babel@toc {russian}{}\relax 
-\contentsline {chapter}{\numberline {1}Введение}{5}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Краткое описание основной части работы}{7}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Заключение}{9}{chapter.3}%
-\contentsline {chapter}{Список использованной литературы}{10}{chapter*.1}%
+\contentsline {section}{\numberline {0.1}Введение}{2}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Краткое описание основной части работы}{3}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Заключение}{4}{section.0.3}%
+\contentsline {chapter}{Список использованной литературы}{6}{chapter*.1}%

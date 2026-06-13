@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.5)  10 JUN 2026 20:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.5)  13 JUN 2026 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1350,11 +1350,11 @@ Package pdftex.def Info: src/use_cases.pdf  used on input line 190.
 ] [13
 
 ]
-<src/arch_diagram.pdf, id=877, 440.49367pt x 379.53694pt>
+<src/arch_diagram.pdf, id=877, 440.89418pt x 379.53694pt>
 File: src/arch_diagram.pdf Graphic file (type pdf)
 <use src/arch_diagram.pdf>
 Package pdftex.def Info: src/arch_diagram.pdf  used on input line 246.
-(pdftex.def)             Requested size: 265.50809pt x 228.76524pt.
+(pdftex.def)             Requested size: 265.7495pt x 228.76524pt.
 
 Overfull \vbox (0.67967pt too high) detected at line 246
  []
@@ -1400,7 +1400,7 @@ Here is how much of TeX's memory you used:
  475 hyphenation exceptions out of 8191
  128i,15n,123p,1085b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slides.pdf (20 pages, 1018614 bytes).
+Output written on slides.pdf (20 pages, 1019141 bytes).
 PDF statistics:
  1144 PDF objects out of 1200 (max. 8388607)
  821 compressed objects within 9 object streams
