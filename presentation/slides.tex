@@ -97,7 +97,7 @@
 
     \bigskip
     \begin{itemize}
-        \item Phantom Virtual Machine (PVM): bytecode language VM
+        \item Phantom Virtual Machine (PVM): bytecode VM of a persistent language
         \item Simplified POSIX layer (non-persistent)
         \item Periodical snapshots (via \textbf{Copy-on-Write})
         \item Changed pages written to disk (incremental)
@@ -244,7 +244,7 @@
 
     \bigskip
     \textbf{Optimization}: using a "Block" session directly\\
-    reduced initialization time from $\approx$20 min to $\approx$1 min.
+    Reduced initialization time from $\approx$20 min to $\approx$1 min
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -257,8 +257,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{First run configuration}
-    Environment: QEMU with \texttt{-cpu host} (enables AES/SHA hardware acceleration).\\
-    2 GB image for isomem, 5 GB image for se\_vault (4 GB user FS).
+    Environment features: 
+    \begin{itemize}
+        \item QEMU with \texttt{-cpu host} (AES/SHA hardware acceleration)
+        \item NVMe controllers
+        \item 2 GB image for isomem
+        \item 5 GB image for se\_vault (4 GB user FS)
+    \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -269,33 +274,14 @@
         \item Normal boot / shutdown / restore cycle
         \item Encrypted image cannot be mounted without key
         \item Key/hash replacement attack --- superblock not detected
-        \item Crash recovery via fsck
+        \item Crash recovery via \texttt{fsck}
     \end{itemize}
-
-    \bigskip
-    Performance: first snapshot creation and restore, 5 runs each.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Performance testing}
-    Functional tests (all passed):
-    \begin{itemize}
-        \item Normal boot / shutdown / restore cycle
-        \item Encrypted image cannot be mounted without key
-        \item Key/hash replacement attack --- superblock not detected
-        \item Crash recovery via fsck
-    \end{itemize}
-
-    \bigskip
-    Performance: first snapshot creation and restore, 5 runs each.
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Results}
-    The measurements are not statistically significant, but they provide an idea of the costs involved in the mockup implementation.
-    \bigskip
+    Methodology: first snapshot creation and reboot with restoring, 5 runs each
     \begin{center}
     \begin{tabular}{lrrr}
         \toprule
@@ -307,18 +293,17 @@
     \end{tabular}
     \end{center}
 
+    The results are not statistically confirmed
+
     \bigskip
-    Root cause: \textbf{known Tresor library limitation} ---
-    not optimized for multithreading.
-    Acknowledged by the author; unresolved.
+    Root cause: \textbf{known Tresor limitation} ---
+    no multithreading optimization
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Evaluation}
-    \textbf{4 of 5 requirements met.}
-
-    \bigskip
+    \textbf{4 of 5 requirements met}
     \begin{tabular}{cl}
         $\checkmark$ & Mandatory authorization (USB key) \\
         $\checkmark$ & Key on external medium \\
@@ -328,24 +313,29 @@
     \end{tabular}
 
     \bigskip
-    Security gain: snapshot cannot be mounted or read without the key.\\
-    Integrity: SHA-256 at block level (Tresor) + hash at FS level (Snapper).
+
+    The current overheads may be acceptable in certain scenarios
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Conclusion}
-    Adapted \textbf{file\_vault} $\to$ \textbf{se\_vault} for encrypted snapshot storage in PhantomOS on Genode.
+    Developed \textbf{se\_vault} based on \textbf{file\_vault}
+
+    Improvements:
+    \begin{itemize}
+        \item Security gain: snapshot encryption enabled
+        \item Integrity gain: SHA-256 at block level (Tresor) + hash at FS level (Snapper)
+    \end{itemize}
 
     \bigskip
-    First security research specifically for PhantomOS.\\
-    No analogous component existed prior to se\_vault.
+    \textbf{First security research} specifically for PhantomOS\\
 
     \bigskip
     Future work:
     \begin{itemize}
-        \item Fix Tresor performance (or switch to FS-level encryption via OpenSSL)
-        \item Encrypt the isomem block device using se\_vault
+        \item Decrease performance overhead
+        \item Encrypt the isomem's block device
         \item Investigate merging Snapper and Tresor snapshot concepts
         \item Bring the PoC implementation to an industrial-scale level
     \end{itemize}
