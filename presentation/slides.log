@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.5)  13 JUN 2026 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.5)  13 JUN 2026 22:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1302,23 +1302,23 @@ Dictionary: translator-numbers-dictionary, Language: English
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./slides.nav) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-] [3
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 63.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 37.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-) [4
+) [2
+
+] [3
+
+] [4
 
 ] [5
 
@@ -1330,40 +1330,40 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [9
 
+] [10
+
 ]
-<src/use_cases.pdf, id=255, 2420.13242pt x 3400.47269pt>
+<src/use_cases.pdf, id=283, 2420.13242pt x 3400.47269pt>
 File: src/use_cases.pdf Graphic file (type pdf)
 <use src/use_cases.pdf>
-Package pdftex.def Info: src/use_cases.pdf  used on input line 180.
+Package pdftex.def Info: src/use_cases.pdf  used on input line 199.
 (pdftex.def)             Requested size: 388.78009pt x 546.29324pt.
- [10
+ [11
 
  <./src/use_cases.pdf>]
 File: src/use_cases.pdf Graphic file (type pdf)
 <use src/use_cases.pdf>
-Package pdftex.def Info: src/use_cases.pdf  used on input line 190.
+Package pdftex.def Info: src/use_cases.pdf  used on input line 209.
 (pdftex.def)             Requested size: 388.78009pt x 546.29324pt.
- [11
-
-] [12
+ [12
 
 ] [13
 
+] [14
+
 ]
-<src/arch_diagram.pdf, id=877, 440.89418pt x 379.53694pt>
+<src/arch_diagram.pdf, id=908, 440.89418pt x 379.53694pt>
 File: src/arch_diagram.pdf Graphic file (type pdf)
 <use src/arch_diagram.pdf>
-Package pdftex.def Info: src/arch_diagram.pdf  used on input line 246.
+Package pdftex.def Info: src/arch_diagram.pdf  used on input line 256.
 (pdftex.def)             Requested size: 265.7495pt x 228.76524pt.
 
-Overfull \vbox (0.67967pt too high) detected at line 246
+Overfull \vbox (0.67967pt too high) detected at line 256
  []
 
-[14
+[15
 
- <./src/arch_diagram.pdf>] [15
-
-] [16
+ <./src/arch_diagram.pdf>] [16
 
 ] [17
 
@@ -1372,6 +1372,8 @@ Overfull \vbox (0.67967pt too high) detected at line 246
 ] [19
 
 ] [20
+
+] [21
 
 ]
 \tf@nav=\write6
@@ -1392,18 +1394,18 @@ Package rerunfilecheck Info: File `slides.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26769 strings out of 468907
- 519610 string characters out of 5460992
- 928866 words of memory out of 5000000
- 54855 multiletter control sequences out of 15000+600000
- 636629 words of font info for 72 fonts, out of 8000000 for 9000
+ 26813 strings out of 468907
+ 520412 string characters out of 5460992
+ 931866 words of memory out of 5000000
+ 54891 multiletter control sequences out of 15000+600000
+ 638749 words of font info for 80 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  128i,15n,123p,1085b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on slides.pdf (20 pages, 1019141 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on slides.pdf (21 pages, 1030739 bytes).
 PDF statistics:
- 1144 PDF objects out of 1200 (max. 8388607)
- 821 compressed objects within 9 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 1181 PDF objects out of 1200 (max. 8388607)
+ 854 compressed objects within 9 object streams
+ 43 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

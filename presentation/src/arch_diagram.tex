@@ -96,11 +96,11 @@
 
 \path let \p1=(genode.west), \p2=(genode.east),
           \n1={\x2-\x1}, \n2={\x2-\x1-10pt} in
-  node[band, minimum width=\n1, text width=\n2, fill=gray!8, draw=gray!50, dashed,
+  node[band, minimum width=\n1, text width=\n2, fill=gray!8, draw=gray!50,
        anchor=north] (qemu) at ($(genode.south)+(0,-0.45cm)$)
     {\bfseries QEMU\normalfont\enspace
      \texttt{-cpu host},\enspace virtual NVMe (PCIe),\enspace USB passthrough}
-  node[band, minimum width=\n1, text width=\n2, fill=red!5, draw=red!45, dashed,
+  node[band, minimum width=\n1, text width=\n2, fill=red!5, draw=red!45,
        anchor=north] (podman) at ($(qemu.south)+(0,-0.18cm)$)
     {\bfseries Podman container\normalfont\enspace
      (USB flash passthrough:\enspace\texttt{--device /dev/bus/usb/...})}

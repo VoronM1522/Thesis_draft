@@ -29,36 +29,47 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Relevance}
-    With the advent of new hardware, new demands are being placed on software, especially basic software. 
-    In light of this, it is necessary to examine the relevance of persistence concepts in the current environment.
+    \begin{itemize}
+        \item Orthogonal persistence has been developing since the 1980s
+        \item New equipment spurs new research
+        \item The current situation requires a research
+    \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Objective}
-    There are already existing implementations of persistent systems designed for embedded systems and systems without constant physical human access. 
-    Our objective is to understand what data security options are available in such implementations.
+    Current implementation:
+    \begin{itemize}
+        \item Test systems exist
+        \item Embedded systems
+        \item No permanent physical access is required
+    \end{itemize}
+
+    \bigskip
+
+    \textbf{Goal:} Explore options for ensuring data security
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Data Persistence}
-    \textbf{Persistence} the period of time during which an object is usable
+    \textbf{Persistence} the period of time during which an object is usable\footnote{M.~P. Atkinson, P.~J. Bailey, K.~J. Chisholm, W.~P. Cockshott, and R.~Morrison, ``Ps-algol: A language for persistent programming,'' 1983.}
 
-    % \textbf{Data persistence:} period of time during which data exists and is used
-
-    % \bigskip
-    \tiny{M. P. Atkinson, P. J. Bailey, K. J. Chisholm, W. P. Cockshott, and R. Morrison,\\
-    “Ps-algol: A language for persistent programming,” (1983)}
-    % \textit{R. Morrison, M. P. Atkinson --- ``Persistent Languages and Architectures'', 1990}
-
-    \normalsize
-    \bigskip\bigskip
-    Today's dominant model (for non-persistent programming) --- \textbf{two-level store}:
+    \bigskip
+    Today's dominant model --- \textbf{two-level store} (non-persistent):
     \begin{itemize}
         \item Data is either \textit{active} (RAM) or \textit{stored} (disk)
         \item Programmer manually moves data between levels
-        \item Consequences: data loss, I/O boilerplate ($\approx$30\% of code)
+        
+    \end{itemize}
+    \bigskip
+
+    Consequences:
+    \begin{itemize}
+        \item Data loss
+        \item I/O boilerplate ($\approx$30\% of code)
+        \item Frequent initialization and configuration
     \end{itemize}
 \end{frame}
 
@@ -68,48 +79,49 @@
     Alternative: the \textbf{environment} manages persistence
 
     \bigskip
-    Three principles of \textbf{orthogonal persistence} (\textit{according to R. Morrison, M. P. Atkinson --- ``Persistent Languages and Architectures'', 1990}):
+    Principles of \textbf{orthogonal persistence}\footnote{R.~Morrison and M.~P. Atkinson, ``Persistent Languages and Architectures,'' 1990.}:
     \begin{enumerate}
-        \item \textbf{Independence} --- data persistence does not depend on how it is manipulated
-        \item \textbf{Data type orthogonality} --- all types can be persisted
-        \item \textbf{Identification} --- type does not affect persistence identity
+        \item \textbf{Independence}
+        \item \textbf{Data type orthogonality}
+        \item \textbf{Identification}
     \end{enumerate}
 
     \bigskip
-    Benefits: No initialization is required at every system startup; there is no need for regular configuration reads/writes; 
-    up to 30\% reduction in code size; more efficient use of disk bandwidth; improved reliability failt tolerance.
+    \textbf{Result:} No two-level store model's drawbacks and improved disk's bandwidth utilization
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{PhantomOS}
-    \textbf{\href{http://phantomos.org/}{PhantomOS}} is a non-Unix like OS implementing orthogonal persistence (D. Zavalishin, 2010).
+    \textbf{PhantomOS}\footnote{\url{http://phantomos.org/}} is a non-Unix like OS implementing orthogonal persistence.\footnote{D.~Zavalishin, PhantomOS, 2010.}
 
     \bigskip
     \begin{itemize}
-        \item Persistent Virtual Machine (PVM): bytecode VM + POSIX layer
-        \item Snapshots saved periodically via \textbf{Copy-on-Write}
-        \item Only changed pages written to disk (incremental)
-        \item Programs paused only briefly during snapshot preparation
+        \item Phantom Virtual Machine (PVM): bytecode language VM
+        \item Simplified POSIX layer (non-persistent)
+        \item Periodical snapshots (via \textbf{Copy-on-Write})
+        \item Changed pages written to disk (incremental)
+        \item Programs are temporarily suspended (snapshot preparation)
     \end{itemize}
+\end{frame}
 
-    \bigskip
-    Currently ported to the \href{https://genode.org/}{\textbf{Genode} OS C++ framework}:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Genode}
+    PhantomOS ported to the \textbf{Genode} OS C++ framework\footnote{\url{https://genode.org/}}:
     \begin{itemize}
         \item Proven microkernels (NOVA, seL4, Fiasco.OC)
-        \item Capability-based security, minimal TCB
+        \item Capability-based security
+        \item Minimal TCB
     \end{itemize}
 
     \bigskip
-    Current snapshot mechanism: \textbf{Snapper}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Snapper}
-    \textbf{\href{https://github.com/rumenmitov/snapper}{Snappser}} is a file-system-based generational snapshot storage
-    \tiny{\\\href{https://fosdem.org/2026/schedule/event/DJ8YVT-practical-persistence/}{R. Mitov, “Snapper (v2): A PhantomOS snapshot mechanism,” FOSDEM 2026}}
-    \normalsize
+    \textbf{Snappser}\footnote{\url{https://github.com/rumenmitov/snapper}} is a file-system-based transactional snapshot mechanism\footnote{R.~Mitov, ``Snapper (v2): A PhantomOS snapshot mechanism,'' FOSDEM 2026. \url{https://fosdem.org/2026/schedule/event/DJ8YVT-practical-persistence/}}
 
     \bigskip
     Previous approach (``superblock''): snapshots stored as monolithic objects.
@@ -121,6 +133,7 @@
     \bigskip
     Snapper 2.0:
     \begin{itemize}
+        \item Configured generations number
         \item Unchanged pages \textbf{linked}, not copied across generations
         \item ext4 + fsck for crash recovery
         \item Integrity checks (hashes per file)
@@ -131,28 +144,34 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Problem Statement}
-    PhantomOS snapshots capture the \textbf{entire machine state}\\
-    --- including sensitive data present in memory.
-
-    \bigskip
-    Snapshots are stored on the drive in \textbf{plaintext}.
-    An attacker with physical access can mount and read them directly,
-    or fully reproduce the machine state.
-
-    \bigskip
+    Problem:
     \begin{itemize}
-        \item No prior research on this for PhantomOS
-        \item No ready-made solution exists in Genode
+        \item Snapshots contain \textbf{sensitive data}
+        \item \textbf{Plaintext} snapshots are stored on the drive
+    \end{itemize}
+    \bigskip
+    
+    Consequences:
+    \begin{itemize}
+        \item Data can be \textbf{read directly}
+        \item Ability to \textbf{restore the complete state}
+    \end{itemize}
+    \bigskip
+
+    Immediate decision's challenges:
+    \begin{itemize}
+        \item \textbf{No prior research} on this for PhantomOS
+        \item \textbf{No ready-made solution} exists in Genode
     \end{itemize}
 
     \bigskip
-    \textbf{Goal}: implement a mechanism for the secure storage of snapshots.
+    \textbf{Solution}: to implement a mechanism for the secure storage of snapshots.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Environment \& Requirements}
-    There should be no way for an attacker to gain access to the snapshot in plaintext at any point during its lifetime.
+    No unauthorized access to data
 
     \bigskip
     Requirements:
@@ -192,15 +211,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Implementation: se\_vault}
-    There is a \textbf{file\_vault} in Genode based on \textbf{Tresor} library:
+    \textbf{file\_vault} based on \textbf{Tresor} library:
     \begin{itemize}
         \item Tresor: AES encryption on 4K blocks, SHA-256 integrity, CoW atomicity
         \item file\_vault: state orchestrator providing a secure FS session
     \end{itemize}
 
     \bigskip
-    Implemented \textbf{\href{https://github.com/VoronM1522/genode/tree/se/repos/gems/src/app/se_vault}{se\_vault}} 
-    as adapted \textbf{\href{github.com/genodelabs/genode/tree/sculpt-25.04/repos/gems/src/app/file_vault}{file\_vault}}:
+    Implemented \textbf{se\_vault}\footnote{\url{https://github.com/VoronM1522/genode/tree/se/repos/gems/src/app/se_vault}}
+    based on \textbf{file\_vault}\footnote{\url{https://github.com/genodelabs/genode/tree/sculpt-25.04/repos/gems/src/app/file_vault}}:
     \begin{itemize}
         \item Headless operation
         \item Passphrase replaced by \textbf{USB key file}
@@ -215,25 +234,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Related Fixes \& Adaptations}
-    For se\_vault to function properly, lwext4, isomem, snapper, and vfs have been adapted.\\
-    \bigskip
-    \textbf{lwext4} bug fixes:
+    \textbf{Functionality patches:}
     \begin{itemize}
-        \item \texttt{ftruncate}: pointer cast for correct file size
-        \item \texttt{sync} call now propagated to lower VFS layers\\
-              (critical --- Tresor updates its state hash on \texttt{sync})
+        \item lwext4: \texttt{ftruncate} and \texttt{sync}
+        \item isomem: power-off button callback and graceful shutdown
+        \item snapper: client counter and graceful shutdown
+        \item vfs: client counter, graceful shutdown and clean unmount
     \end{itemize}
 
     \bigskip
-    \textbf{Shutdown sequence} (isomem / snapper / VFS):
-    \begin{itemize}
-        \item isomem: power-off button triggers final snapshot
-        \item snapper, vfs: client counters trigger graceful shutdown
-        \item lwext4 unmounted cleanly; mount flag cleared for fsck
-    \end{itemize}
-
-    \bigskip
-    \textbf{Optimization}: skipping image file pre-allocation\\
+    \textbf{Optimization}: using a "Block" session directly\\
     reduced initialization time from $\approx$20 min to $\approx$1 min.
 \end{frame}
 
@@ -254,10 +264,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Functional testing}
-    Environment: QEMU with \texttt{-cpu host} (enables AES/SHA hardware acceleration).\\
-    2 GB image for isomem, 5 GB image for se\_vault (4 GB user FS).
-
-    \bigskip
     Functional tests (all passed):
     \begin{itemize}
         \item Normal boot / shutdown / restore cycle
@@ -273,10 +279,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Performance testing}
-    Environment: QEMU with \texttt{-cpu host} (enables AES/SHA hardware acceleration).\\
-    2 GB image for isomem, 5 GB image for se\_vault (4 GB user FS).
-
-    \bigskip
     Functional tests (all passed):
     \begin{itemize}
         \item Normal boot / shutdown / restore cycle
