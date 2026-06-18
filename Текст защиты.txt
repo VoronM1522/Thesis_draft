@@ -53,9 +53,12 @@ As can be seen in the second part of the scheme, encryption is used to protect a
 Слайд 8
 (15 сек / 5 мин 40 сек)
 
-According to chosen scenarios we specified system requirements, which you may see on the slide. We also decided to use the USB flash with the key as an authentication factor.
+According to chosen scenarios we specified system requirements, which you may see on the slide. We decided to use block-level encryption to enhance the system's security by hiding metadata. We also decided to use the USB flash with the key as an authentication factor.
 
 Слайд 9
+()
+
+Now about implementation. Fir
 
 Слайд 10
 
