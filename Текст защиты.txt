@@ -56,9 +56,11 @@ As can be seen in the second part of the scheme, encryption is used to protect a
 According to chosen scenarios we specified system requirements, which you may see on the slide. We decided to use block-level encryption to enhance the system's security by hiding metadata. We also decided to use the USB flash with the key as an authentication factor.
 
 Слайд 9
-()
+(50 сек / 6 мин 30 сек)
 
-Now about implementation. Fir
+Now about implementation. First, we looked into the encryption methods available in Genode. An experimental file_vault was found. It provides secure data storage within a file image. It is based on Tresor, a block-level encryption library. The component did not suit our needs as-is, since it required manual configuration and user interaction. In addition, the rump_fs component used in it is difficult to configure for our needs and there was no build-in mechanism for recovery from failures. The list of changes you may see on the slide.
+
+In addition, necessary changes were made to other components, since the system still did not have a graceful shutdown mechanism, and lwext4 did not propagate sync calls to lower levels of the VFS, which is required for Tesor synchronization.
 
 Слайд 10
 
