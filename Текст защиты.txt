@@ -63,12 +63,24 @@ Now about implementation. First, we looked into the encryption methods available
 In addition, necessary changes were made to other components, since the system still did not have a graceful shutdown mechanism, and lwext4 did not propagate sync calls to lower levels of the VFS, which is required for Tesor synchronization.
 
 Слайд 10
+(35 сек / 7 мин 5 сек)
+
+The system architecture is presented here. isomem requests snapper to create a snapshot or to restore from it. snapper uses the file system requested from se_vault, which uses block-level encryption internally. AES in CBC mode is used for encryption, and SHA-256 is used for integrity checking. The keys are stored on a USB flash drive.
+
+You can also see on the slide the configuration used for testing. The system ran in QEMU, and we used the Genode base kernel.
 
 Слайд 11
+()
+
+Then we checked results of implementation.
 
 Слайд 12
+()
+
+
 
 Слайд 13
+()
 
 Thank you! I am ready to answer your questions.
 
