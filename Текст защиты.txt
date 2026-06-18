@@ -1,0 +1,38 @@
+Слайд 1 - 20 сек / 20 сек
+
+Good morning dear committee! My name is Mikhail Voronin. My superviser is Artem Burmyakov. Alexaner Tormasov is consultant. The topic of our work is "Research and Adaptation of Components from the Persistent OS Phantom for Genode"
+
+Слайд 2
+
+First of all about why it matters. The concept of orthogonal persistentce was developed in 70-th. Since then the hardware and network balances significantly changed which makes the concept more practical then theoretical and promted new researches. The OS Phantom we have chosen is one such example. In practice for most of usage scenarios storage must be protected, especially for persistent systems. There is no snapshots protection in PhantomOS. So our goals are to analyze computer usage scenarios and choose those which we will maintain, develop component which allows to implement such a scenario and experimentally verify the correctness of the concept
+
+Слайд 3
+
+Слайд 4
+
+Слайд 5
+
+Слайд 6
+
+Слайд 7
+
+Слайд 8
+
+Слайд 9
+
+Слайд 10
+
+Слайд 11
+
+Слайд 12
+
+Слайд 13
+
+Thank you! I am ready to answer your questions.
+
+
+Вопросы:
+
+1. Как (каким алгоритмом) генерируется ключ?
+2. В каком виде хранятся данные?
+3.
