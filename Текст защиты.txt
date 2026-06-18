@@ -70,9 +70,11 @@ The system architecture is presented here. isomem requests snapper to create a s
 You can also see on the slide the configuration used for testing. The system ran in QEMU, and we used the Genode base kernel.
 
 Слайд 11
-()
+(55 сек / 8 мин)
 
-Then we checked results of implementation.
+Then we checked results of implementation. The functional part has been fully implemented. The scenarios selected for support have been implemented, as shown on the slide. In addition, the ability to recover the file system in the event of an abnormal shutdown has been successfully tested.
+
+Speed tests showed a huge overhead, which is definitely a bug. This is despite hardware acceleration for cryptographic operations; without it, the results were even worse. The results have not been statistically validated, but all the tests showed the same result. This is a complex problem. One possible reason may be a known optimization issue with Tresor, which causes similar overhead when using file_vault; however, the problem may also be related to the scheduler, the multi-level implementation, or other factors. In any case, it requires further investigation.
 
 Слайд 12
 ()
