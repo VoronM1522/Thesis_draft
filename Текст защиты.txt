@@ -51,6 +51,9 @@ To achieve our objectives, we need to decide on the scenarios we plan to support
 As can be seen in the second part of the scheme, encryption is used to protect against unauthorized access. It is important to note that the system must be fault-tolerant and must not store unprotected data even in the event of an abnormal termination.
 
 Слайд 8
+(15 сек / 5 мин 40 сек)
+
+According to chosen scenarios we specified system requirements, which you may see on the slide. We also decided to use the USB flash with the key as an authentication factor.
 
 Слайд 9
 
