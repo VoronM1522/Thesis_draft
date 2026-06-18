@@ -1,12 +1,28 @@
-Слайд 1 - 20 сек / 20 сек
+Слайд 1
+(20 сек / 20 сек)
 
 Good morning dear committee! My name is Mikhail Voronin. My superviser is Artem Burmyakov. Alexaner Tormasov is consultant. The topic of our work is "Research and Adaptation of Components from the Persistent OS Phantom for Genode"
 
 Слайд 2
+(50 сек / 1 мин 10 сек)
 
-First of all about why it matters. The concept of orthogonal persistentce was developed in 70-th. Since then the hardware and network balances significantly changed which makes the concept more practical then theoretical and promted new researches. The OS Phantom we have chosen is one such example. In practice for most of usage scenarios storage must be protected, especially for persistent systems. There is no snapshots protection in PhantomOS. So our goals are to analyze computer usage scenarios and choose those which we will maintain, develop component which allows to implement such a scenario and experimentally verify the correctness of the concept
+First of all about why it matters. The concept of orthogonal persistentce was developed in 70-th. Since then the hardware and network balances significantly changed which makes the concept more practical then theoretical and promted new researches. The OS Phantom we have chosen is one such example. In practice for most of usage scenarios storage must be protected, especially for persistent systems. There is no snapshots protection in PhantomOS. So our goals are to analyze computer usage scenarios and choose those which we will maintain, develop component which allows to implement such a scenario and experimentally verify the correctness of the concept.
 
 Слайд 3
+(1 мин 30 сек / 2 мин 40 сек)
+
+The definition of the persistence you may see on the slide. The dominant model todays is a two-level storage. It is not persistent, which means a programmer is responsible for data persistence. As a result there are drawbacks: data loss in faults, input/output, serialization/deserialization code templayts (which accounts for about 30% of the code) and periodical initialization and configuration (for each boot, for example). An alternative is to shift this responsibility to the environment. In addition to being free of the drawbacks of two-level systems, systems that provide an orthogonally persistent environment make better use of disk bandwidth. You can see the principles of orthogonal persistence on the slide, but they need some explanation.
+
+Independence means that data persistence does not depend on how the data is manipulated (the user cannot move data between long-term and short-term storage)
+
+Data type orthogonality. In other words data type is orthogonal to its persistence. This principle ensures that there are no cases in which data of any type cannot be persisted.
+
+НЕ ГОВОРЮ: тип данных ортогонален их персистентности, то есть данные персистентны независимо от типа
+
+Identification means that persistent object identification does not relate to the type of such an object.
+
+
+Eventually, data persistence depends neither on the programmer, nor on the data itself, nor on the system.
 
 Слайд 4
 
@@ -29,6 +45,8 @@ First of all about why it matters. The concept of orthogonal persistentce was de
 Слайд 13
 
 Thank you! I am ready to answer your questions.
+
+
 
 
 Вопросы:
