@@ -25,8 +25,20 @@ Identification means that persistent object identification does not relate to th
 Eventually, data persistence depends neither on the programmer, nor on the data itself, nor on the system.
 
 Слайд 4
+(1 мин 20 сек / 4 мин)
+
+PhantomOS is one of the most modern examples of orthogonal persistent systems. It is non-Unix-like OS, which provides persistent environment inside Phantom Virtual Machine. PVM is a java-like virtual machine, which executes phantom's bytecode. Persistence is ensured by periodical transactional snapshots. There is also simlified POSIX layer for backward compatability, however it is not persistent.
+
+Since building a new operating system from scratch is very difficult, a project to port it to Genode was launched to improve development speed, security, and reliability. Genode is an opensource toolkit for OS developing, which provides an interface for interacting with the kernel. It supports a variety of kernels (mostly microkernels). It is based on the principles of capability-based security and uses a recursive system structure, which allows components to be configured very precisely in accordance with the principle of least privilege. Taken together, all of this makes it possible to achieve the lowest Trusted Computing Base (TCB), which has a positive impact on security.
+
+The goal of the porting process was to migrate the persistent environment to Genode. The project was named isomemю.
 
 Слайд 5
+(35 сек / 4 мин 35 сек)
+
+In the ported version, Snapper has become the mechanism for creating snapshots. Unlike “superblock,” it is a file-system-based component. It also uses less disk space and allows the storage to be recovered using the existing mechanisms for working with the file system.
+
+However, the issue of securely storing snapshots still exists, and the system is vulnerable to physical access attacks. This is even more critical for persistent systems, since, in accordance with the principles of orthogonal persistence, sensitive data is also stored in the snapshots.
 
 Слайд 6
 
