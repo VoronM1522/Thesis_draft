@@ -77,12 +77,16 @@ Then we checked results of implementation. The functional part has been fully im
 Speed tests showed a huge overhead, which is definitely a bug. This is despite hardware acceleration for cryptographic operations; without it, the results were even worse. The results have not been statistically validated, but all the tests showed the same result. This is a complex problem. One possible reason may be a known optimization issue with Tresor, which causes similar overhead when using file_vault; however, the problem may also be related to the scheduler, the multi-level implementation, or other factors. In any case, it requires further investigation.
 
 Слайд 12
-()
+(1 мин 5 сек / 9 мин 5 сек)
 
+Therefore, the developed component is just a proof-of-concept (PoC) implementation. While it meets the functional requirements, its performance has dropped significantly. Despite this, there are scenarios in which such performance metrics may be acceptable: for example, when using hardware with excess performance or when I/O volumes are small. The Phantom's author, Dmitry Zavalishin, also discusses such a scenario in his work, and provide graphics rendering as an example saying it uses a large amount of memory for temporary storage, in which modified pages will not be written to a snapshot.
 
+The global objectives of the project were mostly achieved. The scenarios were classified and selected. They were impemented and expirementally verified. We met only perfoemance issues, which are important, but were not the main goal.
+
+As part of future work, we can consider other useage scenarios and environments or expand on the current one. We need to solve the performance issue, secure the isomem storage, and consider combining the functionality of snapper and se_vault into a separate component.
 
 Слайд 13
-()
+(5 сек / 9 мин 10 сек)
 
 Thank you! I am ready to answer your questions.
 
