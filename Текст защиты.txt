@@ -41,8 +41,14 @@ In the ported version, Snapper has become the mechanism for creating snapshots. 
 However, the issue of securely storing snapshots still exists, and the system is vulnerable to physical access attacks. This is even more critical for persistent systems, since, in accordance with the principles of orthogonal persistence, sensitive data is also stored in the snapshots.
 
 Слайд 6
+(35 сек / 5 мин 10 сек)
+
+To achieve our objectives, we need to decide on the scenarios we plan to support. When designing the scheme, we tried to classify possible usage scenarios. Their security was determined by the possibility of untrusted users accessing the plaintext snapshot. States that did not affect the security of the whole scenario or that made other steps unnecessary were omitted.  You may see simplified version on the slide. First and foremost, we are interested in a scenario involving physical access, in which access to the computer is not restricted to trusted personnel only. So it requires access control.
 
 Слайд 7
+(15 сек / 5 мин 25 сек)
+
+As can be seen in the second part of the scheme, encryption is used to protect against unauthorized access. It is important to note that the system must be fault-tolerant and must not store unprotected data even in the event of an abnormal termination.
 
 Слайд 8
 
