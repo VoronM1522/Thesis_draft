@@ -1,0 +1,91 @@
+Слайд 1
+(20 сек / 20 сек)
+
+Good morning dear committee! My name is Mikhail Voronin. My supervisor is Artem Burmyakov. Alexander Tormasov is the consultant. The topic of our work is "Research and Adaptation of Components from the Persistent OS Phantom for Genode"
+
+Слайд 2
+(50 сек / 1 мин 10 сек)
+
+First of all about why it matters. The concept of orthogonal persistence was developed in the 1970s. Since then the hardware and network landscape has significantly changed, which makes the concept more practical than theoretical and prompted new research. The OS Phantom we have chosen is one such example. In practice, for most usage scenarios storage must be protected, especially for persistent systems. There is no snapshot protection in PhantomOS. So our goals are to analyze computer usage scenarios and choose those which we will support, develop a component which allows to implement such a scenario, and experimentally verify the correctness of the concept.
+
+Слайд 3
+(1 мин 30 сек / 2 мин 40 сек)
+
+The definition of persistence you may see on the slide. The dominant model today is a two-level storage. It is not persistent, which means a programmer is responsible for data persistence. As a result there are drawbacks: data loss on faults, input/output and serialization/deserialization boilerplate code (which accounts for about 30% of the code), and periodical initialization and configuration (for each boot, for example). An alternative is to shift this responsibility to the environment. In addition to being free of the drawbacks of two-level systems, systems that provide an orthogonally persistent environment make better use of disk bandwidth. You can see the principles of orthogonal persistence on the slide, but they need some explanation.
+
+Independence means that data persistence does not depend on how the data is manipulated (the programmer does not move data between long-term and short-term storage)
+
+Data type orthogonality. In other words, data type is orthogonal to its persistence. This principle ensures that there are no cases in which data of any type cannot be persisted.
+
+НЕ ГОВОРЮ: тип данных ортогонален их персистентности, то есть данные персистентны независимо от типа
+
+Identification means that persistent object identification does not relate to the type of such an object.
+
+
+Eventually, data persistence depends neither on the programmer, nor on the data itself, nor on the system.
+
+Слайд 4
+(1 мин 20 сек / 4 мин)
+
+PhantomOS is one of the most modern examples of orthogonally persistent systems. It is a non-Unix-like OS, which provides a persistent environment inside the Phantom Virtual Machine. PVM is a Java-like virtual machine, which executes Phantom's bytecode. Persistence is ensured by periodical transactional snapshots. There is also a simplified POSIX layer for backward compatibility, however it is not persistent.
+
+Since building a new operating system from scratch is very difficult, a project to port it to Genode was launched to improve development speed, security, and reliability. Genode is an open-source toolkit for OS development, which provides an interface for interacting with the kernel. It supports a variety of kernels (mostly microkernels). It is based on the principles of capability-based security and uses a recursive system structure, which allows components to be configured very precisely in accordance with the principle of least privilege. Taken together, all of this makes it possible to achieve the lowest Trusted Computing Base (TCB), which has a positive impact on security.
+
+The goal of the porting process was to migrate the persistent environment to Genode. This resulted in the isomem project.
+
+Слайд 5
+(35 сек / 4 мин 35 сек)
+
+In the ported version, Snapper has become the mechanism for creating snapshots. Unlike “superblock,” it is a file-system-based component. It also uses less disk space and allows the storage to be recovered using the existing mechanisms for working with the file system.
+
+However, the issue of securely storing snapshots still exists, and the system is vulnerable to physical access attacks. This is even more critical for persistent systems, since, in accordance with the principles of orthogonal persistence, sensitive data is also stored in the snapshots.
+
+Слайд 6
+(35 сек / 5 мин 10 сек)
+
+To achieve our objectives, we need to decide on the scenarios we plan to support. When designing the scheme, we tried to classify possible usage scenarios. Their security was determined by the possibility of untrusted users accessing the plaintext snapshot. States that did not affect the security of the whole scenario or that made other steps unnecessary were omitted.  You may see a simplified version on the slide. First and foremost, we are interested in a scenario involving physical access, in which access to the computer is not restricted to trusted personnel only. So it requires access control.
+
+Слайд 7
+(15 сек / 5 мин 25 сек)
+
+As can be seen in the second part of the scheme, encryption is used to protect against unauthorized access. It is important to note that the system must be fault-tolerant and must not store unprotected data even in the event of an abnormal termination.
+
+Слайд 8
+(15 сек / 5 мин 40 сек)
+
+According to the chosen scenarios we specified system requirements, which you may see on the slide. We decided to use block-level encryption to enhance the system's security by hiding metadata. We also decided to use a USB flash drive with the key as an authentication factor.
+
+Слайд 9
+(50 сек / 6 мин 30 сек)
+
+Now about implementation. First, we looked into the encryption methods available in Genode. An experimental file_vault was found. It provides secure data storage within a file image. It is based on Tresor, a block-level encryption library. The component did not suit our needs as-is, since it required manual configuration and user interaction. In addition, the rump_fs component used in it is difficult to configure for our needs, and there was no built-in mechanism for recovery from failures. The list of changes you may see on the slide.
+
+In addition, necessary changes were made to other components, since the system still did not have a graceful shutdown mechanism, and lwext4 did not propagate sync calls to lower levels of the VFS, which is required for Tresor synchronization.
+
+Слайд 10
+(35 сек / 7 мин 5 сек)
+
+The system architecture is presented here. isomem requests snapper to create a snapshot or to restore from it. snapper uses the file system requested from se_vault, which uses block-level encryption internally. AES in CBC mode is used for encryption, and SHA-256 is used for integrity checking. The keys are stored on a USB flash drive.
+
+You can also see on the slide the configuration used for testing. The system ran in QEMU, and we used the Genode base kernel.
+
+Слайд 11
+(55 сек / 8 мин)
+
+Then we checked the results of implementation. The functional part has been fully implemented. The scenarios selected for support have been implemented, as shown on the slide. In addition, the ability to recover the file system in the event of an abnormal shutdown has been successfully tested.
+
+Speed tests showed a huge overhead. The exact cause is not yet localized, but it is not in the encryption algorithm or the hardware. This is despite hardware acceleration for cryptographic operations; without it, the results were even worse. The results have not been statistically validated, but all the tests showed the same result. This is a complex problem. One possible reason may be a known optimization issue with Tresor, which causes similar overhead when using file_vault; however, the problem may also be related to the scheduler, the multi-level implementation, or other factors. In any case, it requires further investigation.
+
+Слайд 12
+(1 мин 5 сек / 9 мин 5 сек)
+
+Therefore, the developed component is just a proof-of-concept (PoC) implementation. While it meets the functional requirements, its performance has dropped significantly. Despite this, there are scenarios in which such performance metrics may be acceptable: for example, when using hardware with excess performance or when I/O volumes are small. The Phantom's author, Dmitry Zavalishin, also discusses such a scenario in his work, and provides graphics rendering as an example, saying it uses a large amount of memory for temporary storage, in which modified pages will not be written to a snapshot.
+
+The global objectives of the project were mostly achieved. The scenarios were classified and selected. They were implemented and experimentally verified. The only unmet requirement was performance, which is important, but was not the main goal.
+
+As part of future work, we can consider other usage scenarios and environments, or expand on the current one. We need to solve the performance issue, secure the isomem storage, and consider combining the functionality of snapper and se_vault into a separate component.
+
+Слайд 13
+(5 сек / 9 мин 10 сек)
+
+Thank you! I am ready to answer your questions.

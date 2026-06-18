@@ -97,4 +97,5 @@ Thank you! I am ready to answer your questions.
 
 1. Как (каким алгоритмом) генерируется ключ?
 2. В каком виде хранятся данные?
-3.
+3. Что такое AES-CBC?
+
